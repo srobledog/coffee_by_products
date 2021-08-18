@@ -1,0 +1,421 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+# Creating the environment
+
+```{r}
+library(tidyverse)
+library(revtools)
+library(ggpubr) 
+library(gt)
+library(dplyr)
+library(formattable)
+library(readxl)
+library(googlesheets4)
+```
+
+
+# Data Getting
+
+```{r}
+mendeley_tags_cate <- 
+  read.csv("/cloud/project/output/mendeley_tags_cate.csv", 
+           stringsAsFactors = FALSE)
+```
+
+# Descriptive Analysis
+
+Annual production (Figure X )
+
+```{r}
+byproducts_year <- 
+  mendeley_byproducts_unique %>% 
+  ungroup() %>% 
+  dplyr::select(year) %>% 
+  count(year, sort = TRUE) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.integer(year))
+
+# We need to create a range sequence of years
+
+byproduct_years <- 
+  range(mendeley_byproducts_unique$year)  
+  
+byproduct_year_range <- 
+  byproduct_years[1]:byproduct_years[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to husk dataset
+
+byproduct_year_all <-
+  byproduct_year_range %>% 
+  left_join(byproducts_year) %>% 
+  replace_na(list(papers = 0)) 
+
+mendeley_byproducts_plot <- 
+  byproduct_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() +
+  geom_line() +
+  ylab("papers") +
+  ggtitle("Scientific annual production") +
+  theme(plot.title = element_text(hjust = 0.5),
+        text=element_text(family="Times", face="bold", size=12),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank())
+
+mendeley_byproducts_plot
+```
+
+Scientific production by coffee by-product
+
+Coffee husk 
+
+```{r}
+husk_year <- 
+  mendeley_byproducts_unique %>% 
+  ungroup() %>% 
+  filter(str_detect(string = byproduct,
+                    pattern = "husk")) %>% 
+  select(year) %>% 
+  count(year) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+ # We need to create a range sequence of years
+
+husk_range_year <- 
+  range(husk_year$year)  
+  
+husk_years <- 
+  husk_range_year[1]:husk_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to husk dataset
+
+husk_year_all <-
+  husk_years %>% 
+  left_join(husk_year) %>% 
+  replace_na(list(papers = 0)) 
+
+husk_year_all_plot <- 
+  husk_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() +
+  geom_line() +
+  ylab("papers") +
+  ggtitle("Husk") +
+  theme(plot.title = element_text(hjust = 0.5),
+        text=element_text(family="Times", face="bold", size=12),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank())
+
+husk_year_all_plot
+```
+
+Coffee pulp 
+
+```{r}
+pulp_year <- 
+  mendeley_tags_cate %>% 
+  filter(byproduct == "pulp") %>% 
+  select(year) %>% 
+  count(year) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+ # We need to create a range sequence of years
+
+pulp_range_year <- 
+  range(pulp_year$year)  
+  
+pulp_years <- 
+  pulp_range_year[1]:pulp_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to pulp dataset
+
+pulp_year_all <-
+  pulp_years %>% 
+  left_join(pulp_year) %>% 
+  replace_na(list(papers = 0)) 
+
+pulp_year_all_plot <- 
+  pulp_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() + 
+  geom_line() +
+  ggtitle("Annual pulp scientific production")
+
+pulp_year_all_plot
+```
+
+Coffee silverskin 
+
+```{r}
+silverskin_year <- 
+  mendeley_tags_cate %>% 
+  filter(byproduct == "silverskin") %>% 
+  select(year) %>% 
+  count(year) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+ # We need to create a range sequence of years
+
+silverskin_range_year <- 
+  range(silverskin_year$year)  
+  
+silverskin_years <- 
+  silverskin_range_year[1]:silverskin_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to silverskin dataset
+
+silverskin_year_all <-
+  silverskin_years %>% 
+  left_join(silverskin_year) %>% 
+  replace_na(list(papers = 0)) 
+
+silverskin_year_all_plot <- 
+  silverskin_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() + 
+  geom_line() +
+  ggtitle("Annual silverskin scientific production")
+
+silverskin_year_all_plot
+```
+
+Coffee Spent_coffee 
+
+```{r}
+Spent_coffee_year <- 
+  mendeley_tags_cate %>% 
+  filter(byproduct == "spent_coffee_grounds") %>% 
+  select(year) %>% 
+  count(year) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+ # We need to create a range sequence of years
+
+Spent_coffee_range_year <- 
+  range(Spent_coffee_year$year)  
+  
+Spent_coffee_years <- 
+  Spent_coffee_range_year[1]:Spent_coffee_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to Spent_coffee dataset
+
+Spent_coffee_year_all <-
+  Spent_coffee_years %>% 
+  left_join(Spent_coffee_year) %>% 
+  replace_na(list(papers = 0)) 
+
+Spent_coffee_year_all_plot <- 
+  Spent_coffee_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() + 
+  geom_line() +
+  ggtitle("Annual Spent_coffee scientific production")
+
+Spent_coffee_year_all_plot
+```
+
+## Annual scientific production
+
+```{r}
+global_scientific_production <- 
+  ggarrange(mendeley_byproducts_plot,
+        ggarrange(husk_year_all_plot, pulp_year_all_plot, 
+                  ncol = 2, labels = c("b", "d"), 
+                  align = "h",widths = c(1.5,2)), 
+        ggarrange(silverskin_year_all_plot, Spent_coffee_year_all_plot,
+                  ncol = 2, labels = c("c", "e"), 
+                  align = "h",widths = c(1.5,2)), 
+      nrow = 3, 
+      heights = c(1.5, 1, 1),
+      labels = "a" 
+      ) 
+
+global_scientific_production
+```
+
+## Data tag analysis
+
+
+There are one paper with 44 tags!
+
+ups...what is it?
+
+What about the tags?
+
+Unnesting the tags
+
+```{r}
+mendeley_tags <- 
+  mendeley_byproducts %>% 
+  mutate(tag = str_split(mendeley_tags, ",")) %>% 
+  #select(tag) %>% 
+  unnest(tag)
+```
+
+Counting and visualizing tags
+
+```{r}
+mendeley_tags_unique %>% 
+  count(tag) %>% 
+  mutate(tag = forcats::fct_reorder(tag, n)) %>% 
+  ggplot(aes(x = tag, y = n)) +
+  geom_col() +
+  coord_flip() 
+```
+## Tags timeline
+
+```{r}
+mendeley_tags_year_husk  <- 
+  mendeley_tag_unique_no_cate %>% 
+  filter(byproduct == "Husk") %>% 
+  group_by(year,tag) %>% 
+  count(tag, sort = TRUE)
+
+mendeley_tags_year_husk_plot <- 
+  mendeley_tags_year_husk %>% 
+  arrange(year,tag) %>% 
+  mutate(tag = factor(tag)) %>% 
+  ggplot(aes(y = tag, x = year, size = n, color= tag)) +
+  geom_point(alpha = 1) +
+  scale_size(name="Papers") +
+  xlab("Byproducts Applications") +
+  ggtitle("Husk applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 0,vjust = 0),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 0,hjust = 1)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
+
+mendeley_tags_year_husk_plot
+```
+
+Pulp
+
+```{r}
+mendeley_tags_year_pulp  <- 
+  mendeley_tag_unique %>% 
+  filter(byproduct == "Pulp") %>% 
+  group_by(year,tag) %>% 
+  count(tag, sort = TRUE)
+
+mendeley_tags_year_pulp_plot <- 
+  mendeley_tags_year_pulp %>% 
+  arrange(year,tag) %>% 
+  mutate(tag = factor(tag)) %>% 
+  ggplot(aes(x = tag, y = year, size = n, color= tag)) +
+  geom_point(alpha = 1) +
+  scale_size(name="Papers") +
+  xlab("Byproducts Applications") +
+  ggtitle("Pulp applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 45,vjust = 0.5),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 45,hjust = 0)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
+
+mendeley_tags_year_pulp_plot
+```
+
+silverskin
+
+```{r}
+mendeley_tags_year_silverskin   <- 
+  mendeley_tag_unique %>% 
+  filter(byproduct == "Silverskin") %>% 
+  group_by(year,tag) %>% 
+  count(tag, sort = TRUE)
+
+mendeley_tags_year_silverskin_plot <- 
+  mendeley_tags_year_silverskin %>% 
+  arrange(year,tag) %>% 
+  mutate(tag = factor(tag)) %>% 
+  ggplot(aes(x = tag, y = year, size = n, color= tag)) +
+  geom_point(alpha = 1) +
+  scale_size(name="Papers") +
+  xlab("Byproducts Applications") +
+  ggtitle("Silverskin applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 45,vjust = 0.5),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 45,hjust = 0)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
+
+mendeley_tags_year_silverskin_plot
+```
+
+
+
+```{r}
+mendeley_tags_year_spent   <- 
+  mendeley_tag_unique %>% 
+  filter(byproduct == "Spent_coffee grounds") %>% 
+  group_by(year,tag) %>% 
+  count(tag, sort = TRUE)
+
+mendeley_tags_year_spent_plot <- 
+  mendeley_tags_year_spent %>% 
+  arrange(year,tag) %>% 
+  mutate(tag = factor(tag)) %>% 
+  ggplot(aes(x = tag, y = year, size = n, color= tag)) +
+  geom_point(alpha = 1) +
+  scale_size(name="Papers") +
+  xlab("Byproducts Applications") +
+  ggtitle("Spent applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 90,vjust = 0.5),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 90,hjust = 0)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
+
+mendeley_tags_year_spent_plot
+```
+
+Merging all plots 
+
+```{r}
+mendeley_tags_year_plot <- 
+  ggarrange(
+        ggarrange(mendeley_tags_year_husk_plot, mendeley_tags_year_pulp_plot, 
+                  ncol = 2, labels = c("b", "d"), 
+                  align = "h",widths = c(1.5,2)), 
+        ggarrange(mendeley_tags_year_silverskin_plot, mendeley_tags_year_spent_plot,
+                  ncol = 2, labels = c("c", "e"), 
+                  align = "h",widths = c(1.5,2)), 
+      nrow = 2, 
+      heights = c(2, 2),
+      labels = "a" 
+      ) 
+mendeley_tags_year_plot
+```
+

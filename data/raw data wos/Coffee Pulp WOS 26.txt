@@ -1,0 +1,2706 @@
+﻿FN Clarivate Analytics Web of Science
+VR 1.0
+PT J
+AU Gemechu, FG
+AF Gemechu, Feyera Gobena
+TI Embracing nutritional qualities, biological activities and technological
+   properties of coffee byproducts in functional food formulation
+SO TRENDS IN FOOD SCIENCE & TECHNOLOGY
+LA English
+DT Article
+DE Coffee byproducts; Bioactive properties; Technological function;
+   Nutritional value; Food formulation; Functional food; Natural bioactives
+ID SOLID-STATE FERMENTATION; MILL WASTE-WATER; CHLOROGENIC ACID; GREEN
+   COFFEE; PHENOLIC-COMPOUNDS; DIETARY FIBER; IN-VITRO; ANTIOXIDANT
+   CAPACITY; CHEMICAL-CHARACTERIZATION; ANTIBACTERIAL ACTIVITY
+AB Research interests in coffee byproducts showed increased attraction. This is partly driven by increasing annual coffee production, which leads to increased generation of solid residues which in turn creates environmental concern. Additionally, compositional profile of coffee byproducts stimulate more investigations into their role of affecting human physiological function. Driven by increased demand of valorizing agro-industrial residues into value added products, many research findings present justifiable importance and possible application of coffee byproducts in food. This extensive review therefore presents up-to-date information with reference to compositional data, potential of incorporating coffee byproducts as ingredients in food formulations and new product development with respect to their biological functionality and technological importance. Reviewed byproducts are coffee husk, pulp, parchment, silverskin and spent coffee ground. Processing steps are elaborated and description of each process with respect to characteristics of starting material and generated main products and resulting residues is made to clearly distinguish the corresponding byproducts. Respective nutritional and phytochemical composition, food formulation and their distinctive characteristics are described. Production of value added products and food product development as well as applications made so far to incorporate the byproducts into food formulation are reviewed. Finally, safety related references and prospective insights of coffee processing byproducts in the current changing economy with possible indication into future trend of the current topic in universal context are presented.
+C1 [Gemechu, Feyera Gobena] Addis Ababa Sci & Technol Univ, Dept Food Proc Engn, Biotechnol & Bioproc Ctr Excellence Biocenex, Addis Ababa, Ethiopia.
+RP Gemechu, FG (corresponding author), Addis Ababa Sci & Technol Univ, Dept Food Engn, B-73-R108,POB 16417, Addis Ababa, Ethiopia.
+EM feyera.gobena@aastu.edu.et
+FU Addis Ababa Science and Technology University internal research fund
+FX This work was supported by Addis Ababa Science and Technology University
+   internal research fund.
+CR Abdel-Rahman A, 2011, TOXICOL SCI, V123, P333, DOI 10.1093/toxsci/kfr198
+   Acidri R, 2020, ANTIOXIDANTS-BASEL, V9, DOI 10.3390/antiox9020093
+   Acosta-Fernandez R, 2020, IND ENG CHEM RES, V59, P7346, DOI 10.1021/acs.iecr.9b06429
+   Aguilera Y, 2019, FOOD FUNCT, V10, P4739, DOI [10.1039/c9fo00544g, 10.1039/C9FO00544G]
+   AlAmri OD, 2020, J FUNCT FOODS, V71, DOI 10.1016/j.jff.2020.103996
+   Alghooneh A, 2017, INT J FOOD PROP, V20, P2830, DOI 10.1080/10942912.2016.1253097
+   ALHIJAZEEN M, 2016, ANTIOXIDANTS BASEL, V5
+   Ali HS, 2018, INT J PHARMACOL, V14, P584, DOI 10.3923/ijp.2018.584.594
+   Almeida AAP, 2006, J AGR FOOD CHEM, V54, P8738, DOI 10.1021/jf0617317
+   Alvarado-Ambriz SG, 2020, REV MEX ING QUIM, V19, P135, DOI 10.24275/rmiq.Bio1612
+   Alves RC, 2017, HANDBOOK OF COFFEE PROCESSING BY-PRODUCTS: SUSTAINABLE APPLICATIONS, P1, DOI 10.1016/B978-0-12-811290-8.00001-3
+   Andrade KS, 2012, TALANTA, V88, P544, DOI 10.1016/j.talanta.2011.11.031
+   ANTIER P, 1993, BIOTECHNOL ADV, V11, P429, DOI 10.1016/0734-9750(93)90012-C
+   Arya M, 2007, CRIT REV FOOD SCI, V47, P51, DOI 10.1080/10408390600550315
+   Asgar MA, 2013, INT J FOOD PROP, V16, P91, DOI 10.1080/10942912.2011.595864
+   Ates G, 2019, J FOOD MEAS CHARACT, V13, P755, DOI 10.1007/s11694-018-9988-9
+   Ates G, 2018, LWT-FOOD SCI TECHNOL, V90, P519, DOI 10.1016/j.lwt.2018.01.003
+   Avila Patricia F., 2020, BIOACTIVE CARBOHYDRA, V24, DOI 10.1016/j.bcdf.2020.100234
+   Baggenstoss J, 2008, J AGR FOOD CHEM, V56, P5836, DOI 10.1021/jf800327j
+   Balestra F, 2019, DIETARY FIBER: PROPERTIES, RECOVERY, AND APPLICATIONS, P313, DOI 10.1016/B978-0-12-816495-2.00010-1
+   Ballesteros LF, 2014, FOOD BIOPROCESS TECH, V7, P3493, DOI 10.1007/s11947-014-1349-z
+   Balzano M, 2020, INNOV FOOD SCI EMERG, V59, DOI 10.1016/j.ifset.2019.102254
+   Bassoli BK, 2008, CELL BIOCHEM FUNCT, V26, P320, DOI 10.1002/cbf.1444
+   Beecher GR, 2004, PHARM BIOL, V42, P2, DOI 10.3109/13880200490893474
+   Behrouzian F., 2016, BIOACT CARBOHYDRATES, V8, P58, DOI DOI 10.1016/J.BCDF.2016.11.004
+   Bekalo SA, 2010, MATER STRUCT, V43, P1049, DOI 10.1617/s11527-009-9565-0
+   Rios MB, 2020, MOLECULES, V25, DOI 10.3390/molecules25061358
+   Benitez V, 2019, FOOD RES INT, V122, P105, DOI 10.1016/j.foodres.2019.04.002
+   Bertolino M, 2019, J SCI FOOD AGR, V99, P4267, DOI 10.1002/jsfa.9659
+   Bessada S. M., 2018, COSMETICS, V5, P5, DOI [10.3390/cosmetics5010005, DOI 10.3390/cosmetics5010005, DOI 10.3390/COSMETICS5010005]
+   Bhoite RN, 2015, FOOD BIOPROD PROCESS, V94, P727, DOI 10.1016/j.fbp.2014.10.007
+   Bhoite RN, 2013, PREP BIOCHEM BIOTECH, V43, P350, DOI 10.1080/10826068.2012.737399
+   Bonilla-Hermosa VA, 2014, BIORESOURCE TECHNOL, V166, P142, DOI 10.1016/j.biortech.2014.05.031
+   Bonita JS, 2007, PHARMACOL RES, V55, P187, DOI 10.1016/j.phrs.2007.01.006
+   Borrelli RC, 2004, J AGR FOOD CHEM, V52, P1338, DOI 10.1021/jf034974x
+   Braham J. E., 1979, COFFEE PULP COMPOSIT
+   Brand D, 2000, ENZYME MICROB TECH, V27, P127, DOI 10.1016/S0141-0229(00)00186-1
+   Bravo J, 2013, FOOD CHEM TOXICOL, V60, P397, DOI 10.1016/j.fct.2013.08.002
+   Bresciani L, 2014, FOOD RES INT, V61, P196, DOI 10.1016/j.foodres.2013.10.047
+   Budryn G., 2013, International Food Research Journal, V20, P2133
+   Budryn G, 2015, FOOD CHEM, V168, P276, DOI 10.1016/j.foodchem.2014.07.056
+   Bugge M. M., 2020, INNOVATION STRATEGIE, DOI DOI 10.1016/B978-0-12-817382-4.00001-0
+   Campos-Vega R, 2015, TRENDS FOOD SCI TECH, V45, P24, DOI 10.1016/j.tifs.2015.04.012
+   Cao Q., 2019, INHIBITORY EFFECT CH
+   Carocho M, 2015, TRENDS FOOD SCI TECH, V45, P284, DOI 10.1016/j.tifs.2015.06.007
+   Carocho M, 2014, COMPR REV FOOD SCI F, V13, P377, DOI 10.1111/1541-4337.12065
+   Castaldo L., 2018, Journal of Food Research, V7, P43, DOI 10.5539/jfr.v7n4p43
+   Castaldo L, 2020, MOLECULES, V25, DOI 10.3390/molecules25092132
+   Castillo D., 2016, FUNCTIONAL FOODS CHR, P386
+   Castro ACCM, 2018, FOOD CHEM, V246, P48, DOI 10.1016/j.foodchem.2017.10.153
+   Cerda A, 2017, BIORESOURCE TECHNOL, V243, P1059, DOI 10.1016/j.biortech.2017.07.076
+   Cerda A, 2017, SCI TOTAL ENVIRON, V589, P56, DOI 10.1016/j.scitotenv.2017.02.184
+   Chalalai J., 2015, J PROCESS ENERGY AGR, V19, P224
+   Chen XM, 2019, CRIT REV FOOD SCI, V59, P1008, DOI 10.1080/10408398.2018.1546667
+   Chibane LB, 2019, J SCI FOOD AGR, V99, P1457, DOI 10.1002/jsfa.9357
+   Choi JH, 2017, J BIOCHEM MOL TOXIC, V31, DOI 10.1002/jbt.21865
+   Clarke R.J., 1985, COFFEE BOT BIOCH PRO, P230
+   Cleves S. R., 2004, COFFEE GROWING PROCE, P716, DOI [10.1002/9783527619627.ch25, DOI 10.1002/9783527619627.CH25]
+   CLIFFORD M N, 1985, P305
+   Clifford MN, 2017, NAT PROD REP, V34, P1391, DOI 10.1039/c7np00030h
+   CLIFFORD MN, 1991, FOOD CHEM, V40, P35, DOI 10.1016/0308-8146(91)90017-I
+   Collazo-Bigliardi S, 2019, FOOD PACKAGING SHELF, V22, DOI 10.1016/j.fpsl.2019.100383
+   Collazo-Bigliardi S, 2018, CARBOHYD POLYM, V191, P205, DOI 10.1016/j.carbpol.2018.03.022
+   Conde T, 2016, PREP BIOCHEM BIOTECH, V46, P406, DOI 10.1080/10826068.2015.1084514
+   Costa ASG, 2018, FOOD CHEM, V267, P28, DOI 10.1016/j.foodchem.2017.03.106
+   Cruz R, 2012, J AGR FOOD CHEM, V60, P7777, DOI 10.1021/jf3018854
+   Cubero-Castillo E., 2017, J FOOD NUTR POPULATI, V1, P1
+   da Silveira JS, 2019, FOOD BIOPROD PROCESS, V115, P175, DOI 10.1016/j.fbp.2019.04.001
+   Damat D., 2019, COFFEE SCI, V14, P493
+   Day L, 2009, TRENDS FOOD SCI TECH, V20, P388, DOI 10.1016/j.tifs.2008.05.002
+   de los Santos S, 2019, J FUNCT FOODS, V58, P367, DOI 10.1016/j.jff.2019.05.014
+   Paula LEDE, 2011, CERNE, V17, P237, DOI 10.1590/S0104-77602011000200012
+   del Pozo C, 2020, WASTE MANAGE, V109, P19, DOI 10.1016/j.wasman.2020.04.044
+   Delgado PA, 2008, FOOD CHEM, V110, P168, DOI 10.1016/j.foodchem.2008.01.029
+   Delgado SR, 2019, ACTA SCI POLON-TECHN, V18, P235, DOI [10.17306/J.AFS.2019.0663, 10.17306/J.AFS.0663]
+   Deng Q, 2015, FOOD ENG REV, V7, P357, DOI 10.1007/s12393-014-9104-9
+   Desai NM, 2020, LWT-FOOD SCI TECHNOL, V118, DOI 10.1016/j.lwt.2019.108784
+   Dessie W, 2018, BIOPROC BIOSYST ENG, V41, P1461, DOI 10.1007/s00449-018-1974-4
+   Dias M, 2015, LETT APPL MICROBIOL, V61, P588, DOI 10.1111/lam.12498
+   Dorea JG, 2005, BRIT J NUTR, V93, P773, DOI 10.1079/BJN20051370
+   Dorsey BM, 2017, HANDBOOK OF COFFEE PROCESSING BY-PRODUCTS: SUSTAINABLE APPLICATIONS, P27, DOI 10.1016/B978-0-12-811290-8.00002-5
+   Duangjai Acharaporn, 2018, Kobe J Med Sci, V64, pE84
+   Duangjai A, 2016, INTEGR MED RES, V5, P324, DOI 10.1016/j.imr.2016.09.001
+   Durazzo A, 2018, MOLECULES, V23, DOI 10.3390/molecules23081844
+   Echeverria M.C., 2017, OPEN WASTE MANAGEMEN, V10, P13, DOI DOI 10.2174/1876400201710010013
+   Efthymiopoulos I, 2018, IND CROP PROD, V119, P49, DOI 10.1016/j.indcrop.2018.04.008
+   Eskelinen MH, 2010, J ALZHEIMERS DIS, V20, pS167, DOI 10.3233/JAD-2010-1404
+   Esquivel P., 2012, IDENTIFICATION PHENO
+   Esquivel P, 2012, FOOD RES INT, V46, P488, DOI 10.1016/j.foodres.2011.05.028
+   Fan HZ, 2020, TRENDS FOOD SCI TECH, V95, P86, DOI 10.1016/j.tifs.2019.11.008
+   Farah Adriana, 2006, Braz. J. Plant Physiol., V18, P23, DOI 10.1590/S1677-04202006000100003
+   Farah A, 2019, BEVERAGES, V5, DOI 10.3390/beverages5010011
+   Faria WCS, 2020, FOOD HYDROCOLLOID, V108, DOI 10.1016/j.foodhyd.2020.106004
+   Felipe LD, 2017, TRENDS FOOD SCI TECH, V62, P141, DOI 10.1016/j.tifs.2017.02.005
+   Fernandez-Gomez B, 2016, FOOD RES INT, V89, P1015, DOI 10.1016/j.foodres.2016.03.006
+   Ferreira T, 2019, COFFEE: PRODUCTION, QUALITY AND CHEMISTRY, P3
+   Figueroa G.A., 2016, AUSTIN FOOD SCI, V1, P1014
+   Franca A. S., 2009, AGR WASTES, P306
+   Franca A. S., 2007, ISSUE SEPTEMBER, P1221
+   Fuentes E, 2014, PLOS ONE, V9, DOI 10.1371/journal.pone.0090699
+   Fumagalli M, 2016, PHARMACOL RES, V111, P703, DOI 10.1016/j.phrs.2016.07.028
+   Galanakis CM, 2020, FOODS, V9, DOI 10.3390/foods9040523
+   Galanakis CM, 2018, TRENDS FOOD SCI TECH, V79, P98, DOI 10.1016/j.tifs.2018.07.010
+   Galanakis CM, 2018, ENVIRON TECHNOL INNO, V10, P62, DOI 10.1016/j.eti.2018.01.012
+   Galanakis CM, 2018, ENVIRON TECHNOL INNO, V9, P160, DOI 10.1016/j.eti.2017.12.002
+   Galanakis CM, 2018, IND CROP PROD, V111, P30, DOI 10.1016/j.indcrop.2017.09.058
+   Galanakis CM, 2015, CZECH J FOOD SCI, V33, P126, DOI 10.17221/335/2014-CJFS
+   Galanakis CM, 2015, TRENDS FOOD SCI TECH, V42, P44, DOI 10.1016/j.tifs.2014.11.005
+   Galanakis CM, 2013, FOOD BIOPROD PROCESS, V91, P575, DOI 10.1016/j.fbp.2013.01.004
+   Galanakis CM, 2013, SEP PURIF TECHNOL, V107, P245, DOI 10.1016/j.seppur.2013.01.034
+   Galanakis CM, 2012, TRENDS FOOD SCI TECH, V26, P68, DOI 10.1016/j.tifs.2012.03.003
+   Garcia-Serna E, 2014, POL J FOOD NUTR SCI, V64, P243, DOI 10.2478/pjfns-2013-0024
+   Gawlik-Dziki U, 2019, APPL SCI-BASEL, V9, DOI 10.3390/app9030568
+   Geremu M, 2016, CHEM BIOL TECHNOL AG, V3, DOI 10.1186/s40538-016-0077-1
+   Gocmen D, 2019, J FOOD SCI TECH MYS, V56, P2979, DOI 10.1007/s13197-019-03773-y
+   das Neves JVG, 2019, FOOD SCI TECH-BRAZIL, V39, P348, DOI 10.1590/fst.36018
+   Gonthier MP, 2006, BIOMED PHARMACOTHER, V60, P536, DOI 10.1016/j.biopha.2006.07.084
+   de Cosio-Barron ACG, 2020, INNOV FOOD SCI EMERG, V60, DOI 10.1016/j.ifset.2019.102286
+   Gormley R., 2019, DEV INNOVATIVE FOOD, V93, DOI [10.1016/j.tifs.2019.09.001., DOI 10.1016/J.TIFS.2019.09.001]
+   Gouthamchandra K, 2017, FOOD SCI HUM WELL, V6, P147, DOI 10.1016/j.fshw.2017.06.001
+   Gouvea BM, 2009, BIOTECHNOL LETT, V31, P1315, DOI 10.1007/s10529-009-0023-4
+   Aguilar-Raymundo VG, 2019, J FOOD PROCESS PRES, V43, DOI 10.1111/jfpp.14223
+   Guglielmetti A, 2019, POL J FOOD NUTR SCI, V69, P157, DOI 10.31883/pjfns-2019-0012
+   Gullon P, 2020, TRENDS FOOD SCI TECH, V101, P182, DOI 10.1016/j.tifs.2020.05.007
+   Gyawali R, 2014, FOOD CONTROL, V46, P412, DOI 10.1016/j.foodcont.2014.05.047
+   Halliwell B, 1996, FREE RADICAL RES, V25, P439, DOI 10.3109/10715769609149066
+   Hartati I., 2011, POTENTIAL PRODUCTION
+   Hashimoto TA, 2019, EUR FOOD RES TECHNOL, V245, DOI 10.1007/s00217-018-3200-7
+   Heeger A, 2017, FOOD CHEM, V221, P969, DOI 10.1016/j.foodchem.2016.11.067
+   Heimbach JT, 2010, FOOD CHEM TOXICOL, V48, P2517, DOI 10.1016/j.fct.2010.06.025
+   Higdon JV, 2006, CRIT REV FOOD SCI, V46, P101, DOI 10.1080/10408390500400009
+   Hu GL, 2019, FOOD FUNCT, V10, P3113, DOI [10.1039/c9fo00288j, 10.1039/C9FO00288J]
+   이은희, 2013, [Asian Journal of Beauty and Cosmetology, 아시안뷰티화장품학술지], V11, P479
+   Iriondo-DeHond A, 2019, NUTRIENTS, V11, DOI 10.3390/nu11112693
+   Iriondo-DeHond A, 2019, INNOV FOOD SCI EMERG, V51, P194, DOI 10.1016/j.ifset.2018.06.010
+   Iriondo-DeHond A, 2017, FOOD RES INT, V100, P791, DOI 10.1016/j.foodres.2017.08.012
+   Iriondo-DeHond M, 2020, NUTRIENTS, V12, DOI 10.3390/nu12030627
+   Janicke B, 2011, NUTR CANCER, V63, P611, DOI 10.1080/01635581.2011.538486
+   Janissen B, 2018, RESOUR CONSERV RECY, V128, P110, DOI 10.1016/j.resconrec.2017.10.001
+   Jimenez-Zamora A, 2015, LWT-FOOD SCI TECHNOL, V61, P12, DOI 10.1016/j.lwt.2014.11.031
+   Jully KMM, 2016, LWT-FOOD SCI TECHNOL, V66, P244, DOI 10.1016/j.lwt.2015.10.046
+   Kabir F, 2014, J KOREAN SOC APPL BI, V57, P359, DOI 10.1007/s13765-014-4056-6
+   Kalaska B, 2014, J AGR FOOD CHEM, V62, P2853, DOI 10.1021/jf5008538
+   Kandasamy S, 2016, 3 BIOTECH, V6, DOI 10.1007/s13205-016-0481-z
+   Kim J., 2019, LACTIC ACID PRODUCTI
+   Kim JH, 2016, ANTIOXIDANTS-BASEL, V5, DOI 10.3390/antiox5030021
+   Klangpetch W, 2017, INT FOOD RES J, V24, P2246
+   Kleinwachter M., 2015, COFFEE HLTH DIS PREV, P73, DOI [10.1016/ B978-0-12-409517-5.00009-7, DOI 10.1016/B978-0-12-409517-5.00009-7]
+   Klingel T, 2020, FOODS, V9, DOI 10.3390/foods9050665
+   KOSTENBERG D, 1993, WATER SCI TECHNOL, V27, P97
+   Kovacevic DB, 2018, FOOD CHEM, V254, P150, DOI 10.1016/j.foodchem.2018.01.192
+   Kovalcik A, 2018, FOOD BIOPROD PROCESS, V110, P104, DOI 10.1016/j.fbp.2018.05.002
+   Kowalska H, 2017, TRENDS FOOD SCI TECH, V67, P150, DOI 10.1016/j.tifs.2017.06.016
+   Kruger MJ, 2014, FOOD RES INT, V59, P41, DOI 10.1016/j.foodres.2014.01.046
+   KUMARI M, 2012, RES J RECENT SCI, V1, P70
+   Kurmukov A. G., 2013, MED PLANTS CENT ASIA, V1, P13, DOI DOI 10.1007/978-1-4614-3912-7_4
+   Lai WT, 2017, TRENDS FOOD SCI TECH, V59, P148, DOI 10.1016/j.tifs.2016.11.014
+   Larrauri JA, 1999, TRENDS FOOD SCI TECH, V10, P3, DOI 10.1016/S0924-2244(99)00016-3
+   Laufenberg G, 2003, BIORESOURCE TECHNOL, V87, P167, DOI 10.1016/S0960-8524(02)00167-0
+   Leao D. P., 2013, 2 INT C NUTR FOOD SC, V53, P12
+   Leifa F, 2001, BRAZ ARCH BIOL TECHN, V44, P205, DOI 10.1590/S1516-89132001000200015
+   Liang N, 2016, NUTRIENTS, V8, DOI 10.3390/nu8010016
+   Veiga TRLA, 2017, CERNE, V23, P529, DOI 10.1590/01047760201723042373
+   Lin C., 2014, LEBENSMITTEL WISSENS, DOI [10.1016/j.lwt.2014.08.010., DOI 10.1016/J.LWT.2014.08.010]
+   Londono-Hernandez L, 2020, BIOCATAL AGR BIOTECH, V23, DOI 10.1016/j.bcab.2019.101467
+   Lopes ACA, 2020, J FOOD SCI TECH MYS, V57, P4481, DOI 10.1007/s13197-020-04485-4
+   Lou ZX, 2011, J FOOD SCI, V76, pM398, DOI 10.1111/j.1750-3841.2011.02213.x
+   Luis A, 2014, BIOFOULING, V30, P69, DOI 10.1080/08927014.2013.845878
+   Ma S, 2019, DIETARY FIBER: PROPERTIES, RECOVERY, AND APPLICATIONS, P279, DOI 10.1016/B978-0-12-816495-2.00009-5
+   Machado C. M. M., 2000, COFFEE BIOTECHNOLOGY, P401, DOI 10.1007/978-94-017-1068-8_37.
+   Machado CMM, 2002, APPL BIOCHEM BIOTECH, V102, P179, DOI 10.1385/ABAB:102-103:1-6:179
+   Machado E, 2018, BEVERAGES, V4, DOI 10.3390/beverages4040105
+   Machado S, 2020, FOOD CHEM, V326, DOI 10.1016/j.foodchem.2020.126940
+   Magoni C, 2018, FOOD RES INT, V112, P129, DOI 10.1016/j.foodres.2018.06.026
+   Lorenzo JM, 2016, ASIAN PAC J TROP BIO, V6, P709, DOI 10.1016/j.apjtb.2016.06.010
+   Marin M, 2019, WASTE BIOMASS VALORI, V10, P2761, DOI 10.1007/s12649-018-0327-5
+   Martinez-Albert N, 2019, EXPERT REV MED DEVIC, V16, P63, DOI 10.1080/17434440.2019.1557517
+   Martinez-Saez N, 2017, FOOD CHEM, V216, P114, DOI 10.1016/j.foodchem.2016.07.173
+   Martinez-Saez N, 2014, FOOD CHEM, V150, P227, DOI 10.1016/j.foodchem.2013.10.100
+   Medeiros ABP, 2003, BRAZ J MICROBIOL, V34, P245, DOI 10.1590/S1517-83822003000300013
+   Medina I, 2007, J AGR FOOD CHEM, V55, P3889, DOI 10.1021/jf063498i
+   Martinez CLM, 2019, BIOMASS BIOENERG, V120, P68, DOI 10.1016/j.biombioe.2018.11.003
+   Mesias M, 2014, FOOD RES INT, V62, P1120, DOI 10.1016/j.foodres.2014.05.058
+   Mindarti S, 2020, IOP C SER EARTH ENV, V462, DOI 10.1088/1755-1315/462/1/012017
+   Miron-Merida VA, 2019, LWT-FOOD SCI TECHNOL, V101, P167, DOI 10.1016/j.lwt.2018.11.013
+   Monente C, 2015, J AGR FOOD CHEM, V63, P4327, DOI 10.1021/acs.jafc.5b01619
+   Monente C, 2015, J FUNCT FOODS, V12, P365, DOI 10.1016/j.jff.2014.12.006
+   Montavon P. M., 2003, CHANGES GREEN COFFEE
+   Moreira MD, 2018, WASTE MANAGE, V82, P93, DOI 10.1016/j.wasman.2018.10.017
+   Moreno J., 2019, J FOOD NUTR RES, V7, P632, DOI [10.12691/jfnr-7-9-2., DOI 10.12691/JFNR-7-9-2]
+   Morone P, 2019, J CLEAN PROD, V238, DOI 10.1016/j.jclepro.2019.117868
+   Mortele O, 2019, J PHARMACEUT BIOMED, V175, DOI 10.1016/j.jpba.2019.07.016
+   Mullen W, 2013, J AGR FOOD CHEM, V61, P5298, DOI 10.1021/jf4003126
+   Ameca GM, 2018, CIENC AGROTEC, V42, P307, DOI 10.1590/1413-70542018423000818
+   Murthy PS, 2010, WORLD APPL SCI J, V8, P199
+   Murthy PS, 2012, FOOD BIOPROCESS TECH, V5, P657, DOI [10.1007/s11947-010-0331-7, 10.1007/s11947-010-0363-z]
+   Murthy PS, 2012, RESOUR CONSERV RECY, V66, P45, DOI 10.1016/j.resconrec.2012.06.005
+   Murthy PS, 2009, J CHEM TECHNOL BIOT, V84, P1246, DOI 10.1002/jctb.2142
+   Mussatto SI, 2012, APPL ENERG, V92, P763, DOI 10.1016/j.apenergy.2011.08.020
+   Mussatto SI, 2011, SEP PURIF TECHNOL, V83, P173, DOI 10.1016/j.seppur.2011.09.036
+   Mussatto SI, 2011, FOOD BIOPROCESS TECH, V4, P661, DOI 10.1007/s11947-011-0565-z
+   Mussatto SI, 2011, CARBOHYD POLYM, V83, P368, DOI 10.1016/j.carbpol.2010.07.063
+   Nandakumar V, 2008, CANCER LETT, V269, P378, DOI 10.1016/j.canlet.2008.03.049
+   Narita Y, 2014, FOOD RES INT, V61, P16, DOI 10.1016/j.foodres.2014.01.023
+   Natarajan K, 2012, FOOD BIOPROD PROCESS, V90, P780, DOI 10.1016/j.fbp.2012.06.003
+   Navya PN, 2013, BIOPROC BIOSYST ENG, V36, P1115, DOI 10.1007/s00449-012-0865-3
+   Negesse T, 2009, ANIM FEED SCI TECH, V154, P204, DOI 10.1016/j.anifeedsci.2009.09.010
+   NISHINA A, 1994, BIOSCI BIOTECH BIOCH, V58, P293, DOI 10.1271/bbb.58.293
+   Nzekoue FK, 2020, FOOD RES INT, V133, DOI 10.1016/j.foodres.2020.109128
+   O'Shea N, 2012, INNOV FOOD SCI EMERG, V16, P1, DOI 10.1016/j.ifset.2012.06.002
+   Okuda T, 2011, MOLECULES, V16, P2191, DOI 10.3390/molecules16032191
+   Oliveira FD, 2018, BIORESOURCE TECHNOL, V257, P172, DOI 10.1016/j.biortech.2018.01.041
+   Oliveira LS, 2015, COFFEE HLTH DIS PREV, P283, DOI DOI 10.1016/B978-0-12-409517-5.00031-0
+   Ong KW, 2012, PLOS ONE, V7, DOI 10.1371/journal.pone.0032718
+   Ontawong A, 2019, J FUNCT FOODS, V54, P568, DOI 10.1016/j.jff.2019.02.011
+   Osorio-Arias J, 2020, MATER CHEM PHYS, V240, DOI 10.1016/j.matchemphys.2019.122171
+   Pagnoncelli MGB, 2003, NEW HORIZONS IN BIOTECHNOLOGY, P321
+   Palomino Garcia LRP, 2015, FOOD SCI TECH-BRAZIL, V35, P704, DOI 10.1590/1678-457X.6834
+   Pandey A, 1999, CURR SCI INDIA, V77, P149
+   Pandey A, 2000, BIOCHEM ENG J, V6, P153, DOI 10.1016/S1369-703X(00)00084-X
+   Panusa A., 2013, RECOVERY NATURAL ANT
+   Panusa A, 2017, FOOD RES INT, V99, P155, DOI 10.1016/j.foodres.2017.05.017
+   Parra-Campos A, 2019, FOOD CHEM, V285, P59, DOI 10.1016/j.foodchem.2019.01.158
+   Patay EB, 2016, ASIAN PAC J TROP MED, V9, P1127, DOI 10.1016/j.apjtm.2016.11.008
+   Pegg R. B., 2004, 50 INT C MEAT SCI TE, V1, P0
+   Pena-Maravilla M, 2017, REV MEX ING QUIM, V16, P757
+   PENALOZA W, 1985, APPL ENVIRON MICROB, V49, P388
+   Perez-Sarinana B. Y., 2017, QUESTION CAFFEINE, P143, DOI [10.5772/intechopen.68598., DOI 10.5772/INTECHOPEN.68598]
+   Perraud-Gaime I., 2000, COFFEE BIOTECHNOLOGY, P437
+   Petzold G, 2018, HANDB FOOD BIOENG, V18, P67, DOI 10.1016/B978-0-12-811447-6.00003-5
+   Pietta P, 2003, STUD NAT PROD CHEM, V28, P257
+   Pleissner D, 2016, BIORESOURCE TECHNOL, V218, P167, DOI 10.1016/j.biortech.2016.06.078
+   Pop O. L., 2019, DIETARY FIBER PROPER
+   PORTER WL, 1993, TOXICOL IND HEALTH, V9, P93, DOI 10.1177/0748233793009001-209
+   Pourfarzad A, 2013, LWT-FOOD SCI TECHNOL, V50, P599, DOI 10.1016/j.lwt.2012.08.001
+   Prata ERBA, 2007, LWT-FOOD SCI TECHNOL, V40, P1555, DOI 10.1016/j.lwt.2006.10.003
+   Prihadi A. R., 2020, Rasayan Journal of Chemistry, V13, P955, DOI 10.31788/RJC.2020.1325613
+   Pujol D, 2013, IND CROP PROD, V50, P423, DOI 10.1016/j.indcrop.2013.07.056
+   Pushpa S, 2012, EUR J BIOL SCI, V4, P13, DOI DOI 10.5829/ID0SI.EJBS.2012.4.1.6149
+   Rabetafika HN, 2014, TRENDS FOOD SCI TECH, V40, P99, DOI 10.1016/j.tifs.2014.08.004
+   Rahmanian N, 2014, J AM OIL CHEM SOC, V91, P1, DOI 10.1007/s11746-013-2350-9
+   Rambo MKD, 2015, TALANTA, V144, P696, DOI 10.1016/j.talanta.2015.06.045
+   Ramirez-Coronel MAN, 2004, J AGR FOOD CHEM, V52, P1344, DOI 10.1021/jf035208t
+   RAMIREZMARTINEZ JR, 1988, J SCI FOOD AGR, V43, P135, DOI 10.1002/jsfa.2740430204
+   Rani MU, 2012, FOOD CHEM, V130, P243, DOI 10.1016/j.foodchem.2011.07.021
+   Ratnadewi A. A. I., 2020, BIOCATALYSIS AGR BIO, DOI 10.1016/j.bcab.2019.101446
+   Rebollo-Hernanz M, 2019, FOOD CHEM TOXICOL, V132, DOI 10.1016/j.fct.2019.110672
+   Regazzoni L, 2016, J FUNCT FOODS, V20, P472, DOI 10.1016/j.jff.2015.11.027
+   Reyes-Izquierdo T, 2013, BRIT J NUTR, V110, P420, DOI 10.1017/S0007114512005338
+   Ribeiro EF, 2017, FOOD SCI TECH-BRAZIL, V37, P5, DOI [10.1590/1678-457x.06117, 10.1590/1678-457X.06117]
+   Ribeiro VS, 2014, FOOD RES INT, V61, P39, DOI 10.1016/j.foodres.2014.05.003
+   Saada M., 2019, INT J BUSINESS TREND, V9, P11
+   Sacchetti G, 2009, J FOOD ENG, V90, P74, DOI 10.1016/j.jfoodeng.2008.06.005
+   Sampaio A, 2013, LWT-FOOD SCI TECHNOL, V54, P557, DOI 10.1016/j.lwt.2013.05.042
+   Santos-Buelga C, 2000, J SCI FOOD AGR, V80, P1094, DOI [10.1002/(SICI)1097-0010(20000515)80:7&lt;1094::AID-JSFA569&gt;3.0.CO;2-1, 10.1002/(SICI)1097-0010(20000515)80:7<1094::AID-JSFA569>3.3.CO;2-T]
+   Sato Y, 2011, INT J PHARMACEUT, V403, P136, DOI 10.1016/j.ijpharm.2010.09.035
+   Schieber A, 2001, TRENDS FOOD SCI TECH, V12, P401, DOI 10.1016/S0924-2244(02)00012-2
+   Scully D. S., 2016, INVESTIGATION SPENT, DOI [10.3390/bioengineering3040033, DOI 10.3390/BIOENGINEERING3040033]
+   Seczyk L, 2017, FOOD CHEM, V223, P1, DOI 10.1016/j.foodchem.2016.12.020
+   Setyobudi R. H., 2019, IOP Conference Series: Earth and Environmental Science, V293, DOI 10.1088/1755-1315/293/1/012035
+   Severini C, 2020, LWT-FOOD SCI TECHNOL, V119, DOI 10.1016/j.lwt.2019.108877
+   Shahidi F, 2015, J FUNCT FOODS, V18, P820, DOI 10.1016/j.jff.2015.06.018
+   SHANKARANAND VS, 1994, WORLD J MICROB BIOT, V10, P165, DOI 10.1007/BF00360879
+   Shen WJ, 2012, BRAIN RES BULL, V88, P487, DOI 10.1016/j.brainresbull.2012.04.010
+   Shin HS, 2015, FOOD CHEM, V168, P167, DOI 10.1016/j.foodchem.2014.06.100
+   Silva ED, 2017, COMPR REV FOOD SCI F, V16, P580, DOI 10.1111/1541-4337.12266
+   Simoes J, 2009, MOL NUTR FOOD RES, V53, P1036, DOI 10.1002/mnfr.200800385
+   Soares M, 2000, PROCESS BIOCHEM, V35, P857, DOI 10.1016/S0032-9592(99)00144-2
+   Sousa C., 2015, BATTLE MICROBIAL PAT, P131
+   Stone J, 2019, J ENVIRON MANAGE, V247, P425, DOI 10.1016/j.jenvman.2019.06.037
+   Stylianou M, 2018, ENVIRON SCI POLLUT R, V25, P35776, DOI 10.1007/s11356-018-2359-6
+   Suarez JA, 2003, ENERG SOURCE, V25, P953, DOI 10.1080/00908310390232406
+   Sung SiHeung, 2012, Journal of Medicinal Plants Research, V6, P3072, DOI 10.5897/JMPR11.1575
+   Swieca M, 2018, FOOD CHEM, V258, P301, DOI 10.1016/j.foodchem.2018.03.081
+   Swieca M, 2017, FOOD CHEM, V221, P1451, DOI 10.1016/j.foodchem.2016.11.006
+   Tajik N, 2017, EUR J NUTR, V56, P2215, DOI 10.1007/s00394-017-1379-1
+   Taram F, 2016, BRAIN RES, V1648, P69, DOI 10.1016/j.brainres.2016.07.028
+   Tavares KM, 2016, FOOD CONTROL, V70, P318, DOI 10.1016/j.foodcont.2016.06.011
+   Tello J, 2011, J SUPERCRIT FLUID, V59, P53, DOI 10.1016/j.supflu.2011.07.018
+   Tian T, 2017, J AGR FOOD CHEM, V65, P2784, DOI 10.1021/acs.jafc.6b04716
+   Tolesa LD, 2018, ACS OMEGA, V3, P10866, DOI 10.1021/acsomega.8b01447
+   Toschi T. G., 2014, COFFEE SILVERSKIN CH
+   Tran G., 2015, COFFEE HULLS FRUIT P
+   Vazquez-Sanchez K, 2018, FOOD CHEM, V261, P253, DOI 10.1016/j.foodchem.2018.04.064
+   Widsten P, 2014, J AGR FOOD CHEM, V62, P11146, DOI 10.1021/jf503819t
+   Wojciechowski A. L., 1991, COFFEE BIOTECHNOLOGY, P409
+   Woldesenbet AG, 2016, SPRINGERPLUS, V5, DOI 10.1186/s40064-016-3600-8
+   Wu CM, 2014, J NUTR BIOCHEM, V25, P412, DOI 10.1016/j.jnutbio.2013.12.002
+   Xu YX, 2010, INFLAMM RES, V59, P871, DOI 10.1007/s00011-010-0199-z
+   Yashin A, 2013, ANTIOXIDANTS, V2, P230, DOI 10.3390/antiox2040230
+   Zapata FJ, 2020, J FUNCT FOODS, V64, DOI 10.1016/j.jff.2019.103646
+   유경미, 2011, [The Korean Journal of Food and Nutrition, 한국식품영양학회지], V24, P111
+NR 292
+TC 0
+Z9 0
+U1 7
+U2 7
+PU ELSEVIER SCIENCE LONDON
+PI LONDON
+PA 84 THEOBALDS RD, LONDON WC1X 8RR, ENGLAND
+SN 0924-2244
+J9 TRENDS FOOD SCI TECH
+JI Trends Food Sci. Technol.
+PD OCT
+PY 2020
+VL 104
+BP 235
+EP 261
+DI 10.1016/j.tifs.2020.08.005
+PG 27
+WC Food Science & Technology
+SC Food Science & Technology
+GA NW4CK
+UT WOS:000574956300009
+DA 2020-12-22
+ER
+
+PT J
+AU Alvarado-Ambriz, SG
+   Lobato-Calleros, C
+   Hernandez-Rodriguez, L
+   Vernon-Carter, EJ
+AF Alvarado-Ambriz, S. G.
+   Lobato-Calleros, C.
+   Hernandez-Rodriguez, L.
+   Vernon-Carter, E. J.
+TI Wet processing coffee waste as an alternative to produce extracts with
+   antifungal activity: In vitro and in vivo valorization
+SO REVISTA MEXICANA DE INGENIERIA QUIMICA
+LA English
+DT Article
+DE wet processing coffee waste; ethanolic extract; antioxidant activity; in
+   vitro antifungal activity; in vivo antifungal activity
+ID INDUSTRY BY-PRODUCTS; SPENT COFFEE; ANTIOXIDANT ACTIVITY;
+   PHENOLIC-COMPOUNDS; CHLOROGENIC ACID; CHEMICAL-COMPOSITION;
+   BOTRYTIS-CINEREA; ESSENTIAL OILS; CAFFEIC ACID; PULP
+AB Wet coffee waste (WCW) generated by the wet processing of coffee, is mainly made up of coffee pulp and husk, and has been scarcely studied and reutilized. Therefore, the aim of this work was to investigate the in vitro and in vivo antifungal activity of an WCW ethanolic-extract (EWCW) obtained by ultrasonication (amplitude 70%, sonication time 45 min). EWCW had total phenolic content of 33.8 mg gallic acid equivalents/g and antioxidant activity of 1790.1 mu mol Trolox equivalents/g. EWCW showed a potent in vitro antifungal activity against Aspergillus niger, Botryris cinerea, and Rhizopus stolonifer equivalent or superior to that of commercial synthetic carbendazim. Strawberries were wounded and inoculated with the three fungi for in vivo assays. After 5 d of inoculation, percentage of wounds presenting mold growth was of 16.7% (400 mu g/mL of EWCW) and 38.2% (1000 mu g/mL of carbendazim) for A. niger, and of 36.1% for B. cinerea and of 50.12% for R. stolonifer (2000 mu g/mL of EWCW) compared to the 38.2% and 51.2% (1000 mu g/mL of carbendazim), respectively. The efficient antifungal activity of EWCW can be mainly attributed to its majoritarian compounds chlorogenic acid (14.19 mg/g) and caffeic acid (1.18 mg/g), which represented 89.83% of the identified compounds.
+C1 [Alvarado-Ambriz, S. G.] Univ Autonoma Metropolitana Iztapalapa, Dept Biotecnol, San Rafael Atlixco 186, Ciudad De Mexico 09340, Mexico.
+   [Lobato-Calleros, C.; Hernandez-Rodriguez, L.] Univ Autonoma Chapingo, Dept Preparatoria Agr, Km 38-5 Carr Mexico Texcoco, Texcoco 56230, Estado De Mexic, Mexico.
+   [Vernon-Carter, E. J.] Univ Autonoma Metropolitana Iztapalapa, Dept Ingn Proc & Hidraul, San Rafael Atlixco 186, Ciudad De Mexico 09340, Mexico.
+RP Lobato-Calleros, C (corresponding author), Univ Autonoma Chapingo, Dept Preparatoria Agr, Km 38-5 Carr Mexico Texcoco, Texcoco 56230, Estado De Mexic, Mexico.
+EM consuelobato@yahoo.com
+FU Consejo Nacional de Ciencia y Tecnologia (CONACyT)Consejo Nacional de
+   Ciencia y Tecnologia (CONACyT)
+FX Authors extend their thanks to the Consejo Nacional de Ciencia y
+   Tecnologia (CONACyT) for the scholarship of Sinai Alvarado Ambriz.
+CR Ahmadzia H, 2019, J MATERN-FETAL NEO M, DOI 10.1080/14767058.2019.1691989
+   Al-Dhabi NA, 2017, ULTRASON SONOCHEM, V34, P206, DOI 10.1016/j.ultsonch.2016.05.005
+   Andrade KS, 2012, TALANTA, V88, P544, DOI 10.1016/j.talanta.2011.11.031
+   AOAC, 2005, OFFICIAL METHODS ANA
+   Aqueveque P, 2017, FOOD CHEM TOXICOL, V109, P1048, DOI 10.1016/j.fct.2017.05.036
+   Ballesteros LF, 2017, J FOOD ENG, V199, P1, DOI 10.1016/j.jfoodeng.2016.11.014
+   BRAND-WILLIAMS W, 1995, FOOD SCI TECHNOL-LEB, V28, P25
+   Bravo J, 2012, J AGR FOOD CHEM, V60, P12565, DOI 10.1021/jf3040594
+   Can OT, 2019, J WATER PROCESS ENG, V28, P28, DOI 10.1016/j.jwpe.2019.01.002
+   Chanakya HN, 2004, PROCESS SAF ENVIRON, V82, P291, DOI 10.1205/095758204323162319
+   Chen JY, 2019, PLANTS-BASEL, V8, DOI 10.3390/plants8020026
+   Chen W, 2012, CARBOHYD POLYM, V87, P614, DOI 10.1016/j.carbpol.2011.08.029
+   Choi B, 2017, FOOD SCI BIOTECHNOL, V26, P921, DOI 10.1007/s10068-017-0144-9
+   Dahmoune F, 2013, IND CROP PROD, V50, P77, DOI 10.1016/j.indcrop.2013.07.013
+   Nguyen DMC, 2013, MICROB PATHOGENESIS, V56, P8, DOI 10.1016/j.micpath.2013.01.001
+   Do P. M. N., 2019, VIETNAM J SCI TECHNO, V57, P2
+   Donlao N, 2018, LWT-FOOD SCI TECHNOL, V89, P648, DOI 10.1016/j.lwt.2017.11.051
+   Duangjai A, 2016, INTEGR MED RES, V5, P324, DOI 10.1016/j.imr.2016.09.001
+   Aguilar-Gonzalez AE, 2015, INNOV FOOD SCI EMERG, V32, P181, DOI 10.1016/j.ifset.2015.09.003
+   Elfirta R. R., 2018, Biodiversitas: Journal of Biological Diversity, V19, P1313
+   Esquivel P, 2012, FOOD RES INT, V46, P488, DOI 10.1016/j.foodres.2011.05.028
+   Feliziani E, 2016, J BERRY RES, V6, P47, DOI 10.3233/JBR-150113
+   Ghosh PR, 2017, MATERIALS, V10, DOI 10.3390/ma10080852
+   Guédez Clemencia, 2009, Rev. Soc. Ven. Microbiol., V29, P34
+   Hecimovic I, 2011, FOOD CHEM, V129, P991, DOI 10.1016/j.foodchem.2011.05.059
+   Heeger A, 2017, FOOD CHEM, V221, P969, DOI 10.1016/j.foodchem.2016.11.067
+   International Coffee Organization, 2020, COFF MARK REP
+   Janissen B, 2018, RESOUR CONSERV RECY, V128, P110, DOI 10.1016/j.resconrec.2017.10.001
+   de Rodriguez DJ, 2017, IND CROP PROD, V107, P499, DOI 10.1016/j.indcrop.2017.04.054
+   Jeszka-Skowron M, 2016, EUR FOOD RES TECHNOL, V242, P1403, DOI 10.1007/s00217-016-2643-y
+   Jimenez M, 2011, REV MEX ING QUIM, V10, P29
+   Joaquin-Cruz E, 2015, FOOD RES INT, V70, P151, DOI 10.1016/j.foodres.2015.01.033
+   Khalid U., 2019, MYCOPATH, V15, P67
+   Leopoldini M, 2011, FOOD CHEM, V125, P288, DOI 10.1016/j.foodchem.2010.08.012
+   Liu J, 2011, FOOD BIOPROD PROCESS, V89, P333, DOI 10.1016/j.fbp.2010.08.004
+   Londono-Hernandez L, 2020, BIOCATAL AGR BIOTECH, V23, DOI 10.1016/j.bcab.2019.101467
+   Magalhaes LM, 2016, TALANTA, V147, P460, DOI 10.1016/j.talanta.2015.10.022
+   Magoni C, 2018, FOOD RES INT, V112, P129, DOI 10.1016/j.foodres.2018.06.026
+   Martinez G, 2017, PESTIC BIOCHEM PHYS, V140, P30, DOI 10.1016/j.pestbp.2017.05.012
+   Martinez-Ruiz C, 2018, REV MEX ING QUIM, V17, P613, DOI 10.24275/uam/izt/dcbi/revmexingquim/2018v17n2/MartinezC
+   Martins AF, 2011, CARBOHYD POLYM, V86, P1266, DOI 10.1016/j.carbpol.2011.06.024
+   Masood S, 2016, J FOOD PROCESS PRES, V40, P3, DOI 10.1111/jfpp.12550
+   Miron-Merida VA, 2019, LWT-FOOD SCI TECHNOL, V101, P167, DOI 10.1016/j.lwt.2018.11.013
+   Miyashira CH, 2012, PEST MANAG SCI, V68, P935, DOI 10.1002/ps.3254
+   Moreira MD, 2018, WASTE MANAGE, V82, P93, DOI 10.1016/j.wasman.2018.10.017
+   Murthy PS, 2012, RESOUR CONSERV RECY, V66, P45, DOI 10.1016/j.resconrec.2012.06.005
+   Mussatto SI, 2011, SEP PURIF TECHNOL, V83, P173, DOI 10.1016/j.seppur.2011.09.036
+   Sardi JDO, 2016, DIAGN MICR INFEC DIS, V86, P387, DOI 10.1016/j.diagmicrobio.2016.08.002
+   Pan GY, 2012, ULTRASON SONOCHEM, V19, P486, DOI 10.1016/j.ultsonch.2011.11.006
+   Petrasch S, 2019, MOL PLANT PATHOL, V20, P877, DOI 10.1111/mpp.12794
+   Ramirez-Velasco L, 2016, REV MEX ING QUIM, V15, P503
+   Rashed K, 2014, IND CROP PROD, V59, P210, DOI 10.1016/j.indcrop.2014.05.021
+   Re R, 1999, FREE RADICAL BIO MED, V26, P1231, DOI 10.1016/S0891-5849(98)00315-3
+   Ruiz-Palomino P, 2019, REV MEX ING QUIM, V18, P387, DOI 10.24275/uam/izt/dcbi/revmexingquim/2019v18n2/Ruiz
+   Sacchetti G, 2005, FOOD CHEM, V91, P621, DOI 10.1016/j.foodchem.2004.06.031
+   Sharma K, 2019, TOXIN REV, DOI 10.1080/15569543.2019.1662813
+   Sidoryk K, 2018, MOLECULES, V23, DOI 10.3390/molecules23092199
+   Torres-Valenzuela LS, 2020, J FOOD ENG, V278, DOI 10.1016/j.jfoodeng.2020.109933
+   Suleiman M., 2011, Bayero Journal of Pure and Applied Sciences, V4, P204
+   Sung WS, 2010, PURE APPL CHEM, V82, P219, DOI 10.1351/PAC-CON-09-01-08
+   Vinatoru M, 2017, TRAC-TREND ANAL CHEM, V97, P159, DOI 10.1016/j.trac.2017.09.002
+   Wang YC, 2016, J AGR FOOD CHEM, V64, P6685, DOI 10.1021/acs.jafc.6b02044
+   WILLS RBH, 1995, POSTHARVEST BIOL TEC, V6, P249, DOI 10.1016/0925-5214(95)00005-Q
+   Yang ZD, 2010, INNOV FOOD SCI EMERG, V11, P470, DOI 10.1016/j.ifset.2010.03.003
+NR 64
+TC 1
+Z9 1
+U1 1
+U2 1
+PU UNIV AUTONOMA METROPOLITANA-IZTAPALAPA
+PI MEXICO
+PA C/O DR JAIME VERNON-CARTER, SAN RAFAEL ATLIXCO NO 186, COL VICENTINA,
+   DELEGACION IZTAPALAPA, MEXICO, 09340, MEXICO
+SN 1665-2738
+J9 REV MEX ING QUIM
+JI Rev. Mex. Ing. Quim.
+PY 2020
+VL 19
+SI 1
+BP 135
+EP 149
+DI 10.24275/rmiq.Bio1612
+PG 15
+WC Chemistry, Applied; Engineering, Chemical
+SC Chemistry; Engineering
+GA MU7QH
+UT WOS:000555863500013
+DA 2020-12-22
+ER
+
+PT J
+AU Brunerova, A
+   Roubik, H
+   Brozek, M
+   Haryanto, A
+   Hasanudin, U
+   Iryani, DA
+   Herak, D
+AF Brunerova, Anna
+   Roubik, Hynek
+   Brozek, Milan
+   Haryanto, Agus
+   Hasanudin, Udin
+   Iryani, Dewi Agustina
+   Herak, David
+TI Valorization of Bio-Briquette Fuel by Using Spent Coffee Ground as an
+   External Additive
+SO ENERGIES
+LA English
+DT Article
+DE solid biofuel; waste management; Coffea spp; waste biomass; calorific
+   value; mechanical durability
+ID MECHANICAL-PROPERTIES; WASTE BIOMASS; L.; DURABILITY; MOISTURE; PULP
+AB The present study investigates the quality changes of wood bio-briquette fuel after the addition of spent coffee ground (SCG) into the initial feedstock materials (sawdust, shavings) in different mass ratios (1:1, 1:3). Analysis of SCGs fuel parameter proved great potential for energy generation by a process of direct combustion. Namely, level of calorific value (GCV = 21.58 MJ.kg(-1)), of ash content (Ac = 1.49%) and elementary composition (C = 55.49%, H = 7.07%, N = 2.38%, O = 33.41%) supports such statement. A comparison with results of initial feedstock materials exhibited better results of SCG in case of its calorific value and elementary composition. Bulk density rho (kgm(-3)) and mechanical durability DU (%) of bio-briquette samples from initial feedstock materials were following for sawdust: rho = 1026.39 kgm(-3), DU = 98.44% and shavings: rho = 1036.53 kgm(>-3), DU = 96.70%. The level of such mechanical quality indicators changed after the addition of SCG. Specifically, SCG+sawdust mixtures achieved rho = 1077.49 kgm(3) and DU = 90.09%, while SCG + shavings mixtures achieved rho = 899.44 kgm(-3) and DU = 46.50%. The addition of SCG increased wood bio-briquettes energy potential but decreased its mechanical quality. Consequently, the addition of SCG in wood bio-briquette has advantages, but its mass ratio plays an important key role.
+C1 [Brunerova, Anna; Brozek, Milan] Czech Univ Life Sci Prague, Fac Engn, Dept Mat Sci & Mfg Technol, Kamycka 129, Prague 16500, Czech Republic.
+   [Roubik, Hynek] Czech Univ Life Sci Prague, Fac Trop AgriSci, Dept Sustainable Technol, Kamycka 129, Prague 16500, Czech Republic.
+   [Haryanto, Agus] Univ Lampung, Dept Agr Engn, Fac Agr, Jl Sumantri Brojonegoro 1, Bandar Lampung 35145, Czech Republic.
+   [Hasanudin, Udin] Univ Lampung, Fac Agr, Dept Agroind Technol, Jl Sumantri Brojonegoro 1, Bandar Lampung 35145, Czech Republic.
+   [Iryani, Dewi Agustina] Univ Lampung, Engn Fac, Dept Chem Engn, Jl Sumantri Brojonegoro 1, Bandar Lampung 35145, Czech Republic.
+   [Herak, David] Czech Univ Life Sci Prague, Fac Engn, Dept Mech Engn, Kamycka 129, Prague 16500, Czech Republic.
+RP Brunerova, A (corresponding author), Czech Univ Life Sci Prague, Fac Engn, Dept Mat Sci & Mfg Technol, Kamycka 129, Prague 16500, Czech Republic.
+EM brunerova@tf.czu.cz; roubik@ftz.czu.cz; brozek@tf.czu.cz;
+   agus.haryanto@fp.unila.ac.id; udinha@fp.unila.ac.id;
+   dewi.agustina@eng.unila.ac.id; herak@tf.czu.cz
+RI Herak, David/I-3201-2018
+OI Herak, David/0000-0002-0097-6009; Hasanudin, Udin/0000-0002-0535-4866;
+   Brunerova, Anna/0000-0001-5152-9906; Iryani, Dewi/0000-0002-9623-2863;
+   Roubik, Hynek/0000-0002-7498-4140
+FU European Union (EU)European Union (EU)
+   [CZ.02.2.69/0.0/0.0/16_027/0008366]; Internal Grant Agency of the Czech
+   University Life Sciences Prague [20173005 (31140/1313/3108)]; Internal
+   Grant Agency of the Faculty of Engineering, Czech University of Life
+   Sciences Prague [2019:31140/1312/3103]
+FX This research was funded by European Union (EU), managing authority of
+   the Czech Operational Programme Research, Development and Education
+   within the project "Supporting the development of international mobility
+   of research staff at CULS Prague", grant number
+   CZ.02.2.69/0.0/0.0/16_027/0008366. Further, research was supported by
+   the Internal Grant Agency of the Czech University Life Sciences Prague,
+   grant number 20173005 (31140/1313/3108) and by Internal Grant Agency of
+   the Faculty of Engineering, Czech University of Life Sciences Prague,
+   grant number 2019:31140/1312/3103.
+CR ABNT, 1987, RES SOL CLASS NBR 10
+   Acevedo F., 2013, P 3 S 212 AE ATABANI
+   Adapa P, 2009, BIOSYST ENG, V104, P335, DOI 10.1016/j.biosystemseng.2009.06.022
+   Allesina G, 2017, APPL THERM ENG, V126, P730, DOI 10.1016/j.applthermaleng.2017.07.202
+   Altuntas E, 2007, J FOOD ENG, V78, P174, DOI 10.1016/j.jfoodeng.2005.09.013
+   Atabani AE, 2018, J AIR WASTE MANAGE, V68, P196, DOI 10.1080/10962247.2017.1367738
+   Ballesteros LF, 2014, FOOD BIOPROCESS TECH, V7, P3493, DOI 10.1007/s11947-014-1349-z
+   Belitz H. D, 2009, FOOD CHEM, P938, DOI DOI 10.1007/978-3-662-07279-0_22
+   Brozek M., 2016, Acta Universitatis Agriculturae et Silviculturae Mendelianae Brunensis, V64, P1453, DOI 10.11118/actaun201664051453
+   Brozek M., 2015, Research in Agricultural Engineering, V61, P66, DOI 10.17221/61/2013-RAE
+   Brunerova A., 2017, Agronomy Research, V15, P344
+   Brunerova A., 2016, Agronomy Research, V14, P327
+   Brunerova A, 2018, ENERGIES, V11, DOI 10.3390/en11092186
+   Brunerova A, 2017, ENG RUR DEVELOP, P561, DOI 10.22616/ERDev2017.16.N110
+   Caetano NS, 2012, CHEM ENGINEER TRANS, V26, P267, DOI 10.3303/CET1226045
+   Chiteculo V, 2018, Agronomy Research, V16, P365, DOI 10.15159/AR.18.114
+   Ciesielczuk T, 2015, J ECOL ENG, V16, P133, DOI 10.12911/22998993/59361
+   CLAUDE B, 1979, CAFE CACAO THE, V23, P146
+   Corro G, 2014, ENERGY SCI ENG, V2, P177, DOI 10.1002/ese3.44
+   Cruz GM, 1983, INFORM AGROPECUARIO, V9, P32
+   Cubero-Abarca R, 2014, CIENC AGROTEC, V38, P461, DOI 10.1590/S1413-70542014000500005
+   Din ZU, 2016, RENEW SUST ENERG REV, V53, P1356, DOI 10.1016/j.rser.2015.09.013
+   Eissa A.H.A., 2013, WORLD ACAD SCI ENG T, V78, P166
+   Etienne H., 2005, V77, P167
+   Gardy J, 2019, J ENVIRON MANAGE, V249, DOI 10.1016/j.jenvman.2019.109316
+   GIVENS DI, 1986, AGR WASTES, V18, P69, DOI 10.1016/0141-4607(86)90108-3
+   Grigg D., 2002, GeoJournal, V57, P283, DOI 10.1023/B:GEJO.0000007249.91153.c3
+   Haile M, 2014, BIOFUEL RES J, V1, P65, DOI 10.18331/brj2015.1.2.6
+   Hu J, 2012, CATALYSTS, V2, P303, DOI 10.3390/catal2020303
+   ISO, 2015, SOL BIOF DET MECH 2
+   Kang SB, 2017, RENEW ENERG, V113, P1208, DOI 10.1016/j.renene.2017.06.092
+   Karmee SK, 2018, WASTE MANAGE, V72, P240, DOI 10.1016/j.wasman.2017.10.042
+   Karunanithy C, 2012, Biotechnol Res Int, V2012, P165202, DOI 10.1155/2012/165202
+   Kondamudi N, 2008, J AGR FOOD CHEM, V56, P11757, DOI 10.1021/jf802487s
+   Machado E.S.M., 2009, THESIS
+   Mussatto SI, 2006, J CEREAL SCI, V43, P1, DOI 10.1016/j.jcs.2005.06.001
+   Nabais JMV, 2008, FUEL PROCESS TECHNOL, V89, P262, DOI 10.1016/j.fuproc.2007.11.030
+   Okot DK, 2018, BIOMASS BIOENERG, V112, P61, DOI 10.1016/j.biombioe.2018.02.015
+   Pujol D, 2013, IND CROP PROD, V50, P423, DOI 10.1016/j.indcrop.2013.07.056
+   Repsa E, 2014, ENG RUR DEVELOP, P436
+   Rubio B, 1999, CARBON, V37, P1833, DOI 10.1016/S0008-6223(99)00057-3
+   Seifi M. R., 2010, Journal of Agricultural Science (Toronto), V2, P125
+   Sendzikiene E, 2004, EUR J LIPID SCI TECH, V106, P831, DOI 10.1002/ejlt.200401011
+   Silva MA, 1998, BIOMASS BIOENERG, V14, P457, DOI 10.1016/S0961-9534(97)10034-4
+   Solowiej Piotr, 2016, Agricultural Engineering, V20, P177, DOI 10.1515/agriceng-2016-0018
+   Somnuk Krit, 2017, Agriculture and Natural Resources, V51, P181, DOI 10.1016/j.anres.2017.01.003
+   Tsai WT, 2012, J ANAL APPL PYROL, V93, P63, DOI 10.1016/j.jaap.2011.09.010
+   Tumuluru JS, 2015, BIOENERG RES, V8, P388, DOI 10.1007/s12155-014-9527-4
+   YAHYA A, 2013, J APPL SCI, V13, P1004, DOI DOI 10.3923/jas.2013.1004.1012
+   Zabaniotou A, 2019, J CLEAN PROD, V211, P1553, DOI 10.1016/j.jclepro.2018.11.230
+   Zuorro A, 2012, J CLEAN PROD, V34, P49, DOI 10.1016/j.jclepro.2011.12.003
+NR 51
+TC 2
+Z9 2
+U1 1
+U2 1
+PU MDPI
+PI BASEL
+PA ST ALBAN-ANLAGE 66, CH-4052 BASEL, SWITZERLAND
+EI 1996-1073
+J9 ENERGIES
+JI Energies
+PD JAN
+PY 2020
+VL 13
+IS 1
+AR 54
+DI 10.3390/en13010054
+PG 15
+WC Energy & Fuels
+SC Energy & Fuels
+GA KV4AW
+UT WOS:000520425800054
+OA DOAJ Gold
+DA 2020-12-22
+ER
+
+PT J
+AU Parascanu, MM
+   Puig-Gamero, M
+   Soreanu, G
+   Valverde, JL
+   Sanchez-Silva, L
+AF Parascanu, M. M.
+   Puig-Gamero, M.
+   Soreanu, G.
+   Valverde, J. L.
+   Sanchez-Silva, L.
+TI Comparison of three Mexican biomasses valorization through combustion
+   and gasification: Environmental and economic analysis
+SO ENERGY
+LA English
+DT Article
+DE Life cycle assessment; Combustion; Gasification; Biomass; Energy;
+   Economic analysis
+ID LIFE-CYCLE ASSESSMENT; STEAM GASIFICATION; TECHNOECONOMIC ANALYSIS;
+   BIODIESEL PRODUCTION; ETHANOL-PRODUCTION; IMPACT ASSESSMENT; ENERGY;
+   COFFEE; TEMPERATURE; PLANT
+AB The energy production from biomass through thermochemical processes is a promising technology to reduce the negative environmental impact. This study evaluates the environmental effects of the use of different Mexican biomasses (castor husk, coffee pulp and Pinus sawdust) on the combustion and gasification processes applied to energy production. The objective was to carry out the environmental and economic analysis associated with the generation of 1 MJ of energy for three proposals to determine which biomass is better to use as a raw material, which process is more respectful with the environment and economically viable. The life cycle assessment analysis showed that the combustion process is less harmful to the environment than the gasification process. In addition, for the two thermochemical processes studied, it was observed that the equipment that most damaged the environment was the Rankine cycle due to the emissions released and the energy consumed. Therefore, the coffee pulp was identified as the biomass with the most negative impact for both processes and the Pinus sawdust as the one that least affects the environment. The energy production through combustion process is more economically viable than the gasification, but both processes can be considered highly competitive for the biomass valorization. (C) 2019 Elsevier Ltd. All rights reserved.
+C1 [Parascanu, M. M.; Puig-Gamero, M.; Valverde, J. L.; Sanchez-Silva, L.] Univ Castilla La Mancha, Dept Chem Engn, Avda Camilo Jose Cela 12, E-13071 Ciudad Real, Spain.
+   [Soreanu, G.] Tech Univ Gheorghe Asachi Iasi, Dept Environm Engn & Management, 73 D Mangeron Blvd, Iasi 700050, Romania.
+RP Sanchez-Silva, L (corresponding author), Univ Castilla La Mancha, Dept Chem Engn, Avda Camilo Jose Cela 12, E-13071 Ciudad Real, Spain.
+EM marialuz.sanchez@uclm.es
+RI Valverde, Jose-Luis/ABE-9492-2020; SANCHEZ-SILVA, LUZ/C-6768-2011
+OI Valverde, Jose-Luis/0000-0001-6939-9820; SANCHEZ-SILVA,
+   LUZ/0000-0002-4348-7520
+FU University of Castilla-La Mancha of Spain (UCLM) [2016/14100]
+FX Authors acknowledge the financial support from the University of
+   Castilla-La Mancha of Spain (UCLM Grant 2016/14100). Authors gratefully
+   appreciate the participation of Fabiola Sandoval Salas from Instituto
+   Tecnologico Superior de Perote (Mexico), who provided the Mexican
+   biomasses.
+CR Aleman-Nava GS, 2015, BIOFUEL BIOPROD BIOR, V9, P8, DOI 10.1002/bbb.1523
+   Alloway BJ, 2013, HEAVY METALS SOILS, P11, DOI DOI 10.1007/978-94-007-4470-7
+   Amouri M, 2017, CLEAN TECHNOL ENVIR, V19, P749, DOI 10.1007/s10098-016-1262-4
+   [Anonymous], 2009, ISO14000
+   Barnes DJ, 2009, IND CROP PROD, V29, P509, DOI 10.1016/j.indcrop.2008.09.006
+   Bateni H, 2014, APPL ENERG, V136, P14, DOI 10.1016/j.apenergy.2014.09.005
+   Brizmohun R, 2015, J CLEAN PROD, V106, P565, DOI 10.1016/j.jclepro.2014.11.033
+   Bustamante CAG, ESTADO ARTE BIOENERG
+   Camporeale SM, 2015, ENERG CONVERS MANAGE, V105, P1239, DOI 10.1016/j.enconman.2015.08.069
+   Cardoso J, 2019, J CLEAN PROD, V212, P741, DOI 10.1016/j.jclepro.2018.12.054
+   Chau J, 2009, APPL ENERG, V86, P616, DOI 10.1016/j.apenergy.2008.11.005
+   Coltro L, 2006, INT J LIFE CYCLE ASS, V11, P16, DOI 10.1065/lca2006.01.230
+   Lopes AC, 2018, BIORESOURCE TECHNOL, V270, P138, DOI 10.1016/j.biortech.2018.09.005
+   Cormos CC, 2016, FUEL, V169, P50, DOI 10.1016/j.fuel.2015.12.005
+   Council WE, 2016, WORLD EN RES 2016
+   De Marco I, 2018, J SUPERCRIT FLUID, V133, P393, DOI 10.1016/j.supflu.2017.11.005
+   Vera-Acevedo LD, 2016, REV FAC ING-UNIV ANT, P93, DOI 10.17533/udea.redin.n81a09
+   Doherty W, 2013, ASPEN PLUS SIMULATIO
+   Formica M, 2016, ENERG CONVERS MANAGE, V120, P358, DOI 10.1016/j.enconman.2016.05.009
+   Fornari T, 2014, HIGH PRESSURE FLUID
+   Foulet A, 2015, J CLEAN PROD, V91, P180, DOI 10.1016/j.jclepro.2014.12.035
+   Fregoso-Madueno J, 2017, ALTERNATIVE USES SAW
+   Goedkoop M, INTRO LCA SIMAPRO
+   Gonzalez-Garcia S, 2019, SCI TOTAL ENVIRON, V647, P158, DOI 10.1016/j.scitotenv.2018.07.295
+   Gonzalez-Garcia S, 2016, J CLEAN PROD, V125, P33, DOI 10.1016/j.jclepro.2016.03.024
+   Gu H, 2017, CRADLE TO GRAVE LIFE
+   Gurel E., 2017, SWOT ANAL THEORETICA
+   Helling RK, 2009, GREEN CHEM, V11, P380, DOI 10.1039/b815833a
+   Hertwich EG, 2001, ENVIRON TOXICOL CHEM, V20, P928, DOI 10.1002/etc.5620200431
+   Hillstrom K, 2002, ENCY SMALL BUSINESS
+   Huijbregts MAJ, 2017, INT J LIFE CYCLE ASS, V22, P138, DOI 10.1007/s11367-016-1246-y
+   IEA and IRENA, 2017, PERSP EN TRANS INV N
+   IEO, INT EN OUTL EX SUMM
+   ISO, 2006, ISO14044
+   ISO, 2006, ISO14040
+   Jana K, 2017, BIORESOURCE TECHNOL, V227, P256, DOI [10.1016/j.biortech.2016.12.067, 10.1016/j.biortech.201]
+   Kalk J, 1986, MANUAL IND MICROBIOL, P385
+   Khoo HH, 2009, WASTE MANAGE, V29, P1892, DOI 10.1016/j.wasman.2008.12.020
+   Khoshnevisan B, 2018, INT J LIFE CYCLE ASS, V23, P1788, DOI 10.1007/s11367-017-1383-y
+   Kirnbauer F, 2012, FUEL, V95, P553, DOI 10.1016/j.fuel.2011.10.066
+   Kirnbauer F, 2011, ENERG FUEL, V25, P3793, DOI 10.1021/ef200746c
+   Kookos IK, 2018, RESOUR CONSERV RECY, V134, P156, DOI 10.1016/j.resconrec.2018.02.002
+   Kraft S, 2017, APPL ENERG, V190, P408, DOI 10.1016/j.apenergy.2016.12.113
+   Liang S, 2013, BIORESOURCE TECHNOL, V129, P72, DOI 10.1016/j.biortech.2012.11.037
+   Liu Q, 2014, APPL ENERG, V115, P394, DOI 10.1016/j.apenergy.2013.11.036
+   Mandegari MA, 2017, BIORESOURCE TECHNOL, V224, P314, DOI 10.1016/j.biortech.2016.10.074
+   Mantoam E, 2017, CHEM ENG T, V58, P175, DOI DOI 10.3303/CET1758030
+   Moreno J, 2013, INT J HYDROGEN ENERG, V38, P7616, DOI 10.1016/j.ijhydene.2012.11.076
+   Murthy PS, 2012, RESOUR CONSERV RECY, V66, P45, DOI 10.1016/j.resconrec.2012.06.005
+   Pala LPR, 2017, RENEW ENERG, V101, P484, DOI 10.1016/j.renene.2016.08.069
+   Pantaleo AM, 2017, APPL ENERG, V204, P994, DOI 10.1016/j.apenergy.2017.05.019
+   Parascanu MM, 2018, J CLEAN PROD, V186, P771, DOI 10.1016/j.jclepro.2018.03.169
+   Parascanu MM, 2017, RENEW SUST ENERG REV, V71, P509, DOI 10.1016/j.rser.2016.12.079
+   Patel M, 2016, RENEW SUST ENERG REV, V53, P1486, DOI 10.1016/j.rser.2015.09.070
+   Pedersen TH, 2018, BIOFUEL BIOPROD BIOR, V12, P213, DOI 10.1002/bbb.1831
+   Peters MS, 2003, PLANT DESIGN EC CHEM
+   Ponsioen TC, 2014, INT J LIFE CYCLE ASS, V19, P872, DOI 10.1007/s11367-013-0676-z
+   PReConsultants, 2016, SIMAPRO 8 2 LIF CYCL
+   Rahman SM, 2017, RENEW SUST ENERG REV, V74, P110, DOI 10.1016/j.rser.2017.02.037
+   Rauch R., C FLUID BED GAS SYNT
+   Ricciardi P, 2017, CONSTR BUILD MATER, V147, P185, DOI 10.1016/j.conbuildmat.2017.04.114
+   Ruiz D, 2018, FUEL, V215, P601, DOI 10.1016/j.fuel.2017.11.050
+   SAGARPA, PLANT AGR NAC 2017 2
+   Saleh B, 2007, ENERGY, V32, P1210, DOI 10.1016/j.energy.2006.07.001
+   Salema AA, 2019, BIORESOURCE TECHNOL, V274, P439, DOI 10.1016/j.biortech.2018.12.014
+   SENER, 2014, AN PROP INTR ETH ANH
+   Simon Herrero C, 2018, JSGST, V89
+   Song YC, 2019, FUEL, V239, P365, DOI 10.1016/j.fuel.2018.11.023
+   Srinophakun T, 2001, ENERG CONVERS MANAGE, V42, P1437, DOI 10.1016/S0196-8904(00)00142-4
+   Syed-Hassan SSA, 2017, RENEW SUST ENERG REV, V80, P888, DOI 10.1016/j.rser.2017.05.262
+   Vienescu DN, 2018, BIORESOURCE TECHNOL, V249, P626, DOI 10.1016/j.biortech.2017.10.069
+   Xu GL, 2019, BIOMASS BIOENERG, V122, P63, DOI 10.1016/j.biombioe.2019.01.016
+   Zolghadr A, 2019, BIORESOURCE TECHNOL, V273, P16, DOI 10.1016/j.biortech.2018.09.137
+NR 73
+TC 2
+Z9 2
+U1 5
+U2 7
+PU PERGAMON-ELSEVIER SCIENCE LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, ENGLAND
+SN 0360-5442
+EI 1873-6785
+J9 ENERGY
+JI Energy
+PD DEC 15
+PY 2019
+VL 189
+AR 116095
+DI 10.1016/j.energy.2019.116095
+PG 15
+WC Thermodynamics; Energy & Fuels
+SC Thermodynamics; Energy & Fuels
+GA KC0TO
+UT WOS:000506901100094
+DA 2020-12-22
+ER
+
+PT J
+AU Parascanu, MM
+   Sanchez, P
+   Soreanu, G
+   Valverde, JL
+   Sanchez-Silva, L
+AF Parascanu, M. M.
+   Sanchez, P.
+   Soreanu, G.
+   Valverde, J. L.
+   Sanchez-Silva, L.
+TI Mexican biomasses valorization through pyrolysis process: Environmental
+   and costs analysis
+SO WASTE MANAGEMENT
+LA English
+DT Article
+DE Biomass; Pyrolysis; Life cycle assessment; Cost analysis
+ID LIFE-CYCLE ASSESSMENT; ETHANOL-PRODUCTION; IMPACT ASSESSMENT; ENERGY;
+   GASIFICATION; PRODUCTS; PULP; OIL; COMBUSTION; BIODIESEL
+AB Biomasses valorization by pyrolysis is a good option for reducing environmental problems. In this study, the environmental performance of three Mexican biomass valorizations (castor husk, coffee pulp and Pinus sawdust) by the pyrolysis was compared. The environmental impacts of all equipment involved in pyrolysis were evaluated. In addition, the financial viability of pyrolysis technology of coffee pulp was studied. The biomass with the lowest impact for all the selected categories was the Pinus sawdust, followed by castor husk and coffee pulp. The GWP category had values greater than 700 kg CO(2)eq for all the biomass studied. GWP category is caused by the emissions, mainly due to the high amounts of CH4 and CO2 released for all the studied biomasses. Furthermore, the equipment with the greatest impact are the separator, the pyrolyzer and the cyclone. Finally, it was observed that even the least favorable biomass with the environment is viable from a financial point of view. (C) 2019 Published by Elsevier Ltd.
+C1 [Parascanu, M. M.; Sanchez, P.; Valverde, J. L.; Sanchez-Silva, L.] Univ Castilla La Mancha, Dept Chem Engn, Avda Camilo Jose Cela 12, E-13071 Ciudad Real, Spain.
+   [Soreanu, G.] Tech Univ Gheorghe Asachi Iasi, Dept Environm Engn & Management, 73 D Mangeron Blvd, Iasi 700050, Romania.
+RP Sanchez-Silva, L (corresponding author), Univ Castilla La Mancha, Dept Chem Engn, Avda Camilo Jose Cela 12, E-13071 Ciudad Real, Spain.
+EM marialuz.sanchez@uclm.es
+RI Valverde, Jose-Luis/ABE-9492-2020; SANCHEZ-SILVA, LUZ/C-6768-2011
+OI Valverde, Jose-Luis/0000-0001-6939-9820; Sanchez Paredes,
+   Paula/0000-0001-6585-8196; SANCHEZ-SILVA, LUZ/0000-0002-4348-7520
+FU University of Castilla-La Mancha of Spain (UCLM Grant -Plan Propio de
+   I+D+i.) [2016/14100]
+FX Authors acknowledge the financial support from the University of
+   Castilla-La Mancha of Spain (UCLM Grant -Plan Propio de I+D+i.
+   [2016/14100]). Authors gratefully appreciate the participation of
+   Fabiola Sandoval Salas from Instituto Tecnologico Superior de Perote
+   (ITSPe - Mexico), who provided the Mexican biomasses.
+CR Amouri M, 2017, CLEAN TECHNOL ENVIR, V19, P749, DOI 10.1007/s10098-016-1262-4
+   [Anonymous], ISO14044
+   Asadullah M, 2014, RENEW SUST ENERG REV, V40, P118, DOI 10.1016/j.rser.2014.07.132
+   AspenTechnology I., 2006, ASP PHYS PROP SYST
+   Barnes DJ, 2009, IND CROP PROD, V29, P509, DOI 10.1016/j.indcrop.2008.09.006
+   Bateni H, 2014, APPL ENERG, V136, P14, DOI 10.1016/j.apenergy.2014.09.005
+   Brandt P., 2000, DECOMPOSITION TAR GA
+   Bru K, 2007, J ANAL APPL PYROL, V78, P291, DOI 10.1016/j.jaap.2006.08.006
+   Campbell RM, 2018, APPL ENERG, V230, P330, DOI 10.1016/j.apenergy.2018.08.085
+   Cao Y., 2008, SYNTHESIS GAS PRODUC
+   Lopes AC, 2018, BIORESOURCE TECHNOL, V270, P138, DOI 10.1016/j.biortech.2018.09.005
+   Corcelli F, 2018, J CLEAN PROD, V198, P96, DOI 10.1016/j.jclepro.2018.07.018
+   Dunlap R.E., 2012, ENV PROBLEMS
+   Durao Luis, 2019, Innovation, Engineering and Entrepreneurship. LNEE 505, P655, DOI 10.1007/978-3-319-91334-6_89
+   Echeverria M.C., 2017, OPEN WASTE MANAGEMEN, V10, P13, DOI DOI 10.2174/1876400201710010013
+   Fiorentino G, 2019, ENERGY, V170, P720, DOI 10.1016/j.energy.2018.12.206
+   Fischedick M, 2014, CLIMATE CHANGE 2014: MITIGATION OF CLIMATE CHANGE, P739
+   Fornari T, 2014, HIGH PRESSURE FLUID
+   Garcia Bustamante CA, 2016, ESTADO ARTE BIOENERG
+   Goedkoop M., 2016, INTRO LCA SIMAPRO
+   Goedkoop M., 2009, ALIFE CYCLE IMPACT A
+   Gonzalez-Garcia S, 2019, SCI TOTAL ENVIRON, V647, P158, DOI 10.1016/j.scitotenv.2018.07.295
+   Gu H, 2017, CRADLE TO GRAVE LIFE
+   Han J, 2013, BIORESOURCE TECHNOL, V133, P421, DOI 10.1016/j.biortech.2013.01.141
+   Hay G.J., 2006, INT ARCH PHOTOGRAM R
+   Hertwich EG, 2001, ENVIRON TOXICOL CHEM, V20, P928, DOI 10.1002/etc.5620200431
+   Hillstrom K, 2002, ENCY SMALL BUSINESS
+   Huijbregts MAJ, 2017, INT J LIFE CYCLE ASS, V22, P138, DOI 10.1007/s11367-016-1246-y
+   International Energy Agency and International Renewable Energy Agency (IEA-IRENA), 2017, PERSP EN TRANS INV N
+   Iraola-Arregui I, 2018, WASTE MANAGE, V79, P667, DOI 10.1016/j.wasman.2018.08.034
+   ISO/IEC, 140402006 ISO
+   Jana K, 2017, BIORESOURCE TECHNOL, V227, P256, DOI [10.1016/j.biortech.2016.12.067, 10.1016/j.biortech.201]
+   Kalogiannis KG, 2016, BIOMASS BIOENERG, V95, P405, DOI 10.1016/j.biombioe.2016.07.001
+   Kaur R, 2018, BIORESOURCE TECHNOL, V250, P422, DOI 10.1016/j.biortech.2017.11.077
+   Khoo HH, 2009, WASTE MANAGE, V29, P1892, DOI 10.1016/j.wasman.2008.12.020
+   Lucas Tibola F., 2017, COFFEE HUSKS CHARACT
+   Mandegari MA, 2017, BIORESOURCE TECHNOL, V224, P314, DOI 10.1016/j.biortech.2016.10.074
+   Mohammed T.H., 2014, BIOOIL PYROLYSIS CAS
+   Montoya J.I., 2015, ESTUDIO PARAMETRIC 1, V82, P239
+   Murthy PS, 2012, RESOUR CONSERV RECY, V66, P45, DOI 10.1016/j.resconrec.2012.06.005
+   Ning SK, 2013, J CLEAN PROD, V59, P141, DOI 10.1016/j.jclepro.2013.06.042
+   Oladeji J. T., 2015, Journal of Natural Sciences Research, V5, P99
+   Orozco AL, 2008, J ANAL APPL PYROL, V81, P247, DOI 10.1016/j.jaap.2007.12.002
+   Parascanu MM, 2017, RENEW SUST ENERG REV, V71, P509, DOI 10.1016/j.rser.2016.12.079
+   Peters JF, 2015, ENVIRON SCI TECHNOL, V49, P5195, DOI 10.1021/es5060786
+   Peters MS, 2003, PLANT DESIGN EC CHEM
+   Pleissner D, 2016, BIORESOURCE TECHNOL, V218, P167, DOI 10.1016/j.biortech.2016.06.078
+   Ponsioen TC, 2014, INT J LIFE CYCLE ASS, V19, P872, DOI 10.1007/s11367-013-0676-z
+   PReConsultants, 2016, SIMAPRO 8 2 LIF CYCL
+   Qiao YY, 2019, BIORESOURCE TECHNOL, V278, P287, DOI 10.1016/j.biortech.2019.01.102
+   Quispe I, 2017, WASTE MANAGE, V59, P200, DOI 10.1016/j.wasman.2016.10.001
+   SAGARPA, 2016, PLANT AGR NAC 2017 2
+   Santos NAV, 2015, ENERG FUEL, V29, P2351, DOI 10.1021/ef401933c
+   SENER, 2014, AN PROP INTR ET ANH
+   Steele P, 2012, FOREST PROD J, V62, P326
+   Sundaram S, 2017, IND ENG CHEM RES, V56, P3373, DOI 10.1021/acs.iecr.6b04611
+   Tsai WT, 2017, HANDBOOK OF COFFEE PROCESSING BY-PRODUCTS: SUSTAINABLE APPLICATIONS, P299, DOI 10.1016/B978-0-12-811290-8.00010-4
+   U.S. Bureau of Labor Statistics, 2018, PROD PRIC IND IND AS
+   Vienescu DN, 2018, BIORESOURCE TECHNOL, V249, P626, DOI 10.1016/j.biortech.2017.10.069
+   Wang JX, 2017, J ANAL APPL PYROL, V125, P279, DOI 10.1016/j.jaap.2017.03.015
+   Winjobi O, 2017, ACS SUSTAIN CHEM ENG, V5, P4541, DOI 10.1021/acssuschemeng.7b00373
+   Wright J.A., 1994, OCCASIONAL PAPERS
+   Wright MM, 2010, FUEL, V89, pS11, DOI 10.1016/j.fuel.2010.07.029
+   Zhai M, 2016, INT J HYDROGEN ENERG, V41, P21926, DOI 10.1016/j.ijhydene.2016.10.037
+NR 64
+TC 0
+Z9 0
+U1 1
+U2 2
+PU PERGAMON-ELSEVIER SCIENCE LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, ENGLAND
+SN 0956-053X
+EI 1879-2456
+J9 WASTE MANAGE
+JI Waste Manage.
+PD JUL 15
+PY 2019
+VL 95
+BP 171
+EP 181
+DI 10.1016/j.wasman.2019.06.007
+PG 11
+WC Engineering, Environmental; Environmental Sciences
+SC Engineering; Environmental Sciences & Ecology
+GA JR9EX
+UT WOS:000499920700017
+PM 31351602
+DA 2020-12-22
+ER
+
+PT J
+AU Dadi, D
+   Daba, G
+   Beyene, A
+   Luis, P
+   Van der Bruggen, B
+AF Dadi, D.
+   Daba, G.
+   Beyene, A.
+   Luis, P.
+   Van der Bruggen, B.
+TI Composting and co-composting of coffee husk and pulp with
+   source-separated municipal solid waste: a breakthrough in valorization
+   of coffee waste
+SO INTERNATIONAL JOURNAL OF RECYCLING OF ORGANIC WASTE IN AGRICULTURE
+LA English
+DT Article
+DE Coffee husk; Valorization; Co-composting; Maturity; Compost quality;
+   Productivity
+ID MANAGEMENT; MATURITY; LITTER; CARBON
+AB Purpose In this study, the composting and co-composting potential of coffee husk and pulp with source-separated municipal solid waste (SSMSW) was investigated.
+   Methods Coffee husk and pulp were mixed independently with SSMSW in different proportions (0, 33, 50 and 100%), and composted in triplicates with a total of 24 composting piles for 3 months. From each compost type, different physicochemical parameters were analyzed. In addition, the seed germination, growth and fresh head weight yield of each compost type were investigated on each matured compost type using cabbage seed (Brassica oleracea).
+   Results The results indicate that the two coffee by-products can be composted alone or co-composted with SSMSW yielding very mature and stable compost. The results indicated that the addition of 1/4th of local soil (wt/wt) on C8 compost type yields the optimum fresh head weight of the cabbage among all field experiments. In addition, when C8 compost type is mixed with local soil in 3:1 ratio, it could yield an optimum fresh head weight of the cabbage (572 +/- 10 g/kg of compost). This could be due to the relatively higher concentration of total nitrogen in the C8 compost sample.
+   Conclusions Generally, the final compost can be served for unrestricted type of agricultural purposes. Thus, co-composing of coffee husk and pulp with SSMSW can alleviate the multidimensional problems of rural and urban dwellers.
+C1 [Dadi, D.; Beyene, A.] Jimma Univ, Dept Environm Hlth Sci & Technol, POB 378, Jimma, Ethiopia.
+   [Dadi, D.; Van der Bruggen, B.] Katholieke Univ Leuven, Bio & Chem Syst Technol, Reactor Engn & Safety Dept Chem Engn, Leuven Chem & Tech, Celestijnenlaan 200F,Box 2424, B-3001 Louvain, Belgium.
+   [Daba, G.] Jimma Univ, Coll Agr & Vet Med, Dept Hort & Plant Sci, POB 307, Jimma, Ethiopia.
+   [Luis, P.] Catholic Univ Louvain, Mat & Proc Engn iMMC IMAP, Pl St Barbe 2, B-1348 Louvain La Neuve, Belgium.
+   [Van der Bruggen, B.] Tshwane Univ Technol, Fac Engn & Built Environm, Private Bag X680, ZA-0001 Pretoria, South Africa.
+RP Dadi, D (corresponding author), Jimma Univ, Dept Environm Hlth Sci & Technol, POB 378, Jimma, Ethiopia.; Dadi, D (corresponding author), Katholieke Univ Leuven, Bio & Chem Syst Technol, Reactor Engn & Safety Dept Chem Engn, Leuven Chem & Tech, Celestijnenlaan 200F,Box 2424, B-3001 Louvain, Belgium.
+EM dessalegndadiolani@gmail.com
+FU Institutional University Cooperation Program (IUC) VLIR-UOS project of
+   Belgium; Jimma University, Ethiopia
+FX This work has been supported by the Institutional University Cooperation
+   Program (IUC) VLIR-UOS project of Belgium and Jimma University,
+   Ethiopia.
+CR Abebe Y, 2007, J FOOD COMPOS ANAL, V20, P161, DOI 10.1016/j.jfca.2006.09.003
+   Adegunloye D. V., 2007, Pakistan Journal of Nutrition, V6, P506
+   Anandavalli D, 1998, J ECOTOXICOLOGY ENV, V8, P191
+   Beck F B, 2001, AGR ENG RES, V78, P423, DOI DOI 10.1006/jaer.2000.0662
+   Bernal MP, 2009, BIORESOURCE TECHNOL, V100, P5444, DOI 10.1016/j.biortech.2008.11.027
+   Bernstein L, 1964, USDA AGR INF B, V283, P23
+   BREMNER J. M., 1960, JOUR AGRIC SCI, V55, P11, DOI 10.1017/S0021859600021572
+   Brinton WF, 2000, COMPOST QUALITY STAN
+   Bustamante MA, 2008, CHEMOSPHERE, V72, P551, DOI 10.1016/j.chemosphere.2008.03.030
+   CCME, 2005, GUID COMP QUAL, P1
+   Dadi D, 2012, J APPL SCI ENV MANAG, V16, P5
+   De Rezende FA, 2012, REV CIENCIAS AGRO AM, V10, P109
+   Degefe G, 2016, AFR J BIOTECHNOL, V15, P884, DOI [10.5897/AJB2015.14676, DOI 10.5897/AJB2015.14676]
+   DUME B, 2015, INT J SOIL SCI, V10, P63, DOI DOI 10.3923/IJSS.2015.63.73
+   Echeverria M.C., 2017, OPEN WASTE MANAGEMEN, V10, P13, DOI DOI 10.2174/1876400201710010013
+   EFEPA, 2004, ETH FED ENV PROT AUT, P1
+   Franca A. S, 2009, AGR WASTES, V9, P155
+   Gajalakshmi S, 2008, CRIT REV ENV SCI TEC, V38, P311, DOI 10.1080/10643380701413633
+   Gazi AV, 2007, GLOBAL NEST J, V9, P35
+   GEISSHUSLER S, 1987, J ETHNOPHARMACOL, V19, P269, DOI 10.1016/0378-8741(87)90004-3
+   Getahun T, 2012, ENVIRON MONIT ASSESS, V184, P6337, DOI 10.1007/s10661-011-2423-x
+   Getahun T, 2012, RESOUR CONSERV RECY, V65, P79, DOI 10.1016/j.resconrec.2012.05.007
+   Hassen A, 2001, BIORESOURCE TECHNOL, V80, P217, DOI 10.1016/S0960-8524(01)00065-7
+   Hseu ZY, 2004, BIORESOURCE TECHNOL, V95, P53, DOI 10.1016/j.biortech.2004.02.008
+   Huang GF, 2004, WASTE MANAGE, V24, P805, DOI 10.1016/j.wasman.2004.03.011
+   Hue N.V., 2006, J HAWAIIAN PACIFIC A, V13, P15
+   Kalamdhad AS, 2009, CHEMOSPHERE, V74, P1327, DOI 10.1016/j.chemosphere.2008.11.058
+   Kassa H, 2011, ETHIOPIAN J ENV STUD, V4, P8, DOI [10.4314/ejesm.v4i4.2, DOI 10.4314/EJESM.V4I4.2]
+   Kassegn G, 2015, RES J AGR ENV SCI, V2, P25
+   Lemma E, 2014, AM J ENV ENG, V4, P162, DOI [10.5923/j.ajee.20140406.04, DOI 10.5923/J.AJEE.20140406.04]
+   Liu K, 2011, BIORESOURCE TECHNOL, V102, P7966, DOI 10.1016/j.biortech.2011.05.073
+   Maggen J., 2017, Sustainable Agriculture Research, V6, P167, DOI 10.5539/sar.v6n2p167
+   Mamo M, 1998, UTILIZATION MUNICIPA
+   Miller F.C., 1993, SOIL MICROBIAL ECOLO, P515
+   Murthy PS, 2012, RESOUR CONSERV RECY, V66, P45, DOI 10.1016/j.resconrec.2012.06.005
+   Ogunwande GA, 2008, BIORESOURCE TECHNOL, V99, P7495, DOI 10.1016/j.biortech.2008.02.020
+   Olsen S.R., 1954, ESTIMATION AVAILABLE
+   Pandey A, 2000, BIORESOURCE TECHNOL, V74, P69, DOI 10.1016/S0960-8524(99)00142-X
+   PIJLS LTJ, 1995, J SCI FOOD AGR, V67, P1, DOI 10.1002/jsfa.2740670102
+   Preethu D., 2007, P INT C SUST SOL WAS, P270
+   Ryckeboer J, 2003, ANN MICROBIOL, V53, P349
+   Salomone R, 2003, J FOOD AGRIC ENVIRON, V1, P295
+   Sanchez-Monedero MA, 2001, BIORESOURCE TECHNOL, V78, P301, DOI 10.1016/S0960-8524(01)00031-1
+   Shemekite F, 2014, WASTE MANAGE, V34, P642, DOI 10.1016/j.wasman.2013.11.010
+   Tack F, 2013, SOIL CHEM LECT NOTES
+   Tiquia SM, 1998, AGR ECOSYST ENVIRON, V67, P79, DOI 10.1016/S0167-8809(97)00132-1
+   Tirado SM, 2008, THESIS, P1
+   USSLS, 1954, HANDBOOK, V60, P160
+   Van Reeuwijk L.P., 1993, PROCEDURES SOIL ANAL
+   Varma V. S., 2013, International Journal of Environmental Sciences, V3, P2068
+   Wang P, 2004, SOIL BIOL BIOCHEM, V36, P767, DOI 10.1016/j.soilbio.2003.12.012
+   Wiersum K. F., 2008, Forests, Trees and Livelihoods, V18, P9
+   Yusuf M, 2008, THESIS, P1
+   Zoca S. M., 2014, INT J RECYCLING ORGA, V3, P155
+   ZUCCONI F, 1981, BIOCYCLE, V22, P54
+NR 55
+TC 5
+Z9 6
+U1 0
+U2 0
+PU ISLAMIC AZAD UNIV, TONEKABON BRANCH
+PI TONEKABON
+PA DEPT FISHERIES SCIENCES & MARINE BIOLOGY, VALI ABAD, TONEKABON, IRAN
+SN 2195-3228
+EI 2251-7715
+J9 INT J RECYCLING ORG
+JI Int. J. Recycling Org. Waste Agric.
+PD SUM
+PY 2019
+VL 8
+IS 3
+BP 263
+EP 277
+DI 10.1007/s40093-019-0256-8
+PG 15
+WC Environmental Sciences
+SC Environmental Sciences & Ecology
+GA MR4RQ
+UT WOS:000553577300005
+OA DOAJ Gold
+DA 2020-12-22
+ER
+
+PT J
+AU Parascanu, MM
+   Sandoval-Salas, F
+   Soreanu, G
+   Valverde, JL
+   Sanchez-Silva, L
+AF Parascanu, M. M.
+   Sandoval-Salas, F.
+   Soreanu, G.
+   Valverde, J. L.
+   Sanchez-Silva, L.
+TI Valorization of Mexican biomasses through pyrolysis, combustion and
+   gasification processes
+SO RENEWABLE & SUSTAINABLE ENERGY REVIEWS
+LA English
+DT Review
+DE Pyrolysis; Combustion; Gasification; Biomass
+ID MASS SPECTROMETRIC ANALYSIS; SOLID-STATE FERMENTATION; LIFE-CYCLE
+   ASSESSMENT; RICINUS-COMMUNIS L.; COFFEE-PULP; AGAVE BAGASSE;
+   FLUIDIZED-BED; THERMAL-ANALYSIS; DAIRY MANURE; ENZYMATIC-HYDROLYSIS
+AB Pyrolysis, combustion and gasification processes of six different types of biomass, which were obtained from Mexico (Castor husk, Castor stem, Agave bagasse, Coffee pulp, Opuntia stem and Pinus sawdust) were investigated by means of thermogravimetric analysis coupled with mass spectrometry (TG-MS). The selection of biomass, for each thermochemical process, depended on its main physico-chemical properties (moisture content, volatile matter, fixed carbon, ash content, calorific value, mineral content, etc.). For pyrolysis processes, the desirable characteristics of biomass are high volatile matter and low ash content. For combustion processes, the biomass has to show high low heating value (LHV) and low ash content. In the case of gasification processes, the biomass ought to have high fixed carbon. Pinus sawdust had the highest volatile matter and the lowest ash content, Castor stem showed the highest LHV and Coffee pulp had the highest fixed carbon content. The pyrolysis process was divided in three main stages (dehydration, devolatilization and char formation). Moreover, for Agave bagasse two more peaks at high temperature were found due to the decomposition of lignin and cellulose but it could also be related to its high mineral content. On the other hand, three main different stages (dehydration, devolatilization and char oxidation) for the combustion process were found. It is noticeable that Coffee pulp showed one more peak than other studied biomasses, which is related to its high lignin content. Due to its high heat released, Castor husk could be considered as the best candidate for combustion process. However, Pinus sawdust can be considerate more suitable for this process because of its low amount of NO released. In addition, for gasification process the effect of the gas flow was studied. Coffee pulp resulted to be the most suitable for gasification process due to the amount and quality of the fuel gas produced.
+C1 [Parascanu, M. M.; Valverde, J. L.; Sanchez-Silva, L.] Univ Castilla La Mancha, Dept Chem Engn, Avda Camilo Jose Cela 12, E-13071 Ciudad Real, Spain.
+   [Sandoval-Salas, F.] Inst Tecnol Super Perote, Carretera Fed Perote Mexico Km 2-5, Perote 91270, Mexico.
+   [Soreanu, G.] Tech Univ Gheorghe Asachi Iasi, Dept Environm Engn & Management, 73 D Mangeron Blvd, Iasi 700050, Romania.
+RP Sanchez-Silva, L (corresponding author), Univ Castilla La Mancha, Dept Chem Engn, Avda Camilo Jose Cela 12, E-13071 Ciudad Real, Spain.
+EM marialuz.sanchez@uclm.es
+RI Valverde, Jose-Luis/ABE-9492-2020; SANCHEZ-SILVA, LUZ/C-6768-2011
+OI Valverde, Jose-Luis/0000-0001-6939-9820; Parascanu, Maria
+   Magdalena/0000-0001-6860-7675; SANCHEZ-SILVA, LUZ/0000-0002-4348-7520
+FU Regional Government of Castilla-La Mancha [PEII-2014-007-P]
+FX Authors acknowledge the financial support from the Regional Government
+   of Castilla-La Mancha (Project PEII-2014-007-P).
+CR Al-Qodah Z, 2009, BRAZ J CHEM ENG, V26, P127, DOI 10.1590/S0104-66322009000100012
+   Alves EEN, 2010, AM SOC AGR BIOL ENG, P3829
+   Andrade MM, 2013, APPL BIOCHEM BIOTECH, V170, P1792, DOI 10.1007/s12010-013-0309-9
+   Aranda G, 2016, FUEL PROCESS TECHNOL, V141, P16, DOI 10.1016/j.fuproc.2015.06.006
+   Asadieraghi M, 2015, ENERG CONVERS MANAGE, V101, P151, DOI 10.1016/j.enconman.2015.05.008
+   Azadi P, 2013, RENEW SUST ENERG REV, V21, P506, DOI 10.1016/j.rser.2012.12.022
+   Barnes DJ, 2009, IND CROP PROD, V29, P509, DOI 10.1016/j.indcrop.2008.09.006
+   Barra BN, 2015, IND CROP PROD, V77, P691, DOI 10.1016/j.indcrop.2015.07.052
+   Bateni H, 2014, APPL ENERG, V136, P14, DOI 10.1016/j.apenergy.2014.09.005
+   Bonilla-Hermosa VA, 2014, BIORESOURCE TECHNOL, V166, P142, DOI 10.1016/j.biortech.2014.05.031
+   Can M, 2015, WATER SCI TECHNOL, V71, P1901, DOI 10.2166/wst.2015.164
+   Cantrell K, 2010, APPL THERMOGRAVIMETR
+   Caspeta L, 2014, APPL ENERG, V113, P277, DOI 10.1016/j.apenergy.2013.07.036
+   Chavez-Guerrero L, 2010, FUEL, V89, P4049, DOI 10.1016/j.fuel.2010.07.026
+   Chen YC, 2016, APPL ENERG, V181, P110, DOI 10.1016/j.apenergy.2016.07.130
+   Corro G, 2013, ENERG CONVERS MANAGE, V74, P471, DOI 10.1016/j.enconman.2013.07.017
+   Cortes AM, 2015, FUEL PROCESS TECHNOL, V138, P184, DOI 10.1016/j.fuproc.2015.05.013
+   Cruz G, 2016, J THERM ANAL CALORIM, V123, P1003, DOI 10.1007/s10973-015-4908-2
+   Demirbas A, 2009, ENERG CONVERS MANAGE, V50, P2239, DOI 10.1016/j.enconman.2009.05.010
+   Di Blasi C, 2009, PROG ENERG COMBUST, V35, P121, DOI 10.1016/j.pecs.2008.08.001
+   Rambo MKD, 2015, FOOD SCI TECH-BRAZIL, V35, P605, DOI 10.1590/1678-457X.6704
+   Escobar JC, 2009, RENEW SUST ENERG REV, V13, P1275, DOI 10.1016/j.rser.2008.08.014
+   Esquivel P, 2012, FOOD RES INT, V46, P488, DOI 10.1016/j.foodres.2011.05.028
+   Fernandez-Lopez M, 2016, RENEW ENERG, V95, P552, DOI 10.1016/j.renene.2016.04.056
+   Fernandez-Lopez M, 2015, BIORESOURCE TECHNOL, V182, P184, DOI 10.1016/j.biortech.2015.01.140
+   Garivait S, 2013, ENERG SOURCE PART A, V35, P826, DOI 10.1080/15567036.2011.592910
+   GEYDAN THOMAS DAVID, 2005, Acta biol.Colomb., V10, P3
+   Gil MV, 2010, BIORESOURCE TECHNOL, V101, P8859, DOI 10.1016/j.biortech.2010.06.062
+   Gil MV, 2015, ENERGY, V91, P655, DOI 10.1016/j.energy.2015.08.074
+   Gonzalez A, 2010, BIOMASS BIOENERG, V34, P1573, DOI 10.1016/j.biombioe.2010.06.004
+   Gonzalo-Tirado C, 2012, COMBUST FLAME, V159, P385, DOI 10.1016/j.combustflame.2011.07.001
+   Gurram R, 2016, CLEAN TECHNOL ENVIR, V18, P269, DOI 10.1007/s10098-015-1015-9
+   Velazquez-Jimenez LH, 2014, IND ENG CHEM RES, V53, P8332, DOI 10.1021/ie403789z
+   Herculano PN, 2011, APPL BIOCHEM BIOTECH, V165, P1057, DOI 10.1007/s12010-011-9321-0
+   Hewitt F, 2016, POLYM DEGRAD STABIL, V127, P65, DOI 10.1016/j.polymdegradstab.2016.01.007
+   Hughes SR, 2014, APPL MICROBIOL BIOT, V98, P8413, DOI 10.1007/s00253-014-5991-1
+   JAKAB E, 1991, FUEL PROCESS TECHNOL, V28, P221, DOI 10.1016/0378-3820(91)90076-O
+   Jayaraman K, 2015, ENERG CONVERS MANAGE, V89, P83, DOI 10.1016/j.enconman.2014.09.058
+   Jenkins BM, 1998, FUEL PROCESS TECHNOL, V54, P17, DOI 10.1016/S0378-3820(97)00059-3
+   Kestur GS, 2013, COMPOS PART A-APPL S, V45, P153, DOI 10.1016/j.compositesa.2012.09.001
+   Kok MV, 2013, FUEL PROCESS TECHNOL, V106, P739, DOI 10.1016/j.fuproc.2012.10.010
+   Li SS, 2016, APPL THERM ENG, V106, P865, DOI 10.1016/j.applthermaleng.2016.06.091
+   Lima RLS, 2011, IND CROP PROD, V33, P364, DOI 10.1016/j.indcrop.2010.11.008
+   Linan-Montes A, 2014, J THERM ANAL CALORIM, V115, P751, DOI 10.1007/s10973-013-3321-y
+   Liu SC, 2016, INT J GREEN ENERGY, V13, P963, DOI 10.1080/15435075.2015.1087851
+   Lopez-Gonzalez D, 2015, ENERGY, V90, P1626, DOI 10.1016/j.energy.2015.06.134
+   Lopez-Gonzalez D, 2015, RENEW SUST ENERG REV, V51, P1752, DOI 10.1016/j.rser.2015.07.022
+   Lopez-Gonzalez D, 2014, ENERGY, V71, P456, DOI 10.1016/j.energy.2014.04.105
+   Lopez-Gonzalez D, 2013, BIORESOURCE TECHNOL, V143, P562, DOI 10.1016/j.biortech.2013.06.052
+   Madeira JV, 2011, BIORESOURCE TECHNOL, V102, P7343, DOI 10.1016/j.biortech.2011.04.099
+   Marquez-Montesinos F, 2002, FUEL, V81, P423, DOI 10.1016/S0016-2361(01)00174-0
+   Martin AR, 2010, THERMOCHIM ACTA, V506, P14, DOI 10.1016/j.tca.2010.04.008
+   Melo WC, 2008, J BRAZIL CHEM SOC, V19, P418, DOI 10.1590/S0103-50532008000300008
+   Methacanon P, 2010, CARBOHYD POLYM, V82, P1090, DOI 10.1016/j.carbpol.2010.06.036
+   Moore A, 2015, J ANAL APPL PYROL, V115, P203, DOI 10.1016/j.jaap.2015.07.017
+   Mueller A, 2015, ENERG FUEL, V29, P6717, DOI 10.1021/acs.energyfuels.5b01123
+   Murthy PS, 2012, RESOUR CONSERV RECY, V66, P45, DOI 10.1016/j.resconrec.2012.06.005
+   Nieto-Delgado C, 2011, BIOMASS BIOENERG, V35, P103, DOI 10.1016/j.biombioe.2010.08.025
+   Nussbaumer T, 2003, ENERG FUEL, V17, P1510, DOI 10.1021/ef030031q
+   Obernberger I, 2004, BIOMASS BIOENERG, V27, P653, DOI 10.1016/j.biombioe.2003.07.006
+   Okello C, 2013, RENEW SUST ENERG REV, V18, P55, DOI 10.1016/j.rser.2012.10.004
+   Orozco AL, 2008, J ANAL APPL PYROL, V81, P247, DOI 10.1016/j.jaap.2007.12.002
+   Ounas A, 2011, BIORESOURCE TECHNOL, V102, P11234, DOI 10.1016/j.biortech.2011.09.010
+   Pandey A, 2000, BIOCHEM ENG J, V6, P153, DOI 10.1016/S1369-703X(00)00084-X
+   Paraschiv M, 2015, APPL THERM ENG, V87, P424, DOI 10.1016/j.applthermaleng.2015.04.070
+   Pecora AAB, 2014, FUEL PROCESS TECHNOL, V124, P188, DOI 10.1016/j.fuproc.2014.03.003
+   Perez-Pimienta JA, 2015, BIOMASS BIOENERG, V75, P180, DOI 10.1016/j.biombioe.2015.02.026
+   Polat S, 2016, ENERG SOURCE PART A, V38, P3065, DOI 10.1080/15567036.2015.1129373
+   Protasio TD, 2013, BIORESOURCES, V8, P1166
+   Raheem A, 2015, ALGAL RES, V12, P52, DOI 10.1016/j.algal.2015.08.003
+   Rathnam RK, 2009, FUEL PROCESS TECHNOL, V90, P797, DOI 10.1016/j.fuproc.2009.02.009
+   Rattan S, 2015, ENVIRON SCI POLLUT R, V22, P6461, DOI 10.1007/s11356-015-4079-5
+   Ren QQ, 2010, FUEL, V89, P1064, DOI 10.1016/j.fuel.2009.12.001
+   Rodriguez C, 2012, PROCEEDINGS OF THE ASME TURBO EXPO 2012, VOL 1, P701
+   Sanchez-Silva L, 2013, BIORESOURCE TECHNOL, V130, P321, DOI 10.1016/j.biortech.2012.12.002
+   Sanchez-Silva L, 2012, BIORESOURCE TECHNOL, V109, P163, DOI 10.1016/j.biortech.2012.01.001
+   Santos NAV, 2015, ENERG FUEL, V29, P2351, DOI 10.1021/ef401933c
+   Sellin N, 2016, RENEW ENERG, V96, P56, DOI 10.1016/j.renene.2016.04.032
+   Seo DK, 2010, J ANAL APPL PYROL, V89, P66, DOI 10.1016/j.jaap.2010.05.008
+   Shen DK, 2013, BIORESOURCE TECHNOL, V130, P449, DOI 10.1016/j.biortech.2012.11.081
+   Shen JC, 2015, BIORESOURCE TECHNOL, V185, P89, DOI 10.1016/j.biortech.2015.02.079
+   Siriwardane R, 2016, APPL ENERG, V165, P952, DOI 10.1016/j.apenergy.2015.12.085
+   Song YY, 2014, BIORESOURCE TECHNOL, V174, P204, DOI 10.1016/j.biortech.2014.10.027
+   Soreanu G, 2016, CHEMOSPHERE, V146, P539, DOI 10.1016/j.chemosphere.2015.11.121
+   Sun SZ, 2010, BIORESOURCE TECHNOL, V101, P3678, DOI 10.1016/j.biortech.2009.12.092
+   Menezes EGT, 2013, APPL BIOCHEM BIOTECH, V169, P673, DOI 10.1007/s12010-012-0030-0
+   Valdez-Vazquez I, 2010, RENEW SUST ENERG REV, V14, P2147, DOI 10.1016/j.rser.2010.03.034
+   Varhegyi G, 2009, J ANAL APPL PYROL, V86, P310, DOI 10.1016/j.jaap.2009.08.008
+   Wang F, 2016, FUEL, V164, P403, DOI 10.1016/j.fuel.2015.09.084
+   Wang X, 2016, ENERG CONVERS MANAGE, V117, P326, DOI 10.1016/j.enconman.2016.03.013
+   Werther J, 2000, PROG ENERG COMBUST, V26, P1, DOI 10.1016/S0360-1285(99)00005-2
+   Wright JA., 1994, UTILIZATION PINUS PA
+   Wu HJ, 2012, WASTE MANAGE RES, V30, P1066, DOI 10.1177/0734242X12452906
+   Xingping Kai, 2011, Proceedings of the 2011 Second International Conference on Digital Manufacturing and Automation (ICDMA 2011), P1274, DOI 10.1109/ICDMA.2011.314
+   Yahya MA, 2015, ASIAN J CHEM, V27, P2331, DOI DOI 10.14233/ajchem.2015.18804
+   Yahya MA, 2015, RENEW SUST ENERG REV, V46, P218, DOI 10.1016/j.rser.2015.02.051
+   Yang HP, 2007, FUEL, V86, P1781, DOI 10.1016/j.fuel.2006.12.013
+   Yang LS, 2015, BIOMASS BIOENERG, V76, P43, DOI 10.1016/j.biombioe.2015.03.004
+   Yang Q, 2012, BIORESOURCE TECHNOL, V126, P336, DOI 10.1016/j.biortech.2012.10.018
+   Yuan T, 2015, BIORESOURCE TECHNOL, V175, P333, DOI 10.1016/j.biortech.2014.10.108
+   Zabeti M, 2015, CHEMCATCHEM, V7, P3386, DOI 10.1002/cctc.201500487
+   Zborowska M, 2015, BIORESOURCES, V10, P2057, DOI 10.15376/biores.10.2.2057-2066
+   Zhang J, 2016, CLEAN TECHNOL ENVIR, V18, P1621, DOI 10.1007/s10098-016-1137-8
+   Zhang Y, 2016, BIORESOURCE TECHNOL, V200, P789, DOI 10.1016/j.biortech.2015.10.076
+NR 104
+TC 24
+Z9 24
+U1 3
+U2 78
+PU PERGAMON-ELSEVIER SCIENCE LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, ENGLAND
+SN 1364-0321
+J9 RENEW SUST ENERG REV
+JI Renew. Sust. Energ. Rev.
+PD MAY
+PY 2017
+VL 71
+BP 509
+EP 522
+DI 10.1016/j.rser.2016.12.079
+PG 14
+WC Green & Sustainable Science & Technology; Energy & Fuels
+SC Science & Technology - Other Topics; Energy & Fuels
+GA EL9DW
+UT WOS:000394920600039
+DA 2020-12-22
+ER
+
+PT B
+AU Aristizabal-Marulanda, V
+   Chacon-Perez, Y
+   Alzate, CAC
+AF Aristizabal-Marulanda, Valentina
+   Chacon-Perez, Yessica
+   Cardona Alzate, Carlos A.
+BE Galanakis, CM
+TI The biorefinery concept for the industrial valorization of coffee
+   processing by-products
+SO HANDBOOK OF COFFEE PROCESSING BY-PRODUCTS: SUSTAINABLE APPLICATIONS
+LA English
+DT Article; Book Chapter
+DE coffee silverskin; spent coffee grounds; coffee pulp; coffee cut-stems;
+   biorefinery; bioproducts
+ID SOLID-STATE FERMENTATION; SUPERCRITICAL-FLUID EXTRACTION; NATURAL
+   ANTIOXIDANTS; ETHANOL-PRODUCTION; PHENOLIC-COMPOUNDS; XYLITOL
+   PRODUCTION; ACID PRODUCTION; RAW-MATERIAL; CUT-STEMS; GROUNDS
+AB During the cultivation and processing of coffee different residues can be obtained, such as, coffee cut-stems, coffee silverskin, spent coffee grounds, coffee pulp, and coffee husk. In the last years, some research has demonstrated that this type of bio-mass can be a good source of bioproducts through its transformation using stand-alone processes or biorefineries. In this sense, this chapter shows a description of coffee grain and an overview of the world production, consumption, and processing stages to obtain the by-products. In order to know the potential and identify the important compounds in the coffee processing, the physicochemical composition of by-products is analyzed. Thus, an analysis of possibilities of integral valorization of by-products as raw materials to obtain antioxidants, biofuels, bioenergy, bioproducts, and biofertilizers is performed. Finally, the biorefinery concept is considered to generate biochemicals and added-value products from the abovementioned residues, taking into account the design of biorefineries, the production scale, and a technical and economic assessment.
+C1 [Aristizabal-Marulanda, Valentina; Chacon-Perez, Yessica; Cardona Alzate, Carlos A.] Univ Nacl Colombia, Manizales, Colombia.
+RP Aristizabal-Marulanda, V (corresponding author), Univ Nacl Colombia, Manizales, Colombia.
+OI cardona alzate, carlos ariel/0000-0002-0237-2313; Aristizabal-Marulanda,
+   Valentina/0000-0003-4786-3885; Chacon Perez, Yessica/0000-0002-9724-9835
+CR Agirrezabal-Telleria I, 2013, BIORESOURCE TECHNOL, V143, P258, DOI 10.1016/j.biortech.2013.05.082
+   Al-Hamamre Z, 2012, FUEL, V96, P70, DOI 10.1016/j.fuel.2012.01.023
+   Alibaba, 2016, INT PRICES
+   Andrade KS, 2012, TALANTA, V88, P544, DOI 10.1016/j.talanta.2011.11.031
+   [Anonymous], 2013, LYD CONSIDERS RISKY
+   [Anonymous], 2010, PRIC REP CHEM
+   Araus K, 2009, J FOOD ENG, V92, P438, DOI 10.1016/j.jfoodeng.2008.12.016
+   Arcila J., 2007, SISTEMAS PRODUCCION
+   Aristizabal MV, 2015, BIORESOURCE TECHNOL, V196, P480, DOI 10.1016/j.biortech.2015.07.057
+   Arya M, 2007, CRIT REV FOOD SCI, V47, P51, DOI 10.1080/10408390600550315
+   Ballesteros LF, 2014, FOOD BIOPROCESS TECH, V7, P3493, DOI 10.1007/s11947-014-1349-z
+   Ballesteros LF, 2014, FOOD BIOPROCESS TECH, V7, P1322, DOI 10.1007/s11947-013-1115-7
+   Bekalo SA, 2010, MATER STRUCT, V43, P1049, DOI 10.1617/s11527-009-9565-0
+   Borrelli RC, 2004, J AGR FOOD CHEM, V52, P1338, DOI 10.1021/jf034974x
+   Brand D, 2000, ENZYME MICROB TECH, V27, P127, DOI 10.1016/S0141-0229(00)00186-1
+   Bravo J, 2013, FOOD RES INT, V50, P610, DOI 10.1016/j.foodres.2011.04.026
+   Caetano NS, 2012, CHEM ENGINEER TRANS, V26, P267, DOI 10.3303/CET1226045
+   CALZADA JF, 1984, AGR WASTES, V9, P217, DOI 10.1016/0141-4607(84)90081-7
+   Campos-Vega R, 2015, TRENDS FOOD SCI TECH, V45, P24, DOI 10.1016/j.tifs.2015.04.012
+   Chheda JN, 2007, CATAL TODAY, V123, P59, DOI 10.1016/j.cattod.2006.12.006
+   Chisti Y, 2008, TRENDS BIOTECHNOL, V26, P126, DOI 10.1016/j.tibtech.2007.12.002
+   Clarke R., 1987, COFFEE VOLUME 2 TECH, P109
+   Conde T, 2016, PREP BIOCHEM BIOTECH, V46, P406, DOI 10.1080/10826068.2015.1084514
+   Cortes W, 2013, DYNA-COLOMBIA, V80, P105
+   Cotes A.M., 2006, CORPOICA, P1
+   Couto RM, 2009, J SUPERCRIT FLUID, V51, P159, DOI 10.1016/j.supflu.2009.09.009
+   Cruz MV, 2014, BIORESOURCE TECHNOL, V157, P360, DOI 10.1016/j.biortech.2014.02.013
+   de Melo MMR, 2014, J SUPERCRIT FLUID, V86, P150, DOI 10.1016/j.supflu.2013.12.016
+   Esquivel P, 2012, FOOD RES INT, V46, P488, DOI 10.1016/j.foodres.2011.05.028
+   Fedebiocombustibles Federacion Nacional de Biocombustibles de Colombia, 2014, BIOF PRIC COL 2016 2
+   Franca AS, 2005, LWT-FOOD SCI TECHNOL, V38, P709, DOI 10.1016/j.lwt.2004.08.014
+   Garcia Vicentini Cláudia Regina, 2016, Cuad. Cent. Estud. Diseñ. Comun., Ensayos, P1
+   GIVENS DI, 1986, AGR WASTES, V18, P69, DOI 10.1016/0141-4607(86)90108-3
+   Gouvea BM, 2009, BIOTECHNOL LETT, V31, P1315, DOI 10.1007/s10529-009-0023-4
+   Haile M, 2013, INT J RENEW ENERGY R, V3, P854
+   Haile M, 2014, BIOFUEL RES J, V1, P65, DOI 10.18331/brj2015.1.2.6
+   Han J., 1997, PAPER COMPOSITES AGR, P83
+   Ilickovic Z., 2012, CHEM IND, V66, P581
+   Jeszka-Skowron M, 2016, EUR FOOD RES TECHNOL, V242, P1403, DOI 10.1007/s00217-016-2643-y
+   Jin Q, 2011, BIOMASS BIOENERG, V35, P4158, DOI 10.1016/j.biombioe.2011.06.050
+   Jing Q, 2008, CHINESE J CHEM ENG, V16, P890, DOI 10.1016/S1004-9541(09)60012-4
+   Leksawasdi N, 2001, BIOTECHNOL LETT, V23, P1087, DOI 10.1023/A:1010599530577
+   Machado CMM, 2002, APPL BIOCHEM BIOTECH, V102, P179, DOI 10.1385/ABAB:102-103:1-6:179
+   Machado EMS, 2012, BIOCHEM ENG J, V60, P87, DOI 10.1016/j.bej.2011.10.007
+   Mancini A, 2015, MOLECULES, V20, P17339, DOI 10.3390/molecules200917339
+   Lopez-Barrera DM, 2016, FOOD CHEM, V212, P282, DOI 10.1016/j.foodchem.2016.05.175
+   Menezes EGT, 2014, BIOTECHNOL PROGR, V30, P451, DOI 10.1002/btpr.1856
+   Moncada Botero J, 2012, THESIS U NACL COLOMB
+   Moncada J, 2014, CHEM ENG SCI, V118, P126, DOI 10.1016/j.ces.2014.07.035
+   Morales-Rodriguez R, 2011, CHINESE J CHEM ENG, V19, P185, DOI 10.1016/S1004-9541(11)60152-3
+   Murthy PS, 2012, FOOD BIOPROCESS TECH, V5, P657, DOI [10.1007/s11947-010-0331-7, 10.1007/s11947-010-0363-z]
+   Murthy PS, 2012, RESOUR CONSERV RECY, V66, P45, DOI 10.1016/j.resconrec.2012.06.005
+   Mussatto SI, 2004, BIORESOURCE TECHNOL, V93, P1, DOI 10.1016/j.biortech.2003.10.005
+   Mussatto SI, 2013, FOOD BIOPROCESS TECH, V6, P2128, DOI 10.1007/s11947-012-0873-y
+   Mussatto SI, 2011, SEP PURIF TECHNOL, V83, P173, DOI 10.1016/j.seppur.2011.09.036
+   Mussatto SI, 2011, FOOD BIOPROCESS TECH, V4, P661, DOI 10.1007/s11947-011-0565-z
+   Nabais JMV, 2008, FUEL PROCESS TECHNOL, V89, P262, DOI 10.1016/j.fuproc.2007.11.030
+   Narita Y, 2012, FOOD CHEM, V135, P943, DOI 10.1016/j.foodchem.2012.05.078
+   Obruca S, 2014, APPL MICROBIOL BIOT, V98, P5883, DOI 10.1007/s00253-014-5653-3
+   Pabon Usaquen J. P, 2009, AV TECNIC CENICAFE, P1
+   Panusa A, 2013, J AGR FOOD CHEM, V61, P4162, DOI 10.1021/jf4005719
+   Parajo JC, 1998, BIORESOURCE TECHNOL, V66, P25, DOI 10.1016/S0960-8524(98)00037-6
+   Pavlovic MD, 2013, SEP PURIF TECHNOL, V118, P503, DOI 10.1016/j.seppur.2013.07.035
+   PENALOZA W, 1985, APPL ENVIRON MICROB, V49, P388
+   Pfluger R . A., 1975, SOLID WASTES ORIGIN
+   PITT WW, 1983, BIOTECHNOL BIOENG, V25, P123, DOI 10.1002/bit.260250110
+   Pleissner D, 2016, BIORESOURCE TECHNOL, V218, P167, DOI 10.1016/j.biortech.2016.06.078
+   Pourfarzad A, 2013, LWT-FOOD SCI TECHNOL, V50, P599, DOI 10.1016/j.lwt.2012.08.001
+   Prata ERBA, 2007, LWT-FOOD SCI TECHNOL, V40, P1555, DOI 10.1016/j.lwt.2006.10.003
+   Quintero JA, 2013, BIORESOURCE TECHNOL, V139, P300, DOI 10.1016/j.biortech.2013.04.048
+   Rathinavelu R., 2005, CENT EUR J CHEM, V942, P4
+   Rezaiyan J., 2005, GASIFICATION TECHNOL
+   Riano Luna C.E, 2010, TECNOLOGIA DEL CAFE
+   Rivera EC, 2006, PROCESS BIOCHEM, V41, P1682, DOI 10.1016/j.procbio.2006.02.009
+   Rodriguez N., 2010, AV TECNIC CENICAFE, V3
+   Rojas JBU, 2003, BIORESOURCE TECHNOL, V89, P267, DOI 10.1016/S0960-8524(03)00070-1
+   Rojas JBU, 2002, ANIM FEED SCI TECH, V99, P195, DOI 10.1016/S0377-8401(02)00050-0
+   Saenger M, 2001, RENEW ENERG, V23, P103, DOI 10.1016/S0960-1481(00)00106-3
+   Sanchez D.A., 2013, REV COLOMB QUIM, V41, P211
+   SHANKARANAND VS, 1994, WORLD J MICROB BIOT, V10, P165, DOI 10.1007/BF00360879
+   Shemekite F, 2014, WASTE MANAGE, V34, P642, DOI 10.1016/j.wasman.2013.11.010
+   Shenoy D, 2011, BIOMASS BIOENERG, V35, P4107, DOI 10.1016/j.biombioe.2011.05.016
+   Simoes J, 2013, CARBOHYD POLYM, V97, P81, DOI 10.1016/j.carbpol.2013.04.067
+   Sluiter A., 2008, NRELTP51042622
+   Sluiter A., 2008, NRELTP51042619
+   Menezes EGT, 2013, APPL BIOCHEM BIOTECH, V169, P673, DOI 10.1007/s12010-012-0030-0
+   Tochampa W, 2005, BIOPROC BIOSYST ENG, V28, P175, DOI 10.1007/s00449-005-0025-0
+   Triana CF, 2011, ENERGY, V36, P4182, DOI 10.1016/j.energy.2011.04.025
+   Urribarri A., 2014, MULTICIENCIAS, V14, P129
+   Vardon DR, 2013, ACS SUSTAIN CHEM ENG, V1, P1286, DOI 10.1021/sc400145w
+   Villarreal MLM, 2006, ENZYME MICROB TECH, V40, P17, DOI 10.1016/j.enzmictec.2005.10.032
+   Vincent JC, 1987, COFFEE TECHNOLOGY, V2, P1
+   Wang QX, 2013, 2013 INTERNATIONAL CONFERENCE ON MATERIALS FOR RENEWABLE ENERGY AND ENVIRONMENT (ICMREE), VOLS 1-3, P188, DOI 10.1109/ICMREE.2013.6893644
+   Go AW, 2016, WASTE BIOMASS VALORI, V7, P1047, DOI 10.1007/s12649-016-9527-z
+   Xiong RC, 2014, CHEMSUSCHEM, V7, P236, DOI 10.1002/cssc.201300408
+   Zuorro A, 2012, J CLEAN PROD, V34, P49, DOI 10.1016/j.jclepro.2011.12.003
+NR 96
+TC 5
+Z9 5
+U1 0
+U2 8
+PU ACADEMIC PRESS LTD-ELSEVIER SCIENCE LTD
+PI LONDON
+PA 125 LONDON WALL, LONDON EC2Y 5AS, ENGLAND
+BN 978-0-12-811291-5; 978-0-12-811290-8
+PY 2017
+BP 63
+EP 92
+DI 10.1016/B978-0-12-811290-8.00003-7
+PG 30
+WC Engineering, Environmental; Food Science & Technology
+SC Engineering; Food Science & Technology
+GA BK0SN
+UT WOS:000431236100004
+DA 2020-12-22
+ER
+
+PT B
+AU Hikichi, SE
+   Andrade, RP
+   Dias, ES
+   Duarte, WF
+AF Hikichi, Suzana E.
+   Andrade, Rafaela P.
+   Dias, Eustaquio S.
+   Duarte, Whasley F.
+BE Galanakis, CM
+TI Biotechnological applications of coffee processing by-products
+SO HANDBOOK OF COFFEE PROCESSING BY-PRODUCTS: SUSTAINABLE APPLICATIONS
+LA English
+DT Article; Book Chapter
+DE microbial biotechnology; coffee wastewater; coffee pulp; coffee husk
+ID SOLID-STATE FERMENTATION; PLEUROTUS-SAJOR-CAJU; STATISTICAL
+   OPTIMIZATION; ACID PRODUCTION; BACILLUS-COAGULANS; ETHANOL-PRODUCTION;
+   TANNASE PRODUCTION; ASPERGILLUS-NIGER; CITRIC-ACID; PULP
+AB The search for new substrates to be used in biotechnological processes has grown in recent years, especially, for the bioprocesses in which microorganisms are used to produce value-added products. In this scenario, the coffee processing by-products, wastewater, pulp, mucilage, husk, silverskin, and spent coffee ground, appear as interesting alternative substrate to be used in bacteria, filamentous fungi, and yeast cultivation. The composition of the coffee processing by-products including water-soluble sugars, proteins, lignin, cellulose, hemicellulose, oils, etc., allows its microbial conversion into products, such as ethanol, acids (lactic, citric, gibberellic, and gallic), aromatic volatile compounds (terpenes, higher alcohols, and esters), pigments (carotenoids), microbial biomass (edible mushroom), and enzymes. In this context, the current chapter presents several examples of coffee processing by-products used as substrate for the cultivation of microorganisms with an ultimate goal to generate value-added products.
+C1 [Hikichi, Suzana E.; Andrade, Rafaela P.; Dias, Eustaquio S.; Duarte, Whasley F.] Univ Lavras UFLA, Lavras, MG, Brazil.
+RP Hikichi, SE (corresponding author), Univ Lavras UFLA, Lavras, MG, Brazil.
+RI Hikichi, Suzana E/G-4177-2018; Dias, Eustaquio/ABE-8021-2020; Duarte,
+   Whasley/P-5075-2019
+OI Hikichi, Suzana E/0000-0002-3409-4346; Duarte,
+   Whasley/0000-0002-1027-588X
+CR Adrio JL, 2014, BIOMOLECULES, V4, P117, DOI 10.3390/biom4010117
+   Anjum A, 2016, INT J BIOL MACROMOL, V89, P161, DOI 10.1016/j.ijbiomac.2016.04.069
+   ANTIER P, 1993, ENZYME MICROB TECH, V15, P254, DOI 10.1016/0141-0229(93)90146-S
+   Battestin V, 2007, BIORESOURCE TECHNOL, V98, P1832, DOI 10.1016/j.biortech.2006.06.031
+   Bhoite R.N., 2013, J FOOD SCI ENG, V3, P323
+   Bhoite RN, 2013, FOOD SCI BIOTECHNOL, V22, P205, DOI 10.1007/s10068-013-0068-y
+   Bhoite RN, 2013, PREP BIOCHEM BIOTECH, V43, P350, DOI 10.1080/10826068.2012.737399
+   BOCCAS F, 1994, J FOOD SCI TECH MYS, V31, P22
+   Bonilla-Hermosa VA, 2014, BIORESOURCE TECHNOL, V166, P142, DOI 10.1016/j.biortech.2014.05.031
+   Choi IS, 2012, BIORESOURCE TECHNOL, V125, P132, DOI 10.1016/j.biortech.2012.08.080
+   Cruz MV, 2014, BIORESOURCE TECHNOL, V157, P360, DOI 10.1016/j.biortech.2014.02.013
+   Davoli P, 2004, APPL BIOCHEM MICRO+, V40, P392, DOI 10.1023/B:ABIM.0000033917.57177.f2
+   Davoli Paolo, 2002, Mycologist, V16, P102, DOI 10.1017/S0269915X02001027
+   Goncalves CCD, 2010, CIENC AGROTEC, V34, P220, DOI 10.1590/S1413-70542010000100028
+   Dias ES, 2003, CIENC AGROTEC, V27, P1363, DOI 10.1590/S1413-70542003000600022
+   Dubal S. A., 2008, ADV BIOTECHNOL, V6, P20
+   Esquivel P, 2012, FOOD RES INT, V46, P488, DOI 10.1016/j.foodres.2011.05.028
+   Fan L, 2005, MUSHROOM GROWERS HDB, V2, P92
+   Fan LF, 2006, BRAZ J MICROBIOL, V37, P420, DOI 10.1590/S1517-83822006000400003
+   Gouvea BM, 2009, BIOTECHNOL LETT, V31, P1315, DOI 10.1007/s10529-009-0023-4
+   Gurram R, 2016, CLEAN TECHNOL ENVIR, V18, P269, DOI 10.1007/s10098-015-1015-9
+   Haddis A, 2008, J HAZARD MATER, V152, P259, DOI 10.1016/j.jhazmat.2007.06.094
+   Jaramillo C. L., 2005, MUSHROOM GROWERS HDB, P234
+   Leifa F, 2000, J BASIC MICROB, V40, P187, DOI 10.1002/1521-4028(200007)40:3<187::AID-JOBM187>3.0.CO;2-Q
+   Machado CMM, 2002, APPL BIOCHEM BIOTECH, V102, P179, DOI 10.1385/ABAB:102-103:1-6:179
+   Murthy PS, 2010, WORLD APPL SCI J, V8, P199
+   Murthy PS, 2012, FOOD BIOPROCESS TECH, V5, P657, DOI [10.1007/s11947-010-0331-7, 10.1007/s11947-010-0363-z]
+   Murthy PS, 2012, RESOUR CONSERV RECY, V66, P45, DOI 10.1016/j.resconrec.2012.06.005
+   Murthy PS, 2009, J CHEM TECHNOL BIOT, V84, P1246, DOI 10.1002/jctb.2142
+   Mussatto SI, 2012, APPL ENERG, V92, P763, DOI 10.1016/j.apenergy.2011.08.020
+   Navya PN, 2013, BIOPROC BIOSYST ENG, V36, P1115, DOI 10.1007/s00449-012-0865-3
+   Navya P. N., 2012, World Applied Sciences Journal, V20, P781
+   Navya P. N., 2012, INT J CURR RES, V4, P123
+   Neu AK, 2016, BIORESOURCE TECHNOL, V211, P398, DOI 10.1016/j.biortech.2016.03.122
+   Obruca S, 2015, NEW BIOTECHNOL, V32, P569, DOI 10.1016/j.nbt.2015.02.008
+   Obruca S, 2014, PROCESS BIOCHEM, V49, P1409, DOI 10.1016/j.procbio.2014.05.013
+   Oliveira L. S., 2015, COFFEE HLTH DIS PREV
+   Pandey A, 2000, BIOCHEM ENG J, V6, P153, DOI 10.1016/S1369-703X(00)00084-X
+   Petrik S, 2014, BIOCHEM ENG J, V90, P307, DOI 10.1016/j.bej.2014.06.025
+   Pleissner D, 2016, BIORESOURCE TECHNOL, V218, P167, DOI 10.1016/j.biortech.2016.06.078
+   Sabu A, 2006, PROCESS BIOCHEM, V41, P575, DOI 10.1016/j.procbio.2005.05.011
+   Sampaio A, 2013, LWT-FOOD SCI TECHNOL, V54, P557, DOI 10.1016/j.lwt.2013.05.042
+   Sangeetha PT, 2004, APPL MICROBIOL BIOT, V65, P530, DOI 10.1007/s00253-004-1618-2
+   Schwan R. F., 2003, YEASTS FOOD, V1, P426
+   SHANKARANAND VS, 1994, WORLD J MICROB BIOT, V10, P165, DOI 10.1007/BF00360879
+   Shenoy D, 2011, BIOMASS BIOENERG, V35, P4107, DOI 10.1016/j.biombioe.2011.05.016
+   Siqueira F., 2012, REV J BIOTECHNOLOGY, V11, P11630
+   Menezes EGT, 2013, APPL BIOCHEM BIOTECH, V169, P673, DOI 10.1007/s12010-012-0030-0
+   Tehrani NF, 2015, J CLEAN PROD, V91, P64, DOI 10.1016/j.jclepro.2014.12.031
+   Toschi TG, 2014, J AGR FOOD CHEM, V62, P10836, DOI 10.1021/jf503200z
+   Vachali Preejith, 2012, Methods Mol Biol, V898, P41, DOI 10.1007/978-1-61779-918-1_2
+   Vandenberghe LPS, 2000, BIORESOURCE TECHNOL, V74, P175, DOI 10.1016/S0960-8524(99)00107-8
+   Zied DC, 2016, WORLD J MICROB BIOT, V32, DOI 10.1007/s11274-016-2115-3
+NR 53
+TC 0
+Z9 0
+U1 0
+U2 11
+PU ACADEMIC PRESS LTD-ELSEVIER SCIENCE LTD
+PI LONDON
+PA 125 LONDON WALL, LONDON EC2Y 5AS, ENGLAND
+BN 978-0-12-811291-5; 978-0-12-811290-8
+PY 2017
+BP 221
+EP 244
+DI 10.1016/B978-0-12-811290-8.00008-6
+PG 24
+WC Engineering, Environmental; Food Science & Technology
+SC Engineering; Food Science & Technology
+GA BK0SN
+UT WOS:000431236100009
+DA 2020-12-22
+ER
+
+PT J
+AU Pina-Guzman, AB
+   Nieto-Monteros, DA
+   Robles-Martinez, F
+AF Belem Pina-Guzman, Ana
+   Alejandro Nieto-Monteros, Diego
+   Robles-Martinez, Fabian
+TI UTILIZATION OF AGRICULTURAL AND AGRO INDUSTRIAL RESIDUES IN THE
+   CULTIVATION AND PRODUCTION OF EDIBLE MUSHROOM (Pleurotus spp.)
+SO REVISTA INTERNACIONAL DE CONTAMINACION AMBIENTAL
+LA Spanish
+DT Article
+DE biodegradation; biological efficiency (BE); lignocellulosic substrates
+ID OYSTER-MUSHROOM; SAJOR-CAJU; LIGNOCELLULOSIC WASTES; BIOLOGICAL
+   EFFICIENCY; COFFEE PULP; OSTREATUS; SUBSTRATE; SUPPLEMENTS; STRAINS;
+   GROWTH
+AB Some productive processes allow the utilization of by-products, waste or residues generated in other different processes. From the point of view of the sustainable development, this is interesting because, on the one hand, the resources are to be useful to the maximum, and for other one, the waste disposal decreases. A good example is the use of a great variety of agricultural crop residues and agroindustrial by-products as substrates in the production of edible mushrooms. Mushroom cultivation is an efficient biotechnological process, since high performances and good productivity are achieved with low environmental controls. Mushrooms grow in a wide range of temperature, in short periods and has the ability of biodegrade different lignocellulosic substrates. This makes possible the valorization of agricultural, forest and agroindustrial residues regionally available. In Mexico, mushroom cultivation is an important economic and ecological activity, because it generates employments and enables the use and recycling of more than 500,000 tons of agricultural, agroindustrial and forest residues, per year. Moreover, it reduces the environmental impact of the final disposition of green residues. The goal of this work is to present a review of the research, mainly in Ibero-American countries, about the utilization of different green wastes (substrates) on the cultivation and production of edible mushrooms (Pleurotus spp.). Substrates were classified as straw, stubble, pulp, bagasse, forest residues, and others. The wide variation of biological efficiency (BE) (15 % - 235 %) obtained in different studies, and the criteria needed to choose the correct substrate for the cultivation of mushrooms were also analyzed.
+C1 [Belem Pina-Guzman, Ana; Robles-Martinez, Fabian] Inst Politecn Nacl, Unidad Profes Interdisciplinaria Biotecnol, Secc Posgrad & Invest, Av Acueducto S-N, Barrio La Laguna, DF, Mexico.
+   [Alejandro Nieto-Monteros, Diego] Univ Tecn Particular Loja, Dept Quim & Ciencias Exactas, Secc Ingn Ambiental, San Cayetano Alto S-N, Loja 1101608, Ecuador.
+   [Belem Pina-Guzman, Ana; Robles-Martinez, Fabian] Red Ingn Saneamiento Ambiental, REDISA, Mexico City, DF, Mexico.
+RP Robles-Martinez, F (corresponding author), Inst Politecn Nacl, Unidad Profes Interdisciplinaria Biotecnol, Secc Posgrad & Invest, Av Acueducto S-N, Barrio La Laguna, DF, Mexico.; Robles-Martinez, F (corresponding author), Red Ingn Saneamiento Ambiental, REDISA, Mexico City, DF, Mexico.
+EM froblesm@ipn.mx
+CR Ahmed S.A., 2009, NATURE SCI, V7, P44
+   Andrade R. H., 2013, HONGOS COMESTIBLES M, P393
+   Andrino Alberto, 2011, Anales de Biologia, V33, P53
+   Basak MK, 1996, IND CROP PROD, V5, P173, DOI 10.1016/0926-6690(00)00002-9
+   Bermudez R. C., 2001, Micologia Aplicada International, V13, P25
+   Bermudez R.C., 2007, TECNOLOGIA QUIMICA, V27, P55
+   Bernabe-Gonzalez Teodoro, 2004, Revista Mexicana de Micologia, V18, P77
+   Bonilla E. Y., 2001, THESIS
+   Cayetano-Catarino Maricela, 2008, Rev. Mex. Mic, V26, P57
+   Cohen R, 2002, APPL MICROBIOL BIOT, V58, P582, DOI 10.1007/s00253-002-0930-y
+   Cruz D, 2010, J AGRIC ENVIRON INT, V104, P139
+   Curvetto NR, 2002, BIORESOURCE TECHNOL, V84, P171, DOI 10.1016/S0960-8524(02)00013-5
+   Das N, 2007, BIORESOURCE TECHNOL, V98, P2723, DOI 10.1016/j.biortech.2006.09.061
+   Delfin AI, 2003, REV INT CONTAM AMBIE, V19, P37
+   DIAZ R. LABAJO, 2009, THESIS
+   Estrada AER, 2009, BIORESOURCE TECHNOL, V100, P5270, DOI 10.1016/j.biortech.2009.02.073
+   Fanadzo M, 2010, AFR J BIOTECHNOL, V9, P2756
+   Fracchia Sebastián, 2009, Rev. Mex. Mic, V29, P37
+   Gaitan-Hernandez R., 2006, MANUAL PRACTICO CULT, P56
+   Garcia N., 2006, REV MEX MICOL, V23, P99
+   Guzman G., 2008, CULTIVO HONGOS COMES, P245
+   Heredia C., 2010, THESIS
+   Huerta Graciela, 2009, Rev. Mex. Mic, V30, P31
+   Hurst C. J., 2007, MANUAL ENV MICROBIOL
+   Ingale A., 2010, FOOD BIOTECHNOL, V6, P25
+   Jafarpour M, 2010, AFR J AGR RES, V5, P3291
+   JWANNY EW, 1995, APPL BIOCHEM BIOTECH, V50, P71, DOI 10.1007/BF02788041
+   Khan MA, 2012, FOOD REV INT, V28, P313, DOI 10.1080/87559129.2011.637267
+   Kudryavtseva OA, 2008, MICROBIOLOGY+, V77, P643, DOI 10.1134/S0026261708060015
+   Kumari D, 2008, LIFE SCI J, V5, P73
+   Kurt S, 2010, BIORESOURCE TECHNOL, V101, P3164, DOI 10.1016/j.biortech.2009.12.011
+   Lara M., 2002, P 4 INT C MUSHR BIOL, P323
+   Lechner BE, 2011, REV IBEROAM MICOL, V28, P148, DOI 10.1016/j.riam.2010.12.001
+   Liang ZC, 2009, INT BIODETER BIODEGR, V63, P509, DOI 10.1016/j.ibiod.2008.12.006
+   López-Rodríguez Claudia, 2008, Univ. Sci., V13, P128
+   Loss E, 2009, J HAZARD MATER, V166, P1522, DOI 10.1016/j.jhazmat.2008.11.014
+   Mamiro D. P., 2011, Journal of Animal and Plant Sciences (JAPS), V10, P1211
+   Mandeel QA, 2005, WORLD J MICROB BIOT, V21, P601, DOI 10.1007/s11274-004-3494-4
+   Mateo Toledo B'alam Eladio, 2008, THESIS
+   De Carvalho CSM, 2010, INTERCIENCIA, V35, P177
+   Moda EM, 2005, SCI AGR, V62, P127, DOI 10.1590/S0103-90162005000200006
+   MORALES P, 1987, Revista Mexicana de Micologia, V3, P71
+   Mshandete AM, 2008, AFR J BIOTECHNOL, V7, P4551
+   Naraian R., 2009, Environmentalist, V29, P1, DOI 10.1007/s10669-008-9174-4
+   Naraian R, 2011, ANN MICROBIOL, V61, P853, DOI 10.1007/s13213-011-0206-9
+   Narh D. L., 2011, INT FOOD RES J, V18, P1092
+   Obodai M, 2003, J IND MICROBIOL BIOT, V30, P146, DOI 10.1007/s10295-002-0021-1
+   Perez J., 2002, International Microbiology, V5, P53, DOI 10.1007/s10123-002-0062-3
+   Perez-Merlo R., 2005, REV MEX MICOL, V20, P53
+   Philippoussis A, 2001, WORLD J MICROB BIOT, V17, P191, DOI 10.1023/A:1016685530312
+   Ragunathan R, 2003, FOOD CHEM, V80, P371, DOI 10.1016/S0308-8146(02)00275-3
+   Rajak S., 2011, European Journal of Medicinal Plants, V1, P10
+   Ramirez G. Flores, 2012, THESIS
+   Rashad M. M., 2009, Australian Journal of Basic and Applied Sciences, V3, P3352
+   Rios M., 2010, BIOTECNOL SECT AGRO, V8, P86
+   RIVERA OMEN RUBY LEONOR, 2013, Luna Azul, P89
+   Rodriguez N., 1994, CENICAFE, V45, P85
+   Romero Omar, 2010, Agron. Costarricense, V34, P53
+   Royse DJ, 2004, BIORESOURCE TECHNOL, V91, P85, DOI 10.1016/S0960-8524(03)00151-2
+   Salmones D, 2005, BIORESOURCE TECHNOL, V96, P537, DOI 10.1016/j.biortech.2004.06.019
+   Salmones Dulce, 2004, Revista Mexicana de Micologia, V18, P21
+   Sánchez Alfonso, 2008, Rev. Mex. Mic, V28, P17
+   Sanchez C, 2009, BIOTECHNOL ADV, V27, P185, DOI 10.1016/j.biotechadv.2008.11.001
+   Sanchez C, 2010, APPL MICROBIOL BIOT, V85, P1321, DOI 10.1007/s00253-009-2343-7
+   SOTO-VELAZCO C, 1989, Revista Mexicana de Micologia, V5, P97
+   Tisdale TE, 2006, WORLD J MICROB BIOT, V22, P201, DOI 10.1007/s11274-005-9020-5
+   Varnero María T, 2010, Inf. tecnol., V21, P13, DOI [10.4067/S0718-07642010000200003, 10.1612/inf.tecnol.4154it.09]
+   Velazquez-Cedeno MA, 2002, WORLD J MICROB BIOT, V18, P201, DOI 10.1023/A:1014999616381
+   Velez C. A.Sanchez, 2013, THESIS
+   YOUNG RA, 1998, ENV FRIENDLY TECHNOL
+NR 70
+TC 0
+Z9 0
+U1 2
+U2 12
+PU CENTRO CIENCIAS ATMOSFERA UNAM
+PI MEXICO CITY
+PA CIRCUITO EXTERIOR, MEXICO CITY CU 04510, MEXICO
+SN 0188-4999
+J9 REV INT CONTAM AMBIE
+JI Rev. Int. Contam. Ambient.
+PY 2016
+VL 32
+SI SI
+BP 141
+EP 151
+PG 11
+WC Environmental Sciences
+SC Environmental Sciences & Ecology
+GA FP9NR
+UT WOS:000417976200010
+DA 2020-12-22
+ER
+
+PT J
+AU Rattan, S
+   Parande, AK
+   Nagaraju, VD
+   Ghiwari, GK
+AF Rattan, Supriya
+   Parande, A. K.
+   Nagaraju, V. D.
+   Ghiwari, Girish K.
+TI A comprehensive review on utilization of wastewater from coffee
+   processing
+SO ENVIRONMENTAL SCIENCE AND POLLUTION RESEARCH
+LA English
+DT Article
+DE Coffee; Pulp; Wastewater; Mucilage
+ID ANAEROBIC CO-DIGESTION; ARABICA COFFEE; BY-PRODUCTS; BEANS; CAFFEINE;
+   PULP
+AB The coffee processing industry is one of the major agro-based industries contributing significantly in international and national growth. Coffee fruits are processed by two methods, wet and dry process. In wet processing, coffee fruits generate enormous quantities of high strength wastewater requiring systematic treatment prior to disposal. Different method approach is used to treat the wastewater. Many researchers have attempted to assess the efficiency of batch aeration as posttreatment of coffee processing wastewater from an upflow anaerobic hybrid reactor (UAHR)-continuous and intermittent aeration system. However, wet coffee processing requires a high degree of processing know-how and produces large amounts of effluents which have the potential to damage the environment. Characteristics of wastewater from coffee processing has a biological oxygen demand (BOD) of up to 20,000 mg/l and a chemical oxygen demand (COD) of up to 50,000 mg/l as well as the acidity of pH below 4. In this review paper, various methods are discussed to treat coffee processing wastewaters; the constitution of wastewater is presented and the technical solutions for wastewater treatment are discussed.
+C1 [Parande, A. K.; Nagaraju, V. D.; Ghiwari, Girish K.] CSIR, Cent Food Technol Res Inst Mysore, Mysore 570020, Karnataka, India.
+   [Rattan, Supriya] Guru Gobind Singh Indraprastha Univ, Univ Sch Biotechnol, New Delhi, India.
+RP Parande, AK (corresponding author), CSIR, Cent Food Technol Res Inst Mysore, Mysore 570020, Karnataka, India.
+EM akparande@cftri.res.in
+CR ABIC, 2011, BARZ ASS COFF IND TE
+   Ahmad R, 2002, LETT APPL MICROBIOL, V34, P279, DOI 10.1046/j.1472-765x.2002.01080.x
+   Alemayehu H, 2007, J HAZARD MATER, V152, P259
+   Hernandez MA, 2014, BIORESOURCE TECHNOL, V168, P112, DOI 10.1016/j.biortech.2014.02.101
+   Belitz HD, 2009, FOOD CHEM
+   Bhumiratana N, 2011, LWT-FOOD SCI TECHNOL, V44, P2185, DOI 10.1016/j.lwt.2011.07.001
+   Bonilla-Hermosa VA, 2014, BIORESOURCE TECHNOL, V166, P142, DOI 10.1016/j.biortech.2014.05.031
+   Braham J. E., 1979, COFFEE PULP COMPOSIT
+   Brohan M, 2009, FOOD CHEM, V116, P480, DOI 10.1016/j.foodchem.2009.02.072
+   Cabezas MT, 1987, USE COFFEE PULP RUMI, P25
+   Carbonell AJ, 1974, JUSTIFICATION PROYEC
+   CLIFFORD MN, 1987, FOOD CHEM, V26, P59, DOI 10.1016/0308-8146(87)90167-1
+   CLIFFORD MN, 1991, FOOD CHEM, V40, P35, DOI 10.1016/0308-8146(91)90017-I
+   Domenech X, 2001, ELIMINACION CONTAMIN, P15
+   Duarte G, 2009, P 22 INT C COFF SCI, P508
+   Enden V J C, 2002, REV COFFEE WASTE WAT
+   ENDEN VJC, 2002, LIMIT ENV DAMAGE BAS
+   Esquivel P, 2012, FOOD RES INT, V46, P488, DOI 10.1016/j.foodres.2011.05.028
+   Etiegni L, 2011, GEOPHY RES ABS, V13
+   Fan L., 2003, Micologia Aplicada International, V15, P15
+   Fan L, 2005, MUSHROOM GROWERS HDB, V2, P92
+   Frisullo P, 2012, J FOOD ENG, V109, P175, DOI 10.1016/j.jfoodeng.2011.09.015
+   Gaime Perraud Y., 1993, MICOLOGIA NEOTROPICA, V6, P95
+   GATHUO B, 1991, WATER SCI TECHNOL, V24, P53
+   Huang C. P., 1993, Waste Management, V13, P361, DOI 10.1016/0956-053X(93)90070-D
+   Hue N V, 2004, MANAGING COFFEE PROC
+   International Coffee Organization (ICO) Statistics, 2011, BREAKD EXP GREEN AR
+   Kumar BM, 2012, INDIAN J CHEM TECHN, V19, P213
+   Martinez-Carrera D, 2000, COFFEE BIOTECHNOLOGY, P471
+   Mohana V. S., 2011, International Journal of Research in Chemistry and Environment (IJRCE), V1, P111
+   MURTHY KVN, 2004, EFFLUENT TREATMENT C
+   Murthy PS, 2012, RESOUR CONSERV RECY, V66, P45, DOI 10.1016/j.resconrec.2012.06.005
+   Mussatto SI, 2011, FOOD BIOPROCESS TECH, V4, P661, DOI 10.1007/s11947-011-0565-z
+   Neves L, 2006, WASTE MANAGE, V26, P176, DOI 10.1016/j.wasman.2004.12.022
+   O'Neill A, 2011, BIORESOURCE TECHNOL, V102, P5024, DOI 10.1016/j.biortech.2011.01.075
+   Pandey A, 2000, BIOCHEM ENG J, V6, P153, DOI 10.1016/S1369-703X(00)00084-X
+   Ponte S, 2002, WORLD DEV, V30, P1099, DOI 10.1016/S0305-750X(02)00032-3
+   Pujol D, 2013, IND CROP PROD, V50, P423, DOI 10.1016/j.indcrop.2013.07.056
+   Purseglove JW, 1976, TROPICAL CROPS, V1, P458
+   Reich A, 2010, HERBANIST, V76, P9
+   Rendon MY, 2013, EUR FOOD RES TECHNOL, V236, P753, DOI 10.1007/s00217-013-1933-x
+   Rubayiza AB, 2005, J AGR FOOD CHEM, V53, P4654, DOI 10.1021/jf0478657
+   Schenker S., 2000, INVESTIGATIONS HOT A
+   Selvamurugan M., 2010, Global Journal of Environmental Research, V4, P31
+   Selvamurugan M, 2009, IJEHSE, V7, P129
+   Menezes EGT, 2013, APPL BIOCHEM BIOTECH, V169, P673, DOI 10.1007/s12010-012-0030-0
+   Variyar PS, 2003, J AGR FOOD CHEM, V51, P7945, DOI 10.1021/jf030408q
+   Verbist B, 2005, AGR SYST, V85, P254, DOI 10.1016/j.agsy.2005.06.010
+   Zayas PT, 2007, J ENVIRON SCI-CHINA, V19, P300, DOI 10.1016/S1001-0742(07)60049-7
+NR 49
+TC 26
+Z9 29
+U1 0
+U2 43
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 0944-1344
+EI 1614-7499
+J9 ENVIRON SCI POLLUT R
+JI Environ. Sci. Pollut. Res.
+PD MAY
+PY 2015
+VL 22
+IS 9
+BP 6461
+EP 6472
+DI 10.1007/s11356-015-4079-5
+PG 12
+WC Environmental Sciences
+SC Environmental Sciences & Ecology
+GA CG1PX
+UT WOS:000353046600009
+PM 25598156
+DA 2020-12-22
+ER
+
+PT J
+AU Bonilla-Hermosa, VA
+   Duarte, WF
+   Schwan, RF
+AF Bonilla-Hermosa, Veronica Alejandra
+   Duarte, Whasley Ferreira
+   Schwan, Rosane Freitas
+TI Utilization of coffee by-products obtained from semi-washed process for
+   production of value-added compounds
+SO BIORESOURCE TECHNOLOGY
+LA English
+DT Article
+DE Coffee pulp; Coffee wastewater; Bioethanol; Volatile compounds;
+   Hanseniaspora uvarum
+ID NON-SACCHAROMYCES YEASTS; PHENOLIC-COMPOUNDS; AROMA COMPOUNDS;
+   FERMENTATION; SUGARS; CEREVISIAE; BIOETHANOL; CULTURES; GROUNDS; HEALTH
+AB The semi-dry processing of coffee generates significant amounts of coffee pulp and wastewater. This study evaluated the production of bioethanol and volatile compounds of eight yeast strains cultivated in a mixture of these residues. Hanseniaspora uvarum UFLA CAF76 showed the best fermentation performance; hence it was selected to evaluate different culture medium compositions and inoculum size. The best results were obtained with 12% w/v of coffee pulp, 1 g/L of yeast extract and 0.3 g/L of inoculum. Using these conditions, fermentation in 1 L of medium was carried out, achieving higher ethanol yield, productivity and efficiency with values of 0.48 g/g, 0.55 g/L h and 94.11% respectively. Twenty-one volatile compounds corresponding to higher alcohols, acetates, terpenes, aldehydes and volatile acids were identified by GC-FID. Such results indicate that coffee residues show an excellent potential as substrates for production of value-added compounds. H. uvarum demonstrated high fermentative capacity using these residues. (C) 2014 Elsevier Ltd. All rights reserved.
+C1 [Bonilla-Hermosa, Veronica Alejandra; Duarte, Whasley Ferreira; Schwan, Rosane Freitas] Fed Univ Lavras UFLA, Dept Biol, BR-37200000 Lavras, MG, Brazil.
+RP Duarte, WF (corresponding author), Fed Univ Lavras UFLA, Dept Biol, CP 3037 Campus Univ, BR-37200000 Lavras, MG, Brazil.
+EM whasleyduarte@dbi.ufla.br
+RI Duarte, Whasley/F-7863-2010; Duarte, Whasley/P-5075-2019; Schwan, Rosane
+   Freitas/AAD-3253-2020
+OI Duarte, Whasley/0000-0002-1027-588X; Duarte,
+   Whasley/0000-0002-1027-588X; Schwan, Rosane Freitas/0000-0003-1320-8882
+FU Fundacao de Amparo a Pesquisa do Estado de Minas Gerais (FAPEMIG)Minas
+   Gerais State Research Foundation (FAPEMIG); Conselho Nacional de
+   Desenvolvimento Cientifico e Tecnologico do Brasil (CNPq)National
+   Council for Scientific and Technological Development (CNPq); Coordenacao
+   de Aperfeicoamento de Pessoal de Nivel Superior (CAPES)CAPES
+FX The authors would like to thank Fundacao de Amparo a Pesquisa do Estado
+   de Minas Gerais (FAPEMIG), Conselho Nacional de Desenvolvimento
+   Cientifico e Tecnologico do Brasil (CNPq) and Coordenacao de
+   Aperfeicoamento de Pessoal de Nivel Superior (CAPES) for providing
+   financial support.
+CR AOAC, 1970, OFFICIAL METHODS ANA
+   APHA AWWA WEF, 1992, STANDARD METHODS EXA
+   Bicas JL, 2010, CIENCIA TECNOL ALIME, V30, P7, DOI 10.1590/S0101-20612010000100002
+   BITTER T, 1962, ANAL BIOCHEM, V4, P330, DOI 10.1016/0003-2697(62)90095-7
+   Choi IS, 2012, BIORESOURCE TECHNOL, V125, P132, DOI 10.1016/j.biortech.2012.08.080
+   De Benedictis M, 2011, ANTON LEEUW INT J G, V99, P189, DOI 10.1007/s10482-010-9475-8
+   Duarte LC, 2005, APPL BIOCHEM BIOTECH, V121, P413, DOI 10.1385/ABAB:121:1-3:0413
+   Duarte WF, 2013, ANTON LEEUW INT J G, V103, P175, DOI 10.1007/s10482-012-9798-8
+   Duarte WF, 2011, J FOOD SCI, V76, pC1307, DOI 10.1111/j.1750-3841.2011.02412.x
+   Elias LG, 1979, COFFEE PULP COMPOSIT, P11
+   Eshkol N, 2009, J APPL MICROBIOL, V106, P534, DOI 10.1111/j.1365-2672.2008.04023.x
+   Esquivel P, 2012, FOOD RES INT, V46, P488, DOI 10.1016/j.foodres.2011.05.028
+   Haddis A, 2008, J HAZARD MATER, V152, P259, DOI 10.1016/j.jhazmat.2007.06.094
+   Kwon EE, 2013, BIORESOURCE TECHNOL, V136, P475, DOI 10.1016/j.biortech.2013.03.052
+   Longo MA, 2006, FOOD TECHNOL BIOTECH, V44, P335
+   Salgado JM, 2012, WORLD J MICROB BIOT, V28, P3123, DOI 10.1007/s11274-012-1122-2
+   Medeiros ABP, 2001, WORLD J MICROB BIOT, V17, P767, DOI 10.1023/A:1013596330389
+   Moreira N, 2011, FOOD CONTROL, V22, P662, DOI 10.1016/j.foodcont.2010.07.025
+   Murthy PS, 2012, RESOUR CONSERV RECY, V66, P45, DOI 10.1016/j.resconrec.2012.06.005
+   Mussatto SI, 2012, APPL ENERG, V92, P763, DOI 10.1016/j.apenergy.2011.08.020
+   Mussatto SI, 2011, FOOD BIOPROCESS TECH, V4, P661, DOI 10.1007/s11947-011-0565-z
+   Mussatto SI, 2011, CARBOHYD POLYM, V83, P368, DOI 10.1016/j.carbpol.2010.07.063
+   NAVIA P Diana P, 2011, Vitae, V18, P287
+   Nelson N, 1944, J BIOL CHEM, V153, P375
+   Palmqvist E, 2000, BIORESOURCE TECHNOL, V74, P25, DOI 10.1016/S0960-8524(99)00161-3
+   Pandey A, 2000, BIOCHEM ENG J, V6, P153, DOI 10.1016/S1369-703X(00)00084-X
+   Maturano YP, 2012, INT J FOOD MICROBIOL, V155, P43, DOI 10.1016/j.ijfoodmicro.2012.01.015
+   Rojas JBU, 2003, BIORESOURCE TECHNOL, V89, P267, DOI 10.1016/S0960-8524(03)00070-1
+   Shenoy D, 2011, BIOMASS BIOENERG, V35, P4107, DOI 10.1016/j.biombioe.2011.05.016
+   Van der Kamer JH, 1952, CEREAL CHEM, V29, P23
+   Vandamme EJ, 2003, FUNGAL DIVERS, V13, P153
+   VANSOEST PJ, 1968, J ASSOC OFF ANA CHEM, V51, P780
+   Vilela DM, 2010, FOOD MICROBIOL, V27, P1128, DOI 10.1016/j.fm.2010.07.024
+   Waghorn GC, 2003, P NUTR SOC, V62, P383, DOI 10.1079/PNS2003245
+NR 34
+TC 38
+Z9 40
+U1 2
+U2 48
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0960-8524
+EI 1873-2976
+J9 BIORESOURCE TECHNOL
+JI Bioresour. Technol.
+PD AUG
+PY 2014
+VL 166
+BP 142
+EP 150
+DI 10.1016/j.biortech.2014.05.031
+PG 9
+WC Agricultural Engineering; Biotechnology & Applied Microbiology; Energy &
+   Fuels
+SC Agriculture; Biotechnology & Applied Microbiology; Energy & Fuels
+GA AK8XD
+UT WOS:000338711100019
+PM 24907573
+DA 2020-12-22
+ER
+
+PT S
+AU Achawangkul, Y
+   Maruyama, N
+   Chaichana, C
+   Hirota, M
+AF Achawangkul, Yaowateera
+   Maruyama, Naoki
+   Chaichana, Chatchawan
+   Hirota, Masafumi
+BE OThong, S
+   Waewsak, J
+TI Biomass gasification utilization for double-chambered crematory
+SO 2013 INTERNATIONAL CONFERENCE ON ALTERNATIVE ENERGY IN DEVELOPING
+   COUNTRIES AND EMERGING ECONOMIES (2013 AEDCEE)
+SE Energy Procedia
+LA English
+DT Proceedings Paper
+CT International Conference on Alternative Energy in Developing Countries
+   and Emerging Economies (AEDCEE)
+CY MAY 30-31, 2013
+CL Bangkok, THAILAND
+DE Biomass; Cremation; Crematory; Double-chambered incinerator;
+   Gasification
+AB Cremation is a tradition that Buddhist and Brahmin people usually perform on the deceased according to their beliefs and local customs. Old-fashioned crematories using wood or charcoal as fuel cannot prevent emission release, which affects people's health and quality of life. On the other hand, the modern, double-chambered crematory, which uses fossil fuel such as diesel or LPG, has presented high operation costs. Thus, this research aims to study the feasibility and possibility of biomass gasification utilization in the cremation process. In this research, local biomasses such as macadamia shells and coffee bean pulp were used in a fixed-bed downdraft gasification system for producer gas generation. The producer gas was then used as fuel for sample raw meat burning in a double-chambered incinerator prototype. From the experimental results, it was found that at the equivalent ratio of 0.9, the producer gas from both macadamia shells and coffee bean pulp can raise the maximum temperature in the secondary chamber to 750 degrees C, which can eliminate the undesirable smell and pollutants from the combustion process. In addition, by igniting the secondary chamber, the observed light opacity decreased by 83%, compare to the ignition of only the primary chamber. (C) Published by Elsevier Ltd.
+C1 [Achawangkul, Yaowateera; Maruyama, Naoki; Hirota, Masafumi] Mie Univ, Grad Sch Engn, Tsu, Mie 5148507, Japan.
+   [Chaichana, Chatchawan] Chiang Mai Univ, Fac Engn, Dept Engn Mech, Chiang Mai 50200, Thailand.
+RP Achawangkul, Y (corresponding author), Mie Univ, Grad Sch Engn, Tsu, Mie 5148507, Japan.
+EM yaowateera@gmail.com
+RI Chaichana, Chatchawan/ABG-1576-2020
+CR Bubpamala W., 2007, THESIS KING MONGKUTS, P18
+   Bureau of Mines, 1967, RING SMOK CHART REV, P1
+   Gunther S, 1984, P BIOM GAS WORKSH CH, P85
+   Ontario Ministry of the Environment, 1986, INC DES OP CRIT BIOM, VII, P12
+   Pollution Control Department of Thailand, 2005, SIT AIR POLL CREM, P1
+   Pollution Control Department of Thailand, 2005, SIT AIR POLL CREM, P4
+   Rajvanshi AK, 1986, ALTERNATIVE ENERGY A, VII, P83
+   Thavornun S., 2007, STUDY RES CREMATORY
+   The Committee on Natural Resources and Environment, 2002, STUD AIR POLL URB CR
+NR 9
+TC 0
+Z9 0
+U1 0
+U2 0
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA SARA BURGERHARTSTRAAT 25, PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 1876-6102
+J9 ENRGY PROCED
+PY 2014
+VL 52
+BP 308
+EP 315
+DI 10.1016/j.egypro.2014.07.082
+PG 8
+WC Energy & Fuels
+SC Energy & Fuels
+GA BB7ER
+UT WOS:000345439300035
+OA Other Gold
+DA 2020-12-22
+ER
+
+PT J
+AU Murthy, PS
+   Naidu, MM
+AF Murthy, Pushpa S.
+   Naidu, M. Madahava
+TI Production and Application of Xylanase from Penicillium sp Utilizing
+   Coffee By-products
+SO FOOD AND BIOPROCESS TECHNOLOGY
+LA English
+DT Article
+DE Penicillium sp CFR 303; Xylanase; Solid-state fermentation; Coffee husk;
+   Purification
+ID SOLID-STATE FERMENTATION; ALPHA-AMYLASE; BACILLUS-SUBTILIS;
+   PURIFICATION; CHRYSOGENUM; PULP
+AB The lignocellulosic coffee by-products such as coffee pulp, coffee cherry husk, silver skin, and spent coffee were evaluated for their efficacy as a sole carbon sources for the production of xylanase in solid-state fermentation using Penicillium sp. CFR 303. Among the residues, coffee cherry husk was observed to produce maximum xylanase activity of 9,475 U/g. The process parameters such as moisture (50%), pH (5.0), temperature (30 A degrees C), particle size (1.5 mm), inoculum size (20%), fermentation time (5 days), carbon source (xylose), and nitrogen source (peptone) were optimized and the enzyme activity was in the range of 19,560-20,388 U/g. The enzyme production was further improved to 23,494 U/g with steam as a pre-treatment. The extracellular xylanase from the fungal source was purified to homogeneity from culture supernatant by ammonium sulfate fractionation, DE32-cellulose with a recovery yield of 25.5%. It appeared as a single band on SDS-PAGE gel with a molecular mass of approximately 27 kDa. It had optimum parameters of 50 A degrees C temperature, pH 5.0, K (m) 5.6 mg/mL, and V (max) 925 mu mol mg(-1) min(-1) with brichwood xylan as a substrate. The crude enzyme hydrolysed lignocellulosic substrate as well as industrial pulp. Production of xylanase utilizing coffee by-products constitutes a renewable resource and is reported for the first time.
+C1 [Murthy, Pushpa S.; Naidu, M. Madahava] Cent Food Technol Res Inst, Council Sci & Ind Res, Plantat Prod Spices & Flavour Technol Dept, New Delhi, India.
+RP Murthy, PS (corresponding author), Cent Food Technol Res Inst, Council Sci & Ind Res, Plantat Prod Spices & Flavour Technol Dept, New Delhi, India.
+EM pushpa@cftri.res.in
+FU Department of Plantation Products Spices and Flavour Technology, CFTRI
+FX We thank Dr. V. Prakash, Director, CFTRI, Mysore for constant
+   encouragement. Thanks are also due to Dr. P. Srinivas, Head, Department
+   of Plantation Products Spices and Flavour Technology, CFTRI for his
+   support. The finical help from CSIR, New Delhi, is gratefully
+   acknowledged.
+CR Aguilar G, 2000, ENZYME MICROB TECH, V27, P406, DOI 10.1016/S0141-0229(00)00230-1
+   BAILEY MJ, 1992, J BIOTECHNOL, V23, P257, DOI 10.1016/0168-1656(92)90074-J
+   Bajpai P, 1999, BIOTECHNOL PROGR, V15, P147, DOI 10.1021/bp990013k
+   Bajpai P, 1997, ADV APPL MICROBIOL, V43, P141, DOI 10.1016/S0065-2164(08)70225-9
+   Balkan B, 2005, PREP BIOCHEM BIOTECH, V35, P169, DOI 10.1081/PB-200054740
+   Balkan B, 2007, FOOD TECHNOL BIOTECH, V45, P439
+   Baysal Z, 2003, PROCESS BIOCHEM, V38, P1665, DOI 10.1016/S0032-9592(02)00150-4
+   Beg QK, 2001, APPL MICROBIOL BIOT, V56, P326, DOI 10.1007/s002530100704
+   Christov LP, 1999, PROCESS BIOCHEM, V34, P511, DOI 10.1016/S0032-9592(98)00117-4
+   Febe F., 2002, J BASIC MICROB, V42, P320
+   Fraga LP, 2012, FOOD BIOPROCESS TECH, V5, P138, DOI 10.1007/s11947-009-0261-4
+   Gaspar A, 1997, APPL BIOCHEM BIOTECH, V67, P45, DOI 10.1007/BF02787840
+   Goyal M, 2008, BRAZ J MICROBIOL, V39, P535, DOI [10.1590/S1517-83822008000300025, 10.1590/S1517-838220080003000025]
+   Heck JX, 2006, BIOCHEM ENG J, V32, P179, DOI 10.1016/j.bej.2006.09.020
+   Jecu L, 2000, IND CROP PROD, V11, P1, DOI 10.1016/S0926-6690(99)00022-9
+   Kashyap P, 2002, PROCESS BIOCHEM, V38, P307, DOI 10.1016/S0032-9592(02)00060-2
+   Krishna C, 1996, APPL MICROBIOL BIOT, V46, P106, DOI 10.1007/s002530050790
+   Kuhad RC, 1998, PROCESS BIOCHEM, V33, P641
+   LAEMMLI UK, 1970, NATURE, V227, P680, DOI 10.1038/227680a0
+   Lemos JLS, 2002, BRAZ ARCH BIOL TECHN, V45, P431, DOI 10.1590/S1516-89132002000600005
+   LOWRY OH, 1951, J BIOL CHEM, V193, P265
+   Querido ALD, 2006, BRAZ ARCH BIOL TECHN, V49, P475, DOI 10.1590/S1516-89132006000400016
+   Lv ZW, 2008, ENZYME MICROB TECH, V43, P343, DOI 10.1016/j.enzmictec.2008.06.001
+   Mamo G, 2006, ENZYME MICROB TECH, V39, P1492, DOI 10.1016/j.enzmictec.2006.03.040
+   MILLER GL, 1959, ANAL CHEM, V31, P426, DOI 10.1021/ac60147a030
+   Murthy P. S., 2008, Research Journal of Environmental Sciences, V2, P145
+   Murthy PS, 2009, J CHEM TECHNOL BIOT, V84, P1246, DOI 10.1002/jctb.2142
+   Oberoi HS, 2010, FOOD BIOPROCESS TECH, V3, P528, DOI 10.1007/s11947-008-0092-8
+   Palmer T., 2001, ENZYMES BIOCH BIOTEC, P191
+   PULS J, 1993, PORT PR R M, V4, P1
+   Souza CGM, 1998, REV MICROBIOL, V29, P93
+NR 31
+TC 151
+Z9 157
+U1 2
+U2 4
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 1935-5130
+EI 1935-5149
+J9 FOOD BIOPROCESS TECH
+JI Food Bioprocess Technol.
+PD FEB
+PY 2012
+VL 5
+IS 2
+BP 657
+EP 664
+DI 10.1007/s11947-010-0331-7
+PG 8
+WC Food Science & Technology
+SC Food Science & Technology
+GA 892JQ
+UT WOS:000300282900026
+HC Y
+HP N
+DA 2020-12-22
+ER
+
+PT B
+AU Pimenta, CJ
+   Costa, LMAS
+   Chalfoun, SM
+   Pereira, MC
+   Bastos, SC
+   Tavares, LS
+AF Jose Pimenta, C.
+   Martinez Abreu Soares Costa, L.
+   Maria Chalfoun, S.
+   Claudio Pereira, M.
+   Carvalho Bastos, S.
+   Silveira Tavares, L.
+BE MendezVilas, A
+TI Utilization of agroindustrial residues as substrates for production of
+   pectinolytic enzymes by the biological agent "G088"
+SO MICROORGANISMS IN INDUSTRY AND ENVIRONMENT: FROM SCIENTIFIC AND
+   INDUSTRIAL RESEARCH TO CONSUMER PRODUCTS
+LA English
+DT Proceedings Paper
+CT 3rd International Conference on Environmental, Industrial, and Applied
+   Microbiology (BioMicroWorld 2009)
+CY DEC 02-04, 2009
+CL Lisbon, PORTUGAL
+DE pectinmethylesterase; polygalacturonase; agro-industrial residues
+ID FUNGAL STRAINS; ENDOPOLYGALACTURONASE; POLYGALACTURONASE; PECTINASES;
+   EXTRACTION
+AB The pectinolytic enzymes a have great commercial importance, due their countless applications in the food, pharmaceutical and textile industries. The objective of this work was to evaluate the production potential of pectinolytic enzymes in agroindustrial residues starting from a new isolate Cladosporium cladosporioide (Fres.) de Vries, also known as biological agent "G088." The appraised substrate were orange pulp, sugarcane bagasse, grape peel, passion fruit peel, and coffee and rice hulls. The enzymatic activities of polygalacturonase (PG) and pectinmethylesterase (PME) were evaluated in regular time intervals for all the substrate, with the intention of evaluating the best cultivation duration in each medium. All of the studied substrates presented favorable conditions for the pectinolytic (PG and PME) enzyme production, however the grape peel, presented better conditions for the production of both enzymes, PG (117.35 U/g) and PME (1760 U/g).
+C1 [Jose Pimenta, C.; Martinez Abreu Soares Costa, L.; Carvalho Bastos, S.] UFLA Univ Fed Lavras, Caixa Postal 3037, BR-37200000 Lavras, MG, Brazil.
+   [Maria Chalfoun, S.; Claudio Pereira, M.] EPAMIG Empresa Pesquisa Agr Minas Gerais, Lavras, MG, Brazil.
+RP Pimenta, CJ (corresponding author), UFLA Univ Fed Lavras, Caixa Postal 3037, BR-37200000 Lavras, MG, Brazil.
+EM carlos_pimenta@ufla.br
+FU Fundacao de Amparo a Pesquisa do Estado de Minas GeraisMinas Gerais
+   State Research Foundation (FAPEMIG)
+FX The authors are grateful for the grant awarded by the Fundacao de Amparo
+   a Pesquisa do Estado de Minas Gerais.
+CR Santana MTA, 2008, CIENC AGROTEC, V32, P186, DOI 10.1590/S1413-70542008000100027
+   Alexandrino AM, 2007, CIENCIA TECNOL ALIME, V27, P364, DOI 10.1590/S0101-20612007000200026
+   Association Of Oficial Analytical Chemistral, 1992, OFF METH AN ASS OFF
+   BITTER T, 1962, ANAL BIOCHEM, V4, P330, DOI 10.1016/0003-2697(62)90095-7
+   Blandino A, 2001, PROCESS BIOCHEM, V37, P497, DOI 10.1016/S0032-9592(01)00241-2
+   Santos SFD, 2008, QUIM NOVA, V31, P1973, DOI 10.1590/S0100-40422008000800010
+   Gummadi SN, 2003, PROCESS BIOCHEM, V38, P987, DOI 10.1016/S0032-9592(02)00203-0
+   *I AD LUTZ, 1985, NORM AN MET QUIM FIS, V1
+   Jen JJ, 1984, J FOOD SCI, V49
+   Joo HS, 2005, PROCESS BIOCHEM, V40, P1263, DOI 10.1016/j.procbio.2004.05.010
+   Malvessi E, 2004, BRAZ ARCH BIOL TECHN, V47, P693, DOI 10.1590/S1516-89132004000500004
+   Martos MA, 2009, BRAZ ARCH BIOL TECNO, V52
+   Phutela U, 2005, BRAZ J MICROBIOL, V36, P63, DOI 10.1590/S1517-83822005000100013
+   PRESSEY R, 1973, PLANT PHYSIOL, V52, P252, DOI 10.1104/pp.52.3.252
+   Soares MMCN, 2001, WORLD J MICROB BIOT, V17, P79, DOI 10.1023/A:1016667930174
+   Souza JVB, 2003, PROCESS BIOCHEM, V39, P455, DOI 10.1016/S0032-9592(03)00092-X
+   Uenojo M, 2007, QUIM NOVA, V30, P388, DOI 10.1590/S0100-40422007000200028
+NR 17
+TC 1
+Z9 1
+U1 0
+U2 0
+PU WORLD SCIENTIFIC PUBL CO PTE LTD
+PI SINGAPORE
+PA PO BOX 128 FARRER RD, SINGAPORE 9128, SINGAPORE
+BN 978-981-4322-10-2
+PY 2011
+BP 564
+EP 568
+PG 5
+WC Biochemistry & Molecular Biology; Microbiology
+SC Biochemistry & Molecular Biology; Microbiology
+GA BH0BS
+UT WOS:000394555900123
+DA 2020-12-22
+ER
+
+PT J
+AU Nurfeta, A
+AF Nurfeta, Ajebu
+TI Feed intake, digestibility, nitrogen utilization, and body weight change
+   of sheep consuming wheat straw supplemented with local agricultural and
+   agro-industrial by-products
+SO TROPICAL ANIMAL HEALTH AND PRODUCTION
+LA English
+DT Article
+DE Coffee pulp; Growth; Katikala atella; Local by-products; Sheep
+ID POULTRY LITTER; PERFORMANCE; PROTEIN; DIETS; RUMINANTS; RUMEN
+AB Effects of supplementing sheep consuming wheat straw with local agro-industrial by-products on feed intake, growth, digestibility and nitrogen utilization were determined. Thirty 1-year-old local wethers, with a mean (+/-SD) live weight of 19.8 (+/-1.06) kg, were assigned to five treatments: wheat straw + atella (T1), wheat straw + atella + poultry litter (T2), wheat straw + atella + coffee pulp (T3), wheat straw + atella + coffee pulp + poultry litter (T4), hay + concentrate (T5). A 7-day digestibility experiment and a 112-day growth trial were conducted. Total dry matter (DM) and organic matter (OM) intake as well as body weight gain was similar for all treatments. The highest (P<0.05) nitrogen (N) intake was in sheep fed T1 and T4 diets, while the lowest was in those fed T2 and T5 diets. Sheep fed T1 and T2 diets had greater (P<0.05) DM and OM digestibility than those fed T4 and T5 diets. The highest (P<0.05) digestibility of N was for the T2, T4, and T5 diets, while the lowest was for the T1 diet. The highest N retention was in T4 diet, whereas the lowest was in T3 diet. In conclusion, in urban and peri-urban areas where atella, poultry litter, or coffee pulp are available, smallholder farmers could feed the mixtures as a supplement to straw with a good performance without using concentrate feeds.
+C1 Hawassa Univ, Coll Agr, Dept Anim & Range Sci, Hawassa, Ethiopia.
+RP Nurfeta, A (corresponding author), Hawassa Univ, Coll Agr, Dept Anim & Range Sci, POB 222, Hawassa, Ethiopia.
+EM ajebu_nurfeta@yahoo.com
+OI Nurfeta, Ajebu/0000-0003-3286-4789
+FU Ethiopian Agricultural Research Organization (now the Ethiopian
+   Agricultural Research Institute)
+FX The Ethiopian Agricultural Research Organization (now the Ethiopian
+   Agricultural Research Institute) provided funding for this project. The
+   author is thankful to Professor Frik Sundstol and Dr. Adugna Tolera for
+   their comments on the manuscript. The assistance of Dagim Belay and
+   Tadesse Bokore in animal management is appreciated.
+CR ABATE A, 1989, SMALL RUMINANT RES, V2, P299, DOI 10.1016/0921-4488(89)90025-4
+   ABATE A, 1986, ANIM FEED SCI TECH, V14, P1, DOI 10.1016/0377-8401(86)90002-7
+   Animut G, 2002, SMALL RUMINANT RES, V44, P125, DOI 10.1016/S0921-4488(02)00041-X
+   AOAC, 1990, OFF METH AN, P69
+   Aregheore EM, 2004, ANIM FEED SCI TECH, V111, P191, DOI 10.1016/j.anifeedsci.2003.06.001
+   Ben Salem H, 2008, SMALL RUMINANT RES, V77, P174, DOI 10.1016/j.smallrumres.2008.03.008
+   Cabezas M.T., 1987, COFFEE PULP COMPOSIT, P25
+   de Souza AL, 2005, REV BRAS ZOOTECN, V34, P2496, DOI 10.1590/S1516-35982005000700038
+   DEGONZALEZ CN, 1994, J SCI FOOD AGR, V65, P157
+   DEMEKE S, 1984, THESIS ADDIS ABABA U
+   DEMEKE S, 1989, AFRICAN SMALL RUMINA
+   Demeke S., 2007, LIVESTOCK RES RURAL, V19, P1
+   GEBRU G, 1989, AFRICAN SMALL RUMINA
+   GIHAD EA, 1976, J ANIM SCI, V42, P706
+   HABTE T, 1989, THESIS J LEIBIG U GI
+   Huang HJ, 1999, ANIM FEED SCI TECH, V77, P303, DOI 10.1016/S0377-8401(98)00249-1
+   Kaswari T, 2007, ANIM FEED SCI TECH, V139, P1, DOI 10.1016/j.anifeedsci.2006.12.002
+   KOELN LL, 1984, ANIM FEED SCI TECH, V11, P181, DOI 10.1016/0377-8401(84)90061-0
+   Mazzafera P., 2002, Scientia Agricola, V59, P815, DOI 10.1590/S0103-90162002000400030
+   McDonald P., 2002, ANIMAL NUTR
+   Mekasha Y, 2003, SMALL RUMINANT RES, V50, P141, DOI 10.1016/S0921-4488(03)00106-8
+   Mekasha Y, 2002, SMALL RUMINANT RES, V44, P25, DOI 10.1016/S0921-4488(02)00009-3
+   Min BR, 2003, ANIM FEED SCI TECH, V106, P3, DOI 10.1016/S0377-8401(03)00041-5
+   Muia JMK, 2000, LIVEST PROD SCI, V67, P89, DOI 10.1016/S0301-6226(00)00192-5
+   Negesse T, 2007, SMALL RUMINANT RES, V69, P187, DOI 10.1016/j.smallrumres.2006.01.008
+   NEGESSE T, 1991, SINET ETHIOPIAN J SC, V14, P93
+   Rojas JBU, 2002, ANIM FEED SCI TECH, V99, P195, DOI 10.1016/S0377-8401(02)00050-0
+   ROJAS JBU, 2002, AQUAC RES, V33, P189
+   Rossi J. E., 1999, PROF ANIM SCI, V15, P258
+   SAS Institute Inc, 2001, SAS US GUID
+   TSADIK AG, 2008, LIVESTOCK RES RURAL, V20
+   Van DTT, 2005, ANIM FEED SCI TECH, V118, P1, DOI 10.1016/j.anifeedsci.2004.10.016
+   Van Soest PJ, 1994, NUTR ECOLOGY RUMINAN
+   VANSOEST PJ, 1991, J DAIRY SCI, V74, P3583, DOI 10.3168/jds.S0022-0302(91)78551-2
+   Zapata RA, 2005, REV BRAS ZOOTECN, V34, P584, DOI 10.1590/S1516-35982005000200028
+   Zinn RA, 1996, J ANIM SCI, V74, P2331
+NR 36
+TC 17
+Z9 17
+U1 0
+U2 10
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0049-4747
+EI 1573-7438
+J9 TROP ANIM HEALTH PRO
+JI Trop. Anim. Health Prod.
+PD JUN
+PY 2010
+VL 42
+IS 5
+BP 815
+EP 824
+DI 10.1007/s11250-009-9491-8
+PG 10
+WC Agriculture, Dairy & Animal Science; Veterinary Sciences
+SC Agriculture; Veterinary Sciences
+GA 623BZ
+UT WOS:000279713700005
+PM 19882225
+DA 2020-12-22
+ER
+
+PT J
+AU Rolz, C
+   de Leon, R
+   Cifuentes, R
+   Porres, C
+AF Rolz, C.
+   de Leon, R.
+   Cifuentes, R.
+   Porres, C.
+TI Windrow composting of sugarcane and coffee byproducts
+SO SUGAR TECH
+LA English
+DT Article
+DE Composting; bagasse; pressmud; coffee byproducts
+AB Compost produced from lignocellulosic agricultural residues is found to be suitable for maintaining soil properties and health. Results of experimental trials of large scale windrow composting of sugarcane press mud, cane bagasse and coffee pulp mixtures are presented and discussed. Filter press mud and bagasse mixtures were transformed into composted products in 120 days, of which 80 days were of active material machine turning in the windrows. However, the mixtures containing coffee pulp were active for a much longer time period as the Solvita (R) readings showed. Bagasse was an important component of the mixture as it provided an adequate structure in the heap. The compost product containing 50 % coffee pulp at the start caused adverse effects on black bean seed germination and decreased the growth of black beans and tomato when mixed with soil above 2.5 and 5 %, respectively. These effects were not observed with the products containing sugarcane press mud and bagasse only.
+C1 [Rolz, C.] Univ Valle de Guatemala, Ctr Biochem Engn, Res Inst, Guatemala City, Guatemala.
+   [de Leon, R.] Univ Valle de Guatemala, Ctr Biochem Engn, Res Inst, Guatemala City, Guatemala.
+   [Cifuentes, R.] Univ Valle de Guatemala, Agr & Forestry Res Ctr, Res Inst, Guatemala City, Guatemala.
+RP Rolz, C (corresponding author), Univ Valle de Guatemala, Ctr Biochem Engn, Res Inst, Guatemala City, Guatemala.
+EM carlosrolz@uvg.edu.gt
+FU Fodecyt of the Guatemalan Science and Technology Council [01-2006]
+FX This work was partly financed by Project Fodecyt 01-2006 of the
+   Guatemalan Science and Technology Council. The compost facilities and
+   turning equipment were acquired as part of a USDA Food for Progress
+   Program.
+CR Adani F, 2007, WASTE MANAGE, V27, P319, DOI 10.1016/j.wasman.2006.04.004
+   Chikae M, 2006, BIORESOURCE TECHNOL, V97, P1979, DOI 10.1016/j.biortech.2005.09.026
+   Chiumenti A, 2007, WASTE MANAGE, V27, P1774, DOI 10.1016/j.wasman.2006.10.017
+   Chou CH, 2006, COMPOST SCI UTIL, V14, P16
+   Emino ER, 2004, COMPOST SCI UTIL, V12, P342
+   Matteson TL, 2006, COMPOST SCI UTIL, V14, P170
+   Meunchang S, 2006, PLANT SOIL, V280, P171, DOI 10.1007/s11104-005-2949-1
+   Meunchang S, 2005, BIORESOURCE TECHNOL, V96, P437, DOI 10.1016/j.biortech.2004.05.024
+   Namita Chauhan, 2008, Sugar Tech, V10, P174, DOI 10.1007/s12355-008-0032-y
+   Pagans E, 2006, CHEMOSPHERE, V62, P1534, DOI 10.1016/j.chemosphere.2005.06.044
+   Paredes C, 2002, BIORESOURCE TECHNOL, V85, P1, DOI 10.1016/S0960-8524(02)00078-0
+   Pedro MS, 2003, J BIOSCI BIOENG, V95, P368, DOI 10.1016/S1389-1723(03)80069-5
+   Raviv M, 2004, COMPOST SCI UTIL, V12, P6
+   Rolz-Asturias C, 2008, REV U VALLE DE GUATE, V18, P36
+   Sanchez G, 1999, BIODEGRADATION, V10, P35, DOI 10.1023/A:1008340303142
+   Satisha GC, 2007, WASTE MANAGE, V27, P1083, DOI 10.1016/j.wasman.2006.04.020
+   Schuchardt F, 2005, ENVIRONMENTAL BIOTECHNOLOGY: CONCEPTS AND APPLICATIONS, P333
+   Thompson AG, 2004, ENVIRON MONIT ASSESS, V91, P87, DOI 10.1023/B:EMAS.0000009231.04123.2d
+   Warman PR, 1999, COMPOST SCI UTIL, V7, P33
+NR 19
+TC 6
+Z9 6
+U1 1
+U2 10
+PU SPRINGER INDIA
+PI NEW DELHI
+PA 7TH FLOOR, VIJAYA BUILDING, 17, BARAKHAMBA ROAD, NEW DELHI, 110 001,
+   INDIA
+SN 0972-1525
+J9 SUGAR TECH
+JI Sugar Tech.
+PD MAR
+PY 2010
+VL 12
+IS 1
+BP 15
+EP 20
+DI 10.1007/s12355-010-0004-x
+PG 6
+WC Agronomy
+SC Agriculture
+GA V30KU
+UT WOS:000208815700004
+DA 2020-12-22
+ER
+
+PT J
+AU Niladevi, KN
+   Sukumaran, RK
+   Prema, P
+AF Niladevi, Kizhakkedathu Narayanan
+   Sukumaran, Rajeev Kumar
+   Prema, Parukuttyamma
+TI Utilization of rice straw for laccase production by Streptomyces
+   psammoticus in solid-state fermentation
+SO JOURNAL OF INDUSTRIAL MICROBIOLOGY & BIOTECHNOLOGY
+LA English
+DT Article
+DE laccases; rice straw; solid-state fermentation; Streptomyces
+   psammoticus; central composite design
+ID DECOLORIZATION; OPTIMIZATION
+AB Laccase production from a novel actinobacterial strain, Streptomyces psammoticus, MTCC 7334 was optimized in solid-state fermentation. The process parameters were initially optimized by the conventional "one factor at a time" approach, and the optimal levels of the factors that had considerable influence on enzyme production were identified by response surface methodology. Rice straw was identified as a suitable substrate for laccase production (17.3 U/g), followed by coffee pulp (15.8 U/g). Other optimized conditions were particle size, 500-1,000 mu m (21.2 U/g); initial moisture content, 65% (26.8 U/g); pH of moistening solution, 8.0 (26.9 U/g); incubation temperature, 32 degrees C (27.6 U/g) and inoculum size, 1.5 x 10(7) CFU (33.8 U/g). Yeast extract served as the best nitrogen source (34.8 U/g). No enhancement in enzyme yield was observed with carbon supplementation. The level of yeast extract, inoculum size and copper sulphate were optimized statistically. Statistical optimization performed using a central composite design resulted in threefold increase in laccase activity (55.4 U/g) as compared to the unoptimized medium (17.3 U/g). The upgrading of fermented rice straw for fodder enhancement is also discussed briefly.
+C1 CSIR, Reg Res Lab, Div Biotechnol, Trivandrum 695019, Kerala, India.
+RP Prema, P (corresponding author), CSIR, Reg Res Lab, Div Biotechnol, Trivandrum 695019, Kerala, India.
+EM prema@csrrltrd.ren.nic.in
+RI Sukumaran, Rajeev Kumar/L-5009-2015
+OI Sukumaran, Rajeev Kumar/0000-0002-1315-3650
+CR Arias ME, 2003, APPL ENVIRON MICROB, V69, P1953, DOI 10.1128/AEM.69.4.1953-1958.2003
+   Berrocal MM, 1997, APPL MICROBIOL BIOT, V48, P379, DOI 10.1007/s002530051066
+   Bisaria R, 1997, BIORESOURCE TECHNOL, V59, P5, DOI 10.1016/S0960-8524(96)00140-X
+   BOURBONNAIS R, 1992, APPL MICROBIOL BIOT, V36, P823, DOI 10.1007/BF00172202
+   BUSWELL JA, 1991, HDB APPLIED MYCOLOGY, V1, P425
+   Couto SR, 2005, BIOCHEM ENG J, V22, P211, DOI 10.1016/j.bej.2004.09.013
+   CRECCHIO C, 1995, BIOTECHNOL BIOENG, V48, P585, DOI 10.1002/bit.260480605
+   Duran N, 2000, APPL CATAL B-ENVIRON, V28, P83, DOI 10.1016/S0926-3373(00)00168-5
+   Elisashvili V., 2001, Advances in Food Sciences, V23, P117
+   Galhaup C, 2002, ENZYME MICROB TECH, V30, P529, DOI 10.1016/S0141-0229(01)00522-1
+   Galhaup C, 2001, APPL MICROBIOL BIOT, V56, P225, DOI 10.1007/s002530100636
+   Huttermann A, 2000, AGRO FOOD IND HI TEC, V11, P29
+   KAAL EEJ, 1995, BIORESOURCE TECHNOL, V53, P133, DOI 10.1016/0960-8524(95)00066-N
+   Machczynski MC, 2004, PROTEIN SCI, V13, P2388, DOI 10.1110/ps.04759104
+   MANDELS M, 1976, BIOTECHNOL BIOENG, P21
+   Martins LO, 2002, J BIOL CHEM, V277, P18849, DOI 10.1074/jbc.M200827200
+   MAYER AM, 1987, PHYTOCHEMISTRY, V26, P11
+   Mayer AM, 2002, PHYTOCHEMISTRY, V60, P551, DOI 10.1016/S0031-9422(02)00171-1
+   MCCARTHY AJ, 1987, FEMS MICROBIOL LETT, V46, P145, DOI 10.1111/j.1574-6968.1987.tb02456.x
+   MCMILLAN JD, 1994, ACS SYM SER, V566, P292
+   Niladevi KN, 2009, MICROBIOL RES, V164, P105, DOI 10.1016/j.micres.2006.10.006
+   NILADEVI KN, 2005, MICROBIOL RES, V19, P40
+   Nyanhongo GS, 2002, WATER RES, V36, P1449, DOI 10.1016/S0043-1354(01)00365-7
+   Palmieri G, 2000, APPL ENVIRON MICROB, V66, P920, DOI 10.1128/AEM.66.3.920-924.2000
+   PANDEY A, 1992, ENZYME MICROB TECH, V14, P486, DOI 10.1016/0141-0229(92)90142-B
+   Pandey A, 2000, PROCESS BIOCHEM, V35, P1153, DOI 10.1016/S0032-9592(00)00152-7
+   Pandey A., 2001, SOLID STATE FERMENTA, P221
+   Piontek K, 2002, J BIOL CHEM, V277, P37663, DOI 10.1074/jbc.M204571200
+   Revankar MS, 2006, PROCESS BIOCHEM, V41, P581, DOI 10.1016/j.procbio.2005.07.019
+   SAKURAI Y, 1977, AGR BIOL CHEM TOKYO, V41, P619, DOI 10.1080/00021369.1977.10862552
+   SRINIVASAN C, 1995, APPL ENVIRON MICROB, V61, P4274, DOI 10.1128/AEM.61.12.4274-4277.1995
+   Stajic M, 2006, ENZYME MICROB TECH, V38, P65, DOI 10.1016/j.enzmictec.2005.03.026
+   Suzuki T, 2003, BIOSCI BIOTECH BIOCH, V67, P2167, DOI 10.1271/bbb.67.2167
+   THURSTON CF, 1994, MICROBIOL-SGM, V140, P19, DOI 10.1099/13500872-140-1-19
+   Trupkin S, 2003, J IND MICROBIOL BIOT, V30, P682, DOI 10.1007/s10295-003-0099-0
+   Vasconcelos AFD, 2000, PROCESS BIOCHEM, V35, P1131, DOI 10.1016/S0032-9592(00)00149-7
+NR 36
+TC 60
+Z9 67
+U1 0
+U2 19
+PU SPRINGER HEIDELBERG
+PI HEIDELBERG
+PA TIERGARTENSTRASSE 17, D-69121 HEIDELBERG, GERMANY
+SN 1367-5435
+EI 1476-5535
+J9 J IND MICROBIOL BIOT
+JI J. Ind. Microbiol. Biotechnol.
+PD OCT
+PY 2007
+VL 34
+IS 10
+BP 665
+EP 674
+DI 10.1007/s10295-007-0239-z
+PG 10
+WC Biotechnology & Applied Microbiology
+SC Biotechnology & Applied Microbiology
+GA 209RO
+UT WOS:000249405900004
+PM 17665235
+DA 2020-12-22
+ER
+
+PT J
+AU Gokulakrishnan, S
+   Gummadi, SN
+AF Gokulakrishnan, S.
+   Gummadi, Sathyanarayana N.
+TI Kinetics of cell growth and caffeine utilization by Pseudomonas sp GSC
+   1182
+SO PROCESS BIOCHEMISTRY
+LA English
+DT Article
+DE caffeine degradation; cell growth; substrate inhibition kinetics; Luong
+   model; biomass yield; Pseudomonas sp
+ID SOLID-STATE FERMENTATION; COFFEE HUSK; INHIBITION; NITROGEN
+AB Caffeine in coffee pulp prevents the utilization of nutrition rich coffee pulp effectively. Microbial methods of caffeine degradation can help in detoxifying the pulp and it prove as a better alternative to the conventional methods of environmental unfriendly solvent extraction process of decaffeination. Previously Pseudomonas sp. GSC 1182 was isolated from the soil samples of coffee cultivation area to degrade caffeine. In this report, the cell growth kinetics of Pseudomonas sp. GSC 1182 at various concentration of caffeine ranging from 0.05 to 20 g/l was studied. The kinetic data showed substrate inhibition kinetics and maximum growth rate was obtained when the isolate was grown in medium containing 2.5 g/l of initial concentration of caffeine. The results also showed that the isolate was able to grow at high concentrations of caffeine (10 g/l). Different substrate inhibition models were fitted to the kinetic data and found the Luong model was best. The model predicted kinetic parameters were in agreement with the experimental findings. The kinetic parameters were: S-m = 20.2 g/l; K-S = 0.59 g/l; mu(m) = 0.24 h(-1) and n = 2. This is the first detailed report on the cell growth kinetics of microorganism using caffeine as the substrate. (c) 2005 Elsevier Ltd. All rights reserved.
+C1 Indian Inst Technol, Dept Biotechnol, Madras 600036, Tamil Nadu, India.
+RP Gummadi, SN (corresponding author), Indian Inst Technol, Dept Biotechnol, Madras 600036, Tamil Nadu, India.
+EM gummadi@iitm.ac.in
+RI Gummadi, Sathyanarayana Naidu/K-2303-2019; Gummadi,
+   Sathyanarayana/W-5354-2019
+OI Gummadi, Sathyanarayana Naidu/0000-0003-0707-5710; 
+CR ASANO Y, 1993, BIOSCI BIOTECH BIOCH, V57, P1286, DOI 10.1271/bbb.57.1286
+   Brand D, 2000, ENZYME MICROB TECH, V27, P127, DOI 10.1016/S0141-0229(00)00186-1
+   Gokulakrishnan S, 2005, ENZYME MICROB TECH, V37, P225, DOI 10.1016/j.enzmictec.2005.03.004
+   Hakil M, 1999, PROCESS BIOCHEM, V35, P103, DOI 10.1016/S0032-9592(99)00039-4
+   LUONG JHT, 1987, BIOTECHNOL BIOENG, V29, P242, DOI 10.1002/bit.260290215
+   MAZZAFERA P, 1994, MICROB ECOL, V31, P199
+   Pandey A, 2000, BIOCHEM ENG J, V6, P153, DOI 10.1016/S1369-703X(00)00084-X
+   PUTRAMENT A, 1972, MOL GEN GENET, V118, P373, DOI 10.1007/BF00333572
+   SHULER ML, 2002, BIPROCESS ENG BASIC
+   SUNDARRAJ CV, 1965, APPL MICROBIOL, V13, P432
+   WOOLFOLK CA, 1975, J BACTERIOL, V123, P1088, DOI 10.1128/JB.123.3.1088-1106.1975
+   YAMOKAYANO DM, 1998, ALLEL J, V5, P2
+NR 12
+TC 31
+Z9 32
+U1 0
+U2 15
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 1359-5113
+EI 1873-3298
+J9 PROCESS BIOCHEM
+JI Process Biochem.
+PD JUN
+PY 2006
+VL 41
+IS 6
+BP 1417
+EP 1421
+DI 10.1016/j.procbio.2005.12.018
+PG 5
+WC Biochemistry & Molecular Biology; Biotechnology & Applied Microbiology;
+   Engineering, Chemical
+SC Biochemistry & Molecular Biology; Biotechnology & Applied Microbiology;
+   Engineering
+GA 043OK
+UT WOS:000237610600029
+DA 2020-12-22
+ER
+
+PT J
+AU Rasowo, J
+   Ochieng, RS
+AF Rasowo, Joseph
+   Ochieng, Raphael Sumba
+TI Nutrient utilization and growth response of the Nile tilapia
+   (Oreochromis niloticus) fed on varying levels of dietary raw and boiled
+   coffee pulp as a replacement for rice bran
+SO DISCOVERY AND INNOVATION
+LA English
+DT Editorial Material
+DE diet; growth response; Nile tilapia; Oreochromis niloticus; raw and
+   boiled coffee pulp; rice bran; specific growth ratio (SGR); food
+   conversion ratio (FCR); protein efficiency ratio (PER)
+AB The nutritive value of raw and boiled coffee pulp, Coffea arabica, as a dietary carbohydrate source in pelleted feed for Nile tilapia "Oreochromis niloticus" was assessed. Fingerlings (5.0 +/- 1.0 g) were fed with pelleted diets in which rice bran was progressively replaced with graded levels (0, 15,30,45%) of coffee pulp. All diets were isonitrogenous (30% crude protein) and isocaloric (300 Kcal/g of digestible energy/100 g diet). The fish were fed indoors for 90 days in 20 litre plastic tanks. The results indicated that the diets containing boiled coffee pulp were superior (P < 0.05) to the diets containing raw coffee pulp in terms of weight gain, PER, FCR and SGR. There was a general decline in growth performance with increase in coffee pulp dietary inclusion.'No significant differences (P > 0.05) were detected in the group of fish fed on the control diet and those fed on the diet having 45% boiled coffee pulp. Fish survival was high (> 98%) in all the dietary treatments tested.
+C1 Moi Univ, Dept Zool, Eldoret, Kenya.
+RP Rasowo, J (corresponding author), Moi Univ, Dept Zool, POB 1125, Eldoret, Kenya.
+CR *AOAC, 1980, OFF METH AN
+   BAYNE DR, 1976, AQUACULTURE, V7, P133, DOI 10.1016/0044-8486(76)90003-X
+   Bressani R., 1975, Proceedings of the Conference on Animal Feeds of Tropical and Subtropical Origin., P107
+   BRESSANI R, 1979, PUBLICATION INT DE E, V108, P83
+   CHRISTENSEN MS, 1981, AQUACULTURE, V25, P235, DOI 10.1016/0044-8486(81)90185-X
+   El-Sayed A. F. M., 1991, Asian Fisheries Science, V4, P53
+   ELIAS LG, 1979, PUBLICATION INT DE E, V108, P17
+   FAGBENRO OA, 1991, BIORESOURCE TECHNOL, V37, P253, DOI 10.1016/0960-8524(91)90192-M
+   Fukuhara A., 1966, B JPN SOC SCI FISH, V32, P502, DOI [DOI 10.2331/SUISAN.32.502, 10.2331/suisan.32.502]
+   MGUGUA SK, 1990, E AFR AGR FORESTRY J, V55, P247
+   Phillips A.M., 1972, FISH NUTRITION, P1
+   SANTIAGO CB, 1988, J NUTR, V118, P1540
+   *SAS I, 1987, SAS STAT GUID PERS C
+   SATIA B, 1989, REGIONAL SURVEY AQUA
+   SMITH RR, 1976, FEEDSTUFFS, V48, P16
+   Snedecor G.W., 1967, STAT METHODS
+   WEE KL, 1989, AQUACULTURE, V81, P303, DOI 10.1016/0044-8486(89)90155-5
+NR 17
+TC 0
+Z9 0
+U1 0
+U2 4
+PU ACADEMY SCIENCE PUBLISHERS
+PI NAIROBI
+PA PO BOX 14798, NAIROBI, KENYA
+SN 1015-079X
+J9 DISCOV INNOVAT
+JI Discov. Innov.
+PD DEC
+PY 2005
+VL 17
+IS 3-4
+BP 110
+EP 116
+PG 7
+WC Multidisciplinary Sciences
+SC Science & Technology - Other Topics
+GA 066XO
+UT WOS:000239264100002
+DA 2020-12-22
+ER
+
+PT J
+AU Ulloa, JB
+   Verreth, JAJ
+AF Ulloa, JB
+   Verreth, JAJ
+TI Growth, feed utilization and nutrient digestibility in tilapia
+   fingerlings (Oreochromis aureus Steindachner) fed diets containing
+   bacteria-treated coffee pulp
+SO AQUACULTURE RESEARCH
+LA English
+DT Article
+DE Oreochromis; coffee pulp; fish nutrition; ANFs
+ID MOSSAMBICUS PETERS; NILOTICUS; POLYPHENOLS; ABSORPTION; CELLULOSE; FIBER
+AB The effectiveness of bacteria treated-coffee pulp (BT-CoP) in fish diets was evaluated in a feeding trial with Oreochromis aureus (Steindachner) fingerlings. Five diets were formulated to contain 0%, 6%, 12%, 18% and 24% BT-CoP, replacing wheat meal. Fish were reared in a recirculating unit consisting of 16 aquaria. Each aquarium was stocked with 10 fish of 1.1-2.4 g. Fish were fed ad libitum twice daily (10 and 15 h) for 4 weeks. Fish fed diets without BT-CoP and with 6% BT-CoP showed similar growth (body weight, growth rate: RGRm) and feed utilization (feed conversion ratio, protein efficiency ratio, apparent net protein utilization). Diets containing 0% and 6% BT-CoP gave similar dry matter and protein digestibility coefficients, but dietary BT-CoP levels higher than 6% produced lower digestibility values, except for carbohydrate. It is concluded that O. aureus fingerlings may assimilate only small amounts (6%) of BT-CoP in the diets without adverse effects on growth and feed utilization parameters. The CoP-containing diets did not affect fish survival (100%). The depression in tilapia performance may be associated mainly with the high level of fibre present in the CoP diets.
+C1 Univ Nacl, Escuela Ciencias Biol, Heredia 86 3000, Costa Rica.
+   Wageningen Inst Anim Sci, Fish Culture & Fisheries Grp, NL-6700 AH Wageningen, Netherlands.
+RP Ulloa, JB (corresponding author), Univ Nacl, Escuela Ciencias Biol, Heredia 86 3000, Costa Rica.
+EM jullon@una.ac.cr
+RI Verreth, Johan/ABD-7198-2020
+OI Verreth, Johan/0000-0001-7277-5129
+CR Adams M. R., 1981, Tropical Science, V23, P177
+   AlOgaily SM, 1996, ARAB GULF J SCI RES, V14, P731
+   AMATO S, 1996, MIMEOGRAFIADO CARACT
+   ANDERSON J, 1984, AQUACULTURE, V37, P303, DOI 10.1016/0044-8486(84)90296-5
+   *AOAC, 1980, OFF METH AN
+   BAUTISTA E, 1999, PULPA CAFE ENSILADA, P75
+   BAUTISTA E., 1999, PULPA CAFE ENSILADA, P109
+   BAYNE DR, 1976, AQUACULTURE, V7, P133, DOI 10.1016/0044-8486(76)90003-X
+   BRESSAANI R, 1980, 9 C SCI INT CAF, P303
+   BRESSANI R, 1973, TURRIALBA, V23, P403
+   Bressani R., 1975, Proceedings of the Conference on Animal Feeds of Tropical and Subtropical Origin., P107
+   Bressani R., 1979, COFFEE PULP COMPOSIT, P17
+   CABEZAS M, 1976, P 1 INT S FEED COMP, P11
+   CHRISTENSEN MS, 1981, AQUACULTURE, V25, P235, DOI 10.1016/0044-8486(81)90185-X
+   DEROZO MP, 1985, ARCH LATINOAM NUTR, V35, P287
+   DESILVA S, 1995, FISH NUTR AQUACULTUR, P203
+   DIOUNDICK OB, 1990, AQUACULTURE, V91, P311, DOI 10.1016/0044-8486(90)90196-T
+   DONKOH A, 1988, ANIM FEED SCI TECH, V22, P139, DOI 10.1016/0377-8401(88)90081-8
+   EGAOA J.I., 1979, COFFEE PULP COMPOSIT, P25
+   FAGBENRO OA, 1991, BIORESOURCE TECHNOL, V37, P253, DOI 10.1016/0960-8524(91)90192-M
+   FIELD J, 1991, TRATAMIENTO ANAEROBI, V1, P12
+   FONSECA H, 1976, P 1 INT S FEED COMP, P119
+   GARCIA C, 1974, S FAO CARP AC AM LAT, P1
+   GOMEZ R, 1985, ARCH LATINOAMERICANO, V35, P423
+   GOMEZBRENES R, 1988, ARCH LATINOAM NUTR, V38, P173
+   JARQUIN R, 1977, TURRIALBA, V27, P179
+   Jarquin R., 1979, COFFEE PULP COMPOSIT, P39
+   LOPEZ E, 1986, NOTICIAS QUIMICAS, V42, P23
+   MINK CJK, 1969, CLIN CHIM ACTA, V24, P183, DOI 10.1016/0009-8981(69)90156-9
+   Morris B., 1973, CHEM ANAL FOODS FOOD
+   Mukhopadhyay N, 1997, AQUAC RES, V28, P683
+   *NRC, 1977, NUTR REQ WARMW FISH
+   OSBORNE DR, 1986, ANAL NUTR ALIMENTOS
+   ROLZ C, 1988, BIOL WASTE, V26, P97, DOI 10.1016/0269-7483(88)90155-3
+   ROLZ C, 1982, PROCESS BIOCHEM, V17, P8
+   ROLZ C, 1982, PROCESS BIOCHEM, V17, P22
+   ROMERO I, 1999, PULPA CAFE ENSILADA, P49
+   SHIAU SY, 1989, J FISH BIOL, V34, P929, DOI 10.1111/j.1095-8649.1989.tb03375.x
+   SLINKARD K, 1977, AM J ENOL VITICULT, V28, P49
+   TACON A, 1990, STANDARD METHODS NUT, V1, P1
+   Tacon A. G. J., 1993, FAO Fisheries Circular
+   Tacon AGJ, 1994, FAO FISH CIRC, V881, P35
+   ULLOA J, 1995, 1 S CENTR CULT TIL, P33
+   ULLOA J, 1997, P 4 INT S TIL AQ, V1, P40
+   Ulloa Rojas Juan B., 1994, Aquaculture and Fisheries Management, V25, P631
+   VELEZ AJ, 1985, ARCH LATINOAM NUTR, V35, P297
+   VITTO V, 1999, PULPA CAFE ENSILADA, P31
+   WEE KL, 1991, ASIAN FISH SOC SPEC, V5, P13
+   Wiseman J., 1983, Animal Feed Science and Technology, V10, P285, DOI 10.1016/0377-8401(84)90024-5
+NR 49
+TC 4
+Z9 4
+U1 0
+U2 1
+PU WILEY
+PI HOBOKEN
+PA 111 RIVER ST, HOBOKEN 07030-5774, NJ USA
+SN 1355-557X
+EI 1365-2109
+J9 AQUAC RES
+JI Aquac. Res.
+PD FEB 28
+PY 2002
+VL 33
+IS 3
+BP 189
+EP 195
+DI 10.1046/j.1365-2109.2002.00655.x
+PG 7
+WC Fisheries
+SC Fisheries
+GA 546LB
+UT WOS:000175274600004
+DA 2020-12-22
+ER
+
+PT J
+AU Pandey, A
+   Soccol, CR
+AF Pandey, A
+   Soccol, CR
+TI Economic utilization of crop residues for value addition: A futuristic
+   approach
+SO JOURNAL OF SCIENTIFIC & INDUSTRIAL RESEARCH
+LA English
+DT Article
+ID SOLID-STATE FERMENTATION; SUGAR-CANE BAGASSE; COFFEE PULP;
+   HEMICELLULOSIC HYDROLYSATE; CANDIDA-GUILLIERMONDII; XYLITOL PRODUCTION;
+   BEET PULP; FUNGI; HYDROLYZATE; SELECTION
+AB The agricultural products (cellulosic and ligno-cellulosic, including soft- and hard-wood) having being produced by the photosynthetic processes, are virtually inexhaustible, and could be converted into highly attractive substrate for bioconversion processes. The structure of ligno-cellulosic material is based on three main components: cellulose, hemicellulose and lignin. These three components offer tremendous biotechnological potential to be used as substrate in bioconversion precesses and can be effectively exploited for the production of bulk chemicals and value-added products. It is pointed out there is an urgent need to develop processes for economic utilization of these residues through the advances in biotechnology. Some major products which could be produced from these sources include ethanol, enzymes (e.g. cellulases (endoglucanases, exo-cellobiohydrolase and beta-glucosidase), ligninases (laccase, Mn-peroxidase and Li-peroxidase), xylanase, pectinase, amylases, alpha- and beta-galactosidases, caffeinase, tannase), food and feed (probiotcis), etc. Some major residues which need special emphasis include sugar cane bagasse, cassava bagasse and coffee pulp. It is mentioned that additional research on the pre-treatment of feedstock is required to improve the components yield and the cellulose digestibility to the level, which would make usage of such residues economically viable. Similarly, although much efforts have been made in the past on the cellulose hydrolysis, its effective conversion into fermentable sugars is an area which needs further inputs in terms of R&D. It is argued that much need be done on the hydrolysis of hemicellulose land soft-wood). An in-depth analysis is presented on the scenario of applications of crops residues in developing countries, particularly in India, with special reference to sugar cane bagasse, cassava bagasse and coffee pulp.
+C1 Fed Univ Prana, Dept Chem Engn, Lab Proc Biotechnol, BR-81531970 Curitiba, Parana, Brazil.
+RP Pandey, A (corresponding author), Fed Univ Prana, Dept Chem Engn, Lab Proc Biotechnol, BR-81531970 Curitiba, Parana, Brazil.
+EM ashok@engquim.ufpr.br
+RI Soccol, Carlos R/F-9048-2013; Pandey, Ashok/B-1567-2009; Soccol, Carlos
+   Ricardo/S-6112-2019; Pandey, Ashok/AAC-6340-2019
+OI Soccol, Carlos Ricardo/0000-0001-7630-6864; Pandey,
+   Ashok/0000-0003-1626-3529
+CR AHRING BK, 1997, P 5 BRAZ S CHEM LIGN, P422
+   Alves LA, 1998, APPL BIOCHEM BIOTECH, V70-2, P89, DOI 10.1007/BF02920126
+   ANTIER P, 1993, ENZYME MICROB TECH, V15, P254, DOI 10.1016/0141-0229(93)90146-S
+   AQUIAHUATL MA, 1988, P SEM SOL STAT FERM, P13
+   ASHOK P, 1998, BRAZ ARCH BIOL TECHN, V41, P379
+   ASHOK P, 1999, BIOTECHNOLOGY FOOD F, V1, P383
+   ASHOK P, IN PRESS BIORESOURCE
+   ASHOK P, 1999, BIOTECHNOL APPL BIOC, V29, P119
+   ASHOK P, 1999, APPL BIOCHEM BIOTECH, V81, P1
+   Ashok Pandey, 1999, Current Science, V77, P149
+   ASPINALL GO, 1980, BIOCH PLANTS COMPREH, V3, P473
+   AZZAM AM, 1992, ENV SCI HLTH B, V24, P421
+   BLECHER R, 1977, H-S Z PHYSIOL CHEM, V358, P807, DOI 10.1515/bchm2.1977.358.2.807
+   BOCCAS F, 1994, J FOOD SCI TECH MYS, V31, P22
+   BRAND D, 1999, P 3 INT SEM BIOT COF, P38
+   Breccia JD, 1997, ACTA BIOTECHNOL, V17, P177, DOI 10.1002/abio.370170208
+   Bressani R, 1979, COFFEE PULP COMPOSIT, P83
+   BUCHERT J, 1990, THESIS TECHNICAL RES
+   Chaudhary L. C., 1994, Indian Journal of Microbiology, V34, P55
+   Dominguez JM, 1996, APPL BIOCHEM BIOTECH, V57-8, P49, DOI 10.1007/BF02941687
+   DURATE MCT, 1997, P 5 BRAZ S CHEM LIGN, P340
+   Fan L. T., 1987, CELLULOSE HYDROLYSIS
+   Felipe MGA, 1996, ACTA BIOTECHNOL, V16, P73, DOI 10.1002/abio.370160112
+   Felipe MGA, 1997, BIOMASS BIOENERG, V13, P11, DOI 10.1016/S0961-9534(97)00032-9
+   GONG CS, 1993, APPL BIOCHEM BIOTECH, V39, P83, DOI 10.1007/BF02918979
+   Iritani S, 1995, PN: GB 2285806, Patent No. 2285806
+   KATO M.doS.A., 1987, INFORME AGROPECUDRIO, V13, P9
+   KURTZMAN RH, 1971, EXPERIENTIA, V27, P481, DOI 10.1007/BF02137327
+   LEIFA F, 1999, P 3 INT C MUSHR BIOL
+   LEIFA F, 1999, 9 EUR C BIOT BRUSS B, P2664
+   LEIFA F, 1999, 3 INT C MUSHR BIOL M
+   LEIFA F, 1999, P 3 INT SEM BIOT COF, P50
+   LEIFA F, 1999, 3 INT SEM BIOT COFF, P49
+   LEIFA F, 1999, 3 INT SEM BIOT COFF, P51
+   Machado C. M. M., 1999, P 3 INT SEM BIOT COF, P39
+   MEIDEIROS ABP, 1999, UNPUB OPTIMIZATION P
+   MILAGRES AMF, 1993, ENZYME MICROB TECH, V15, P248, DOI 10.1016/0141-0229(93)90145-R
+   MOLINA MR, 1974, J AGR FOOD CHEM, V22, P1055, DOI 10.1021/jf60196a035
+   MOOYOUNG M, 1993, BIOTECHNOL ADV, V11, P469, DOI 10.1016/0734-9750(93)90015-F
+   NIGAM P, 1987, J BASIC MICROB, V27, P323, DOI 10.1002/jobm.3620270608
+   NIGAM P, 1987, BIOL WASTE, V20, P1, DOI 10.1016/0269-7483(87)90080-2
+   NIGAM P, 1987, BIOL WASTE, V21, P1
+   NIGAM P, 1995, PROCESS BIOCHEM, V30, P117, DOI 10.1016/0032-9592(95)95709-R
+   NIGAM P, 1986, COOP SUGARS, V17, P539
+   PANDEY A, 1988, BIOTECHNOL LETT, V10, P67, DOI 10.1007/BF01030026
+   PANDEY A, 1988, BIOL WASTE, V26, P71, DOI 10.1016/0269-7483(88)90151-6
+   PANDEY A, 1992, PROCESS BIOCHEM, V27, P109, DOI 10.1016/0032-9592(92)80017-W
+   Pandey A., 1994, SOLID STATE FERMENTA, P3
+   Pessoa A, 1997, J IND MICROBIOL BIOT, V18, P360
+   Puniya A. K., 1996, Indian Journal of Microbiology, V36, P177
+   RAMOS LP, 1997, P 5 BRAZ S CHEM LIGN, P146
+   ROBERTO IC, 1991, BIORESOURCE TECHNOL, V36, P271, DOI 10.1016/0960-8524(91)90234-B
+   ROBERTO IC, 1991, PROCESS BIOCHEM, V26, P15, DOI 10.1016/0032-9592(91)80003-8
+   Rodrigues DCGA, 1998, APPL BIOCHEM BIOTECH, V70-2, P869, DOI 10.1007/BF02920197
+   RODRIGUEZVAZQUEZ R, 1994, BIORESOURCE TECHNOL, V47, P159, DOI 10.1016/0960-8524(94)90115-5
+   ROUSSOS S, 1994, J FOOD SCI TECH MYS, V31, P316
+   ROUSSOS S, 1995, APPL MICROBIOL BIOT, V42, P756, DOI [10.1007/BF00171958, 10.1007/s002530050327]
+   SCHWIMME.S, 1972, J FOOD SCI, V37, P921, DOI 10.1111/j.1365-2621.1972.tb03704.x
+   Sene L, 1998, J BASIC MICROB, V38, P61, DOI 10.1002/(SICI)1521-4028(199803)38:1&lt;61::AID-JOBM61&gt;3.0.CO;2-2
+   Silva SS, 1997, APPL BIOCHEM BIOTECH, V63-5, P557, DOI 10.1007/BF02920453
+   SOARES M, 1999, P 3 INT SEM BIOT COF, P40
+   SOARES M, 1999, P 3 INT SEM BIOT COF, P52
+   Soccol C. R., 1995, FRANCA FLASH AGR, V4, P3
+   Soccol CR, 1996, J SCI IND RES INDIA, V55, P358
+   Tengerdy R., 1998, ADV BIOTECHNOL, P13
+   TEUNISSEN MJ, 1993, APPL BIOCHEM BIOTECH, V39, P177, DOI 10.1007/BF02918988
+   UDAYASANKAR K, 1986, J FOOD SCI TECH MYS, V23, P326
+   VANDENBERGHE LPS, 1999, IN PRESS BIORESOURCE
+   VanWalsum GP, 1996, APPL BIOCHEM BIOTECH, V57-8, P157, DOI 10.1007/BF02941696
+   VIIKARI L, 1991, ACS SYM SER, V460, P12
+   WOICIECHOWSKI AL, IN PRESS PROCESS BIO
+   WOICIECHOWSKI AL, 1999, 3 INT SEM BIOT COFF, P54
+   WOOLFOLK CA, 1975, J BACTERIOL, V123, P1088, DOI 10.1128/JB.123.3.1088-1106.1975
+NR 73
+TC 54
+Z9 58
+U1 3
+U2 18
+PU NATL INST SCIENCE COMMUNICATION-NISCAIR
+PI NEW DELHI
+PA DR K S KRISHNAN MARG, PUSA CAMPUS, NEW DELHI 110 012, INDIA
+SN 0022-4456
+EI 0975-1084
+J9 J SCI IND RES INDIA
+JI J. Sci. Ind. Res.
+PD JAN
+PY 2000
+VL 59
+IS 1
+BP 12
+EP 22
+PG 11
+WC Engineering, Multidisciplinary
+SC Engineering
+GA 273NV
+UT WOS:000084714500002
+OA DOAJ Gold
+DA 2020-12-22
+ER
+
+PT J
+AU BautistaPerez, F
+   Rodriguez, RD
+AF BautistaPerez, F
+   Rodriguez, RD
+TI Population dynamics of Myrothecium roridum Tode ex Fr and Rhizoctonia
+   solani Kuhn in commercial coffee nurseries
+SO JOURNAL OF AGRICULTURE OF THE UNIVERSITY OF PUERTO RICO
+LA Spanish
+DT Article
+DE coffee; canker disease; Myrothecium roridum; Rhizoctonia solani; root
+   rot
+AB Sources of inoculum and population dynamics of Myrothecium roridum and Rhizoctonia solani, causal organisms of cankers and root rot in nursery coffee plants, were studied. Six commercial nurseries were selected on the basis of presence of disease, and samples were taken every eight weeks. Correlated with disease incidence were variables such as density of propagules for both pathogens in soil of diseased plants, apparently healthy plants, and chlorotic plants; in fumigated and non fumigated soil; in organic matter used for the mixture; and in sand from the seedbed. Density of propagules of M. roridum was estimated on the basis of the colony-forming units (CFU); that of R. solani, on the basis of percentage of colonized sugarbeet seeds. Neither of the pathogens was detected in the coffee pulp. Higher density of propagules was obtained in the soil at 5-cm depth. The highly correlated density of M. roridum with disease incidence per season and nursery indicated its primary role in coffee stem cankers in the nurseries. The presence of M. roridum in the sand of asymptomatic seedlings and the high correlation with its density in soil of plants in the nursery suggests that seedlings are the primary source of inoculum for canker disease of plants in the nursery.
+CR BARNETT HL, 1987, ILLUSGRATED GEN IMPE
+   CHASE AR, 1984, PLANT DIS, V68, P488, DOI 10.1094/PD-69-488
+   Domsch KH, 1980, COMPENDIUM SOIL FUNG, V1
+   French E.R., 1980, METODOS INVESTIGACIO
+   GILGAGGIOLI SL, 1991, MANUAL CAFICULTOR, P91
+   HERNANDEZPAZ A, 1975, REV CAFETALARA, P23
+   PAPAVIZAS GC, 1975, PHYTOPATHOLOGY, V65, P871, DOI 10.1094/Phyto-65-871
+   Rodriguez RD, 1996, J AGR U PUERTO RICO, V80, P135
+   SCHIEBER E, 1963, PHYTOPATHOLOGY, V53, P25
+   SCHIEBER E, 1973, INFORME ALGUNOS ESTU
+   SINGH R S, 1986, Journal of Research Punjab Agricultural University, V23, P265
+   SRIVASTAVA MP, 1985, NATL ACAD SCI LETT, V8, P3
+   STEEL RG, 1988, BIOESTADISTICA PRINC
+   Tripathi R. K., 1986, Farm Science Journal, V1, P90
+   Tripathi R. K., 1986, Indian Journal of Plant Pathology, V4, P204
+NR 15
+TC 1
+Z9 1
+U1 0
+U2 1
+PU COLL AGRICULTURAL SCI, AGRICULTURAL EXPERIMENT STN
+PI RIO PIEDRAS
+PA  UNIV PUERTO RICO, MAYAGUEZ CAMPUS, RIO PIEDRAS, PR 00928
+SN 0041-994X
+J9 J AGR U PUERTO RICO
+JI J. Agric. Univ. P. R.
+PD JUL
+PY 1996
+VL 80
+IS 3
+BP 145
+EP 156
+PG 12
+WC Agriculture, Multidisciplinary
+SC Agriculture
+GA WX292
+UT WOS:A1996WX29200006
+DA 2020-12-22
+ER
+
+PT J
+AU FRICKER, C
+   HARDY, JK
+AF FRICKER, C
+   HARDY, JK
+TI CHARACTERIZATION OF COMMERCIALLY AVAILABLE COFFEE FILTER PAPERS
+SO JOURNAL OF ENVIRONMENTAL SCIENCE AND HEALTH PART A-ENVIRONMENTAL SCIENCE
+   AND ENGINEERING & TOXIC AND HAZARDOUS SUBSTANCE CONTROL
+LA English
+DT Article
+ID SOFTWOOD KRAFT PULP; SPENT LIQUORS
+AB Commercially available coffee filter papers were evaluated for extractable materials to determine differences between chlorine bleached, peroxide beached and unbleached products.  Organic species were determined by initial Sohxlet extraction followed by GC/MS analysis for semi-volatile organics, dibenzofurans and dioxins.  Inorganic species were initially extracted with heated water.  Representative inorganics were determined either by atomic absorbtion spectroscopy or ion selective electrodes as the method of analysis.
+   No direct relationship between bleaching method and the presence of halogenated materials in the final filter product was observed.  Only in one cases was a single dioxin isomer detected.  Three semi-volatile species not consistent with natural products were detected in any of the filter papers.  Both a chlorine bleached and unbleached paper were found to contained a single brominated species whereas tributyl phosphate, a plasticizer for cellulose esters and plastics was found in a single oxygen bleached paper.
+C1 UNIV AKRON,CTR ENVIRONM STUDIES,AKRON,OH 44325.
+RP FRICKER, C (corresponding author), UNIV AKRON,DEPT CHEM,AKRON,OH 44325, USA.
+CR AMENDOLA G, 1989, CHEMOSPHERE, V18, P1
+   AMENDOLA GA, 1989, TAPPI J          DEC, P189
+   DOONER R, 1990, COMMUNICATION
+   GERGOV M, 1988, TAPPI J, V71, P175
+   KEENAN RE, 1989, ENVIRON SCI TECHNOL, V23, P643, DOI 10.1021/es00064a601
+   KRINGSTAD KP, 1984, ENVIRON SCI TECHNOL, V18, pA236, DOI 10.1021/es00126a714
+   LINDSTROM K, 1986, ENVIRON SCI TECHNOL, V20, P133, DOI 10.1021/es00144a003
+   MCKAGUE AB, 1988, ENVIRON SCI TECHNOL, V22, P523, DOI 10.1021/es00170a006
+   SELTZER R, 1988, CHEM ENG NEWS   0111
+   STINSON S, 1989, CHEM ENG NEWS   0724
+   SWANSON S, 1987, 1987 C CHLOR DIOX RE
+   WATTS S, 1989, NEW SCI         0427
+   1989, LEAF RIVER DIOXIN UP
+   1988, EPA440188025
+NR 14
+TC 1
+Z9 1
+U1 0
+U2 2
+PU MARCEL DEKKER INC
+PI NEW YORK
+PA 270 MADISON AVE, NEW YORK, NY 10016
+SN 1077-1204
+J9 J ENVIRON SCI HEAL A
+JI J. Environ. Sci. Health Part A-Environ. Sci. Eng. Toxic Hazard. Subst.
+   Control
+PY 1990
+VL 25
+IS 8
+BP 927
+EP 936
+DI 10.1080/10934529009375609
+PG 10
+WC Engineering, Environmental; Environmental Sciences
+SC Engineering; Environmental Sciences & Ecology
+GA FA781
+UT WOS:A1990FA78100004
+DA 2020-12-22
+ER
+
+PT J
+AU ABATE, A
+   PFEFFER, E
+AF ABATE, A
+   PFEFFER, E
+TI CHANGES IN NUTRIENT INTAKE AND PERFORMANCE BY GOATS FED COFFEE
+   PULP-BASED DIETS FOLLOWED BY A COMMERCIAL CONCENTRATE
+SO ANIMAL FEED SCIENCE AND TECHNOLOGY
+LA English
+DT Article
+C1 UNIV BONN,INST ANIM NUTR,D-5300 BONN,FED REP GER.
+RP ABATE, A (corresponding author), UNIV JUBA,DEPT ANIM SCI,JUBA,SUDAN.
+CR ABATE A, 1984, THESIS U BONN
+   [Anonymous], 1980, OFFICIAL METHODS ANA
+   Braham J E, 1973, Arch Latinoam Nutr, V23, P379
+   Braham J. E., 1979, COFFEE PULP COMPOSIT
+   Cabezas M. T., 1977, First International Symposium: feed composition, animal nutrient requirements, and computerization of diets, P112
+   CABEZAS MT, 1974, TURRIALBA, V24, P160
+   CAMPBELL TW, 1976, J DAIRY SCI, V59, P1452, DOI 10.3168/jds.S0022-0302(76)84384-6
+   Elias LG, 1979, COFFEE PULP COMPOSIT, P11
+   LEDGER H P, 1972, East African Agricultural and Forestry Journal, V37, P234
+   LEROY F, 1967, 1966 P INT C NUTR HA, P113
+   LINDAHL IL, 1974, DIGESTIVE PHYSL NUTR, V3, P261
+   MASON JF, 1979, FOOD ENG INT, V4, P35
+   MENKE KH, 1979, J AGR SCI, V93, P217, DOI 10.1017/S0021859600086305
+   MOLINA MR, 1974, J AGR FOOD CHEM, V22, P1055, DOI 10.1021/jf60196a035
+   NIESS E, 1981, WISS UMWELT, V3, P196
+   Oyenuga V. A., 1977, First International Symposium: feed composition, animal nutrient requirements, and computerization of diets, P505
+   ROGERSON A., 1955, East African Agricultural Journal, V20, P254
+   THERIEZ M, 1982, LIVEST PROD SCI, V9, P471, DOI 10.1016/0301-6226(82)90052-5
+   VANSOEST PJ, 1963, J ASSOC OFF AGR CHEM, V46, P829
+   WILSON P. N., 1958, Journal of Agricultural Science, V50, P198, DOI 10.1017/S002185960003104X
+   WILSON R T, 1978, East African Agricultural and Forestry Journal, V43, P193
+   WILSON RT, 1981, ILCA24 INT LIV CENT
+   1981, NUTRIENT REQUIREMENT
+NR 23
+TC 7
+Z9 7
+U1 0
+U2 0
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0377-8401
+J9 ANIM FEED SCI TECH
+JI Anim. Feed Sci. Technol.
+PD MAR
+PY 1986
+VL 14
+IS 1-2
+BP 1
+EP 10
+DI 10.1016/0377-8401(86)90002-7
+PG 10
+WC Agriculture, Dairy & Animal Science
+SC Agriculture
+GA C1138
+UT WOS:A1986C113800001
+DA 2020-12-22
+ER
+
+PT J
+AU JARQUIN, R
+   GONZALEZ, JM
+   BRAHAM, JE
+   BRESSANI, R
+AF JARQUIN, R
+   GONZALEZ, JM
+   BRAHAM, JE
+   BRESSANI, R
+TI COFFEE PULP AND COFFEE HULLS .2. UTILIZATION OF COFFEE PULP AS FEED FOR
+   RUMINANTS
+SO TURRIALBA
+LA Spanish
+DT Article
+C1 INST NUTR CENTR AMER & PANAMA,DIV CIENC AGRI & ALIMENTOS,GUATEMALA CITY,GUATEMALA.
+CR ABELL LL, 1952, J BIOL CHEM, V195, P357
+   Altman PL, 1961, BLOOD OTHER BODY FLU
+   [Anonymous], 1960, OFFICIAL METHODS ANA
+   BOLANOS JR, 1953, CAFE EL SALVADOR, V23, P258
+   BOLANOS JR, 1953, CAFE EL SALVADOR, V23, P217
+   BRESSANI R, 1972, TURRIALBA, V22, P299
+   BRESSANI R, IN PRESS
+   BRESSANI RICARDO, 1962, ARCH VENEZOLANOS NUTRICION, V12, P93
+   CANNAN RK, 1958, CLIN CHEM, V4, P246
+   CHEN PS, 1956, ANAL CHEM, V28, P1756, DOI 10.1021/ac60119a033
+   CHOUSSY F, 1944, ANALES I TECHNOLOGIC, V1, P265
+   ECHAVARRIA G, 1947, REV CAFETERA COLOMBI, V8, P3310
+   HAWK PB, 1954, PRACTICAL PHYSIOLOGI
+   Hoffman WS, 1937, J BIOL CHEM, V120, P51
+   KOCH FC, 1953, PRACTICAL METHODS BI
+   MADDEN DE, 1948, THESIS INTER AM I AG
+   MARSH WH, 1965, CLIN CHEM, V11, P624
+   MATSUZAK.F, 1965, FED PROC, V24, P342
+   SQUIB RL, 1945, HACIENDA, V40, P438
+   Work Samuel H., 1946, CAFE EL SALVADOR, V16, P773
+   1947, AGRICULTURE AM, V7, P157
+   1947, CONSEJO INTERAMERICA
+   1948, PLANTERS CHRONICLE, V43, P219
+   1947, CAFE EL SALVADOR, V17, P1157
+NR 24
+TC 12
+Z9 12
+U1 0
+U2 1
+PU INTER-AMER INST COOPERAT AGRIC
+PI SAN JOSE
+PA PO BOX 55 2200 CORONADO, SAN JOSE, COSTA RICA
+SN 0041-4360
+J9 TURRIALBA
+PY 1973
+VL 23
+IS 1
+BP 41
+EP 47
+PG 7
+WC Agronomy
+SC Agriculture
+GA P5990
+UT WOS:A1973P599000005
+DA 2020-12-22
+ER
+
+EF

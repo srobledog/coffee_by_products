@@ -1,0 +1,1101 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+# Creating the environment
+
+```{r}
+library(tidyverse)
+library(revtools)
+library(ggpubr) 
+library(gt)
+library(dplyr)
+library(formattable)
+library(readxl)
+library(bibliometrix)
+library(tosr)
+```
+
+
+# Data Getting
+
+## 1. Mendeley data
+
+### Spent Coffe Grounds
+
+```{r}
+spent_mendeley <- 
+  revtools::read_bibliography("data/spent_coffee_grounds_79.bib") %>% 
+  select(label, 
+         doi, 
+         mendeley_tags,
+         title, 
+         year) %>% 
+  mutate(byproduct = "spent_coffee_grounds")
+dim(spent_mendeley)
+```
+
+### Silverskin
+
+```{r}
+silverskin_mendelely <- 
+  revtools::read_bibliography("data/coffee_silverskin_35.bib") %>% 
+  select(label, 
+         doi, 
+         mendeley_tags,
+         title, 
+         year) %>% 
+  mutate(byproduct = "silverskin")
+dim(silverskin_mendelely)
+```
+### Pulp
+
+```{r}
+pulp_mendeley <- 
+  revtools::read_bibliography("data/coffee_pulp_36.bib") %>% 
+  select(label, 
+         doi, 
+         mendeley_tags,
+         title, 
+         year) %>% 
+  mutate(byproduct = "pulp")
+dim(pulp_mendeley)
+```
+### Husk
+
+```{r}
+husk_mendeley <- 
+  revtools::read_bibliography("data/coffee_husk_25.bib") %>% 
+  select(label, 
+         doi, 
+         mendeley_tags,
+         title, 
+         year) %>% 
+  mutate(byproduct = "husk")
+dim(husk_mendeley)
+```
+
+Merging datasets
+
+```{r}
+mendeley_byproducts <- 
+  bind_rows(husk_mendeley, 
+            pulp_mendeley,
+            silverskin_mendelely,
+            spent_mendeley) %>% 
+  mutate(mendeley_tags = str_to_lower(mendeley_tags))
+
+rm(husk_mendeley,
+   pulp_mendeley,
+   silverskin_mendelely,
+   spent_mendeley)
+
+dim(mendeley_byproducts)
+```
+
+## 2. Tags 
+
+```{r}
+tags <-
+  read.csv("data/unique_tags.csv", 
+                  stringsAsFactors = FALSE) %>% 
+  rename(tag = "code") %>% 
+  unique() %>% 
+  mutate(category = str_to_lower(category),
+         tag = str_to_lower(tag))
+
+categories <- 
+  tags %>% 
+  select(category) %>% 
+  unique
+```
+
+## 3. Scopus & WoS
+
+### Scopus
+
+```{r}
+husk_scopus <- 
+  bibliometrix::convert2df("data/raw data/Coffee Husk Scopus 21.bib", 
+                           dbsource = "scopus", 
+                           format = "bibtex")
+
+pulp_scopus <- 
+  bibliometrix::convert2df("data/raw data/Coffee Pulp Scopus 33.bib", 
+                           dbsource = "scopus", 
+                           format = "bibtex")
+
+silverskin_scopus <- 
+  bibliometrix::convert2df("data/raw data/Coffee Silverskin Scopus 34.bib", 
+                           dbsource = "scopus", 
+                           format = "bibtex")
+
+spent_scopus <- 
+  bibliometrix::convert2df("data/raw data/Spent coffee grounds Scopus 47.bib", 
+                           dbsource = "scopus", 
+                           format = "bibtex")
+
+byproducts_raw_scopus <- 
+  bind_rows(husk_scopus,
+            pulp_scopus,
+            silverskin_scopus,
+            spent_scopus) %>% 
+  unique()
+
+dim(byproducts_raw_scopus)
+
+rm(husk_scopus,
+   pulp_scopus,
+   silverskin_scopus,
+   spent_scopus)
+```
+
+### WoS
+
+```{r}
+husk_wos <- 
+  bibliometrix::convert2df("data/raw data wos/Coffe Husk WOS 29.txt", 
+                           dbsource = "wos", 
+                           format = "plaintext")
+
+pulp_wos <- 
+  bibliometrix::convert2df("data/raw data wos/Coffee Pulp WOS 26.txt", 
+                           dbsource = "wos", 
+                           format = "plaintext")
+
+silverskin_wos <- 
+  bibliometrix::convert2df("data/raw data wos/Coffee Silverskin WOS 26.txt", 
+                           dbsource = "wos", 
+                           format = "plaintext")
+
+spent_wos <- 
+  bibliometrix::convert2df("data/raw data wos/Spent coffee grounds WOS 57.txt", 
+                           dbsource = "wos", 
+                           format = "plaintext")
+
+byproducts_raw_wos <- 
+  bind_rows(husk_wos,
+            pulp_wos,
+            silverskin_wos,
+            spent_scopus) %>% 
+  unique()
+
+dim(byproducts_raw_wos)
+
+rm(husk_wos,
+   pulp_wos,
+   silverskin_wos,
+   spent_wos)
+```
+
+Merging both datasets...
+
+```{r}
+byproducts_raw_scopus_wos <- 
+  bibliometrix::mergeDbSources(byproducts_raw_scopus, 
+                               byproducts_raw_wos, 
+                               remove.duplicated = TRUE)
+```
+
+
+# Data tidying 
+
+## Adding missing values
+
+## Checking NAs
+
+```{r}
+mendeley_byproducts %>% 
+  map_df(~sum(is.na(.)))
+```
+
+I will remove "N/A"s tags
+
+```{r}
+mendeley_byproducts_no_nas <- 
+  mendeley_byproducts %>% 
+  filter(!str_detect(string = mendeley_tags, 
+                     pattern = "n/a"))
+dim(mendeley_byproducts_no_nas)
+```
+
+Other option to write the paper
+
+```{r}
+mendeley_byproducts_no_nas_other <- 
+  mendeley_byproducts %>% 
+  filter(!str_detect(string = mendeley_tags, 
+                     pattern = "n/a"),
+         !str_detect(string = mendeley_tags, 
+                    pattern = "na"),
+         !str_detect(string = mendeley_tags, 
+                    pattern = "review"))
+
+dim(mendeley_byproducts_no_nas_other)
+```
+
+
+Now, we need to remove papers with the tag "Review" and "na"
+
+```{r}
+mendeley_byproducts_no_nas_reviews <- 
+  mendeley_byproducts_no_nas %>% 
+  filter(!str_detect(string = mendeley_tags, 
+                    pattern = "review"), 
+         !str_detect(string = mendeley_tags, 
+                    pattern = "na"))
+
+dim(mendeley_byproducts_no_nas_reviews)
+```
+
+Are there duplicate papers?
+
+```{r}
+mendeley_byproducts_no_nas_reviews %>% 
+  select(label) %>% 
+  count(label, sort = TRUE) %>% 
+  filter(n > 1) %>% 
+  summarise(papers = length(label),
+            duplicates = sum(n))
+```
+
+We can not remove them now because it has different tags. It's better to 
+remove duplicates with same tags. Maybe this is because there are papers in
+with several by-products. What do we need? unique papers? or several byproducts?
+maybe unique papers is more accurate, so we can merge by-products by paper. 
+
+```{r}
+mendeley_byproducts_unique <- 
+  mendeley_byproducts_no_nas_reviews %>% 
+  group_by(label, doi, mendeley_tags, title, year) %>% 
+  mutate(byproduct = paste0(byproduct, collapse = ", ")) %>% 
+  unique()
+
+dim(mendeley_byproducts_unique)
+```
+
+We need to create a dataset with individual tags
+
+```{r}
+mendeley_tags <- 
+  mendeley_byproducts_unique %>% 
+  mutate(tag = str_split(mendeley_tags, ",")) %>% 
+  unnest(tag)
+
+dim(mendeley_tags)
+```
+Tags per paper
+
+```{r}
+mendeley_tags %>% 
+  select(label, tag) %>% 
+  group_by(label, tag) %>% 
+  count(tag, sort = TRUE) 
+```
+
+There are no duplicates 
+
+## Removing categories from tags
+
+We found some tags that are not in the category table. So, we need it to 
+delete them but I will ask Natalia and Daniel first. 
+
+This is the list:
+
+bioenergy
+butanol
+caffeine
+coffee silverskin
+food and feed
+gasification
+heat
+odorants
+phenolic compounds
+phenols
+polyphenols
+pyrolysis
+antimicrobial
+antioxidant activity
+bakery products
+
+```{r}
+not_founded_list <- 
+  paste(c("bioenergy",
+          "butanol",
+          "caffeine",
+          "coffee silverskin",
+          "food and feed",
+          "gasification",
+          "heat",
+          "odorants",
+          "phenolic compounds",
+          "phenols",
+          "polyphenols",
+          "pyrolysis",
+          "antimicrobial",
+          "antioxidant activity",
+          "bakery products"), 
+        collapse = '|')
+
+mendeley_tags_cleaned <- 
+  mendeley_tags %>%
+  filter(!str_detect(tag, not_founded_list))
+
+dim(mendeley_tags_cleaned)
+```
+
+First, we need to remove category names from tags. 
+
+```{r}
+remove_list <- 
+  paste(c("bioactive compounds", 
+          "microbial transformation", 
+          "environmental applications", 
+          "biofuels",
+          "others"), 
+        collapse = '|')
+
+mendeley_tags_no_cate <- 
+  mendeley_tags_cleaned %>% 
+  filter(!str_detect(tag, remove_list))
+
+mendeley_tags_no_cate <-  # materials and construction materials have the same word in rows. 
+  mendeley_tags_no_cate %>% # we need to split the query. 
+  filter(!str_detect(tag, "^materials"))
+
+dim(mendeley_tags_no_cate)
+```
+
+Now, we need to add a new column called category based on the tags
+
+```{r}
+mendeley_tags_cate <- 
+  mendeley_tags_no_cate %>% 
+  left_join(tags)
+
+dim(mendeley_tags_cate)  
+```
+
+How many articles do we have now?
+
+```{r}
+dummy_title_83 <- 
+  mendeley_tags_cate %>% 
+  ungroup() %>% 
+  select(title) %>% 
+  group_by(title) %>% 
+  count(title) %>% 
+  arrange(title) %>% 
+  select(-n)
+
+dim(dummy_title_83)
+```
+
+We removed 17 papers!!!
+
+Analysing the number of NAs in DOIS
+
+```{r}
+mendeley_tags_cate %>% 
+  map_df(~sum(is.na(.)))
+```
+
+Let's manually assing identifiers to na dois
+
+Which are the papers with na?
+
+```{r}
+dois_nas <- 
+  mendeley_tags_cate %>% 
+  filter(is.na(doi)) %>% 
+  ungroup() %>% 
+  select(label) %>% 
+  unique()
+```
+
+```{r}
+mendeley_tags_cate$doi <- 
+  ifelse(mendeley_tags_cate$label == dois_nas$label[1], 1, 
+         ifelse(mendeley_tags_cate$label == dois_nas$label[2], 2,
+                ifelse(mendeley_tags_cate$label == dois_nas$label[3], 3,
+                       ifelse(mendeley_tags_cate$label == dois_nas$label[4], 4,
+                              ifelse(mendeley_tags_cate$label == dois_nas$label[5], 5,
+                                     ifelse(mendeley_tags_cate$label == dois_nas$label[6], 6,
+                                            ifelse(mendeley_tags_cate$label == dois_nas$label[7], 7,
+                                                   ifelse(mendeley_tags_cate$label == dois_nas$label[8], 8, mendeley_tags_cate$doi))))))))
+```
+
+Added manually in excel
+
+Scopus
+
+```{r}
+byproducts_raw_scopus_modified <- 
+  read_csv("output/byproducts_raw_scopus_modified.csv")
+```
+
+WoS in this case we only need one record...
+
+I couldn't find this paper
+
+"Isolation and identification of lactic acid bacteria from mature coffee cheries: Potential application in coffee husk ensiling"
+
+it was weird...
+
+
+We need to merge both datasets 
+
+```{r}
+mendeley_tags_cate_all <- 
+  mendeley_tags_cate %>%
+  left_join(byproducts_raw_scopus_modified %>%
+              select(DI,AU, CR, SO), 
+            by = c("doi" = "DI")) 
+dim(mendeley_tags_cate_all)
+```
+
+NAs?
+
+```{r}
+mendeley_tags_cate_all %>% 
+  purrr::map_df(~sum(is.na(.)))
+```
+
+There are 32 missing values...
+
+```{r}
+mendeley_tags_cate$doi[is.na(mendeley_tags_cate$doi)] <- 1:10
+```
+
+
+One option is with the title
+
+```{r}
+byproducts_raw_scopus %>% 
+  mutate(TI = str_to_lower(TI)) %>% 
+filter(TI == "residual biomass gasification on a small scale and its thermal utilization for coffee drying") %>%
+  select(DI, JI, AU)
+```
+
+Yes!!!! let's merge them by title
+
+```{r}
+dummy <- 
+  mendeley_tags_cate %>%
+  mutate(title = str_to_lower(title)) %>% 
+  left_join(byproducts_raw_scopus %>% 
+              mutate(TI = str_to_lower(TI)) %>% 
+              select(TI, AU, CR, SO), 
+            by = c("title" = "TI")) 
+dim(dummy)
+```
+
+```{r}
+dummy %>% 
+  purrr::map_df(~sum(is.na(.)))
+```
+
+
+let's try to find all the titles with doi NA. 
+
+```{r}
+mendeley_tags_cate %>% 
+  filter(is.na(doi))
+```
+
+Let's try by doi 
+
+```{r}
+dummy_1 <- 
+  dummy %>%
+  left_join(byproducts_raw_scopus %>% 
+              select(TI, AU, CR, SO), 
+            by = c("title" = "TI")) 
+dim(dummy)
+```
+
+Naahh is complicated
+
+# Descriptive Analysis
+
+Annual production (Figure X )
+
+```{r}
+mendeley_byproducts_plot <- 
+  mendeley_byproducts %>% 
+  select(year) %>% 
+  count(year, sort = TRUE) %>% 
+  ggplot(aes(x = year, y = n, group = 1)) +
+  geom_point() +
+  geom_line() +
+  ylab("papers") +
+  ggtitle("Scientific annual production")
+
+mendeley_byproducts_plot
+```
+
+Scientific production by coffee by-product
+
+Coffee husk 
+
+```{r}
+husk_year <- 
+  mendeley_byproducts %>% 
+  filter(byproduct == "Husk") %>% 
+  select(year) %>% 
+  count(year) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+ # We need to create a range sequence of years
+
+husk_range_year <- 
+  range(husk_year$year)  
+  
+husk_years <- 
+  husk_range_year[1]:husk_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to husk dataset
+
+husk_year_all <-
+  husk_years %>% 
+  left_join(husk_year) %>% 
+  replace_na(list(papers = 0)) 
+
+husk_year_all_plot <- 
+  husk_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() + 
+  geom_line() +
+  ggtitle("Annual husk scientific production")
+
+husk_year_all_plot
+```
+
+Coffee pulp 
+
+```{r}
+pulp_year <- 
+  mendeley_byproducts %>% 
+  filter(byproduct == "Pulp") %>% 
+  select(year) %>% 
+  count(year) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+ # We need to create a range sequence of years
+
+pulp_range_year <- 
+  range(pulp_year$year)  
+  
+pulp_years <- 
+  pulp_range_year[1]:pulp_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to pulp dataset
+
+pulp_year_all <-
+  pulp_years %>% 
+  left_join(pulp_year) %>% 
+  replace_na(list(papers = 0)) 
+
+pulp_year_all_plot <- 
+  pulp_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() + 
+  geom_line() +
+  ggtitle("Annual pulp scientific production")
+
+pulp_year_all_plot
+```
+
+Coffee silverskin 
+
+```{r}
+silverskin_year <- 
+  mendeley_byproducts %>% 
+  filter(byproduct == "Silverskin") %>% 
+  select(year) %>% 
+  count(year) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+ # We need to create a range sequence of years
+
+silverskin_range_year <- 
+  range(silverskin_year$year)  
+  
+silverskin_years <- 
+  silverskin_range_year[1]:silverskin_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to silverskin dataset
+
+silverskin_year_all <-
+  silverskin_years %>% 
+  left_join(silverskin_year) %>% 
+  replace_na(list(papers = 0)) 
+
+silverskin_year_all_plot <- 
+  silverskin_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() + 
+  geom_line() +
+  ggtitle("Annual silverskin scientific production")
+
+silverskin_year_all_plot
+```
+
+Coffee Spent_coffee 
+
+```{r}
+Spent_coffee_year <- 
+  mendeley_byproducts %>% 
+  filter(byproduct == "Spent_coffee grounds") %>% 
+  select(year) %>% 
+  count(year) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+ # We need to create a range sequence of years
+
+Spent_coffee_range_year <- 
+  range(Spent_coffee_year$year)  
+  
+Spent_coffee_years <- 
+  Spent_coffee_range_year[1]:Spent_coffee_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to Spent_coffee dataset
+
+Spent_coffee_year_all <-
+  Spent_coffee_years %>% 
+  left_join(Spent_coffee_year) %>% 
+  replace_na(list(papers = 0)) 
+
+Spent_coffee_year_all_plot <- 
+  Spent_coffee_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() + 
+  geom_line() +
+  ggtitle("Annual Spent_coffee scientific production")
+
+Spent_coffee_year_all_plot
+```
+
+## Annual scientific production
+
+```{r}
+global_scientific_production <- 
+  ggarrange(mendeley_byproducts_plot,
+        ggarrange(husk_year_all_plot, pulp_year_all_plot, 
+                  ncol = 2, labels = c("b", "d"), 
+                  align = "h",widths = c(1.5,2)), 
+        ggarrange(silverskin_year_all_plot, Spent_coffee_year_all_plot,
+                  ncol = 2, labels = c("c", "e"), 
+                  align = "h",widths = c(1.5,2)), 
+      nrow = 3, 
+      heights = c(1.5, 1, 1),
+      labels = "a" 
+      ) 
+
+global_scientific_production
+```
+
+## Data tag analysis
+
+
+There are one paper with 44 tags!
+
+ups...what is it?
+
+What about the tags?
+
+Unnesting the tags
+
+```{r}
+mendeley_tags <- 
+  mendeley_byproducts %>% 
+  mutate(tag = str_split(mendeley_tags, ",")) %>% 
+  #select(tag) %>% 
+  unnest(tag)
+```
+
+Counting and visualizing tags
+
+```{r}
+mendeley_tags_unique %>% 
+  count(tag) %>% 
+  mutate(tag = forcats::fct_reorder(tag, n)) %>% 
+  ggplot(aes(x = tag, y = n)) +
+  geom_col() +
+  coord_flip() 
+```
+## Tags timeline
+
+```{r}
+mendeley_tags_year_husk  <- 
+  mendeley_tag_unique_no_cate %>% 
+  filter(byproduct == "Husk") %>% 
+  group_by(year,tag) %>% 
+  count(tag, sort = TRUE)
+
+mendeley_tags_year_husk_plot <- 
+  mendeley_tags_year_husk %>% 
+  arrange(year,tag) %>% 
+  mutate(tag = factor(tag)) %>% 
+  ggplot(aes(y = tag, x = year, size = n, color= tag)) +
+  geom_point(alpha = 1) +
+  scale_size(name="Papers") +
+  xlab("Byproducts Applications") +
+  ggtitle("Husk applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 0,vjust = 0),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 0,hjust = 1)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
+
+mendeley_tags_year_husk_plot
+```
+
+Pulp
+
+```{r}
+mendeley_tags_year_pulp  <- 
+  mendeley_tag_unique %>% 
+  filter(byproduct == "Pulp") %>% 
+  group_by(year,tag) %>% 
+  count(tag, sort = TRUE)
+
+mendeley_tags_year_pulp_plot <- 
+  mendeley_tags_year_pulp %>% 
+  arrange(year,tag) %>% 
+  mutate(tag = factor(tag)) %>% 
+  ggplot(aes(x = tag, y = year, size = n, color= tag)) +
+  geom_point(alpha = 1) +
+  scale_size(name="Papers") +
+  xlab("Byproducts Applications") +
+  ggtitle("Pulp applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 45,vjust = 0.5),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 45,hjust = 0)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
+
+mendeley_tags_year_pulp_plot
+```
+
+silverskin
+
+```{r}
+mendeley_tags_year_silverskin   <- 
+  mendeley_tag_unique %>% 
+  filter(byproduct == "Silverskin") %>% 
+  group_by(year,tag) %>% 
+  count(tag, sort = TRUE)
+
+mendeley_tags_year_silverskin_plot <- 
+  mendeley_tags_year_silverskin %>% 
+  arrange(year,tag) %>% 
+  mutate(tag = factor(tag)) %>% 
+  ggplot(aes(x = tag, y = year, size = n, color= tag)) +
+  geom_point(alpha = 1) +
+  scale_size(name="Papers") +
+  xlab("Byproducts Applications") +
+  ggtitle("Silverskin applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 45,vjust = 0.5),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 45,hjust = 0)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
+
+mendeley_tags_year_silverskin_plot
+```
+
+
+
+```{r}
+mendeley_tags_year_spent   <- 
+  mendeley_tag_unique %>% 
+  filter(byproduct == "Spent_coffee grounds") %>% 
+  group_by(year,tag) %>% 
+  count(tag, sort = TRUE)
+
+mendeley_tags_year_spent_plot <- 
+  mendeley_tags_year_spent %>% 
+  arrange(year,tag) %>% 
+  mutate(tag = factor(tag)) %>% 
+  ggplot(aes(x = tag, y = year, size = n, color= tag)) +
+  geom_point(alpha = 1) +
+  scale_size(name="Papers") +
+  xlab("Byproducts Applications") +
+  ggtitle("Spent applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 90,vjust = 0.5),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 90,hjust = 0)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
+
+mendeley_tags_year_spent_plot
+```
+
+Merging all plots 
+
+```{r}
+mendeley_tags_year_plot <- 
+  ggarrange(
+        ggarrange(mendeley_tags_year_husk_plot, mendeley_tags_year_pulp_plot, 
+                  ncol = 2, labels = c("b", "d"), 
+                  align = "h",widths = c(1.5,2)), 
+        ggarrange(mendeley_tags_year_silverskin_plot, mendeley_tags_year_spent_plot,
+                  ncol = 2, labels = c("c", "e"), 
+                  align = "h",widths = c(1.5,2)), 
+      nrow = 2, 
+      heights = c(2, 2),
+      labels = "a" 
+      ) 
+mendeley_tags_year_plot
+```
+
+
+
+# Others
+
+There are some duplicates values in the network, this chuck remove them. 
+
+```{r}
+edge_list <- 
+  as_tibble(get.edgelist(byproducts_scopus_wos_tos$graph)) %>% 
+  mutate(V2 = str_trim(V2)) %>% 
+  unique()
+
+# We need to create the graph again
+
+graph_wos_scopus <- 
+  graph.data.frame(edge_list, 
+                   directed = TRUE)
+
+# we have a graph with 881 nodes and 2962 edges
+# Subfields are missing
+```
+
+
+```{r}
+write.graph(graph_wos_scopus, 
+            "output/byproducts_scopus_wos_tos.graphml", 
+            "graphml")
+```
+
+This chunk create a df of the graph with indegree, outdegree, bet and pagerang
+metrics
+
+```{r}
+network_metrics <- 
+  tibble(paper = V(graph_wos_scopus)$name,
+         indegree = degree(graph_wos_scopus, 
+                           mode = "in"), 
+         outdegree = degree(graph_wos_scopus, 
+                            mode = "out"),
+         bet = betweenness(graph_wos_scopus),
+         pagerank = page.rank(graph_wos_scopus)$vector)
+
+dim(network_metrics)
+```
+
+We need to add the complete name of the paper
+
+```{r}
+network_metrics_names <- 
+  network_metrics %>% 
+  dplyr::left_join(byproducts_scopus_wos_tos$nodes_atributes %>% 
+                     mutate(ID_TOS = str_trim(ID_TOS)),  
+            by = c("paper" = "ID_TOS")) %>% 
+  filter(!duplicated(paper))
+
+dim(network_metrics_names)
+```
+Checking null values 
+
+```{r}
+network_metrics_names %>% 
+  purrr::map_df(~sum(is.na(.)))
+```
+
+Selecting the top 20 of each metric
+
+```{r}
+papers_main_indegree <- 
+  network_metrics_names %>% 
+  arrange(desc(indegree)) %>% 
+  slice(1:50) %>% 
+  select(paper,CITE) %>% 
+  mutate(type = "indegree",
+         position = 1:50)
+
+papers_main_outdegree <- 
+  network_metrics_names %>% 
+  arrange(desc(outdegree)) %>% 
+  slice(1:50) %>% 
+  select(paper,CITE) %>% 
+  mutate(type = "outdegree",
+         position = 1:50)
+
+papers_main_bet <- 
+  network_metrics_names %>% 
+  arrange(desc(bet)) %>% 
+  slice(1:50) %>% 
+  select(paper,CITE) %>% 
+  mutate(type = "bet",
+         position = 1:50)
+
+papers_main_pagerank <- 
+  network_metrics_names %>% 
+  arrange(desc(pagerank)) %>% 
+  slice(1:50) %>% 
+  select(paper,CITE) %>% 
+  mutate(type = "pagerank",
+         position = 1:50)
+
+papers_main <- 
+  bind_rows(papers_main_indegree,
+            papers_main_outdegree,
+            papers_main_bet,
+            papers_main_pagerank
+            ) %>% 
+  filter(!duplicated(paper))
+
+dim(papers_main)
+```
+
+But they need to be different from the initial search!!!
+
+```{r}
+# We will use byproducts_scopus_wos_tos$bibliometrix_df because is the same... 
+
+papers_main_all <- 
+  papers_main %>% 
+  anti_join(byproducts_scopus_wos_tos$bibliometrix_df %>% 
+              select(TI, ID_TOS), 
+            by = c("paper" = "ID_TOS"))
+dim(papers_main_all)
+```
+
+
+```{r}
+dim(papers_main)
+```
+```{r}
+write.csv(papers_main_all, 
+          "output/papers_form_graph_all.csv", 
+          row.names = FALSE)
+```
+
+
+```{r}
+summary(byproducts_scopus_wos_tos$graph)
+```
+
+We need to remove the blank space at the beginning of the strings in V2
+
+```{r}
+edge_list <- 
+  edge_list %>% 
+  mutate(V2 = str_trim(V2))
+```
+
+Finding Natalia's papers 
+
+```{r}
+byproducts_scopus_wos_tos <- 
+  tosr::tosR("data/raw data scopus/Coffee Husk Scopus 21.bib",
+             "data/raw data scopus/Coffee Pulp Scopus 33.bib",
+             "data/raw data scopus/Coffee Silverskin Scopus 34.bib",
+             "data/raw data scopus/Spent coffee grounds Scopus 47.bib", 
+             "data/raw data wos/Coffe Husk WOS 29.txt", 
+             "data/raw data wos/Coffee Pulp WOS 26.txt",
+             "data/raw data wos/Coffee Silverskin WOS 26.txt", 
+             "data/raw data wos/Spent coffee grounds WOS 57.txt")
+```
+Trying to get citation network of WoS
+
+```{r}
+write.graph(byproducts_scopus_wos_tos$graph,
+            "byproducts_scopus_wos_tos.graphml", 
+            "graphml")
+```
+
+
+```{r}
+dummy_title_80 <- 
+  mendeley_tags_cate %>% 
+  ungroup() %>% 
+  select(title) %>% 
+  group_by(title) %>% 
+  count(title) %>% 
+  arrange(title) %>% 
+  select(-n)
+
+dim(dummy_title_80)
+```
+
+```{r}
+dummy_title_97 <- 
+  mendeley_tags_cleaned %>% 
+  ungroup() %>% 
+  select(title) %>% 
+  group_by(title) %>% 
+  count(title) %>% 
+  arrange(title) %>% 
+  select(-n)
+
+dim(dummy_title_97)
+```
+
+Which are these papers?
+
+```{r}
+dummy_diff_17 <- 
+  as_tibble(dummy_title_97$title[!(dummy_title_97$title %in% dummy_title_80$title) ]) %>% 
+  mutate(title = value) %>% 
+  select(-value) %>% 
+  left_join(mendeley_tags %>% 
+              ungroup() %>% 
+              select(title, 
+                     mendeley_tags), by = "title") %>% 
+  unique()
+```
+
+
+```{r}
+dummy <- 
+  mendeley_byproducts_unique %>% 
+  ungroup() %>% 
+  select(title, byproduct, year) %>% 
+  unique()
+
+dim(dummy)
+```
+
+```{r}
+dummy %>% 
+  select(year) %>% 
+  count(year) %>% 
+  ggplot(aes(x = year, y = n)) +
+  geom_point()
+
+```
+

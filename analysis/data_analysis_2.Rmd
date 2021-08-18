@@ -1,0 +1,25 @@
+---
+title: "Data_Analysis_2"
+author: "Sebastian Robledo"
+date: "8/18/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Getting tidied data 
+
+```{r}
+data_tidied <- 
+  read_csv(here("output",
+                "data_final_test.csv"))
+```
+
+
+
+```{r}
+
+```
+

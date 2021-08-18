@@ -105,7 +105,7 @@ dim(mendeley_byproducts)
 tags <-
   read.csv(here("data",
                 "unique_tags.csv"), 
-                  stringsAsFactors = FALSE) %>% 
+           stringsAsFactors = FALSE) %>% 
   rename(tag = "code") %>% 
   unique() %>% 
   mutate(category = str_to_lower(category),
@@ -136,7 +136,7 @@ pulp_scopus <-
 
 silverskin_scopus <- 
   bibliometrix::convert2df(here("data",
-                           "raw data scopus/Coffee Silverskin Scopus 34.bib"), 
+                                "raw data scopus/Coffee Silverskin Scopus 34.bib"), 
                            dbsource = "scopus", 
                            format = "bibtex")
 
@@ -178,7 +178,7 @@ pulp_wos <-
 
 silverskin_wos <- 
   bibliometrix::convert2df(here("data", 
-                           "raw data wos/Coffee Silverskin WOS 26.txt"), 
+                                "raw data wos/Coffee Silverskin WOS 26.txt"), 
                            dbsource = "wos", 
                            format = "plaintext")
 
@@ -234,9 +234,9 @@ mendeley_byproducts_no_nas_other <-
   filter(!str_detect(string = mendeley_tags, 
                      pattern = "n/a"),
          !str_detect(string = mendeley_tags, 
-                    pattern = "na"),
+                     pattern = "na"),
          !str_detect(string = mendeley_tags, 
-                    pattern = "review"))
+                     pattern = "review"))
 
 dim(mendeley_byproducts_no_nas_other)
 ```
@@ -455,7 +455,126 @@ mendeley_tags_cate_all %>%
   purrr::map_df(~sum(is.na(.)))
 ```
 
-### I don't know what is this below  ###
+Searching for unique missing papers
+
+```{r}
+titles_1 <- mendeley_tags_cate_all |> 
+  filter(is.na(AU)) |>
+  ungroup() |> 
+  select(title) |> 
+  unique()
+```
+
+Reading missing values from Scopus (some) 
+
+```{r}
+scopus_missing <- 
+  bibliometrix::convert2df(c(here("data", 
+                                  "raw_data_scopus_missing/scopus (3).bib"),
+                             here("data", 
+                                  "raw_data_scopus_missing/scopus (4).bib"),
+                             here("data", 
+                                  "raw_data_scopus_missing/scopus (5).bib"),
+                             here("data", 
+                                  "raw_data_scopus_missing/scopus (6).bib"),
+                             here("data", 
+                                  "raw_data_scopus_missing/scopus (7).bib")),
+                           dbsource = "scopus", 
+                           format = "bibtex") |> 
+  select(DI,TI, AU, CR, SO) |> 
+  filter(!is.na(DI)) |> 
+  unique()
+```
+
+Merging with mendeley_tags_cate_all
+
+```{r}
+mendeley_tags_cate_all$doi[47] <-  "10.24275/rmiq/Bio1612"
+
+mendeley_tags_1 <- 
+  mendeley_tags_cate_all |> 
+  filter(is.na(AU)) |> 
+  select(-AU, -CR, -SO) |> 
+  left_join(scopus_missing |> 
+              select(-TI), by = c("doi" = "DI")) |> 
+  filter(!is.na(AU)) |> 
+  unique()
+```
+
+
+```{r}
+mendeley_tags_nas <- 
+  mendeley_tags_cate_all |> 
+  filter(is.na(AU)) |> 
+  select(-AU, -CR, -SO) |> 
+  left_join(scopus_missing |> 
+              select(-TI), by = c("doi" = "DI")) |> 
+  filter(is.na(AU)) |> 
+  unique()
+```
+
+
+```{r}
+titles_3 <- 
+  mendeley_tags_nas |> 
+  filter(is.na(AU)) |>
+  ungroup() |> 
+  select(title) |> 
+  unique()
+```
+
+
+Other 
+
+```{r}
+scopus_missing_2 <- 
+  bibliometrix::convert2df(c(here("data", 
+                                  "raw_data_scopus_missing/scopus (9).bib"),
+                             here("data", 
+                                  "raw_data_scopus_missing/scopus (11).bib"),
+                             here("data", 
+                                  "raw_data_scopus_missing/scopus (12).bib"),
+                             here("data", 
+                                  "raw_data_scopus_missing/scopus (13).bib")),
+                           dbsource = "scopus", 
+                           format = "bibtex") |> 
+  select(DI,TI, AU, CR, SO) |> 
+  filter(!is.na(DI)) |> 
+  unique()
+```
+
+Merging with mendeley_tags_cate_all
+
+```{r}
+mendeley_tags_2 <- 
+  mendeley_tags_cate_all |> 
+  filter(is.na(AU)) |> 
+  select(-AU, -CR, -SO) |> 
+  left_join(scopus_missing_2 |> 
+              select(-TI), by = c("doi" = "DI")) |> 
+  filter(!is.na(AU)) |> 
+  unique()
+```
+
+Merging everything... just for the analysis
+
+```{r}
+data_final <- 
+  mendeley_tags_cate_all |> 
+  bind_rows(mendeley_tags_1,
+            mendeley_tags_2) |>
+  filter(!is.na(AU)) |> 
+  unique()
+```
+
+```{r}
+write_csv(data_final,
+          here("output", 
+               "data_final_test.csv"))
+```
+
+
+# I don't know what is this below  ###
 
 There are 32 missing values...
 
@@ -469,7 +588,7 @@ One option is with the title
 ```{r}
 byproducts_raw_scopus %>% 
   mutate(TI = str_to_lower(TI)) %>% 
-filter(TI == "residual biomass gasification on a small scale and its thermal utilization for coffee drying") %>%
+  filter(TI == "residual biomass gasification on a small scale and its thermal utilization for coffee drying") %>%
   select(DI, JI, AU)
 ```
 
@@ -544,11 +663,11 @@ husk_year <-
   mutate(year = as.numeric(year)) %>% 
   arrange(desc(year)) 
 
- # We need to create a range sequence of years
+# We need to create a range sequence of years
 
 husk_range_year <- 
   range(husk_year$year)  
-  
+
 husk_years <- 
   husk_range_year[1]:husk_range_year[2]%>% 
   as_tibble() %>% 
@@ -583,11 +702,11 @@ pulp_year <-
   mutate(year = as.numeric(year)) %>% 
   arrange(desc(year)) 
 
- # We need to create a range sequence of years
+# We need to create a range sequence of years
 
 pulp_range_year <- 
   range(pulp_year$year)  
-  
+
 pulp_years <- 
   pulp_range_year[1]:pulp_range_year[2]%>% 
   as_tibble() %>% 
@@ -622,11 +741,11 @@ silverskin_year <-
   mutate(year = as.numeric(year)) %>% 
   arrange(desc(year)) 
 
- # We need to create a range sequence of years
+# We need to create a range sequence of years
 
 silverskin_range_year <- 
   range(silverskin_year$year)  
-  
+
 silverskin_years <- 
   silverskin_range_year[1]:silverskin_range_year[2]%>% 
   as_tibble() %>% 
@@ -661,11 +780,11 @@ Spent_coffee_year <-
   mutate(year = as.numeric(year)) %>% 
   arrange(desc(year)) 
 
- # We need to create a range sequence of years
+# We need to create a range sequence of years
 
 Spent_coffee_range_year <- 
   range(Spent_coffee_year$year)  
-  
+
 Spent_coffee_years <- 
   Spent_coffee_range_year[1]:Spent_coffee_range_year[2]%>% 
   as_tibble() %>% 
@@ -693,16 +812,16 @@ Spent_coffee_year_all_plot
 ```{r}
 global_scientific_production <- 
   ggarrange(mendeley_byproducts_plot,
-        ggarrange(husk_year_all_plot, pulp_year_all_plot, 
-                  ncol = 2, labels = c("b", "d"), 
-                  align = "h",widths = c(1.5,2)), 
-        ggarrange(silverskin_year_all_plot, Spent_coffee_year_all_plot,
-                  ncol = 2, labels = c("c", "e"), 
-                  align = "h",widths = c(1.5,2)), 
-      nrow = 3, 
-      heights = c(1.5, 1, 1),
-      labels = "a" 
-      ) 
+            ggarrange(husk_year_all_plot, pulp_year_all_plot, 
+                      ncol = 2, labels = c("b", "d"), 
+                      align = "h",widths = c(1.5,2)), 
+            ggarrange(silverskin_year_all_plot, Spent_coffee_year_all_plot,
+                      ncol = 2, labels = c("c", "e"), 
+                      align = "h",widths = c(1.5,2)), 
+            nrow = 3, 
+            heights = c(1.5, 1, 1),
+            labels = "a" 
+  ) 
 
 global_scientific_production
 ```
@@ -853,16 +972,16 @@ Merging all plots
 ```{r}
 mendeley_tags_year_plot <- 
   ggarrange(
-        ggarrange(mendeley_tags_year_husk_plot, mendeley_tags_year_pulp_plot, 
-                  ncol = 2, labels = c("b", "d"), 
-                  align = "h",widths = c(1.5,2)), 
-        ggarrange(mendeley_tags_year_silverskin_plot, mendeley_tags_year_spent_plot,
-                  ncol = 2, labels = c("c", "e"), 
-                  align = "h",widths = c(1.5,2)), 
-      nrow = 2, 
-      heights = c(2, 2),
-      labels = "a" 
-      ) 
+    ggarrange(mendeley_tags_year_husk_plot, mendeley_tags_year_pulp_plot, 
+              ncol = 2, labels = c("b", "d"), 
+              align = "h",widths = c(1.5,2)), 
+    ggarrange(mendeley_tags_year_silverskin_plot, mendeley_tags_year_spent_plot,
+              ncol = 2, labels = c("c", "e"), 
+              align = "h",widths = c(1.5,2)), 
+    nrow = 2, 
+    heights = c(2, 2),
+    labels = "a" 
+  ) 
 mendeley_tags_year_plot
 ```
 
@@ -918,7 +1037,7 @@ network_metrics_names <-
   network_metrics %>% 
   dplyr::left_join(byproducts_scopus_wos_tos$nodes_atributes %>% 
                      mutate(ID_TOS = str_trim(ID_TOS)),  
-            by = c("paper" = "ID_TOS")) %>% 
+                   by = c("paper" = "ID_TOS")) %>% 
   filter(!duplicated(paper))
 
 dim(network_metrics_names)
@@ -970,7 +1089,7 @@ papers_main <-
             papers_main_outdegree,
             papers_main_bet,
             papers_main_pagerank
-            ) %>% 
+  ) %>% 
   filter(!duplicated(paper))
 
 dim(papers_main)

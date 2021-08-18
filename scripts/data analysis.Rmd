@@ -70,14 +70,7 @@ mendeley_byproducts_plot <-
         panel.border = element_blank(),
         panel.background = element_blank())
 
-mendeley_byproducts_plot
-```
 
-Scientific production by coffee by-product
-
-Coffee husk 
-
-```{r}
 husk_year <- 
   mendeley_byproducts_unique %>% 
   ungroup() %>% 
@@ -121,12 +114,7 @@ husk_year_all_plot <-
         panel.border = element_blank(),
         panel.background = element_blank())
 
-husk_year_all_plot
-```
 
-Coffee pulp 
-
-```{r}
 pulp_year <- 
   mendeley_tags_cate %>% 
   filter(byproduct == "pulp") %>% 
@@ -160,12 +148,9 @@ pulp_year_all_plot <-
   geom_line() +
   ggtitle("Annual pulp scientific production")
 
-pulp_year_all_plot
-```
 
-Coffee silverskin 
+## Coffee silverskin 
 
-```{r}
 silverskin_year <- 
   mendeley_tags_cate %>% 
   filter(byproduct == "silverskin") %>% 
@@ -199,12 +184,9 @@ silverskin_year_all_plot <-
   geom_line() +
   ggtitle("Annual silverskin scientific production")
 
-silverskin_year_all_plot
-```
 
-Coffee Spent_coffee 
+## Coffee Spent_coffee 
 
-```{r}
 Spent_coffee_year <- 
   mendeley_tags_cate %>% 
   filter(byproduct == "spent_coffee_grounds") %>% 
@@ -238,12 +220,9 @@ Spent_coffee_year_all_plot <-
   geom_line() +
   ggtitle("Annual Spent_coffee scientific production")
 
-Spent_coffee_year_all_plot
-```
 
 ## Annual scientific production
 
-```{r}
 global_scientific_production <- 
   ggarrange(mendeley_byproducts_plot,
         ggarrange(husk_year_all_plot, pulp_year_all_plot, 

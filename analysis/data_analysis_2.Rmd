@@ -2,24 +2,301 @@
 title: "Data_Analysis_2"
 author: "Sebastian Robledo"
 date: "8/18/2021"
-output: html_document
+output: 
+  html_document:
+    code_folding: hide
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+```{r}
+library(tidyverse)
+library(here)
+library(revtools)
+library(ggpubr) 
+library(gt)
+library(dplyr)
+library(formattable)
+library(readxl)
+library(googlesheets4)
+library(sjrdata)
+```
+
+
 # Getting tidied data 
 
-```{r}
+```{r message=FALSE, warning=FALSE}
 data_tidied <- 
   read_csv(here("output",
                 "data_final_test.csv"))
 ```
 
 
+# 3.1 Scientometric mapping 
+## 3.1.2 Annual scientific production
+
 
 ```{r}
+byproducts_year <- 
+  data_tidied %>% 
+  ungroup() %>% 
+  dplyr::select(doi, byproduct, year) %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  unique() |> 
+  count(year, sort = TRUE) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.integer(year))
 
+# We need to create a range sequence of years
+
+byproduct_years <- 
+  range(data_tidied$year)  
+
+byproduct_year_range <- 
+  byproduct_years[1]:byproduct_years[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to husk dataset
+
+byproduct_year_all <-
+  byproduct_year_range %>% 
+  left_join(byproducts_year) %>% 
+  replace_na(list(papers = 0)) 
+
+mendeley_byproducts_plot <- 
+  byproduct_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() +
+  geom_line() +
+  ylab("papers") +
+  ggtitle("Scientific annual production") +
+  theme(plot.title = element_text(hjust = 0.5),
+        text=element_text(family="Times", face="bold", size=12),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank())
+
+## Coffee husk 
+
+husk_year <- 
+  data_tidied %>% 
+  ungroup() %>% 
+  dplyr::select(doi, byproduct, year) %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  unique() |>
+  filter(str_detect(string = byproduct,
+                    pattern = "husk")) |> 
+  count(year, sort = TRUE) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+# We need to create a range sequence of years
+
+husk_range_year <- 
+  range(husk_year$year)  
+
+husk_years <- 
+  husk_range_year[1]:husk_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to husk dataset
+
+husk_year_all <-
+  husk_years %>% 
+  left_join(husk_year) %>% 
+  replace_na(list(papers = 0)) 
+
+husk_year_all_plot <- 
+  husk_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() +
+  geom_line() +
+  ylab("papers") +
+  ggtitle("Husk") +
+  theme(plot.title = element_text(hjust = 0.5),
+        text=element_text(family="Times", face="bold", size=12),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank())
+
+
+## Coffee pulp 
+
+pulp_year <- 
+  data_tidied %>% 
+  ungroup() %>% 
+  dplyr::select(doi, byproduct, year) %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  unique() |>
+  filter(str_detect(string = byproduct,
+                    pattern = "pulp")) |> 
+  count(year, sort = TRUE) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+# We need to create a range sequence of years
+
+pulp_range_year <- 
+  range(pulp_year$year)  
+
+pulp_years <- 
+  pulp_range_year[1]:pulp_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to pulp dataset
+
+pulp_year_all <-
+  pulp_years %>% 
+  left_join(pulp_year) %>% 
+  replace_na(list(papers = 0)) 
+
+pulp_year_all_plot <- 
+  pulp_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() + 
+  geom_line() +
+  ggtitle("Pulp")
+
+
+## Coffee silverskin 
+
+silverskin_year <- 
+  data_tidied %>% 
+  ungroup() %>% 
+  dplyr::select(doi, byproduct, year) %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  unique() |>
+  filter(str_detect(string = byproduct,
+                    pattern = "silverskin")) |> 
+  count(year, sort = TRUE) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+# We need to create a range sequence of years
+
+silverskin_range_year <- 
+  range(silverskin_year$year)  
+
+silverskin_years <- 
+  silverskin_range_year[1]:silverskin_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to silverskin dataset
+
+silverskin_year_all <-
+  silverskin_years %>% 
+  left_join(silverskin_year) %>% 
+  replace_na(list(papers = 0)) 
+
+silverskin_year_all_plot <- 
+  silverskin_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() + 
+  geom_line() +
+  ggtitle("Silverskin")
+
+
+
+## Coffee Spent_coffee 
+
+Spent_coffee_year <- 
+  data_tidied %>% 
+  ungroup() %>% 
+  dplyr::select(doi, byproduct, year) %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  unique() |>
+  filter(str_detect(string = byproduct,
+                    pattern = "spent_coffee_grounds")) |> 
+  count(year, sort = TRUE) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+# We need to create a range sequence of years
+
+Spent_coffee_range_year <- 
+  range(Spent_coffee_year$year)  
+
+Spent_coffee_years <- 
+  Spent_coffee_range_year[1]:Spent_coffee_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to Spent_coffee dataset
+
+Spent_coffee_year_all <-
+  Spent_coffee_years %>% 
+  left_join(Spent_coffee_year) %>% 
+  replace_na(list(papers = 0)) 
+
+Spent_coffee_year_all_plot <- 
+  Spent_coffee_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() + 
+  geom_line() +
+  ggtitle("Spent coffee ground")
+
+
+## Annual scientific production
+
+global_scientific_production <- 
+  ggarrange(mendeley_byproducts_plot,
+            ggarrange(husk_year_all_plot, pulp_year_all_plot, 
+                      ncol = 2, labels = c("b", "d"), 
+                      align = "h",widths = c(1.5,2)), 
+            ggarrange(silverskin_year_all_plot, Spent_coffee_year_all_plot,
+                      ncol = 2, labels = c("c", "e"), 
+                      align = "h",widths = c(1.5,2)), 
+            nrow = 3, 
+            heights = c(1.5, 1, 1),
+            labels = "a" 
+  ) 
+
+global_scientific_production
+```
+
+## 3.1.3 Journal production
+
+```{r}
+data_tidied |> 
+  ungroup() %>% 
+  dplyr::select(doi, byproduct, SO ) %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  unique() |> 
+  count(SO, sort = TRUE)
+```
+
+```{r}
+journals_byproducts <- 
+  data_tidied %>% 
+  ungroup() %>% 
+  dplyr::select(doi, byproduct, year, SO) %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  unique() |> 
+  count(SO, sort = TRUE) %>% 
+  rename("papers" = n) |> 
+  slice(1:5)
+
+sjr_journals_by_products <- 
+  sjr_journals |> 
+  mutate(title  = str_to_upper(title)) |>
+  filter(year == 2019) |> 
+  select(title, h_index, sjr_best_quartile) |> 
+  right_join(journals_byproducts, 
+             by = c("title" = "SO")) |> 
+  select(title, papers, sjr_best_quartile, h_index)
 ```
 

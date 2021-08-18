@@ -317,3 +317,11 @@ authors_by_products <-
 authors_by_products
 ```
 
+# 3.2 Coffee By-products applications
+
+## 3.2.1 Husk
+
+```{r}
+
+```
+

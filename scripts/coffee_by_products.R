@@ -5,7 +5,7 @@ library(tidyverse)
 library(formattable)
 library(readxl)
 
-archivo       <- "datos_cafe.csv"
+archivo       <- here("datos_cafe.csv")
 mendeley_tags <- read.csv(file = archivo)
 
 mendeley_tags_year  <- mendeley_tags %>% group_by(year,tag,byproduct) %>% count(tag, sort = TRUE)

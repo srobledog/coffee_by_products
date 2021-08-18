@@ -298,5 +298,22 @@ sjr_journals_by_products <-
   right_join(journals_byproducts, 
              by = c("title" = "SO")) |> 
   select(title, papers, sjr_best_quartile, h_index)
+
+sjr_journals_by_products
+```
+
+## 3.1.4 Author analysis and country collaboration
+
+```{r}
+authors_by_products <- 
+  data_tidied |> 
+  ungroup() |> 
+  select(doi, AU) |>
+  unique() |> 
+  separate_rows(AU, sep = ";") |> 
+  count(AU, sort = TRUE) |> 
+  slice(1:5)
+
+authors_by_products
 ```
 

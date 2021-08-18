@@ -15,15 +15,50 @@ library(stringdist)
 
 # ----------------- SE CARGAN LOS DATOS DE BUSQUEDA EN WOS Y SCOPUS ------------
 
-coffe_wos_1 <- convert2df('/cloud/project/data/raw data wos/Coffe Husk WOS 29.txt', dbsource = "wos", format = "plaintext")
-coffe_wos_2 <- convert2df('/cloud/project/data/raw data wos/Coffee Pulp WOS 26.txt', dbsource = "wos", format = "plaintext")
-coffe_wos_3 <- convert2df('/cloud/project/data/raw data wos/Coffee Silverskin WOS 26.txt', dbsource = "wos", format = "plaintext")
-coffe_wos_4 <- convert2df('/cloud/project/data/raw data wos/Spent coffee grounds WOS 57.txt', dbsource = "wos", format = "plaintext")
+coffe_wos_1 <- 
+  convert2df(here("data",
+                  "/raw data wos/Coffe Husk WOS 29.txt"), 
+             dbsource = "wos", 
+             format = "plaintext")
 
-coffe_scopus_1 <- convert2df('/cloud/project/data/raw data scopus/Coffee Husk Scopus 21.bib', dbsource = "scopus", format = "bibtex")
-coffe_scopus_2 <- convert2df('/cloud/project/data/raw data scopus/Coffee Pulp Scopus 33.bib', dbsource = "scopus", format = "bibtex")
-coffe_scopus_3 <- convert2df('/cloud/project/data/raw data scopus/Coffee Silverskin Scopus 34.bib', dbsource = "scopus", format = "bibtex")
-coffe_scopus_4 <- convert2df('/cloud/project/data/raw data scopus/Spent coffee grounds Scopus 47.bib', dbsource = "scopus", format = "bibtex")
+coffe_wos_2 <- 
+  convert2df(here("data", 
+                  "raw data wos/Coffee Pulp WOS 26.txt"),
+             dbsource = "wos", 
+             format = "plaintext")
+
+coffe_wos_3 <- 
+  convert2df(here("data", 
+                  "raw data wos/Coffee Silverskin WOS 26.txt"),
+             dbsource = "wos", 
+             format = "plaintext")
+
+coffe_wos_4 <- 
+  convert2df(here("data",
+                  "raw data wos/Spent coffee grounds WOS 57.txt"), 
+             dbsource = "wos", 
+             format = "plaintext")
+
+coffe_scopus_1 <- 
+  convert2df(here("data",
+                  "raw data scopus/Coffee Husk Scopus 21.bib"), 
+             dbsource = "scopus", 
+             format = "bibtex")
+
+coffe_scopus_2 <- convert2df(here("data",
+                                  "raw data scopus/Coffee Pulp Scopus 33.bib"),
+                             dbsource = "scopus", 
+                             format = "bibtex")
+
+coffe_scopus_3 <- 
+  convert2df(here("data",
+             "raw data scopus/Coffee Silverskin Scopus 34.bib"),
+             dbsource = "scopus", format = "bibtex")
+
+coffe_scopus_4 <- 
+  convert2df(here("data", 
+                  "raw data scopus/Spent coffee grounds Scopus 47.bib"),
+                  dbsource = "scopus", format = "bibtex")
 
 # Union de las bases de datos 
 coffe_scopus_wos <- mergeDbSources(coffe_wos_1,coffe_wos_2,coffe_wos_3,coffe_wos_4,
@@ -41,7 +76,8 @@ coffe_scopus_wos$TI <- gsub('\\.','',coffe_scopus_wos$TI)
 
 # ----------------- SE CARGA LA BASE DE DATOS  COFFE BY PRODUCTS ---------------
 
-datos       <- read.csv('/cloud/project/output/mendeley_tags_cate.csv')
+datos       <- read.csv(here("output",
+                             "mendeley_tags_cate.csv"))
 datos$title <- str_to_lower(datos$title)  
 datos$title <- gsub('-','',datos$title)
 datos$title <- gsub(':','',datos$title)
@@ -92,42 +128,42 @@ net=networkPlot(NetMatrix, normalize="association", weighted=T, n = 30, Title = 
 
 # Tabla de journals por producto 
 datos_unidos <- inner_join(datos_select,datos,by = c('AU' = 'autores')) %>%
-                separate_rows(byproduct,sep = ',')
+  separate_rows(byproduct,sep = ',')
 datos_unidos$byproduct <- gsub(" ","",datos_unidos$byproduct)
 
 journal_product <- datos_unidos %>%
-                   group_by(JI,byproduct) %>%
-                   count()
+  group_by(JI,byproduct) %>%
+  count()
 
 
 # Autores mas productivos
 datos_autores <- datos_unidos %>%
-                 separate_rows(AU, sep = ";")
+  separate_rows(AU, sep = ";")
 
 autores_mas_prod <- datos_autores %>%
-                    group_by(AU) %>% 
-                    count() %>%
-                    arrange(desc(n)) %>% 
-                    head(10)
+  group_by(AU) %>% 
+  count() %>%
+  arrange(desc(n)) %>% 
+  head(10)
 
 
 # Autores mas productivos por producto 
 
 autores_producto <- datos_autores %>%
-                    group_by(AU,byproduct) %>% 
-                    count() %>%
-                    arrange(desc(n)) %>%
-                    group_by(byproduct) %>%
-                    top_n(n = 5)
+  group_by(AU,byproduct) %>% 
+  count() %>%
+  arrange(desc(n)) %>%
+  group_by(byproduct) %>%
+  top_n(n = 5)
 
 
 # Autores por categoria 
 autores_categoria <- datos_autores %>%
-                     group_by(AU,category) %>% 
-                     count() %>%
-                     arrange(desc(n)) %>%
-                     group_by(category) %>%
-                     top_n(n = 5)
+  group_by(AU,category) %>% 
+  count() %>%
+  arrange(desc(n)) %>%
+  group_by(category) %>%
+  top_n(n = 5)
 
 
 

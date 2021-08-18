@@ -15,6 +15,7 @@ library(formattable)
 library(readxl)
 library(bibliometrix)
 library(tosr)
+library(here)
 ```
 
 
@@ -26,7 +27,8 @@ library(tosr)
 
 ```{r}
 spent_mendeley <- 
-  revtools::read_bibliography("data/spent_coffee_grounds_79.bib") %>% 
+  revtools::read_bibliography(here("data",
+                                   "spent_coffee_grounds_79.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
@@ -40,7 +42,8 @@ dim(spent_mendeley)
 
 ```{r}
 silverskin_mendelely <- 
-  revtools::read_bibliography("data/coffee_silverskin_35.bib") %>% 
+  revtools::read_bibliography(here("data",
+                                   "coffee_silverskin_35.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
@@ -53,7 +56,8 @@ dim(silverskin_mendelely)
 
 ```{r}
 pulp_mendeley <- 
-  revtools::read_bibliography("data/coffee_pulp_36.bib") %>% 
+  revtools::read_bibliography(here("data",
+                                   "coffee_pulp_36.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
@@ -66,7 +70,8 @@ dim(pulp_mendeley)
 
 ```{r}
 husk_mendeley <- 
-  revtools::read_bibliography("data/coffee_husk_25.bib") %>% 
+  revtools::read_bibliography(here("data",
+                                   "coffee_husk_25.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
@@ -98,7 +103,8 @@ dim(mendeley_byproducts)
 
 ```{r}
 tags <-
-  read.csv("data/unique_tags.csv", 
+  read.csv(here("data",
+                "unique_tags.csv"), 
                   stringsAsFactors = FALSE) %>% 
   rename(tag = "code") %>% 
   unique() %>% 
@@ -113,26 +119,30 @@ categories <-
 
 ## 3. Scopus & WoS
 
-### Scopus
+### Scopus
 
 ```{r}
 husk_scopus <- 
-  bibliometrix::convert2df("data/raw data/Coffee Husk Scopus 21.bib", 
+  bibliometrix::convert2df(here("data",
+                                "raw data scopus/Coffee Husk Scopus 21.bib"), 
                            dbsource = "scopus", 
                            format = "bibtex")
 
 pulp_scopus <- 
-  bibliometrix::convert2df("data/raw data/Coffee Pulp Scopus 33.bib", 
+  bibliometrix::convert2df(here("data",
+                                "raw data scopus/Coffee Pulp Scopus 33.bib"), 
                            dbsource = "scopus", 
                            format = "bibtex")
 
 silverskin_scopus <- 
-  bibliometrix::convert2df("data/raw data/Coffee Silverskin Scopus 34.bib", 
+  bibliometrix::convert2df(here("data",
+                           "raw data scopus/Coffee Silverskin Scopus 34.bib"), 
                            dbsource = "scopus", 
                            format = "bibtex")
 
 spent_scopus <- 
-  bibliometrix::convert2df("data/raw data/Spent coffee grounds Scopus 47.bib", 
+  bibliometrix::convert2df(here("data",
+                                "raw data scopus/Spent coffee grounds Scopus 47.bib"), 
                            dbsource = "scopus", 
                            format = "bibtex")
 
@@ -155,22 +165,26 @@ rm(husk_scopus,
 
 ```{r}
 husk_wos <- 
-  bibliometrix::convert2df("data/raw data wos/Coffe Husk WOS 29.txt", 
+  bibliometrix::convert2df(here("data",
+                                "raw data wos/Coffe Husk WOS 29.txt"), 
                            dbsource = "wos", 
                            format = "plaintext")
 
 pulp_wos <- 
-  bibliometrix::convert2df("data/raw data wos/Coffee Pulp WOS 26.txt", 
+  bibliometrix::convert2df(here("data",
+                                "raw data wos/Coffee Pulp WOS 26.txt"), 
                            dbsource = "wos", 
                            format = "plaintext")
 
 silverskin_wos <- 
-  bibliometrix::convert2df("data/raw data wos/Coffee Silverskin WOS 26.txt", 
+  bibliometrix::convert2df(here("data", 
+                           "raw data wos/Coffee Silverskin WOS 26.txt"), 
                            dbsource = "wos", 
                            format = "plaintext")
 
 spent_wos <- 
-  bibliometrix::convert2df("data/raw data wos/Spent coffee grounds WOS 57.txt", 
+  bibliometrix::convert2df(here("data",
+                                "/raw data wos/Spent coffee grounds WOS 57.txt"), 
                            dbsource = "wos", 
                            format = "plaintext")
 
@@ -178,7 +192,7 @@ byproducts_raw_wos <-
   bind_rows(husk_wos,
             pulp_wos,
             silverskin_wos,
-            spent_scopus) %>% 
+            spent_wos) %>% 
   unique()
 
 dim(byproducts_raw_wos)
@@ -210,15 +224,7 @@ mendeley_byproducts %>%
   map_df(~sum(is.na(.)))
 ```
 
-I will remove "N/A"s tags
-
-```{r}
-mendeley_byproducts_no_nas <- 
-  mendeley_byproducts %>% 
-  filter(!str_detect(string = mendeley_tags, 
-                     pattern = "n/a"))
-dim(mendeley_byproducts_no_nas)
-```
+I will remove "N/A"s tags and reviews
 
 Other option to write the paper
 
@@ -235,19 +241,6 @@ mendeley_byproducts_no_nas_other <-
 dim(mendeley_byproducts_no_nas_other)
 ```
 
-
-Now, we need to remove papers with the tag "Review" and "na"
-
-```{r}
-mendeley_byproducts_no_nas_reviews <- 
-  mendeley_byproducts_no_nas %>% 
-  filter(!str_detect(string = mendeley_tags, 
-                    pattern = "review"), 
-         !str_detect(string = mendeley_tags, 
-                    pattern = "na"))
-
-dim(mendeley_byproducts_no_nas_reviews)
-```
 
 Are there duplicate papers?
 
@@ -372,7 +365,8 @@ Now, we need to add a new column called category based on the tags
 ```{r}
 mendeley_tags_cate <- 
   mendeley_tags_no_cate %>% 
-  left_join(tags)
+  left_join(tags) |> 
+  filter(!is.na(category))
 
 dim(mendeley_tags_cate)  
 ```
@@ -422,8 +416,7 @@ mendeley_tags_cate$doi <-
                        ifelse(mendeley_tags_cate$label == dois_nas$label[4], 4,
                               ifelse(mendeley_tags_cate$label == dois_nas$label[5], 5,
                                      ifelse(mendeley_tags_cate$label == dois_nas$label[6], 6,
-                                            ifelse(mendeley_tags_cate$label == dois_nas$label[7], 7,
-                                                   ifelse(mendeley_tags_cate$label == dois_nas$label[8], 8, mendeley_tags_cate$doi))))))))
+                                            ifelse(mendeley_tags_cate$label == dois_nas$label[7], 7, mendeley_tags_cate$doi)))))))
 ```
 
 Added manually in excel
@@ -432,7 +425,8 @@ Scopus
 
 ```{r}
 byproducts_raw_scopus_modified <- 
-  read_csv("output/byproducts_raw_scopus_modified.csv")
+  read_csv(here("output",
+                "byproducts_raw_scopus_modified.csv"))
 ```
 
 WoS in this case we only need one record...
@@ -442,7 +436,6 @@ I couldn't find this paper
 "Isolation and identification of lactic acid bacteria from mature coffee cheries: Potential application in coffee husk ensiling"
 
 it was weird...
-
 
 We need to merge both datasets 
 
@@ -461,6 +454,8 @@ NAs?
 mendeley_tags_cate_all %>% 
   purrr::map_df(~sum(is.na(.)))
 ```
+
+### I don't know what is this below  ###
 
 There are 32 missing values...
 

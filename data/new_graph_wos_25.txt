@@ -1,0 +1,2269 @@
+﻿FN Clarivate Analytics Web of Science
+VR 1.0
+PT J
+AU Martinez-Saez, N
+   Garcia, AT
+   Perez, ID
+   Rebollo-Hernanz, M
+   Mesias, M
+   Morales, FJ
+   Martin-Cabrejas, MA
+   del Castillo, MD
+AF Martinez-Saez, Nuria
+   Tamargo Garcia, Alba
+   Dominguez Perez, Ines
+   Rebollo-Hernanz, Miguel
+   Mesias, Marta
+   Morales, Francisco J.
+   Martin-Cabrejas, Maria A.
+   Dolores del Castillo, Maria
+TI Use of spent coffee grounds as food ingredient in bakery products
+SO FOOD CHEMISTRY
+LA English
+DT Article
+DE Spent coffee grounds; Antioxidant dietary fibre; Food grade ingredient;
+   Bakery products
+ID MAILLARD REACTION-PRODUCTS; NATURAL ANTIOXIDANTS; SUGAR REPLACEMENT;
+   EXTRACTION; GLYCATION
+AB The present research aimed to evaluate the use of spent coffee grounds (SCG) from instant coffee as a food ingredient and its application in bakery products. Data on physicochemical characterization, thermal stability and food safety of SCG were acquired. Evaluation of feasibility as dietary fibre was also determined. Results showed SCG are natural source of antioxidant insoluble fibre, essential amino acids, low glycaemic sugars, resistant to thermal food processing and digestion process, and totally safe. In the present work, SCG were incorporated in biscuit formulations for the first time. Low-calorie sweeteners and oligofructose were also included in the food formulations. Nutritional quality, chemical (acrylamide, hydroxymethylfurfural and advanced glycation end products) and microbiological safety and sensory tests of the biscuits were carried out. Innovative biscuits were obtained according to consumers' preferences with high nutritional and sensorial quality and potential to reduce the risk of chronic diseases such as obesity and diabetes. (C) 2016 Elsevier Ltd. All rights reserved.
+C1 [Martinez-Saez, Nuria; Tamargo Garcia, Alba; Dominguez Perez, Ines; Rebollo-Hernanz, Miguel; Martin-Cabrejas, Maria A.; Dolores del Castillo, Maria] UAM CSIC, Food Sci Res Inst, CIAL, Madrid 28049, Spain.
+   [Mesias, Marta; Morales, Francisco J.] ICTAN CSIC, Inst Food Sci Technol & Nutr, Madrid 28040, Spain.
+RP del Castillo, MD (corresponding author), UAM CSIC, Food Sci Res Inst, CIAL, Madrid 28049, Spain.
+EM mdolores.delcastillo@csic.es
+RI Khamassi, emna/R-2875-2016; Rebollo-Hernanz, Miguel/S-6539-2019;
+   Morales, Francisco J./F-5523-2010; Mesias, Marta/E-7280-2014; Morales,
+   Francisco J./N-1941-2019; del Castillo/J-6283-2012; Rebollo-Hernanz,
+   Miguel/L-9523-2015; Martin-Cabrejas, Maria Angeles/L-6433-2014
+OI Rebollo-Hernanz, Miguel/0000-0003-1034-1290; Morales, Francisco
+   J./0000-0003-3984-7009; Mesias, Marta/0000-0003-0905-1587; Morales,
+   Francisco J./0000-0003-3984-7009; del Castillo/0000-0001-6309-5383;
+   Rebollo-Hernanz, Miguel/0000-0003-1034-1290; Martin-Cabrejas, Maria
+   Angeles/0000-0001-9834-639X
+FU SUSCOFFEE project [AGL2014-57239-R]; JAE Intro fellowship
+   [JAEINT_15_00086]; FPU predoctoral program of the Ministry of Education,
+   Culture and Sports [FPU15/04238]
+FX This study was funded by SUSCOFFEE (AGL2014-57239-R) project. The
+   present research is part of the PhD. Thesis of Martinez-Saez, N.
+   FPI-predoc fellow belongs to Autonomous University of Madrid (UAM),
+   Spain. Rebollo-Hernanz, M. thanks the JAE Intro fellowship
+   (JAEINT_15_00086) and the FPU predoctoral program of the Ministry of
+   Education, Culture and Sports (FPU15/04238). Authors also thank Prosol
+   for the spent coffee grounds and BENEO-ORAFTI for the FOS.
+CR Acar OC, 2009, EUR FOOD RES TECHNOL, V229, P961, DOI 10.1007/s00217-009-1131-z
+   Ballesteros LF, 2014, FOOD BIOPROCESS TECH, V7, P3493, DOI 10.1007/s11947-014-1349-z
+   Bravo J, 2012, J AGR FOOD CHEM, V60, P12565, DOI 10.1021/jf3040594
+   Campos-Vega R, 2015, TRENDS FOOD SCI TECH, V45, P24, DOI 10.1016/j.tifs.2015.04.012
+   Capuano E, 2011, LWT-FOOD SCI TECHNOL, V44, P793, DOI 10.1016/j.lwt.2010.11.002
+   Codex Alimentarius, 2009, CAC RCP 69 2009
+   Contini M, 2008, FOOD CHEM, V110, P659, DOI 10.1016/j.foodchem.2008.02.060
+   Cruz R, 2012, J AGR FOOD CHEM, V60, P7777, DOI 10.1021/jf3018854
+   Culetu A, 2016, FOOD CHEM, V197, P14, DOI 10.1016/j.foodchem.2015.10.097
+   Del Castillo M. D., COFFEE CHEM QUALITY
+   Del Castillo M. D., 2014, PCTES2014070062
+   del Castillo MD, 2002, J AGR FOOD CHEM, V50, P3698, DOI 10.1021/jf011702q
+   Edwards AD, 2009, VACCINE, V27, P3897, DOI 10.1016/j.vaccine.2009.04.006
+   EFSA, 2005, EFSA J
+   EFSA Panel on Biological Hazards, 2012, EFSA Journal, V10, P2724
+   Esfahani A, 2011, IUBMB LIFE, V63, P7, DOI 10.1002/iub.418
+   European Commission, 2013, OFFICIAL J EUROPEA L, VL301
+   European Food Safety Authority, 2014, EFSA J, V12, DOI 10.2903/j.efsa.2014.3547
+   Fernandez-Gomez B, 2015, FOOD FUNCT, V6, P2081, DOI [10.1039/c5fo00194c, 10.1039/C5FO00194C]
+   Garcia-Serna E, 2014, POL J FOOD NUTR SCI, V64, P243, DOI 10.2478/pjfns-2013-0024
+   Hellfritsch C, 2012, J AGR FOOD CHEM, V60, P6782, DOI 10.1021/jf301297n
+   Hollebeeck S, 2013, FOOD CHEM, V138, P1936, DOI 10.1016/j.foodchem.2012.11.041
+   Ishikawa T, 2012, WORLD J GASTROENTERO, V18, P2005, DOI 10.3748/wjg.v18.i17.2005
+   Jimenez-Zamora A, 2015, LWT-FOOD SCI TECHNOL, V61, P12, DOI 10.1016/j.lwt.2014.11.031
+   Kulthe AA, 2014, J FOOD SCI TECH MYS, V51, P153, DOI 10.1007/s13197-011-0465-2
+   Lago R., 2001, CENTESIMAL COMPOSITI
+   Mesias M, 2014, FOOD RES INT, V62, P1120, DOI 10.1016/j.foodres.2014.05.058
+   Michalska A, 2008, J CEREAL SCI, V48, P123, DOI 10.1016/j.jcs.2007.08.012
+   Murthy PS, 2012, FOOD BIOPROCESS TECH, V5, P897, DOI 10.1007/s11947-010-0363-z
+   Murthy PS, 2012, RESOUR CONSERV RECY, V66, P45, DOI 10.1016/j.resconrec.2012.06.005
+   Mussatto SI, 2011, FOOD BIOPROCESS TECH, V4, P661, DOI 10.1007/s11947-011-0565-z
+   Mussatto SI, 2011, CARBOHYD POLYM, V83, P368, DOI 10.1016/j.carbpol.2010.07.063
+   Oki T, 2006, FOOD SCI TECHNOL RES, V12, P156, DOI 10.3136/fstr.12.156
+   Oomah BD, 2001, J SCI FOOD AGR, V81, P889, DOI 10.1002/jsfa.898
+   Panusa A, 2013, J AGR FOOD CHEM, V61, P4162, DOI 10.1021/jf4005719
+   Poulsen MW, 2013, FOOD CHEM TOXICOL, V60, P10, DOI 10.1016/j.fct.2013.06.052
+   Pujol D, 2013, IND CROP PROD, V50, P423, DOI 10.1016/j.indcrop.2013.07.056
+   Rufian-Henares JA, 2006, J AOAC INT, V89, P161
+   Simoes J, 2013, CARBOHYD POLYM, V97, P81, DOI 10.1016/j.carbpol.2013.04.067
+   Tamanna Nahid, 2015, Int J Food Sci, V2015, P526762, DOI 10.1155/2015/526762
+   Vardon DR, 2013, ACS SUSTAIN CHEM ENG, V1, P1286, DOI 10.1021/sc400145w
+   Vatankhah M, 2015, QUAL ASSUR SAF CROP, V7, P393, DOI 10.3920/QAS2014.0396
+   Vlassopoulos A, 2013, FREE RADICAL BIO MED, V60, P318, DOI 10.1016/j.freeradbiomed.2013.03.010
+   Zoulias EI, 2000, J SCI FOOD AGR, V80, P2049, DOI [10.1002/1097-0010(200011)80:14&lt;2049::AID-JSFA735&gt;3.0.CO;2-Q, 10.1002/1097-0010(200011)80:14<2049::AID-JSFA735>3.0.CO;2-Q]
+NR 44
+TC 82
+Z9 82
+U1 5
+U2 346
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0308-8146
+EI 1873-7072
+J9 FOOD CHEM
+JI Food Chem.
+PD FEB 1
+PY 2017
+VL 216
+BP 114
+EP 122
+DI 10.1016/j.foodchem.2016.07.173
+PG 9
+WC Chemistry, Applied; Food Science & Technology; Nutrition & Dietetics
+SC Chemistry; Food Science & Technology; Nutrition & Dietetics
+GA DY0JO
+UT WOS:000384783300015
+PM 27596399
+OA Green Submitted
+HC Y
+HP N
+DA 2021-08-19
+ER
+
+PT J
+AU Park, J
+   Kim, B
+   Lee, JW
+AF Park, Jeongseok
+   Kim, Bora
+   Lee, Jae W.
+TI In-situ transesterification of wet spent coffee grounds for sustainable
+   biodiesel production
+SO BIORESOURCE TECHNOLOGY
+LA English
+DT Article
+DE Biodiesel; Spent coffee ground (SCG); Wet in-situ transesterification
+ID PALM OIL; ACID; MICROALGAE; WASTE; MANAGEMENT; RESIDUES; MOISTURE;
+   BIOMASS; HUSK
+AB This work addresses in-situ transesterification of wet spent coffee grounds (SCGs) for the production of biodiesel. For in-situ transesterification process, the methanol, organic solvent and acid catalyst were mixed with wet SCG in one pot and the mixture was heated for simultaneous lipid extraction and transesterification. Maximum yield of fatty acid methyl esters (FAME) was 16.75 wt.% based on the weight of dry SCG at 95 degrees C. Comprehensive experiments were conducted with varying temperatures and various amounts of moisture, methanol, co-solvent and acid catalyst. Moderate polar and alcohol-miscible organic solvent is suitable for the high FAME yield. Unsaturated FAMEs are subject to oxidative cleavage by nitric acid and shorter chain (C6 and C10) FAMEs were mainly produced while sulfuric acid yielded long chain unsaturated FAMEs (C16 and C18). Utilization of wet SCGs as a biodiesel feedstock gives economic and environmental benefits by recycling the municipal waste. (C) 2016 Elsevier Ltd. All rights reserved.
+C1 [Park, Jeongseok; Kim, Bora; Lee, Jae W.] Korea Adv Inst Sci & Technol, Dept Chem & Biomol Engn, 291 Daehak Ro, Daejeon 305701, South Korea.
+RP Lee, JW (corresponding author), Korea Adv Inst Sci & Technol, Dept Chem & Biomol Engn, 291 Daehak Ro, Daejeon 305701, South Korea.
+EM jaewlee@kaist.ac.kr
+RI Lee, Jae W/G-7717-2012
+OI Lee, Jae W/0000-0002-8756-0195
+FU Advanced Biomass R&D Center (ABC) as the Global Frontier Project -
+   Ministry of Science, ICT and Future Planning [ABC-2011-0031348]
+FX This work was supported by the Advanced Biomass R&D Center (ABC) as the
+   Global Frontier Project funded by the Ministry of Science, ICT and
+   Future Planning (ABC-2011-0031348).
+CR Ajanovic A, 2011, ENERGY, V36, P2070, DOI 10.1016/j.energy.2010.05.019
+   Al-Hamamre Z, 2012, FUEL, V96, P70, DOI 10.1016/j.fuel.2012.01.023
+   Al-Widyan MI, 2002, BIORESOURCE TECHNOL, V85, P253, DOI 10.1016/S0960-8524(02)00135-9
+   Arulrajah A, 2014, J CLEAN PROD, V72, P181, DOI 10.1016/j.jclepro.2014.03.010
+   Banerjee A, 2009, RESOUR CONSERV RECY, V53, P490, DOI 10.1016/j.resconrec.2009.04.003
+   Bekalo SA, 2010, MATER STRUCT, V43, P1049, DOI 10.1617/s11527-009-9565-0
+   Boey PL, 2011, ENERG CONVERS MANAGE, V52, P2081, DOI 10.1016/j.enconman.2010.12.013
+   Caetano NS, 2014, CLEAN TECHNOL ENVIR, V16, P1423, DOI 10.1007/s10098-014-0773-0
+   Campos-Vega R, 2015, TRENDS FOOD SCI TECH, V45, P24, DOI 10.1016/j.tifs.2015.04.012
+   Carrapiso AI, 2000, MEAT SCI, V56, P159, DOI 10.1016/S0309-1740(00)00035-8
+   Chanakya HN, 2004, PROCESS SAF ENVIRON, V82, P291, DOI 10.1205/095758204323162319
+   Cruz R, 2012, J AGR FOOD CHEM, V60, P7777, DOI 10.1021/jf3018854
+   Curry N, 2012, RENEW ENERG, V41, P200, DOI 10.1016/j.renene.2011.10.019
+   Encinar JM, 2011, BIORESOURCE TECHNOL, V102, P10907, DOI 10.1016/j.biortech.2011.09.068
+   FOLCH J, 1957, J BIOL CHEM, V226, P497
+   Haas MJ, 2011, EUR J LIPID SCI TECH, V113, P1219, DOI 10.1002/ejlt.201100106
+   Hidalgo P, 2013, REV ENVIRON SCI BIO, V12, P179, DOI 10.1007/s11157-013-9308-0
+   Hu X, 2012, FUEL, V97, P512, DOI 10.1016/j.fuel.2012.02.032
+   Im H, 2015, BIORESOURCE TECHNOL, V193, P386, DOI 10.1016/j.biortech.2015.06.122
+   Im H, 2014, BIORESOURCE TECHNOL, V152, P534, DOI 10.1016/j.biortech.2013.11.023
+   Jenkins RW, 2014, ENERG FUEL, V28, P1166, DOI 10.1021/ef4022976
+   Johnson MB, 2009, ENERG FUEL, V23, P5179, DOI 10.1021/ef900704h
+   Kasongo RK, 2011, SOIL USE MANAGE, V27, P94, DOI 10.1111/j.1475-2743.2010.00315.x
+   Kim B, 2015, BIORESOURCE TECHNOL, V185, P421, DOI 10.1016/j.biortech.2015.02.092
+   Kim TH, 2015, BIORESOURCE TECHNOL, V191, P438, DOI 10.1016/j.biortech.2015.03.033
+   Knothe G, 2008, ENERG FUEL, V22, P1358, DOI 10.1021/ef700639e
+   Leifa F, 2001, BRAZ ARCH BIOL TECHN, V44, P205, DOI 10.1590/S1516-89132001000200015
+   Liu XJ, 2008, FUEL, V87, P216, DOI 10.1016/j.fuel.2007.04.013
+   Lotero E, 2005, IND ENG CHEM RES, V44, P5353, DOI 10.1021/ie049157g
+   Miao XL, 2006, BIORESOURCE TECHNOL, V97, P841, DOI 10.1016/j.biortech.2005.04.008
+   Mojapelo N., 2014, EFFECT MOISTURE QUAL
+   Murthy PS, 2012, RESOUR CONSERV RECY, V66, P45, DOI 10.1016/j.resconrec.2012.06.005
+   Mussatto SI, 2011, FOOD BIOPROCESS TECH, V4, P661, DOI 10.1007/s11947-011-0565-z
+   Pittia P, 2007, J TEXTURE STUD, V38, P116, DOI 10.1111/j.1745-4603.2007.00089.x
+   Rocha MVP, 2014, BIORESOURCE TECHNOL, V167, P343, DOI 10.1016/j.biortech.2014.06.032
+   Ramirez-Martinez A., 2010, 17 INT DRYING S IDS, P1
+   Reichardt C., 2011, SOLVENTS SOLVENT EFF, V4th
+   ROCKLAND LB, 1984, FOOD TECHNOL-CHICAGO, V38, P112
+   Sathish A, 2014, J CHEM TECHNOL BIOT, V89, P137, DOI 10.1002/jctb.4125
+   Takahama U, 2008, J AGR FOOD CHEM, V56, P4736, DOI 10.1021/jf703660k
+   U. S. Energy Information Administration, 2015, MONTHL BIOD PROD REP
+NR 41
+TC 74
+Z9 74
+U1 4
+U2 59
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0960-8524
+EI 1873-2976
+J9 BIORESOURCE TECHNOL
+JI Bioresour. Technol.
+PD DEC
+PY 2016
+VL 221
+BP 55
+EP 60
+DI 10.1016/j.biortech.2016.09.001
+PG 6
+WC Agricultural Engineering; Biotechnology & Applied Microbiology; Energy &
+   Fuels
+SC Agriculture; Biotechnology & Applied Microbiology; Energy & Fuels
+GA DZ9ZC
+UT WOS:000386241000008
+PM 27639224
+DA 2021-08-19
+ER
+
+PT J
+AU Pleissner, D
+   Neu, AK
+   Mehlmann, K
+   Schneider, R
+   Puerta-Quintero, GI
+   Venus, J
+AF Pleissner, Daniel
+   Neu, Anna-Katrin
+   Mehlmann, Kerstin
+   Schneider, Roland
+   Ines Puerta-Quintero, Gloria
+   Venus, Joachim
+TI Fermentative lactic acid production from coffee pulp hydrolysate using
+   Bacillus coagulans at laboratory and pilot scales
+SO BIORESOURCE TECHNOLOGY
+LA English
+DT Article
+DE Bacillus coagulans; Renewable resources; Coffee pulp; Agricultural
+   residue utilization
+ID ELECTRODIALYSIS; RECOVERY; WASTE; BROTH
+AB In this study, the lignocellulosic residue coffee pulp was used as carbon source in fermentative L(+)-lactic acid production using Bacillus coagulans. After thermo-chemical treatment at 121 degrees C for 30 min in presence of 0.18 mol L-1 H2SO4 and following an enzymatic digestion using Accellerase 1500 carbon-rich hydrolysates were obtained. Two different coffee pulp materials with comparable biomass composition were used, but sugar concentrations in hydrolysates showed variations. The primary sugars were (g L-1) glucose (20-30), xylose (15-25), sucrose (5-11) and arabinose (0.7-10). Fermentations were carried out at laboratory (2 L) and pilot (50 L) scales in presence of 10 g L-1 yeast extract. At pilot scale carbon utilization and lactic acid yield per gram of sugar consumed were 94.65% and 0.78 g g(-1), respectively. The productivity was 4.02 g L-1 h(-1). Downstream processing resulted in a pure formulation containing 937 g L-1 L(+)-lactic acid with an optical purity of 99.7%. (C) 2016 The Authors. Published by Elsevier Ltd.
+C1 [Pleissner, Daniel; Neu, Anna-Katrin; Mehlmann, Kerstin; Schneider, Roland; Venus, Joachim] Leibniz Inst Agr Engn Potsdam Bornim, Max Eyth Allee 100, D-14469 Potsdam, Germany.
+   [Pleissner, Daniel] Leuphana Univ Luneburg, Inst Sustainable Environm Chem, Sustainable Chem, Scharnhorststr 1,C13, D-21335 Luneburg, Germany.
+   [Ines Puerta-Quintero, Gloria] Cenicafe, Natl Coffee Res Ctr, Km 4 Via Chinchina Manizales, Manizales, Caldas, Colombia.
+RP Venus, J (corresponding author), Leibniz Inst Agr Engn Potsdam Bornim, Max Eyth Allee 100, D-14469 Potsdam, Germany.
+EM jvenus@atb-potsdam.de
+RI Venus, Joachim/A-9643-2018
+OI Venus, Joachim/0000-0001-7708-1783; Puerta Quintero, Gloria
+   Ines/0000-0002-3947-4970; Schneider, Roland/0000-0003-2321-7803;
+   Pleissner, Daniel/0000-0003-1575-5046
+FU German Federal Ministry of Education and ResearchFederal Ministry of
+   Education & Research (BMBF) [FKZ 01DN13057]
+FX We kindly acknowledge financial support from the German Federal Ministry
+   of Education and Research (represented by the DLR; FKZ 01DN13057;
+   bilateral project between Colombia and Germany: CAFELACTIC).
+CR ANKOM, 2014, AC DET FIB FEEDS FIL
+   ANKOM, 2009, RAP DET OIL FAT UT H
+   Bakker RR, 2013, AVAILABILITY LIGNOCE
+   Budhavaram NK, 2009, BIORESOURCE TECHNOL, V100, P5966, DOI 10.1016/j.biortech.2009.01.080
+   Martinez FAC, 2013, TRENDS FOOD SCI TECH, V30, P70, DOI 10.1016/j.tifs.2012.11.007
+   Jong E. D., 2011, 42 IEA BIOEN TASK, V42
+   Kim YH, 2001, J CHEM TECHNOL BIOT, V76, P169, DOI 10.1002/jctb.368.abs
+   Koutinas AA, 2014, CHEM SOC REV, V43, P2587, DOI 10.1039/c3cs60293a
+   Kucharczyk P, 2013, J APPL POLYM SCI, V130, P63, DOI 10.1002/app.39017
+   Kucharczyk P, 2011, J APPL POLYM SCI, V122, P1275, DOI 10.1002/app.34260
+   Murthy PS, 2012, RESOUR CONSERV RECY, V66, P45, DOI 10.1016/j.resconrec.2012.06.005
+   Neu AK, 2016, BIORESOURCE TECHNOL, V211, P398, DOI 10.1016/j.biortech.2016.03.122
+   Ou MS, 2011, J IND MICROBIOL BIOT, V38, P599, DOI 10.1007/s10295-010-0796-4
+   Pandey A, 2000, BIOCHEM ENG J, V6, P153, DOI 10.1016/S1369-703X(00)00084-X
+   Pleissner D., 2016, J CHEM TECHNOL BIOTE
+   Pleissner D, 2014, ACS SYM SER, V1186, P247
+   Taherzadeh MJ, 2008, INT J MOL SCI, V9, P1621, DOI 10.3390/ijms9091621
+   Urbaneja G, 1996, RENEW ENERG, V9, P1041, DOI 10.1016/0960-1481(96)88458-8
+   Wee YJ, 2005, J BIOSCI BIOENG, V99, P104, DOI 10.1263/jbb.99.104
+   Woiciechowski A.L., 2000, COFFEE BIOTECHNOLOGY, P409
+   Woiciechowski AL, 1999, PROCESS BIOCHEM, V34, P949, DOI 10.1016/S0032-9592(99)00012-6
+   Wyman C. E., 2005, POLYSACCHARIDES STRU, P1023, DOI DOI 10.1201/9781420030822.CH43
+NR 22
+TC 58
+Z9 61
+U1 0
+U2 21
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0960-8524
+EI 1873-2976
+J9 BIORESOURCE TECHNOL
+JI Bioresour. Technol.
+PD OCT
+PY 2016
+VL 218
+BP 167
+EP 173
+DI 10.1016/j.biortech.2016.06.078
+PG 7
+WC Agricultural Engineering; Biotechnology & Applied Microbiology; Energy &
+   Fuels
+SC Agriculture; Biotechnology & Applied Microbiology; Energy & Fuels
+GA DX9JI
+UT WOS:000384710500024
+PM 27359065
+OA hybrid
+DA 2021-08-19
+ER
+
+PT J
+AU Obruca, S
+   Benesova, P
+   Kucera, D
+   Petrik, S
+   Marova, I
+AF Obruca, Stanislav
+   Benesova, Pavla
+   Kucera, Dan
+   Petrik, Sinisa
+   Marova, Ivana
+TI Biotechnological conversion of spent coffee grounds into
+   polyhydroxyalkanoates and carotenoids
+SO NEW BIOTECHNOLOGY
+LA English
+DT Article; Proceedings Paper
+CT 16th European Congress on Biotechnology
+CY JUL 13-16, 2014
+CL Edinburgh, SCOTLAND
+ID MANAGEMENT; PRODUCTS; RESIDUES; REMOVAL; STRAINS; WATER
+AB Coffee is one of the world's most popular beverages and has been growing steadily in commercial importance. Nowadays, coffee is the second largest traded commodity in the world, after petroleum. Hence, coffee industry is responsible for the generation of large amounts of waste, especially spent coffee grounds (SCG). Various attempts to valorize this waste stream of coffee industry were made. This article summarizes our research and publications aiming at the conversion of SCG into valuable products polyhydroxyalkanoates (PHAs) and carotenoids. At first, oil extracted from SCG (approx. 15 wt% oil in SCG) can be efficiently (Y-P/S = 0.82 g/g) converted into PHA employing Cupriavidus necator H16. Further, the solid residues after oil extraction can be hydrolyzed (by the combination of chemical and enzymatic hydrolysis) yielding fermentable sugars, which can be further used as a substrate for the production of PHAs employing Bacillus megaterium (Y-P/S = 0.04 g/g) or Burkholderia cepacia (Y-P/S = 0.24 g/g). Alternatively, SCG hydrolysate can be used as a substrate for biotechnological production of carotenoids by carotenogenic yeast Sporobolomyces roseus. Solid residues after either oil extraction or hydrolysis can be used as fuel in industrial boilers to generate heat and energy. Therefore, entire biomass of SCG can be used for sustainable production of PHAs and/or carotenoids employing bio-refinery approach.
+C1 [Obruca, Stanislav; Benesova, Pavla; Petrik, Sinisa; Marova, Ivana] Brno Univ Technol, Fac Chem, Mat Res Ctr, Brno 61200, Czech Republic.
+   [Benesova, Pavla; Kucera, Dan; Marova, Ivana] Brno Univ Technol, Fac Chem, Dept Food Sci & Technol, Brno 61200, Czech Republic.
+RP Obruca, S (corresponding author), Brno Univ Technol, Fac Chem, Mat Res Ctr, Purkynova 118, Brno 61200, Czech Republic.
+EM Stana.O@seznam.cz
+RI Obruca, Stanislav/A-7108-2016; Marova, Ivana/AAI-7406-2020; Marova,
+   Ivana/A-6897-2016
+OI Obruca, Stanislav/0000-0002-9270-195X; Kucera, Dan/0000-0002-3750-5964
+FU project 'Materials Research Centre at FCH BUT - Sustainability and
+   Development' of the Ministry of Education, Youth and Sports of the Czech
+   Republic [LO1211]; project 'Excellent young researcher at BUT'
+   [CZ.1.07./2.3.00/30.0039]
+FX This work was supported by the project 'Materials Research Centre at FCH
+   BUT - Sustainability and Development' No. LO1211 of the Ministry of
+   Education, Youth and Sports of the Czech Republic and by the project
+   'Excellent young researcher at BUT' No. CZ.1.07./2.3.00/30.0039. Authors
+   kindly thank Dr Tomas Opravil (Brno University of Technology, Czech
+   Republic) for the collection of spent coffee grounds and also for the
+   analysis of calorific value.
+CR Al-Hamamre Z, 2012, FUEL, V96, P70, DOI 10.1016/j.fuel.2012.01.023
+   GIVENS DI, 1986, AGR WASTES, V18, P69, DOI 10.1016/0141-4607(86)90108-3
+   Jacquel N, 2008, BIOCHEM ENG J, V39, P15, DOI 10.1016/j.bej.2007.11.029
+   Kessler B, 1999, ENCY BIOPROCESS TECH, P2024
+   Koller M, 2014, BIOCATAL BIOTRANSFOR, V32, P161, DOI 10.3109/10242422.2014.913580
+   Kondamudi N, 2008, J AGR FOOD CHEM, V56, P11757, DOI 10.1021/jf802487s
+   Kwon EE, 2013, BIORESOURCE TECHNOL, V136, P475, DOI 10.1016/j.biortech.2013.03.052
+   Lee PC, 2002, APPL MICROBIOL BIOT, V60, P1, DOI 10.1007/s00253-002-1101-x
+   Leifa F, 2001, BRAZ ARCH BIOL TECHN, V44, P205, DOI 10.1590/S1516-89132001000200015
+   Liu K, 2011, BIORESOURCE TECHNOL, V102, P7966, DOI 10.1016/j.biortech.2011.05.073
+   Machado EMS, 2012, BIOCHEM ENG J, V60, P87, DOI 10.1016/j.bej.2011.10.007
+   Murthy PS, 2012, FOOD BIOPROCESS TECH, V5, P657, DOI 10.1007/s11947-010-0331-7
+   Murthy PS, 2012, RESOUR CONSERV RECY, V66, P45, DOI 10.1016/j.resconrec.2012.06.005
+   Murthy PS, 2009, J CHEM TECHNOL BIOT, V84, P1246, DOI 10.1002/jctb.2142
+   Mussatto SI, 2012, APPL ENERG, V92, P763, DOI 10.1016/j.apenergy.2011.08.020
+   Mussatto SI, 2011, SEP PURIF TECHNOL, V83, P173, DOI 10.1016/j.seppur.2011.09.036
+   Mussatto SI, 2011, FOOD BIOPROCESS TECH, V4, P661, DOI 10.1007/s11947-011-0565-z
+   Obruca S, 2014, PROCESS BIOCHEM, V49, P1409, DOI 10.1016/j.procbio.2014.05.013
+   Obruca S, 2014, APPL MICROBIOL BIOT, V98, P5883, DOI 10.1007/s00253-014-5653-3
+   Obruca S, 2010, BIOTECHNOL LETT, V32, P1925, DOI 10.1007/s10529-010-0376-8
+   Panusa A, 2013, J AGR FOOD CHEM, V61, P4162, DOI 10.1021/jf4005719
+   Passos CP, 2014, CARBOHYD POLYM, V103, P333, DOI 10.1016/j.carbpol.2013.12.053
+   Petrik S, 2014, BIOCHEM ENG J, V90, P307, DOI 10.1016/j.bej.2014.06.025
+   Ramalakshmi K, 2009, FOOD CHEM, V115, P79, DOI 10.1016/j.foodchem.2008.11.063
+   Ribeiro H, 2013, EUR J LIPID SCI TECH, V115, P330, DOI 10.1002/ejlt.201200239
+   Safarik I, 2012, EUR FOOD RES TECHNOL, V234, P345, DOI 10.1007/s00217-011-1641-3
+   Sampaio A, 2013, LWT-FOOD SCI TECHNOL, V54, P557, DOI 10.1016/j.lwt.2013.05.042
+   Silva MA, 1998, BIOMASS BIOENERG, V14, P457, DOI 10.1016/S0961-9534(97)10034-4
+   Simova ED, 2004, J IND MICROBIOL BIOT, V31, P115, DOI 10.1007/s10295-004-0122-0
+   Soares B, 2014, J CHEM TECHNOL BIOTE
+   Stalmach A, 2010, ARCH BIOCHEM BIOPHYS, V501, P98, DOI 10.1016/j.abb.2010.03.005
+   Cesario MT, 2014, NEW BIOTECHNOL, V31, P104, DOI 10.1016/j.nbt.2013.10.004
+   Titz M, 2012, CLEAN TECHNOL ENVIR, V14, P495, DOI 10.1007/s10098-012-0464-7
+   Tokimoto T, 2005, J COLLOID INTERF SCI, V281, P56, DOI 10.1016/j.jcis.2004.08.083
+   Zuorro A, 2012, J CLEAN PROD, V34, P49, DOI 10.1016/j.jclepro.2011.12.003
+NR 35
+TC 60
+Z9 64
+U1 4
+U2 274
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 1871-6784
+EI 1876-4347
+J9 NEW BIOTECHNOL
+JI New Biotech.
+PD DEC 25
+PY 2015
+VL 32
+IS 6
+BP 569
+EP 574
+DI 10.1016/j.nbt.2015.02.008
+PG 6
+WC Biochemical Research Methods; Biotechnology & Applied Microbiology
+SC Biochemistry & Molecular Biology; Biotechnology & Applied Microbiology
+GA CQ9GE
+UT WOS:000360920400006
+PM 25721970
+DA 2021-08-19
+ER
+
+PT J
+AU Jimenez-Zamora, A
+   Pastoriza, S
+   Rufian-Henares, JA
+AF Jimenez-Zamora, Ana
+   Pastoriza, Silvia
+   Rufian-Henares, Jose A.
+TI Revalorization of coffee by-products. Prebiotic, antimicrobial and
+   antioxidant properties
+SO LWT-FOOD SCIENCE AND TECHNOLOGY
+LA English
+DT Article
+DE Coffee by-products; Coffee melanoidins; Prebiotic activity;
+   Antimicrobial activity; Antioxidant capacity
+ID SPENT COFFEE; ESCHERICHIA-COLI; GREEN COFFEE; MELANOIDINS; CAPACITY;
+   RESIDUES; ACIDS
+AB Coffee industries are a key sector in the global economy due to income reporting and job creation. Coffee companies produce annually more than 2 billion tons of by-products such as coffee spent grounds (CSG) and coffee silverskin (CS). And most of which are thrown away and are not recycled for other purposes. Here we show the prebiotic, antimicrobial and antioxidant capacity of CSG and CS, as well as those melanoidins (a coffee component generated during the roasting process) obtained from the former. The prebiotic activity was important in both CSG and CS, although the presence of coffee melanoidins (CM) interfered with such beneficial properties. On the contrary, CM exerted an intense antimicrobial activity that could be used to avoid the growth of pathogenic bacteria in food products. In addition, CSG, CS and CM were highly antioxidant, even their indigestible fraction, which were the most relevant. Finally, we found that the addition of sugar during coffee roasting, namely torrefacto, increased the antioxidant and antimicrobial activity due to a larger generation of CM, although prebiotic activity was not affected. Therefore, CSG, CS and CM should be recycled in order to be used as a source of new food ingredients. (C) 2014 Elsevier Ltd. All rights reserved.
+C1 [Jimenez-Zamora, Ana; Rufian-Henares, Jose A.] Univ Granada, Dept Nutr & Bromatol, Fac Farm, E-18071 Granada, Spain.
+   [Pastoriza, Silvia] Spanish Natl Res Council, Estn Expt Zaidin, Dept Fisiol & Bioquim Nutr Anim INAN, Granada, Spain.
+RP Rufian-Henares, JA (corresponding author), Univ Granada, Dept Nutr & Bromatol, Fac Farm, Campus Cartuja, E-18071 Granada, Spain.
+EM jarufian@ugr.es
+RI Henares, Jose Angel Rufian/K-4935-2014; Pastoriza, Silvia/J-1081-2018
+OI Henares, Jose Angel Rufian/0000-0002-1428-4353; Pastoriza,
+   Silvia/0000-0003-3883-1929
+FU Consejeria de Innovacion, Ciencia y Empresa (Junta de Andalucia)Junta de
+   Andalucia [AGR-4135]; postdoctoral scholarship of Silvia Pastoriza from
+   Instituto Danone (Spain)
+FX This work was supported by the project AGR-4135 from Consejeria de
+   Innovacion, Ciencia y Empresa (Junta de Andalucia) and the postdoctoral
+   scholarship of Silvia Pastoriza from Instituto Danone (Spain).
+CR Alvarez J, 2014, FOOD CHEM, V164, P396, DOI 10.1016/j.foodchem.2014.05.047
+   Belviso S, 2014, FOOD RES INT, V61, P93, DOI 10.1016/j.foodres.2014.02.035
+   Benzie IFF, 1996, ANAL BIOCHEM, V239, P70, DOI 10.1006/abio.1996.0292
+   Borrelli RC, 2004, J AGR FOOD CHEM, V52, P1338, DOI 10.1021/jf034974x
+   Bravo J, 2013, FOOD RES INT, V50, P610, DOI 10.1016/j.foodres.2011.04.026
+   Bravo J, 2012, J AGR FOOD CHEM, V60, P12565, DOI 10.1021/jf3040594
+   Bresciani L, 2014, FOOD RES INT, V61, P196, DOI 10.1016/j.foodres.2013.10.047
+   Butt MS, 2011, CRIT REV FOOD SCI, V51, P363, DOI 10.1080/10408390903586412
+   Cruz R, 2012, J AGR FOOD CHEM, V60, P7777, DOI 10.1021/jf3018854
+   DAGLIA M, 1994, J AGR FOOD CHEM, V42, P2270, DOI 10.1021/jf00046a035
+   Delgado-Andrade C, 2005, J AGR FOOD CHEM, V53, P7832, DOI 10.1021/jf0512353
+   Farah A, 2008, J NUTR, V138, P2309, DOI 10.3945/jn.108.095554
+   Gokmen V, 2009, TRENDS FOOD SCI TECH, V20, P278, DOI 10.1016/j.tifs.2009.03.010
+   Kondamudi N, 2008, J AGR FOOD CHEM, V56, P11757, DOI 10.1021/jf802487s
+   Ludwig IA, 2013, LWT-FOOD SCI TECHNOL, V51, P553, DOI 10.1016/j.lwt.2012.12.010
+   Silvan JM, 2010, J AGR FOOD CHEM, V58, P12244, DOI 10.1021/jf102489u
+   Muros J. J., 2014, HDB PHYS ACTIVITY RE, P283
+   Mussatto SI, 2011, FOOD BIOPROCESS TECH, V4, P661, DOI 10.1007/s11947-011-0565-z
+   Mussatto SI, 2010, BIOCHEM ENG J, V53, P154, DOI 10.1016/j.bej.2010.09.012
+   Mussatto SI, 2011, CARBOHYD POLYM, V83, P368, DOI 10.1016/j.carbpol.2010.07.063
+   Nabais JMV, 2008, FUEL PROCESS TECHNOL, V89, P262, DOI 10.1016/j.fuproc.2007.11.030
+   Narita Y, 2012, FOOD CHEM, V135, P943, DOI 10.1016/j.foodchem.2012.05.078
+   Natella F, 2007, AM J CLIN NUTR, V86, P604
+   Nikaido H, 1994, SCIENCE, V364, P282
+   Pascoa RNMJ, 2013, FOOD RES INT, V51, P579, DOI 10.1016/j.foodres.2013.01.035
+   Pastoriza S, 2011, FOOD CHEM, V129, P1926, DOI 10.1016/j.foodchem.2011.06.009
+   Pastoriza S, 2014, FOOD CHEM, V164, P438, DOI 10.1016/j.foodchem.2014.04.118
+   Ramalakshmi K, 2009, FOOD CHEM, V115, P79, DOI 10.1016/j.foodchem.2008.11.063
+   Re R, 1999, FREE RADICAL BIO MED, V26, P1231, DOI 10.1016/S0891-5849(98)00315-3
+   Rufian-Henares JA, 2008, FOOD CHEM, V111, P1069, DOI 10.1016/j.foodchem.2008.05.027
+   Rufian-Henares JA, 2007, FOOD RES INT, V40, P995, DOI 10.1016/j.foodres.2007.05.002
+   Rufian-Henares JA, 2007, J AGR FOOD CHEM, V55, P1480, DOI 10.1021/jf062604d
+   Rufian-Henares JA, 2008, J AGR FOOD CHEM, V56, P2357, DOI [10.1021/jf073300, 10.1021/jf073300+]
+   Rufian-Henares JA, 2009, J AGR FOOD CHEM, V57, P432, DOI 10.1021/jf8027842
+   Silva MA, 1998, BIOMASS BIOENERG, V14, P457, DOI 10.1016/S0961-9534(97)10034-4
+   Vignoli JA, 2011, FOOD CHEM, V124, P863, DOI 10.1016/j.foodchem.2010.07.008
+NR 36
+TC 91
+Z9 93
+U1 3
+U2 135
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0023-6438
+EI 1096-1127
+J9 LWT-FOOD SCI TECHNOL
+JI LWT-Food Sci. Technol.
+PD APR
+PY 2015
+VL 61
+IS 1
+BP 12
+EP 18
+DI 10.1016/j.lwt.2014.11.031
+PG 7
+WC Food Science & Technology
+SC Food Science & Technology
+GA CA5MS
+UT WOS:000348953100003
+DA 2021-08-19
+ER
+
+PT J
+AU Caetano, NS
+   Silva, VFM
+   Melo, AC
+   Martins, AA
+   Mata, TM
+AF Caetano, Nidia S.
+   Silva, Vania F. M.
+   Melo, Ana C.
+   Martins, Antonio A.
+   Mata, Teresa M.
+TI Spent coffee grounds for biodiesel production and other applications
+SO CLEAN TECHNOLOGIES AND ENVIRONMENTAL POLICY
+LA English
+DT Article
+DE Biodiesel; Fertilizer; Lipid extraction; Solid fuel; Spent coffee
+   grounds
+ID OIL; EXTRACTION; RECOVERY; ETHANOL; WASTE
+AB This work evaluates the possibility of using spent coffee grounds (SCG) for biodiesel production and other applications. An experimental study was conducted with different solvents showing that lipid content up to 6 wt% can be obtained from SCG. Results also show that besides biodiesel production, SCG can be used as fertilizer as it is rich in nitrogen, and as solid fuel with higher heating value (HHV) equivalent to some agriculture and wood residues. The extracted lipids were characterized for their properties of acid value, density at 15 A degrees C, viscosity at 40 A degrees C, iodine number, and HHV, which are negatively influenced by water content and solvents used in lipid extraction. Results suggest that for lipids with high free fatty acids (FFA), the best procedure for conversion to biodiesel would be a two-step process of acid esterification followed by alkaline transesterification, instead of a sole step of direct transesterification with acid catalyst. Biodiesel was characterized for its properties of iodine number, acid value, and ester content. Although these quality parameters were not within the limits of NP EN 14214:2009 standard, SCG lipids can be used for biodiesel, blended with higher-quality vegetable oils before transesterification, or the biodiesel produced from SCG can be blended with higher-quality biodiesel or even with fossil diesel, in order to meet the standard requirements.
+C1 [Caetano, Nidia S.; Silva, Vania F. M.] Polytech Inst Porto IPP, Sch Engn ISEP, Dept Chem Engn, P-4200072 Oporto, Portugal.
+   [Caetano, Nidia S.; Melo, Ana C.; Mata, Teresa M.] Univ Porto FEUP, Fac Engn, Lab Proc Engn, Biotechnol & Energy LEPABE, P-4200465 Oporto, Portugal.
+   [Martins, Antonio A.] Oporto Lusophone Univ, Dept Environm Engn, Fac Nat Sci Engn & Technol FCNET, P-4000098 Oporto, Portugal.
+RP Mata, TM (corresponding author), Univ Porto FEUP, Fac Engn, Lab Proc Engn, Biotechnol & Energy LEPABE, R Dr Roberto Frias S-N, P-4200465 Oporto, Portugal.
+EM nsc@isep.ipp.pt; tmmata@gmail.com
+RI Caetano, Nidia S./I-3934-2012; Martins, Antonio/I-4345-2013; Mata,
+   Teresa M./I-4364-2013
+OI Caetano, Nidia S./0000-0002-2185-6401; Martins,
+   Antonio/0000-0002-4930-078X; Mata, Teresa M./0000-0001-8696-8925
+CR Adi AJ, 2009, BIORESOURCE TECHNOL, V100, P1027, DOI 10.1016/j.biortech.2008.07.024
+   Al-Hamamre Z, 2012, FUEL, V96, P70, DOI 10.1016/j.fuel.2012.01.023
+   Alves B, 2007, CIENCIA ENGENHARIA, V16, P9
+   [Anonymous], 2009, 14214 EN
+   APHA, 1999, STANDARD METHODS EXA
+   Bizzo W., 2003, GENERATION DISTRIBUT
+   Caetano NS, 2012, CHEM ENGINEER TRANS, V26, P267, DOI 10.3303/CET1226045
+   Caetano NS, 2012, CHEM ENGINEER TRANS, V26, P81, DOI 10.3303/CET1226014
+   ChartsBin.com, 2014, CURR WORLDW ANN COFF
+   Dinsdale RM, 1996, WATER RES, V30, P371, DOI 10.1016/0043-1354(95)00157-3
+   GIVENS DI, 1986, AGR WASTES, V18, P69, DOI 10.1016/0141-4607(86)90108-3
+   Kante K, 2012, J HAZARD MATER, V201, P141, DOI 10.1016/j.jhazmat.2011.11.053
+   Kondamudi N, 2008, J AGR FOOD CHEM, V56, P11757, DOI 10.1021/jf802487s
+   Kwon EE, 2013, BIORESOURCE TECHNOL, V136, P475, DOI 10.1016/j.biortech.2013.03.052
+   Lago R., 2001, 2 S PESQ CAF BRAS, P1473
+   Lavecchia R, 2010, CHEM ENGINEER TRANS, V19, P73, DOI 10.3303/CET1019013
+   LEPAGE G, 1984, J LIPID RES, V25, P1391
+   Mata TM, 2010, CHEM ENGINEER TRANS, V19, P13, DOI 10.3303/CET1019003
+   Mata TM, 2010, CURRENT TRENDS IN CHEMICAL ENGINEERING, P313
+   Mata TM, 2013, SUSTAIN ENERGY TECHN, V3, P53, DOI 10.1016/j.seta.2013.06.001
+   Mata TM, 2012, BIORESOURCE TECHNOL, V107, P151, DOI 10.1016/j.biortech.2011.12.109
+   Mata TM, 2011, CLEAN TECHNOL ENVIR, V13, P655, DOI 10.1007/s10098-010-0346-9
+   Melo G., 2007, COMPOSTING
+   Mussatto SI, 2012, APPL ENERG, V92, P763, DOI 10.1016/j.apenergy.2011.08.020
+   Mussatto SI, 2011, FOOD BIOPROCESS TECH, V4, P661, DOI 10.1007/s11947-011-0565-z
+   Mussatto SI, 2011, CARBOHYD POLYM, V83, P368, DOI 10.1016/j.carbpol.2010.07.063
+   Nogueira A, 1999, TEMPERATURE RANGE CO, P8
+   Oliveira LS, 2008, BIORESOURCE TECHNOL, V99, P3244, DOI 10.1016/j.biortech.2007.05.074
+   Panusa A, 2013, J AGR FOOD CHEM, V61, P4162, DOI 10.1021/jf4005719
+   Sousa C, 2009, THESIS U MINHO
+   United States Department of Agriculture, 2013, COFF WORLD MARK TRAD
+   Vardon DR, 2013, ACS SUSTAIN CHEM ENG, V1, P1286, DOI 10.1021/sc400145w
+NR 32
+TC 74
+Z9 76
+U1 4
+U2 85
+PU SPRINGER
+PI NEW YORK
+PA 233 SPRING ST, NEW YORK, NY 10013 USA
+SN 1618-954X
+EI 1618-9558
+J9 CLEAN TECHNOL ENVIR
+JI Clean Technol. Environ. Policy
+PD OCT
+PY 2014
+VL 16
+IS 7
+SI SI
+BP 1423
+EP 1430
+DI 10.1007/s10098-014-0773-0
+PG 8
+WC Green & Sustainable Science & Technology; Engineering, Environmental;
+   Environmental Sciences
+SC Science & Technology - Other Topics; Engineering; Environmental Sciences
+   & Ecology
+GA AP6NR
+UT WOS:000342195000020
+OA Green Submitted
+DA 2021-08-19
+ER
+
+PT J
+AU Martinez-Saez, N
+   Ullate, M
+   Martin-Cabrejas, MA
+   Martorell, P
+   Genoves, S
+   Ramon, D
+   del Castillo, MD
+AF Martinez-Saez, Nuria
+   Ullate, Monica
+   Martin-Cabrejas, Maria A.
+   Martorell, Patricia
+   Genoves, Salvador
+   Ramon, Daniel
+   Dolores del Castillo, Maria
+TI A novel antioxidant beverage for body weight control based on coffee
+   silverskin
+SO FOOD CHEMISTRY
+LA English
+DT Article
+DE Antioxidant; Body weight control; Coffee silverskin; Innovative
+   revalorisation of coffee by-products; Novel beverage
+ID CAENORHABDITIS-ELEGANS; DIETARY FIBER; CAFFEINE; MELANOIDINS;
+   POLYPHENOLS; CONSUMPTION; MECHANISMS; MODEL
+AB The present research aimed to add value to coffee silverskin by looking for new innovative applications. Formulation of novel beverages based on coffee silverskin for body fat reduction and body weight control was proposed. Conditions for beverage preparation were optimised. Data on chemical composition and sensorial quality of the new drink were acquired. Health benefits were evaluated in vitro and in vivo employing as animal model Caenorhabditis elegans. An antioxidant beverage containing physiological active concentrations of caffeine and chlorogenic acid for prevention body fat accumulation and possessing acceptable sensorial properties was obtained. Our findings support that the use of coffee silverskin for obtaining bioactive extract is an innovative way for revalorisation of coffee by-product. (C) 2013 Elsevier Ltd. All rights reserved.
+C1 [Martinez-Saez, Nuria; Ullate, Monica; Martin-Cabrejas, Maria A.; Dolores del Castillo, Maria] UAM CSIC, Food Sci Res Inst, Nicolas Cabrera 9, Madrid 28049, Spain.
+   [Martorell, Patricia; Genoves, Salvador; Ramon, Daniel] Biopolis SL, Valencia 46980, Spain.
+RP del Castillo, MD (corresponding author), UAM CSIC, Food Sci Res Inst, Nicolas Cabrera 9, Madrid 28049, Spain.
+EM nur.martinez@titulado.uam.es; mullateartiz@ifi.csic.es;
+   maria.martin@uam.es; patricia.martorell@biopolis.es;
+   salvador.genoves@biopolis.es; daniel.ramon@biopolis.es;
+   mdolores.delcastillo@csic.es
+RI del Castillo/J-6283-2012; Martin-Cabrejas, Maria Angeles/L-6433-2014
+OI del Castillo/0000-0001-6309-5383; Martin-Cabrejas, Maria
+   Angeles/0000-0001-9834-639X
+FU Naturage project [AGL2010-17779]; CONSOLIDER Ingenio (FUN-C-FOOD)
+   project [CSD 2007-00063]; U.A.M.
+FX This work has been funded by Naturage (AGL2010-17779) and CONSOLIDER
+   Ingenio 2010 (FUN-C-FOOD: CSD 2007-00063) projects. Nuria Martinez-Saez
+   thanks U.A.M. for her research fellowship. Authors also thank Dr. P.
+   Martin for the statistical analysis of the data and Cafinsa, Fortaleza,
+   Vitoria for supplying the raw material for preparation of bioactive
+   extracts.
+CR Adams A, 2005, J AGR FOOD CHEM, V53, P4136, DOI 10.1021/jf047903m
+   Albanese D, 2009, FOOD RES INT, V42, P727, DOI 10.1016/j.foodres.2009.02.027
+   Borrelli RC, 2004, J AGR FOOD CHEM, V52, P1338, DOI 10.1021/jf034974x
+   Borrelli RC, 2002, J AGR FOOD CHEM, V50, P6527, DOI 10.1021/jf025686o
+   Capel J.C., 2010, CAFE ESTILO VIDA SAL, P15
+   Cho AS, 2010, FOOD CHEM TOXICOL, V48, P937, DOI 10.1016/j.fct.2010.01.003
+   Contini M, 2008, FOOD CHEM, V110, P659, DOI 10.1016/j.foodchem.2008.02.060
+   del Castillo M. D., 2013, Patent No. [WO 2013/004873, 20131004873]
+   del Castillo MD, 2002, J AGR FOOD CHEM, V50, P3698, DOI 10.1021/jf011702q
+   Dostal V, 2010, GENETICS, V186, P857, DOI 10.1534/genetics.110.120436
+   Figuerola F, 2005, FOOD CHEM, V91, P395, DOI 10.1016/j.foodchem.2004.04.036
+   Furosawa M., 2011, BIOSCIENCE BIOTECHNO, V75, P1205, DOI DOI 10.1271/bbb.110106
+   Glade MJ, 2010, NUTRITION, V26, P932, DOI 10.1016/j.nut.2010.08.004
+   Jaquet M, 2009, INT J FOOD MICROBIOL, V130, P117, DOI 10.1016/j.ijfoodmicro.2009.01.011
+   King DE, 2007, ARCH INTERN MED, V167, P502, DOI 10.1001/archinte.167.5.502
+   Lopez-Garcia E, 2006, AM J CLIN NUTR, V83, P674
+   Silvan JM, 2010, J AGR FOOD CHEM, V58, P12244, DOI 10.1021/jf102489u
+   Martorell P, 2012, J AGR FOOD CHEM, V60, P11071, DOI 10.1021/jf3031138
+   Masuko T, 2005, ANAL BIOCHEM, V339, P69, DOI 10.1016/j.ab.2004.12.001
+   Moreira ASP, 2012, FOOD FUNCT, V3, P903, DOI 10.1039/c2fo30048f
+   Murase T, 2011, AM J PHYSIOL-ENDOC M, V300, pE122, DOI 10.1152/ajpendo.00441.2010
+   Mure K, 2013, NUTRITION, V29, P982, DOI 10.1016/j.nut.2013.01.011
+   Murthy PS, 2012, FOOD BIOPROCESS TECH, V5, P897, DOI 10.1007/s11947-010-0363-z
+   Murthy PS, 2009, J CHEM TECHNOL BIOT, V84, P1246, DOI 10.1002/jctb.2142
+   Mussatto SI, 2011, FOOD BIOPROCESS TECH, V4, P661, DOI 10.1007/s11947-011-0565-z
+   Napolitano A, 2007, J AGR FOOD CHEM, V55, P10499, DOI 10.1021/jf071959+
+   Narita Y, 2012, FOOD CHEM, V135, P943, DOI 10.1016/j.foodchem.2012.05.078
+   Oki T, 2006, FOOD SCI TECHNOL RES, V12, P156, DOI 10.3136/fstr.12.156
+   Pourfarzad A, 2013, LWT-FOOD SCI TECHNOL, V50, P599, DOI 10.1016/j.lwt.2012.08.001
+   Sebekova K, 2012, PHYSIOL BEHAV, V105, P693, DOI 10.1016/j.physbeh.2011.10.004
+   Surco-Laos F, 2012, FOOD RES INT, V46, P514, DOI 10.1016/j.foodres.2011.10.014
+   Tucker LA, 2009, J NUTR, V139, P576, DOI 10.3945/jn.108.096685
+   Vignoli JA, 2011, FOOD CHEM, V124, P863, DOI 10.1016/j.foodchem.2010.07.008
+NR 33
+TC 54
+Z9 55
+U1 3
+U2 97
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0308-8146
+EI 1873-7072
+J9 FOOD CHEM
+JI Food Chem.
+PD MAY 1
+PY 2014
+VL 150
+BP 227
+EP 234
+DI 10.1016/j.foodchem.2013.10.100
+PG 8
+WC Chemistry, Applied; Food Science & Technology; Nutrition & Dietetics
+SC Chemistry; Food Science & Technology; Nutrition & Dietetics
+GA 295ZU
+UT WOS:000330155700035
+PM 24360444
+DA 2021-08-19
+ER
+
+PT J
+AU Cruz, MV
+   Paiva, A
+   Lisboa, P
+   Freitas, F
+   Alves, VD
+   Simoes, P
+   Barreiros, S
+   Reis, MAM
+AF Cruz, Madalena V.
+   Paiva, Alexandre
+   Lisboa, Pedro
+   Freitas, Filomena
+   Alves, Vitor D.
+   Simoes, Pedro
+   Barreiros, Susana
+   Reis, Maria A. M.
+TI Production of polyhydroxyalkanoates from spent coffee grounds oil
+   obtained by supercritical fluid extraction technology
+SO BIORESOURCE TECHNOLOGY
+LA English
+DT Article
+DE Polyhydroxyalkanoates (PHAs); Cupriavidus necator; Spent coffee grounds
+   (SCG); Triglycerides; Supercritical fluid extraction (SFE)
+ID CUPRIAVIDUS-NECATOR
+AB Spent coffee grounds (SCG) oil was obtained by supercritical carbon dioxide (scCO(2)) extraction in a pilot plant apparatus, with an oil extraction yield of 90% at a 35 kg kg(-1) CO2/SCG ratio. Cupriavidus necator DSM 428 was cultivated in 2 L bioreactor using extracted SCG oil as sole carbon source for production of polyhydroxyalkanoates. The culture reached a cell dry weight of 16.7 g L-1 with a polymer content of 78.4% (w/w). The volumetric polymer productivity and oil yield were 4.7 g L-1 day(-1) and 0.77 g g(-1), respectively. The polymer produced was a homopolymer of 3-hydroxybutyrate with an average molecular weight of 2.34 x 10(5) and a polydispersity index of 1.2. The polymer exhibited brittle behaviour, with very low elongation at break (1.3%), tensile strength at break of 16 MPa and Young's Modulus of 1.0 GPa. Results show that SCG can be a bioresource for polyhydroxyalkanoates production with interesting properties. (C) 2014 Elsevier Ltd. All rights reserved.
+C1 [Cruz, Madalena V.; Paiva, Alexandre; Lisboa, Pedro; Freitas, Filomena; Simoes, Pedro; Barreiros, Susana; Reis, Maria A. M.] FCT Univ Nova Lisboa, Dept Chem, REQUIMTE CQFB, P-2829516 Caparica, Portugal.
+   [Alves, Vitor D.] Univ Lisbon, Inst Agron, CEER Biosyst Engn Ctr, P-1349017 Lisbon, Portugal.
+RP Reis, MAM (corresponding author), FCT Univ Nova Lisboa, Dept Chem, REQUIMTE CQFB, P-2829516 Caparica, Portugal.
+EM amr@fct.unl.pt
+RI Paiva, Alexandre/K-8453-2012; Barreiros, Susana/A-7892-2012; Freitas,
+   Filomena/K-1828-2012; Alves, Vitor D/N-3572-2013; Simoes, Pedro
+   MC/D-5061-2011; Reis, Maria A./D-8303-2013
+OI Paiva, Alexandre/0000-0003-0328-999X; Barreiros,
+   Susana/0000-0002-7268-5892; Freitas, Filomena/0000-0002-9430-4640;
+   Alves, Vitor D/0000-0002-4117-5582; Simoes, Pedro
+   MC/0000-0001-5295-8905; Reis, Maria A./0000-0003-4000-1836; Proenca,
+   Madalena/0000-0002-4342-3690
+FU Fundacao para a Ciencia e a Tecnologia (Portugal)Portuguese Foundation
+   for Science and Technology [SFRH/BPD/72280/2010, SFRH/BPD/44946/2008,
+   SFRH/BD/72142/2010, SFRH/BDE/51890/2012, PEst-C/EQB/LA0006/2013]
+FX This work was developed as a Quadro de Referencia Estrategica Nacional
+   (QREN) project in collaboration with the Portuguese coffee company -
+   NovaDelta, Comercio e Industria de Cafes, S.A. (Campo Maior, Portugal).
+   Filomena Freitas, Alexandre Paiva, Madalena V. Cruz and Pedro Lisboa
+   acknowledge the financial support of Fundacao para a Ciencia e a
+   Tecnologia (Portugal) through, respectively, Post-Doctoral fellowships
+   SFRH/BPD/72280/2010 and SFRH/BPD/44946/2008, and PhD fellowships
+   SFRH/BD/72142/2010 and SFRH/BDE/51890/2012, as well as the project
+   PEst-C/EQB/LA0006/2013. The authors thank Prof. Ana Maria Ramos for the
+   determination of the molecular weight of the polymer.
+CR Akaraonye E, 2010, J CHEM TECHNOL BIOT, V85, P732, DOI 10.1002/jctb.2392
+   Al-Hamamre Z, 2012, FUEL, V96, P70, DOI 10.1016/j.fuel.2012.01.023
+   Andrade KS, 2012, TALANTA, V88, P544, DOI 10.1016/j.talanta.2011.11.031
+   Brunner G., 1994, GAS EXTRACTION
+   Couto RM, 2009, J SUPERCRIT FLUID, V51, P159, DOI 10.1016/j.supflu.2009.09.009
+   Fiorese ML, 2009, ENG LIFE SCI, V9, P454, DOI 10.1002/elsc.200900034
+   Freitas F, 2009, BIORESOURCE TECHNOL, V100, P859, DOI 10.1016/j.biortech.2008.07.002
+   Kahar P, 2004, POLYM DEGRAD STABIL, V83, P79, DOI 10.1016/S0141-3910(03)00227-1
+   Kondamudi N, 2008, J AGR FOOD CHEM, V56, P11757, DOI 10.1021/jf802487s
+   Ng KS, 2010, POLYM DEGRAD STABIL, V95, P1365, DOI 10.1016/j.polymdegradstab.2010.01.021
+   Obruca S, 2010, BIOTECHNOL LETT, V32, P1925, DOI 10.1007/s10529-010-0376-8
+   Park DH, 2011, NEW BIOTECHNOL, V28, P719, DOI 10.1016/j.nbt.2011.01.007
+   Serafim LS, 2008, MACROMOL BIOSCI, V8, P355, DOI 10.1002/mabi.200700200
+   Taniguchi I, 2003, GREEN CHEM, V5, P545, DOI 10.1039/b304800b
+   Tokimoto T, 2005, J COLLOID INTERF SCI, V281, P56, DOI 10.1016/j.jcis.2004.08.083
+   Verlinden RAJ, 2011, AMB EXPRESS, V1, DOI 10.1186/2191-0855-1-11
+NR 16
+TC 61
+Z9 65
+U1 1
+U2 96
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0960-8524
+EI 1873-2976
+J9 BIORESOURCE TECHNOL
+JI Bioresour. Technol.
+PD APR
+PY 2014
+VL 157
+BP 360
+EP 363
+DI 10.1016/j.biortech.2014.02.013
+PG 4
+WC Agricultural Engineering; Biotechnology & Applied Microbiology; Energy &
+   Fuels
+SC Agriculture; Biotechnology & Applied Microbiology; Energy & Fuels
+GA AF6MQ
+UT WOS:000334829600049
+PM 24594316
+DA 2021-08-19
+ER
+
+PT J
+AU Jenkins, RW
+   Stageman, NE
+   Fortune, CM
+   Chuck, CJ
+AF Jenkins, Rhodri W.
+   Stageman, Natasha E.
+   Fortune, Christopher M.
+   Chuck, Christopher J.
+TI Effect of the Type of Bean, Processing, and Geographical Location on the
+   Biodiesel Produced from Waste Coffee Grounds
+SO ENERGY & FUELS
+LA English
+DT Article
+ID SUPERCRITICAL CARBON-DIOXIDE; FATTY-ACIDS; OIL; EXTRACTION; REMOVAL;
+   ARABICA; GREEN; QUALITY; KAHWEOL; LIPIDS
+AB Waste coffee grounds offer a viable waste feedstock for biodiesel production. Approximately 8 million tonnes of coffee are produced globally each year and contain up to 15 wt % lipid, of which the glyceride portion is predominantly made up of palmitic, stearic, oleic, and linoleic acids. In this investigation, the variation in the oil content, saponifiable lipids, and lipid profile according to the regional location and processing or brewing techniques was assessed. A number of key fuel properties were also investigated. The oil content for fresh coffee grounds (FCGs) ranged from 11 to 15% across the range of coffees examined. Spent coffee grounds (SCGs) had slightly reduced levels of lipid, between 7 and 13 wt %, for the coffees under investigation. The lipids contained between 0 and 40% unsaponifiable material, which could not be processed to fatty acid methyl ester (FAME). For all samples, with the exception of Vietnamese coffee, the FAME profile of the resulting biodiesel was consistent; the oils contained between 35 and 40% palmitic acid, between 7 and 8% oleic acid, between 44 and 50% linolenic acid, and between 7 and 8% stearic acid, although the fuel properties were reasonably variable across the data set. The kinematic viscosity ranged between 4.0 and 5.5 mm(2) s(-1); the density ranged between 841 and 927 kg m(-3); and the pour point ranged between -1 and 16 degrees C. This variation was also observed in previous reports, suggesting that these fuel properties are not solely determined by the FAME profile but other lipid-soluble biomolecules present in the coffee biodiesel.
+C1 [Jenkins, Rhodri W.; Chuck, Christopher J.] Univ Bath, Dept Chem Engn, Ctr Sustainable Chem Technol, Bath BA2 7AY, Avon, England.
+   [Stageman, Natasha E.; Fortune, Christopher M.] Univ Bath, Dept Chem Engn, Bath BA2 7AY, Avon, England.
+RP Chuck, CJ (corresponding author), Univ Bath, Dept Chem Engn, Ctr Sustainable Chem Technol, Bath BA2 7AY, Avon, England.
+EM c.chuck@bath.ac.uk
+FU Engineering and Physical Sciences Research Council (EPSRC) through the
+   Doctoral Training Centre at the University of Bath; Whorrod Research
+   Fellowship
+FX The authors thank the Engineering and Physical Sciences Research Council
+   (EPSRC) for partially funding this work through the Doctoral Training
+   Centre at the University of Bath, Dr. Lucy Series for providing the
+   statistical analysis and proofreading the manuscript, the students of
+   the 2013 University of Bath, Chemical Engineering Headstart course, and
+   Roger and Sue Whorrod for their generous donation, resulting in a
+   Whorrod Research Fellowship held by the corresponding author.
+CR Abdullah M, 2013, RENEW ENERG, V50, P965, DOI 10.1016/j.renene.2012.08.073
+   Ageitos JM, 2011, APPL MICROBIOL BIOT, V90, P1219, DOI 10.1007/s00253-011-3200-z
+   Aguiar ATD, 2005, PESQUI AGROPECU BRAS, V40, P1251, DOI 10.1590/S0100-204X2005001200015
+   Al-Hamamre Z, 2012, FUEL, V96, P70, DOI 10.1016/j.fuel.2012.01.023
+   Araujo JMA, 2007, FOOD CHEM, V101, P1087, DOI 10.1016/j.foodchem.2006.03.008
+   Bengis RO, 1932, J BIOL CHEM, V97, P99
+   Bertrand B, 2003, THEOR APPL GENET, V107, P387, DOI 10.1007/s00122-003-1203-6
+   BLIGH EG, 1959, CAN J BIOCHEM PHYS, V37, P911
+   Budryn G, 2012, EUR J LIPID SCI TECH, V114, P1052, DOI 10.1002/ejlt.201100324
+   Canakci M, 2007, BIORESOURCE TECHNOL, V98, P183, DOI 10.1016/j.biortech.2005.11.022
+   Chisti Y, 2007, BIOTECHNOL ADV, V25, P294, DOI 10.1016/j.biotechadv.2007.02.001
+   Clarke R., 2001, COFFEE RECENT DEVELO
+   Couto RM, 2009, J SUPERCRIT FLUID, V51, P159, DOI 10.1016/j.supflu.2009.09.009
+   de Azevedo ABA, 2008, J SUPERCRIT FLUID, V44, P186, DOI 10.1016/j.supflu.2007.11.004
+   Demirbas A., 2008, BIODIESEL A REALISTI
+   Dias EC, 2012, EUR FOOD RES TECHNOL, V234, P25, DOI 10.1007/s00217-011-1607-5
+   Hoekman SK, 2012, RENEW SUST ENERG REV, V16, P143, DOI 10.1016/j.rser.2011.07.143
+   International Coffee Organization (ICO), TOTAL COFFEE PRODUCT
+   International Coffee Organization (ICO), DECAFFEINATION OF CO
+   Jham GN, 2001, FOOD RES INT, V34, P111, DOI 10.1016/S0963-9969(00)00137-X
+   KHAN NA, 1953, J AM OIL CHEM SOC, V30, P606, DOI 10.1007/BF02640975
+   Kiss AA, 2008, ENERG FUEL, V22, P598, DOI 10.1021/ef700265y
+   Knothe G., 2010, THE BIODIESEL HANDBO
+   Kondamudi N, 2008, J AGR FOOD CHEM, V56, P11757, DOI 10.1021/jf802487s
+   Kulkarni MG, 2006, IND ENG CHEM RES, V45, P2901, DOI 10.1021/ie0510526
+   Kwon EE, 2013, BIORESOURCE TECHNOL, V136, P475, DOI 10.1016/j.biortech.2013.03.052
+   LERCKER G, 1995, CHROMATOGRAPHIA, V41, P29, DOI 10.1007/BF02274191
+   Lin CSK, 2013, ENERG ENVIRON SCI, V6, P426, DOI 10.1039/c2ee23440h
+   Mushrush GW, 2011, J ENVIRON SCI HEAL A, V46, P176, DOI 10.1080/10934529.2011.532433
+   Oliveira LS, 2008, BIORESOURCE TECHNOL, V99, P3244, DOI 10.1016/j.biortech.2007.05.074
+   Oliveira LS, 2006, LWT-FOOD SCI TECHNOL, V39, P235, DOI 10.1016/j.lwt.2005.01.011
+   Ramalakshmi K, 1999, CRIT REV FOOD SCI, V39, P441, DOI 10.1080/10408699991279231
+   Sarrazin C, 2000, FOOD CHEM, V70, P99, DOI 10.1016/S0956-7135(99)00116-4
+   Selmar D, 2008, ANN BOT-LONDON, V101, P31, DOI 10.1093/aob/mcm277
+   Silva JA, 2012, FOOD ANAL METHOD, V5, P1404, DOI 10.1007/s12161-012-9387-5
+   Wintgens J. N., 2009, COFFEE GROWING PROCE
+   Zuorro A, 2012, J CLEAN PROD, V34, P49, DOI 10.1016/j.jclepro.2011.12.003
+NR 37
+TC 81
+Z9 85
+U1 0
+U2 60
+PU AMER CHEMICAL SOC
+PI WASHINGTON
+PA 1155 16TH ST, NW, WASHINGTON, DC 20036 USA
+SN 0887-0624
+EI 1520-5029
+J9 ENERG FUEL
+JI Energy Fuels
+PD FEB
+PY 2014
+VL 28
+IS 2
+BP 1166
+EP 1174
+DI 10.1021/ef4022976
+PG 9
+WC Energy & Fuels; Engineering, Chemical
+SC Energy & Fuels; Engineering
+GA AB5XK
+UT WOS:000331861800050
+OA Green Accepted
+DA 2021-08-19
+ER
+
+PT J
+AU Sampaio, A
+   Dragone, G
+   Vilanova, M
+   Oliveira, JM
+   Teixeira, JA
+   Mussatto, SI
+AF Sampaio, Armando
+   Dragone, Giuliano
+   Vilanova, Mar
+   Oliveira, Jose M.
+   Teixeira, Jose A.
+   Mussatto, Solange I.
+TI Production, chemical characterization, and sensory profile of a novel
+   spirit elaborated from spent coffee ground
+SO LWT-FOOD SCIENCE AND TECHNOLOGY
+LA English
+DT Article
+DE Saccharomyces cerevisiae; Sensory descriptive analysis; Spent coffee
+   ground; Spirit; Volatile compounds
+ID GALICIAN ORUJO SPIRITS; VOLATILE COMPOSITION; DESCRIPTIVE ANALYSIS;
+   ALCOHOLIC BEVERAGES; NEURAL-NETWORKS; WINES; QUALITY; FERMENTATION;
+   CONSTITUENTS; PREFERENCES
+AB This study describes a process for the production of a spirit from spent coffee ground (SCG), the chemical composition, and sensory profile of this distillate. The process consisted in three steps starting with the extraction of aroma compounds by hydrothermal treatment of SCG, followed by the fermentation of this extract supplemented with sucrose to ethanol, and the fermented broth distillation. Seventeen volatile compounds were identified in the distillate (including alcohols, esters, aldehydes, and acids), all of them in concentrations able to promote pleasant characteristics to the product. Based on the chemical composition, SCG spirit was considered as having organoleptic quality acceptable for human consumption. Twelve descriptors defined the sensory characteristics of this product, including clarity and brilliance (visual analysis), coffee, roasted, alcohol, elegance and frankly (olfactory analysis), bitter, astringent and pungent (gustatory analysis), and finesse (olfactory and gustatory analyses). Coffee was the most representative aroma by olfactory analysis. Based on the sensory analysis, SCG spirit was considered as having features of a pleasant beverage, with smell and taste of coffee. (C) 2013 Elsevier Ltd. All rights reserved.
+C1 [Sampaio, Armando; Dragone, Giuliano; Oliveira, Jose M.; Teixeira, Jose A.; Mussatto, Solange I.] Univ Minho, IBB, Ctr Biol Engn, P-4710057 Braga, Portugal.
+   [Vilanova, Mar] Mis Biol Galicia CSIC, Pontevedra 38080, Spain.
+RP Mussatto, SI (corresponding author), Univ Minho, IBB, Ctr Biol Engn, Campus Gualtar, P-4710057 Braga, Portugal.
+EM solangemussatto@hotmail.com
+RI Mussatto, Solange I/C-2109-2013; Dragone, Giuliano M./C-9061-2009;
+   Teixeira, Jose Antonio Couto/A-6268-2012; Dragone, Giuliano/C-4738-2014;
+   Mussatto, Solange I./N-3355-2019; Oliveira, Jose M/A-6775-2013;
+   Vilanova, Mar/Z-1604-2018
+OI Mussatto, Solange I/0000-0002-7182-6198; Dragone, Giuliano
+   M./0000-0002-5555-8381; Teixeira, Jose Antonio
+   Couto/0000-0002-4918-3704; Dragone, Giuliano/0000-0002-5555-8381;
+   Mussatto, Solange I./0000-0002-7182-6198; Oliveira, Jose
+   M/0000-0002-9650-5876; Vilanova, Mar/0000-0002-1417-9537
+CR [Anonymous], 1988, 8589 ISO NORM
+   [Anonymous], 1994, 11035 ISO NORM
+   Apostolopoulou AA, 2005, FOOD CONTROL, V16, P157, DOI 10.1016/j.foodcont.2004.01.005
+   Asquieri ER, 2009, CIENCIA TECNOL ALIME, V29, P896, DOI 10.1590/S0101-20612009000400030
+   Ballabio D, 2007, CHEMOMETR INTELL LAB, V87, P52, DOI 10.1016/j.chemolab.2006.09.002
+   Bovo B, 2009, INT J FOOD MICROBIOL, V129, P221, DOI 10.1016/j.ijfoodmicro.2008.11.025
+   Carlucci A, 2001, J SCI FOOD AGR, V81, P751, DOI 10.1002/jsfa.879
+   CLYNE J, 1993, INT J FOOD SCI TECH, V28, P69
+   Cortes S, 2005, FOOD CONTROL, V16, P383, DOI 10.1016/j.foodcont.2004.04.003
+   Cortes S, 2009, J SENS STUD, V24, P317, DOI 10.1111/j.1745-459X.2009.00213.x
+   Dias D. R., 2003, Ciencia e Tecnologia de Alimentos, V23, P342, DOI 10.1590/S0101-20612003000300008
+   Dieguez SC, 2005, J AGR FOOD CHEM, V53, P6759, DOI 10.1021/jf040467j
+   Douglas D, 2001, FOOD RES INT, V34, P559, DOI 10.1016/S0963-9969(01)00071-0
+   Dragone G., 2009, BRAZ J FOOD TECHNOL, P120
+   Dragone G, 2009, FOOD CHEM, V112, P929, DOI 10.1016/j.foodchem.2008.07.005
+   DREYWOOD R, 1946, IND ENG CHEM, V18, P499, DOI 10.1021/i560156a015
+   Escudero A, 2004, J AGR FOOD CHEM, V52, P3516, DOI 10.1021/jf035341l
+   Falque E, 2001, TALANTA, V54, P271, DOI 10.1016/S0039-9140(00)00641-X
+   Fitzgerald G, 2000, J CHROMATOGR A, V896, P351, DOI 10.1016/S0021-9673(00)00737-8
+   Fundira M, 2002, J AGR FOOD CHEM, V50, P1535, DOI 10.1021/jf0111514
+   Geroyiannaki M, 2007, FOOD CONTROL, V18, P988, DOI 10.1016/j.foodcont.2006.06.005
+   Hang YD, 2010, BIORESOURCE TECHNOL, V101, P1396, DOI 10.1016/j.biortech.2009.09.069
+   Jack FR, 2002, FOOD QUAL PREFER, V13, P163, DOI 10.1016/S0950-3293(02)00012-5
+   LAWLESS HT, 1998, SENSORY EVALUATION F
+   Lee KYM, 2001, J I BREWING, V107, P287, DOI 10.1002/j.2050-0416.2001.tb00099.x
+   Lesschaeve I, 2005, AM J CLIN NUTR, V81, p330S, DOI 10.1093/ajcn/81.1.330S
+   Meilgaard M., 1999, SENSORY EVALUATION T
+   Mussatto SI, 2011, CARBOHYD POLYM, V83, P368, DOI 10.1016/j.carbpol.2010.07.063
+   Oliveira ES, 2005, WORLD J MICROB BIOT, V21, P707, DOI 10.1007/s11274-004-4490-4
+   Oliveira LP, 2001, BIOTECNOLOGIA CIENCI, V19, P50
+   Pino JA, 2012, FOOD CHEM, V132, P1436, DOI 10.1016/j.foodchem.2011.11.133
+   Plutowska B, 2008, FOOD CHEM, V107, P449, DOI 10.1016/j.foodchem.2007.08.058
+   Poste LM, 1991, PUBLICATION RES BRAN
+   Prescott J, 1998, FOOD QUAL PREFER, V9, P393, DOI 10.1016/S0950-3293(98)00021-4
+   Rapp A., 1995, FOOD FLAVORS GENERAT, P1659
+   Rocafa Junior H., 2005, Alimentos e Nutricao, V16, P321
+   Rodriguez Mendiola I., 2000, ALIMENTARIA, V316, P139
+   Palomo ES, 2007, FOOD CONTROL, V18, P398, DOI 10.1016/j.foodcont.2005.11.006
+   Silva M. Luz, 1996, Journal of Food Composition and Analysis, V9, P72, DOI 10.1006/jfca.1996.0008
+   Soufleros EH, 2004, FOOD CHEM, V86, P625, DOI 10.1016/j.foodchem.2003.11.006
+   Steger CLC, 2000, J IND MICROBIOL BIOT, V24, P431, DOI 10.1038/sj.jim.7000005
+   Tang C, 1999, J FOOD QUALITY, V22, P193, DOI 10.1111/j.1745-4557.1999.tb00551.x
+   Vilanova M, 2008, J SCI FOOD AGR, V88, P819, DOI 10.1002/jsfa.3157
+NR 43
+TC 33
+Z9 33
+U1 2
+U2 139
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0023-6438
+J9 LWT-FOOD SCI TECHNOL
+JI LWT-Food Sci. Technol.
+PD DEC
+PY 2013
+VL 54
+IS 2
+BP 557
+EP 563
+DI 10.1016/j.lwt.2013.05.042
+PG 7
+WC Food Science & Technology
+SC Food Science & Technology
+GA 207JG
+UT WOS:000323594100034
+OA Green Published
+DA 2021-08-19
+ER
+
+PT J
+AU Kwon, EE
+   Yi, H
+   Jeon, YJ
+AF Kwon, Eilhann E.
+   Yi, Haakrho
+   Jeon, Young Jae
+TI Sequential co-production of biodiesel and bioethanol with spent coffee
+   grounds
+SO BIORESOURCE TECHNOLOGY
+LA English
+DT Article
+DE Biodiesel; Coffee ground; Bioethanol; Non-catalytic transesterification;
+   Enzymatic saccharification
+ID OIL; DIESEL; WASTE; TRANSESTERIFICATION; EMISSIONS; FEASIBILITY
+AB The sequential co-production of bioethanol and biodiesel from spent coffee grounds was investigated. The direct conversion of bioethanol from spent coffee grounds was not found to be a desirable option because of the relatively slow enzymatic saccharification behavior in the presence of triglycerides and the free fatty acids (FFAs) found to exist in the raw materials. Similarly, the direct transformation of the spent coffee grounds into ethanol without first extracting lipids was not found to be a feasible alternative. However, the crude lipids extracted from the spent coffee grounds were themselves converted into fatty acid methyl ester (FAME) and fatty acid ethyl ester (FAEE) via the non-catalytic biodiesel transesterification reaction. The yields of bioethanol and biodiesel were 0.46 g g(-1) and 97.5 +/- 0.5%, which were calculated based on consumed sugar and lipids extracted from spent coffee grounds respectively. Thus, this study clearly validated our theory that spent coffee grounds could be a strong candidate for the production of bioethanol and biodiesel. (C) 2013 Elsevier Ltd. All rights reserved.
+C1 [Kwon, Eilhann E.; Yi, Haakrho; Jeon, Young Jae] Res Inst Ind Sci & Technol RIST, Bioenergy Res Team, Kwang Yang City 540090, Cholla Nam Do, South Korea.
+RP Jeon, YJ (corresponding author), Res Inst Ind Sci & Technol RIST, Bioenergy Res Team, 813-1 Keumho Dong, Kwang Yang City 540090, Cholla Nam Do, South Korea.
+EM yjjeon7074@gmail.com
+CR Abdullah M, 2013, RENEW ENERG, V50, P965, DOI 10.1016/j.renene.2012.08.073
+   Bender M, 1999, BIORESOURCE TECHNOL, V70, P81, DOI 10.1016/S0960-8524(99)00009-7
+   Bouaid A, 2009, BIORESOURCE TECHNOL, V100, P2234, DOI 10.1016/j.biortech.2008.10.045
+   Calixto F, 2011, GREEN CHEM, V13, P1196, DOI 10.1039/c1gc15101k
+   Cheng CH, 2008, FUEL, V87, P1870, DOI 10.1016/j.fuel.2008.01.002
+   Cheung CS, 2009, ATMOS ENVIRON, V43, P4865, DOI 10.1016/j.atmosenv.2009.07.021
+   Choi IS, 2012, BIORESOURCE TECHNOL, V125, P132, DOI 10.1016/j.biortech.2012.08.080
+   Demirbas A, 2005, PROG ENERG COMBUST, V31, P466, DOI 10.1016/j.pecs.2005.09.001
+   Eevera T, 2009, RENEW ENERG, V34, P762, DOI 10.1016/j.renene.2008.04.006
+   Gui MM, 2008, ENERGY, V33, P1646, DOI 10.1016/j.energy.2008.06.002
+   Hames B., 2011, NRELTP51042618
+   Ilham Z, 2009, BIORESOURCE TECHNOL, V100, P1793, DOI 10.1016/j.biortech.2008.09.050
+   Imahara H, 2008, FUEL, V87, P1, DOI 10.1016/j.fuel.2007.04.003
+   Imahara H, 2006, FUEL, V85, P1666, DOI 10.1016/j.fuel.2006.03.003
+   KHAN NA, 1953, J AM OIL CHEM SOC, V30, P606, DOI 10.1007/BF02640975
+   Kwon EE, 2012, J CHEM ENG JPN, V45, P850, DOI 10.1252/jcej.11we267
+   Kwon EE, 2012, ENVIRON SCI TECHNOL, V46, P10222, DOI 10.1021/es3019435
+   Kwon EE, 2012, GREEN CHEM, V14, P1799, DOI 10.1039/c2gc35219b
+   Kwon EE, 2012, BIORESOURCE TECHNOL, V114, P370, DOI 10.1016/j.biortech.2012.03.110
+   Lardon L, 2009, ENVIRON SCI TECHNOL, V43, P6475, DOI 10.1021/es900705j
+   Liang XZ, 2009, RENEW ENERG, V34, P2215, DOI 10.1016/j.renene.2009.01.009
+   Fernandez CM, 2010, BIORESOURCE TECHNOL, V101, P7019, DOI 10.1016/j.biortech.2010.04.014
+   Murthy PS, 2012, RESOUR CONSERV RECY, V66, P45, DOI 10.1016/j.resconrec.2012.06.005
+   Murugesan A, 2009, RENEW SUST ENERG REV, V13, P825, DOI 10.1016/j.rser.2008.02.003
+   Nunes AA, 2009, BIORESOURCE TECHNOL, V100, P1786, DOI 10.1016/j.biortech.2008.09.032
+   Oliveira LS, 2008, BIORESOURCE TECHNOL, V99, P3244, DOI 10.1016/j.biortech.2007.05.074
+   Panoutsou C, 2008, BIOMASS BIOENERG, V32, P473, DOI 10.1016/j.biombioe.2007.11.011
+   Payri F, 2009, ATMOS ENVIRON, V43, P1273, DOI 10.1016/j.atmosenv.2008.11.029
+   Sakai T, 2009, BIORESOURCE TECHNOL, V100, P3268, DOI 10.1016/j.biortech.2009.02.010
+   Shenoy D, 2011, BIOMASS BIOENERG, V35, P4107, DOI 10.1016/j.biombioe.2011.05.016
+   Shi AM, 2013, BIORESOURCE TECHNOL, V128, P100, DOI 10.1016/j.biortech.2012.10.007
+   Song D, 2008, CHIN J BIOTECHNOL, V24, P341, DOI DOI 10.1016/S1872-2075(08)60016-3
+   Um BH, 2009, J IND ENG CHEM, V15, P1, DOI 10.1016/j.jiec.2008.08.002
+   Wen DS, 2009, PROG NAT SCI-MATER, V19, P273, DOI 10.1016/j.pnsc.2008.09.001
+NR 34
+TC 112
+Z9 113
+U1 3
+U2 78
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0960-8524
+EI 1873-2976
+J9 BIORESOURCE TECHNOL
+JI Bioresour. Technol.
+PD MAY
+PY 2013
+VL 136
+BP 475
+EP 480
+DI 10.1016/j.biortech.2013.03.052
+PG 6
+WC Agricultural Engineering; Biotechnology & Applied Microbiology; Energy &
+   Fuels
+SC Agriculture; Biotechnology & Applied Microbiology; Energy & Fuels
+GA 149HK
+UT WOS:000319309400065
+PM 23567719
+DA 2021-08-19
+ER
+
+PT J
+AU Limousy, L
+   Jeguirim, M
+   Dutournie, P
+   Kraiem, N
+   Lajili, M
+   Said, R
+AF Limousy, L.
+   Jeguirim, M.
+   Dutournie, P.
+   Kraiem, N.
+   Lajili, M.
+   Said, R.
+TI Gaseous products and particulate matter emissions of biomass residential
+   boiler fired with spent coffee grounds pellets
+SO FUEL
+LA English
+DT Article
+DE Spent coffee grounds; Biomass mixture; Agro-pellets; Combustion tests;
+   Gaseous and PM emissions
+ID PARTICLE EMISSIONS; ENERGY CROPS; COMBUSTION; PYROLYSIS; KINETICS; WATER
+AB In this present work, energetic characteristics and combustion behavior of agro-pellets, produced from pure spent coffee grounds (SCGs) or blended with pine sawdust in a commercial residential pellet boiler, were examined. Hence, thermal and chemical properties such as calorific value, ash content, bulk density, fixed carbon and elemental analysis obtained from blend and pure biomasses were firstly examined. Moreover, combustion tests were performed in 8-12 kW Okofen Boiler, carbon monoxide (CO) and volatile organic compounds (VOCs) were analyzed according to French standards. The emissions of some gases were also monitored during combustion tests: O-2, CO2, NO and NO2. An Electrical Low Pressure Impactor (ELPI) was used to collect particles from 29 nm to 10 mu m into 12 size fractions to determine mass and number concentrations. The exhaust gaseous and particles emissions of SCG and blend pellets were compared with emissions of wood pellets (DIN + standard).
+   It was found that, despite its high LHV, the use of pure SCG as fuel lead to a lower boiler efficiency, which was followed by an increase of particle and gas emissions. However, when SCG was mixed with pine sawdust (50/50 wt.%), combustion parameters (emissions and boiler efficiency) were very close to those obtained for wood pellets.
+   According to the presented results, although it seems reasonable to consider SCG pellets as a promising alternative fuel, the use of SCG blending up to 50% with pine sawdust is essential to meet French Standards (NF agro-pellets). Hence, this pellets production may be a promising issue for SCG valorisation. (c) 2012 Elsevier Ltd. All rights reserved.
+C1 [Limousy, L.; Jeguirim, M.; Dutournie, P.] Univ Haute Alsace, F-68093 Mulhouse, France.
+RP Jeguirim, M (corresponding author), Univ Haute Alsace, 3 Bis,Rue Alfred Werner, F-68093 Mulhouse, France.
+EM mejdi.jeguirim@uha.fr
+RI jeguirim, mejdi/M-9987-2019; JEGUIRIM, Mejdi/B-1266-2011; Dutournie,
+   patrick/AAL-6145-2020
+OI jeguirim, mejdi/0000-0003-2401-5824; limousy, lionel/0000-0003-2898-7065
+CR Bafver LS, 2011, BIOMASS BIOENERG, V35, P3648, DOI 10.1016/j.biombioe.2011.05.027
+   Bressani R., 1979, COFFEE PULP COMPOSIT, P17
+   Chouchene A, 2010, BIORESOURCE TECHNOL, V101, P6962, DOI 10.1016/j.biortech.2010.04.017
+   Chouchene A, 2010, J ANAL APPL PYROL, V87, P168, DOI 10.1016/j.jaap.2009.11.008
+   Dias J, 2004, BIOMASS BIOENERG, V27, P531, DOI 10.1016/j.biombioe.2003.07.002
+   Dorge S, 2011, WASTE BIOMASS VALORI, V2, P149, DOI 10.1007/s12649-010-9060-4
+   Eskilsson D, 2002, P 1 WORLD C PELL STO, P143
+   Fernandes U, 2012, FUEL PROCESS TECHNOL, V103, P51, DOI 10.1016/j.fuproc.2011.08.020
+   GIVENS DI, 1986, AGR WASTES, V18, P69, DOI 10.1016/0141-4607(86)90108-3
+   Gonzalez JF, 2004, BIOMASS BIOENERG, V27, P145, DOI 10.1016/j.biombioe.2004.01.004
+   Gonzalez JF, 2006, FUEL PROCESS TECHNOL, V87, P717, DOI 10.1016/j.fuproc.2006.02.002
+   Jeguirim M, 2010, INT J GREEN ENERGY, V7, P164, DOI 10.1080/15435071003673641
+   Jeguirim M, 2010, BIORESOURCE TECHNOL, V101, P788, DOI 10.1016/j.biortech.2009.05.063
+   Johansson LS, 2003, BIOMASS BIOENERG, V25, P435, DOI 10.1016/S0961-9534(03)00036-9
+   Kondamudi N, 2008, J AGR FOOD CHEM, V56, P11757, DOI 10.1021/jf802487s
+   Miranda T, 2012, FUEL PROCESS TECHNOL, V103, P91, DOI 10.1016/j.fuproc.2011.10.016
+   Mussatto SI, 2011, FOOD BIOPROCESS TECH, V4, P661, DOI 10.1007/s11947-011-0565-z
+   Mussatto SI, 2011, CARBOHYD POLYM, V83, P368, DOI 10.1016/j.carbpol.2010.07.063
+   Nabais JMV, 2008, FUEL PROCESS TECHNOL, V89, P262, DOI 10.1016/j.fuproc.2007.11.030
+   Pandey A, 2000, BIOCHEM ENG J, V6, P153, DOI 10.1016/S1369-703X(00)00084-X
+   Senneca O, 2007, FUEL PROCESS TECHNOL, V88, P87, DOI 10.1016/j.fuproc.2006.09.002
+   Silva MA, 1998, BIOMASS BIOENERG, V14, P457, DOI 10.1016/S0961-9534(97)10034-4
+   Tokimoto T, 2005, J COLLOID INTERF SCI, V281, P56, DOI 10.1016/j.jcis.2004.08.083
+   Tsai WT, 2012, J ANAL APPL PYROL, V93, P63, DOI 10.1016/j.jaap.2011.09.010
+   Verma VK, 2012, APPL ENERG, V90, P17, DOI 10.1016/j.apenergy.2010.12.079
+   Verma VK, 2011, BIOMASS BIOENERG, V35, P272, DOI 10.1016/j.biombioe.2010.08.043
+   Verma VK, 2011, BIOMASS BIOENERG, V35, P80, DOI 10.1016/j.biombioe.2010.08.028
+NR 27
+TC 87
+Z9 92
+U1 0
+U2 77
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0016-2361
+EI 1873-7153
+J9 FUEL
+JI Fuel
+PD MAY
+PY 2013
+VL 107
+BP 323
+EP 329
+DI 10.1016/j.fuel.2012.10.019
+PG 7
+WC Energy & Fuels; Engineering, Chemical
+SC Energy & Fuels; Engineering
+GA 107JZ
+UT WOS:000316214200034
+DA 2021-08-19
+ER
+
+PT J
+AU Pourfarzad, A
+   Mandavian-Mehr, H
+   Sedaghat, N
+AF Pourfarzad, Amir
+   Mandavian-Mehr, Hadi
+   Sedaghat, Naser
+TI Coffee silverskin as a source of dietary fiber in bread-making:
+   Optimization of chemical treatment using response surface methodology
+SO LWT-FOOD SCIENCE AND TECHNOLOGY
+LA English
+DT Article
+DE Dietary fiber; Coffee silverskin; Bread quality; Image processing;
+   Texture analysis
+ID FUNCTIONAL-PROPERTIES; CORN FIBER; PEROXIDE; ANTIOXIDANT; GLUTATHIONE;
+   FLOUR
+AB Nowadays, there is a growing demand from consumers for baked products with lower caloric density and higher levels of dietary fiber. In the present study, the response surface methodology was used to determine the optimum treatment of coffee silverskin (CS) with alkaline hydrogen peroxide that gave the best quality, shelf life, sensory and image properties for Barbari flat bread. Contact time, solution portion and particle size were considered components of the chemical treatment. The most compatible model among mean, linear and quadratic expressions was fitted to each response and the regression coefficients were determined using least square method. The optimum condition was found to be a chemical process containing mixing time of 1 h, solution portion of 4.77 and particle size of 116.41 mu m when desirability function method was applied. There was a good agreement between the experimental data and their predicted counterparts. Results showed that alkaline hydrogen peroxide CS might be useful as an ingredient for reducing caloric density and increasing dietary fiber content of bread. (C) 2012 Elsevier Ltd. All rights reserved.
+C1 [Pourfarzad, Amir; Mandavian-Mehr, Hadi; Sedaghat, Naser] Ferdowsi Univ Mashhad, Dept Food Sci & Technol, Mashhad, Iran.
+RP Pourfarzad, A (corresponding author), Ferdowsi Univ Mashhad, Dept Food Sci & Technol, POB 91775-1163, Mashhad, Iran.
+EM amir.pourfarzad@gmail.com
+RI Pourfarzad, Amir/ABA-2805-2020; sedaghat, nasser/AAH-7306-2021
+OI Pourfarzad, Amir/0000-0003-2913-9682; 
+CR AACC, 2000, APPR METH AM ASS CER, p[32, 44, 46, 30]
+   Abraham SK, 1999, FOOD CHEM TOXICOL, V37, P733, DOI 10.1016/S0278-6915(99)00053-8
+   Alder M., 2011, FOOD BIOPROCESS TECH, P1
+   ANG JF, 1991, J FOOD SCI, V56, P1682, DOI 10.1111/j.1365-2621.1991.tb08670.x
+   Angioloni A, 2011, LWT-FOOD SCI TECHNOL, V44, P747, DOI 10.1016/j.lwt.2010.09.008
+   ARTZ WE, 1990, J FOOD SCI, V55, P746, DOI 10.1111/j.1365-2621.1990.tb05220.x
+   Association of Official Analytical Chemists (AOAC), 1984, OFFICIAL METHODS ANA
+   BEUCHAT LR, 1981, CEREAL FOOD WORLD, V26, P345
+   Borrelli RC, 2004, J AGR FOOD CHEM, V52, P1338, DOI 10.1021/jf034974x
+   Borrelli RC, 2002, J AGR FOOD CHEM, V50, P6527, DOI 10.1021/jf025686o
+   CAUVAIN SP, 2000, BAKERY FOOD MANUFACT
+   Crowley P, 2002, EUR FOOD RES TECHNOL, V214, P489, DOI 10.1007/s00217-002-0500-7
+   Daglia M, 2000, J AGR FOOD CHEM, V48, P1449, DOI 10.1021/jf990510g
+   Daglia M, 1998, J PHARMACEUT BIOMED, V18, P219, DOI 10.1016/S0731-7085(98)00177-0
+   Daniel WW., 1991, BIOSTATISTICS FDN AN
+   de Campos KA, 2009, MAT SCI ENG A-STRUCT, V525, P37, DOI 10.1016/j.msea.2009.07.070
+   DERRINGER G, 1980, J QUAL TECHNOL, V12, P214
+   Esposito F, 2003, ALIMENT PHARM THER, V17, P595, DOI 10.1046/j.1365-2036.2003.01429.x
+   Farrera-Rehollo R. R., 2011, FOOD BIOPROCESS TECH, P1
+   Glitso LV, 1999, J CEREAL SCI, V29, P89, DOI 10.1006/jcrs.1998.0214
+   Gomez M, 2003, EUR FOOD RES TECHNOL, V216, P51, DOI 10.1007/s00217-002-0632-9
+   GOULD JM, 1989, CEREAL CHEM, V66, P213
+   GOULD JM, 1989, CEREAL CHEM, V66, P201
+   GOULD JM, 1985, BIOTECHNOL BIOENG, V27, P893, DOI 10.1002/bit.260270622
+   Kent NL, 1994, TECHNOLOGY CEREALS I
+   Larrea MA, 1997, CEREAL CHEM, V74, P98, DOI 10.1094/CCHEM.1997.74.2.98
+   MALEKI M, 1981, J SCI FOOD AGR, V32, P1209, DOI 10.1002/jsfa.2740321212
+   Mariotti M, 2006, INT J FOOD SCI TECH, V41, P151, DOI 10.1111/j.1365-2621.2006.01383.x
+   Nicoli MC, 1997, CANCER LETT, V114, P71, DOI 10.1016/S0304-3835(97)04628-4
+   NING L, 1991, CEREAL CHEM, V68, P632
+   OTSU N, 1979, IEEE T SYST MAN CYB, V9, P62, DOI 10.1109/TSMC.1979.4310076
+   Park H, 1997, CEREAL CHEM, V74, P207, DOI 10.1094/CCHEM.1997.74.3.207
+   PARROTT ME, 1978, J FOOD SCI, V43, P759, DOI 10.1111/j.1365-2621.1978.tb02412.x
+   Pohjanheimo TA, 2006, J FOOD SCI, V71, pS343, DOI 10.1111/j.1750-3841.2006.00005.x
+   Pomeranz Y, 1991, FUNCTIONAL PROPERTIE
+   Pourfarzad A, 2011, J FOOD PROCESS ENG, V34, P1435, DOI 10.1111/j.1745-4530.2009.00541.x
+   Quevedo R, 2009, LWT-FOOD SCI TECHNOL, V42, P1367, DOI 10.1016/j.lwt.2009.03.011
+   Rajabzadeh N, 1991, IRANIAN FLAT BREADS, DOI Iranian Cereal and Bread Research Institute
+   Renard CMGC, 1997, FOOD SCI TECHNOL-LEB, V30, P398, DOI 10.1006/fstl.1996.0195
+   Riaz MN, 2001, CEREAL FOOD WORLD, V46, P98
+   Saenger M, 2001, RENEW ENERG, V23, P103, DOI 10.1016/S0960-1481(00)00106-3
+   Sangnark A, 2003, FOOD CHEM, V80, P221, DOI 10.1016/S0308-8146(02)00257-1
+   Scanlon MG, 2001, FOOD RES INT, V34, P841, DOI 10.1016/S0963-9969(01)00109-0
+   Wu C. F. J., 2000, EXPT PLANNING ANAL P
+NR 44
+TC 68
+Z9 68
+U1 1
+U2 97
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 0023-6438
+EI 1096-1127
+J9 LWT-FOOD SCI TECHNOL
+JI LWT-Food Sci. Technol.
+PD MAR
+PY 2013
+VL 50
+IS 2
+BP 599
+EP 606
+DI 10.1016/j.lwt.2012.08.001
+PG 8
+WC Food Science & Technology
+SC Food Science & Technology
+GA 038SE
+UT WOS:000311193600033
+DA 2021-08-19
+ER
+
+PT J
+AU Al-Hamamre, Z
+   Foerster, S
+   Hartmann, F
+   Kroger, M
+   Kaltschmitt, M
+AF Al-Hamamre, Zayed
+   Foerster, Sascha
+   Hartmann, Franziska
+   Kroeger, Michael
+   Kaltschmitt, Martin
+TI Oil extracted from spent coffee grounds as a renewable source for fatty
+   acid methyl ester manufacturing
+SO FUEL
+LA English
+DT Article
+DE Methyl ester; Coffee oil; Spent coffee grounds; Extraction;
+   Polar-nonpolar solvents
+ID WASTE COOKING OIL; BIODIESEL PRODUCTION; VEGETABLE-OILS;
+   TRANSESTERIFICATION; OPTIMIZATION
+AB The effect of different extraction solvents (polar and non-polar) on yield, chemical and physical properties, including free fatty acid content (FFA) or acid value (AV), saponification value (SV), density, viscosity, elemental composition and heating values of oil extracted from spent coffee grounds (SCG) is investigated. The Soxhlet extraction method is utilized for the extraction of oil from spent coffee grounds. Iso-propanol, ethanol, and acetone as polar solvents and toluene, chloroform, hexane and n-pentane as nonpolar solvents are used. For each solvent, the oil yield is recorded for different time spans. The results show that the highest oil yield (15.3%) is achieved using hexane as an extraction solvent after 30 min of extraction time. The AV and SV of the extracted oils vary depending on the extraction solvent. The results indicate that AV of SCG oil extracted with hexane is 3.65% (7.3 mg(KOH)/g). This value is lower than the values for spent coffee oil extracted with the other solvents (ethanol 3.85%, isopropanol 6.4%, chloroform 4.55%, and toluene 4.15%).
+   Free fatty acids (FFA) of the extracted oil are converted into fatty acid methyl ester (FAME) by base-catalyzed esterification. Effects of temperature, the ratio of FFA to the methanol-KOH solution and the reaction time are investigated. With one step alkali-catalyzed transesterification, oil conversion to methyl ester can be enhanced from approx. 55-85% by increasing the reaction time, the reaction temperature and the MeOH-KOH/FFA ratio. However, a complete oil conversion could only be achieved by utilizing a two-steps transesterification process. (C) 2012 Elsevier Ltd. All rights reserved.
+C1 [Al-Hamamre, Zayed] Univ Jordan, Fac Engn & Technol, Dept Chem Engn, Amman 11942, Jordan.
+   [Foerster, Sascha; Hartmann, Franziska; Kroeger, Michael; Kaltschmitt, Martin] Deutsch Biomasseforschungszentrum Gemeinnutzige G, D-04347 Leipzig, Germany.
+   [Kaltschmitt, Martin] Hamburg Univ Technol, Inst Environm Engn & Energy Econ, D-21073 Hamburg, Germany.
+RP Al-Hamamre, Z (corresponding author), Univ Jordan, Fac Engn & Technol, Dept Chem Engn, Amman 11942, Jordan.
+EM z.hamamre@ju.edu.jo
+RI Damra, Qatada A/D-5574-2014; Al-Hamamre, Zayed/C-2360-2015
+OI Al-Hamamre, Zayed/0000-0002-4043-4984
+CR Adams IP, 2002, BBA-PROTEIN STRUCT M, V1597, P36, DOI 10.1016/S0167-4838(02)00276-5
+   AlKanhal MA, 1997, INT J FOOD SCI NUTR, V48, P135, DOI 10.3109/09637489709006973
+   *AOAC, 1995, OFF METH AN
+   Arya M, 2007, CRIT REV FOOD SCI, V47, P51, DOI 10.1080/10408390600550315
+   BADRIE N, 1992, J FOOD SCI, V57, P103, DOI 10.1111/j.1365-2621.1992.tb05434.x
+   Barkenbus C, 1927, J AM CHEM SOC, V49, P2057
+   Canakci M, 1999, T ASAE, V42, P1203, DOI 10.13031/2013.13285
+   Canakci M, 2011, AM SOC AGR ENG, V44, P1429
+   Couto RM, 2009, J SUPERCRIT FLUID, V51, P159, DOI 10.1016/j.supflu.2009.09.009
+   Cunniff P.A., 1997, OFFICIAL METHODS ANA
+   Daglia M, 2004, J AGR FOOD CHEM, V52, P1700, DOI 10.1021/jf030298n
+   Demirbas A, 2005, PROG ENERG COMBUST, V31, P466, DOI 10.1016/j.pecs.2005.09.001
+   Demirbas AH, 2009, ENER EDUC SCI TECH-A, V23, P1
+   Demirbas MF, 2010, ENER EDUC SCI TECH-A, V25, P31
+   Felizardo P, 2006, WASTE MANAGE, V26, P487, DOI 10.1016/j.wasman.2005.02.025
+   FEUGE RO, 1945, OIL SOAP, V22, P202, DOI 10.1007/BF02641736
+   Firestone D., 1997, OFFICIAL METHODS REC
+   Freedman B., 1982, Publication, American Society of Agricultural Engineers, P117
+   FREEDMAN B, 1984, J AM OIL CHEM SOC, V61, P1638, DOI 10.1007/BF02541649
+   Graboski MS, 1998, PROG ENERG COMBUST, V24, P125, DOI 10.1016/S0360-1285(97)00034-8
+   Gross G, 1997, FOOD CHEM TOXICOL, V35, P547, DOI 10.1016/S0278-6915(96)00123-8
+   Hill J, 2006, P NATL ACAD SCI USA, V103, P11206, DOI 10.1073/pnas.0604600103
+   International Coffee Organization, HIST DAT DIS DOM CON
+   kaltschmitt M., 2007, RENEWABLE ENERGY TEC
+   Kondamudi N, 2008, J AGR FOOD CHEM, V56, P11757, DOI 10.1021/jf802487s
+   Kucuk MM, 1997, ENERG CONVERS MANAGE, V38, P151, DOI 10.1016/0196-8904(96)00031-3
+   Kulkarni MG, 2006, IND ENG CHEM RES, V45, P2901, DOI 10.1021/ie0510526
+   Leung DYC, 2006, FUEL PROCESS TECHNOL, V87, P883, DOI 10.1016/j.fuproc.2006.06.003
+   LIU KS, 1994, J AM OIL CHEM SOC, V71, P1179, DOI 10.1007/BF02540534
+   Lotero E, 2005, IND ENG CHEM RES, V44, P5353, DOI 10.1021/ie049157g
+   Luthria DL, 2004, OIL EXTRACTION AND ANALYSIS: CRITICAL ISSUES AND COMPARATIVE STUDIES, P118
+   Ma FR, 1999, BIORESOURCE TECHNOL, V70, P1, DOI 10.1016/S0960-8524(99)00025-5
+   Meher LC, 2006, BIORESOURCE TECHNOL, V97, P1392, DOI 10.1016/j.biortech.2005.07.003
+   MERCIER C, 1980, CEREAL CHEM, V57, P4
+   Miao XL, 2006, BIORESOURCE TECHNOL, V97, P841, DOI 10.1016/j.biortech.2005.04.008
+   MITTELBACH M, 1992, LIQUID FUELS FROM RENEWABLE RESOURCES, P74
+   Nelson R.G., 1994, P 6 NAT BIOEN C REN
+   Nwabueze T.U., 2008, AFR J FOOD SCI, V2, P119
+   NYE MJ, 1984, 5 CAN BIOEN R D SEM, P487
+   Oliveira LS, 2008, BIORESOURCE TECHNOL, V99, P3244, DOI 10.1016/j.biortech.2007.05.074
+   Oliveira Leandro S, 2009, J SUPERCRIT FLUID, V51, P159
+   Oliveira LS, 2005, LWT, V39, P235
+   Perry R.H., 1997, PERRYS CHEM ENG HDB
+   Phan AN, 2008, FUEL, V87, P3490, DOI 10.1016/j.fuel.2008.07.008
+   PICARD H, 1984, CAFE CACAO THE, V28, P47
+   Predojevic ZJ, 2008, FUEL, V87, P3522, DOI 10.1016/j.fuel.2008.07.003
+   RATNAYAKE WMN, 1993, FOOD CHEM TOXICOL, V31, P263, DOI 10.1016/0278-6915(93)90076-B
+   Sagar D. V., 2004, RENEW SUST ENERG REV, P1
+   Schuchardt U, 1998, J BRAZIL CHEM SOC, V9, P199
+   Sharma YC, 2008, FUEL, V87, P2355, DOI 10.1016/j.fuel.2008.01.014
+   Shi HX, 2008, BIORESOURCE TECHNOL, V99, P9025, DOI 10.1016/j.biortech.2008.04.025
+   Steiner G, 2008, LEBENSMITTELANALYTIK
+   Tomasevic AV, 2003, FUEL PROCESS TECHNOL, V81, P1, DOI 10.1016/S0378-3820(02)00096-6
+   Urgert R, 1996, J ROY SOC MED, V89, P618
+   USDA, USDA CIRC SER
+   Van Gerpen J, 2005, FUEL PROCESS TECHNOL, V86, P1097, DOI 10.1016/j.fuproc.2004.11.005
+   Vasudevan PT, 2008, J IND MICROBIOL BIOT, V35, P421, DOI 10.1007/s10295-008-0312-2
+   Veljkovic VB, 2006, FUEL, V85, P2671, DOI 10.1016/j.fuel.2006.04.015
+   Vicente G, 2004, BIORESOURCE TECHNOL, V92, P297, DOI 10.1016/j.biortech.2003.08.014
+   Walker KC, 1994, ROY AGR SOC ENGLAND, V155, P43
+   Wrolstad Ronald E, 2000, HDB FOOD ANAL CHEM W
+   Yanagimoto K, 2004, J AGR FOOD CHEM, V52, P592, DOI 10.1021/jf030317t
+   Zhang Y, 2003, BIORESOURCE TECHNOL, V89, P1, DOI 10.1016/S0960-8524(03)00040-3
+   Zhang Y, 2003, BIORESOURCE TECHNOL, V90, P229, DOI 10.1016/S0960-8524(03)00150-0
+NR 64
+TC 142
+Z9 144
+U1 1
+U2 99
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0016-2361
+EI 1873-7153
+J9 FUEL
+JI Fuel
+PD JUN
+PY 2012
+VL 96
+IS 1
+BP 70
+EP 76
+DI 10.1016/j.fuel.2012.01.023
+PG 7
+WC Energy & Fuels; Engineering, Chemical
+SC Energy & Fuels; Engineering
+GA 913DT
+UT WOS:000301853900007
+DA 2021-08-19
+ER
+
+PT J
+AU Mussatto, SI
+   Machado, EMS
+   Carneiro, LM
+   Teixeira, JA
+AF Mussatto, Solange I.
+   Machado, Ercilia M. S.
+   Carneiro, Livia M.
+   Teixeira, Jose A.
+TI Sugars metabolism and ethanol production by different yeast strains from
+   coffee industry wastes hydrolysates
+SO APPLIED ENERGY
+LA English
+DT Article
+DE Coffee silverskin; Spent coffee grounds; Ethanol; Saccharomyces
+   cerevisiae; Pichia stipitis; Kluyveromyces fragilis
+ID FERMENTING YEAST; PICHIA-STIPITIS; FERMENTATION; XYLOSE; HEMICELLULOSE;
+   XYLITOL; WATER
+AB Significant amounts of wastes are generated by the coffee industry, among of which, coffee silverskin (CS) and spent coffee grounds (SCG) are the most abundantly generated during the beans roasting and instant coffee preparation, respectively. This study evaluated the sugars metabolism and production of ethanol by three different yeast strains (Saccharomyces cerevisiae, Pichia stipitis and Kluyveromyces fragilis) when cultivated in sugar rich hydrolysates produced by acid hydrolysis of CS and SCG. S. cerevisiae provided the best ethanol production from SCG hydrolysate (11.7 g/l, 50.2% efficiency). On the other hand, insignificant (<= 1.0 g/l) ethanol production was obtained from CS hydrolysate, for all the evaluated yeast strains, probably due to the low sugars concentration present in this medium (approx. 22 g/l). It was concluded that it is possible to reuse SCG as raw material for ethanol production, which is of great interest for the production of this biofuel, as well as to add value to this agro-industrial waste. CS hydrolysate, in the way that is produced, was not a suitable fermentation medium for ethanol production; however, the hydrolysate concentration for the sugars content increase previous the use as fermentation medium could be an alternative to overcome this problem. (C) 2011 Elsevier Ltd. All rights reserved.
+C1 [Mussatto, Solange I.; Machado, Ercilia M. S.; Teixeira, Jose A.] Univ Minho, IBB, Ctr Biol Engn, P-4710057 Braga, Portugal.
+   [Carneiro, Livia M.] Univ Sao Paulo, Dept Biotechnol, Engn Coll Lorena, BR-12602810 Lorena, SP, Brazil.
+RP Mussatto, SI (corresponding author), Univ Minho, IBB, Ctr Biol Engn, Campus Gualtar, P-4710057 Braga, Portugal.
+EM solange@deb.uminho.pt
+RI Mussatto, Solange I./N-3355-2019; Teixeira, Jose Antonio
+   Couto/A-6268-2012; Mussatto, Solange I/C-2109-2013; Carneiro, Livia
+   Melo/M-3708-2015
+OI Mussatto, Solange I./0000-0002-7182-6198; Teixeira, Jose Antonio
+   Couto/0000-0002-4918-3704; Mussatto, Solange I/0000-0002-7182-6198; MELO
+   CARNEIRO, LIVIA/0000-0002-9345-6079
+CR Balat M, 2009, APPL ENERG, V86, P2273, DOI 10.1016/j.apenergy.2009.03.015
+   Barnett J A, 1976, Adv Carbohydr Chem Biochem, V32, P125, DOI 10.1016/S0065-2318(08)60337-6
+   Brito RA, 2008, 16 S INT IN CIENT US
+   Cruz GM, 1983, INFORM AGROPECUARIO, V9, P32
+   Demirbas A, 2005, ENERG SOURCE, V27, P327, DOI 10.1080/00908310390266643
+   Dias Disney Ribeiro, 2003, Food Sci. Technol (Campinas), V23, P342, DOI 10.1590/S0101-20612003000300008
+   Diaz MJ, 2009, WORLD J MICROB BIOT, V25, P891, DOI 10.1007/s11274-009-9966-9
+   Dragone G, 2011, BIOMASS BIOENERG, V35, P1977, DOI 10.1016/j.biombioe.2011.01.045
+   Ferreira AD, 2011, YEAST, V28, P547, DOI 10.1002/yea.1858
+   Gaspar M, 2007, PROCESS BIOCHEM, V42, P1135, DOI 10.1016/j.procbio.2007.04.003
+   Guo GL, 2008, BIORESOURCE TECHNOL, V99, P6046, DOI 10.1016/j.biortech.2007.12.047
+   HAHNHAGERDAL B, 1994, ENZYME MICROB TECH, V16, P933, DOI 10.1016/0141-0229(94)90002-7
+   IZAGUIRRE ME, 1982, BIOTECHNOL LETT, V4, P257, DOI 10.1007/BF00132397
+   Kumar A, 2009, BIORESOURCE TECHNOL, V100, P3293, DOI 10.1016/j.biortech.2009.02.023
+   Millati R, 2005, ENZYME MICROB TECH, V36, P294, DOI 10.1016/j.enzmictec.2004.09.007
+   Mussatto SI, 2006, J CHEM TECHNOL BIOT, V81, P268, DOI 10.1002/jctb.1374
+   Mussatto SI, 2004, BIORESOURCE TECHNOL, V93, P1, DOI 10.1016/j.biortech.2003.10.005
+   Mussatto SI, 2008, PROCESS BIOCHEM, V43, P540, DOI 10.1016/j.procbio.2008.01.013
+   Mussatto SI, 2011, FOOD BIOPROCESS TECH, V4, P661, DOI 10.1007/s11947-011-0565-z
+   Mussatto SI, 2011, CARBOHYD POLYM, V83, P368, DOI 10.1016/j.carbpol.2010.07.063
+   Mussatto SI, 2010, BIOTECHNOL ADV, V28, P817, DOI 10.1016/j.biotechadv.2010.07.001
+   Nakamura Y, 2001, J CHEM TECHNOL BIOT, V76, P586, DOI 10.1002/jctb.416
+   Napolitano A, 2007, J AGR FOOD CHEM, V55, P10499, DOI 10.1021/jf071959+
+   Parajo JC, 1998, BIORESOURCE TECHNOL, V65, P203, DOI 10.1016/S0960-8524(98)00036-4
+   Saenger M, 2001, RENEW ENERG, V23, P103, DOI 10.1016/S0960-1481(00)00106-3
+   Sanchez S, 2002, J CHEM TECHNOL BIOT, V77, P641, DOI 10.1002/jctb.622
+   Silva JPA, 2010, APPL BIOCHEM BIOTECH, V162, P1306, DOI 10.1007/s12010-009-8867-6
+   Silva MA, 1998, BIOMASS BIOENERG, V14, P457, DOI 10.1016/S0961-9534(97)10034-4
+   Telli-Okur M, 2008, BIORESOURCE TECHNOL, V99, P2162, DOI 10.1016/j.biortech.2007.05.036
+   Tokimoto T, 2005, J COLLOID INTERF SCI, V281, P56, DOI 10.1016/j.jcis.2004.08.083
+   Weiss ND, 2010, BIORESOURCE TECHNOL, V101, P674, DOI 10.1016/j.biortech.2009.08.082
+   Yan J, 2009, APPL ENERG, V86, pS1, DOI 10.1016/j.apenergy.2009.07.004
+NR 32
+TC 112
+Z9 113
+U1 1
+U2 46
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0306-2619
+EI 1872-9118
+J9 APPL ENERG
+JI Appl. Energy
+PD APR
+PY 2012
+VL 92
+BP 763
+EP 768
+DI 10.1016/j.apenergy.2011.08.020
+PG 6
+WC Energy & Fuels; Engineering, Chemical
+SC Energy & Fuels; Engineering
+GA 894YQ
+UT WOS:000300463800081
+OA Green Published
+DA 2021-08-19
+ER
+
+PT J
+AU Tsai, WT
+   Liu, SC
+   Hsieh, CH
+AF Tsai, Wen-Tien
+   Liu, Sii-Chew
+   Hsieh, Ching-Hsiang
+TI Preparation and fuel properties of biochars from the pyrolysis of
+   exhausted coffee residue
+SO JOURNAL OF ANALYTICAL AND APPLIED PYROLYSIS
+LA English
+DT Article
+DE Exhausted coffee residue; Pyrolysis; Biochar; Fuel property; True
+   density
+AB Exhausted coffee residue (ECR), a processing by-product from the soluble coffee industry, was evaluated as a potential feedstock for preparing biochar fuel. Its thermochemical characteristics were first investigated using the standard methods, showing that the biomass obviously comprises a large percentage of volatile matter and less amount of ash. Its molar ratio of hydrogen to carbon (H/C) is about 1.59, which is close to the cellulose (H/C = 1.67) and hemicellulose (H/C = 1.60). Under the pyrolysis temperature of 673-973 K and the heating rate of about 10 K/min studied, the yields and calorific values for the resulting biochar products reached to the maximum at the condition of around 673 K. The calorific value (around 31.9 MJ/kg) of the optimal biochar from ECR was relatively high as compared to that of coal. However, the resulting biochar has greater nitrogen content, which may contribute to greater nitrogen oxides (NOx) emissions during combustion or co-firing. On the other hand, the resulting biochars were characterized using helium-based solid density (true density), showing that the density increased with increasing pyrolysis temperature in accord with the conversion of low-density disordered carbon to high-density turbostratic carbon. (C) 2011 Elsevier B.V. All rights reserved,
+C1 [Tsai, Wen-Tien] Natl Pingtung Univ Sci & Technol, Grad Inst Bioresources, Pingtung 912, Taiwan.
+   [Liu, Sii-Chew; Hsieh, Ching-Hsiang] Natl Pingtung Univ Sci & Technol, Dept Trop Agr & Int Cooperat, Pingtung 912, Taiwan.
+RP Tsai, WT (corresponding author), Natl Pingtung Univ Sci & Technol, Grad Inst Bioresources, Pingtung 912, Taiwan.
+EM wttsai@mail.npust.edu.tw
+CR Balat M, 2007, ENERG SOURCE PART A, V29, P581, DOI 10.1080/15567030701225260
+   Boonamnuayvitaya V, 2005, SEP PURIF TECHNOL, V42, P159, DOI 10.1016/j.seppur.2004.07.007
+   Boonamnuayvitaya V, 2004, J CHEM ENG JPN, V37, P1504, DOI 10.1252/jcej.37.1504
+   Boudrahem F, 2009, J ENVIRON MANAGE, V90, P3031, DOI 10.1016/j.jenvman.2009.04.005
+   Bressani R., 1979, COFFEE PULP COMPOSIT, P17
+   Brown RA, 2006, ORG GEOCHEM, V37, P321, DOI 10.1016/j.orggeochem.2005.10.008
+   BUSTIN RM, 1993, FUEL, V72, P181, DOI 10.1016/0016-2361(93)90395-I
+   Cao Y, 2008, ENVIRON SCI TECHNOL, V42, P9378, DOI 10.1021/es8016107
+   Clarke R.J., 2003, ENCY FOOD SCI NUTR, P1481
+   Demirbas A, 2005, ENERG SOURCE, V27, P1385, DOI 10.1080/009083190523217
+   Deng J, 2009, J ANAL APPL PYROL, V86, P331, DOI 10.1016/j.jaap.2009.08.006
+   Downie A, 2009, BIOCHAR ENV MANAGEME, P13
+   EBELING JM, 1985, T ASAE, V28, P898
+   EMMETT PH, 1948, CHEM REV, V43, P69, DOI 10.1021/cr60134a003
+   Harvey L. D. D, 2010, CARBON FREE ENERGY S
+   Khenniche L, 2010, J CHEM ENG DATA, V55, P728, DOI 10.1021/je900426a
+   Lowell S., 1991, POWDER SURFACE AREA
+   McKendry P, 2002, BIORESOURCE TECHNOL, V83, P47, DOI 10.1016/S0960-8524(01)00119-5
+   Monti A, 2008, BIOMASS BIOENERG, V32, P216, DOI 10.1016/j.biombioe.2007.09.012
+   Nabais JV, 2008, BIORESOURCE TECHNOL, V99, P7224, DOI 10.1016/j.biortech.2007.12.068
+   Pandey A, 2000, BIOCHEM ENG J, V6, P153, DOI 10.1016/S1369-703X(00)00084-X
+   Pimchuai A, 2010, ENERG FUEL, V24, P4638, DOI 10.1021/ef901168f
+   Reffas A, 2010, J HAZARD MATER, V175, P779, DOI 10.1016/j.jhazmat.2009.10.076
+   Saenger M, 2001, RENEW ENERG, V23, P103, DOI 10.1016/S0960-1481(00)00106-3
+   Sims REH, 2002, BRILLIANCE BIOENERGY
+   Suarez JA, 2003, ENERG SOURCE, V25, P953, DOI 10.1080/00908310390232406
+   Tsai WT, 1997, CARBON, V35, P1198, DOI 10.1016/S0008-6223(97)84654-4
+   Tsai WT, 1998, BIORESOURCE TECHNOL, V64, P211, DOI 10.1016/S0960-8524(97)00168-5
+NR 28
+TC 98
+Z9 101
+U1 3
+U2 42
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0165-2370
+EI 1873-250X
+J9 J ANAL APPL PYROL
+JI J. Anal. Appl. Pyrolysis
+PD JAN
+PY 2012
+VL 93
+BP 63
+EP 67
+DI 10.1016/j.jaap.2011.09.010
+PG 5
+WC Chemistry, Analytical; Energy & Fuels; Engineering, Chemical
+SC Chemistry; Energy & Fuels; Engineering
+GA V30WY
+UT WOS:000208847300009
+DA 2021-08-19
+ER
+
+PT J
+AU Mussatto, SI
+   Ballesteros, LF
+   Martins, S
+   Teixeira, JA
+AF Mussatto, Solange I.
+   Ballesteros, Lina F.
+   Martins, Silvia
+   Teixeira, Jose A.
+TI Extraction of antioxidant phenolic compounds from spent coffee grounds
+SO SEPARATION AND PURIFICATION TECHNOLOGY
+LA English
+DT Article
+DE Antioxidant activity; Extraction; Methanol; Phenolic compounds; Spent
+   coffee grounds
+ID ASSISTED EXTRACTION; BY-PRODUCTS; SOLVENT; OPTIMIZATION; POLYPHENOLS;
+   ACID; FRUITS; MODEL; APPLE; L.
+AB The extraction of antioxidant phenolic compounds from spent coffee grounds (SCG) was studied. Extraction experiments were carried out by the conventional solid-liquid method, using methanol as solvent at different concentrations (20-100%), solvent/solid ratios (10-40 ml/g SCG), and extraction times (30-90 min), and the influence of these operational variables on the content of total phenolic compounds and antioxidant activity of the produced extracts was evaluated. Flavonoids, chlorogenic acid, and protocatechuic acid were found in all the produced extracts and were also quantified. A strong influence (p < 0.05) of the variables on the extraction results was verified, and the conditions able to maximize each response (contents of total phenolic compounds, flavonoids, chlorogenic acid and protocatechuic acid, and antioxidant activity) were established. Extraction using 60% methanol in a solvent/solid ratio of 40 ml/g SCG, during 90 min, was the most suitable condition to produce a extract with high content of phenolic compounds (16 mg gallic acid equivalents/g SCG) and high antioxidant activity (FRAP of 0.10 mM Fe(II)/g), simultaneously. These findings are of interest since antioxidant phenolic compounds have an outstanding role in health area, and wide applications in food and pharmaceutical products. (C) 2011 Elsevier B.V. All rights reserved.
+C1 [Mussatto, Solange I.; Ballesteros, Lina F.; Martins, Silvia; Teixeira, Jose A.] Univ Minho, Ctr Biol Engn, Inst Biotechnol & Bioengn IBB, P-4710057 Braga, Portugal.
+RP Mussatto, SI (corresponding author), Univ Minho, Ctr Biol Engn, Inst Biotechnol & Bioengn IBB, Campus Gualtar, P-4710057 Braga, Portugal.
+EM solange@deb.uminho.pt
+RI Teixeira, Jose Antonio Couto/A-6268-2012; Ballesteros, Lina
+   F./B-5565-2017; Mussatto, Solange I/C-2109-2013; Mussatto, Solange
+   I./N-3355-2019
+OI Teixeira, Jose Antonio Couto/0000-0002-4918-3704; Ballesteros, Lina
+   F./0000-0002-2382-1210; Mussatto, Solange I/0000-0002-7182-6198;
+   Mussatto, Solange I./0000-0002-7182-6198
+FU Portuguese Foundation for Science and Technology (FCT)Portuguese
+   Foundation for Science and Technology
+FX This work was supported by the Portuguese Foundation for Science and
+   Technology (FCT).
+CR Adil IH, 2007, J SUPERCRIT FLUID, V43, P55, DOI 10.1016/j.supflu.2007.04.012
+   Arnous A, 2008, FOOD BIOPROD PROCESS, V86, P79, DOI 10.1016/j.fbp.2008.03.004
+   Benzie IFF, 1996, ANAL BIOCHEM, V239, P70, DOI 10.1006/abio.1996.0292
+   Chang CC, 2002, J FOOD DRUG ANAL, V10, P178
+   Chirinos R, 2007, SEP PURIF TECHNOL, V55, P217, DOI 10.1016/j.seppur.2006.12.005
+   Cortazar E, 2005, ANAL CHIM ACTA, V534, P247, DOI 10.1016/j.aca.2004.11.037
+   Escribano-Bailon MT, 2002, METHODS IN POLYPHENOL ANALYSIS, P1
+   Farah Adriana, 2006, Braz. J. Plant Physiol., V18, P23, DOI 10.1590/S1677-04202006000100003
+   Jamal P., 2010, Journal of Applied Sciences, V10, P2658
+   Ju ZY, 2003, J AGR FOOD CHEM, V51, P5207, DOI 10.1021/jf0302106
+   Kim DW, 2002, SER INF MANAGE SCI, V1, P1
+   Lapornik B, 2005, J FOOD ENG, V71, P214, DOI 10.1016/j.jfoodeng.2004.10.036
+   Liu FF, 2000, J AGR FOOD CHEM, V48, P3364, DOI 10.1021/jf991086m
+   Markom M, 2007, SEP PURIF TECHNOL, V52, P487, DOI 10.1016/j.seppur.2006.06.003
+   Martins S, 2010, J CHEM TECHNOL BIOT, V85, P1142, DOI 10.1002/jctb.2412
+   Middleton E, 2000, PHARMACOL REV, V52, P673
+   Moure A, 2007, FOOD CHEM, V101, P193, DOI 10.1016/j.foodchem.2006.01.017
+   Murthy PS, 2012, FOOD BIOPROCESS TECH, V5, P897, DOI 10.1007/s11947-010-0363-z
+   Musa KH, 2011, FOOD ANAL METHOD, V4, P100, DOI 10.1007/s12161-010-9139-3
+   Mussatto SI, 2011, FOOD BIOPROCESS TECH, V4, P661, DOI 10.1007/s11947-011-0565-z
+   Mussatto SI, 2011, CARBOHYD POLYM, V83, P368, DOI 10.1016/j.carbpol.2010.07.063
+   Pinelo M., 2007, AM J FOOD TECHNOLOGY, V2, P641, DOI DOI 10.3923/ajft.2007.641.651
+   Proestos C, 2006, J FOOD QUALITY, V29, P567, DOI 10.1111/j.1745-4557.2006.00096.x
+   Ramalakshmi K, 2009, FOOD CHEM, V115, P79, DOI 10.1016/j.foodchem.2008.11.063
+   RiceEvans CA, 1997, TRENDS PLANT SCI, V2, P152, DOI 10.1016/S1360-1385(97)01018-2
+   Scalbert A, 2005, AM J CLIN NUTR, V81, p215S, DOI 10.1093/ajcn/81.1.215S
+   Shan JH, 2009, INT IMMUNOPHARMACOL, V9, P1042, DOI 10.1016/j.intimp.2009.04.011
+   SINGLETON V. L., 1965, AMER J ENOL VITICULT, V16, P144
+   Stratil P, 2007, TALANTA, V71, P1741, DOI 10.1016/j.talanta.2006.08.012
+   Tokimoto T, 2005, J COLLOID INTERF SCI, V281, P56, DOI 10.1016/j.jcis.2004.08.083
+   Turkmen N, 2006, FOOD CHEM, V99, P835, DOI 10.1016/j.foodchem.2005.08.034
+   Vitaglione P, 2007, J NUTR, V137, P2043
+   Wang SY, 2000, J AGR FOOD CHEM, V48, P140, DOI 10.1021/jf9908345
+   Yilmaz Y, 2006, J FOOD COMPOS ANAL, V19, P41, DOI [10.1016/j.jfca.2004.10.009, 10.1016/J.JFCA.2004.10.009]
+   Zia-ur-Rehman, 2006, FOOD CHEM, V99, P450, DOI 10.1016/j.foodchem.2005.07.054
+NR 35
+TC 195
+Z9 207
+U1 11
+U2 121
+PU ELSEVIER
+PI AMSTERDAM
+PA RADARWEG 29, 1043 NX AMSTERDAM, NETHERLANDS
+SN 1383-5866
+EI 1873-3794
+J9 SEP PURIF TECHNOL
+JI Sep. Purif. Technol.
+PD NOV 15
+PY 2011
+VL 83
+BP 173
+EP 179
+DI 10.1016/j.seppur.2011.09.036
+PG 7
+WC Engineering, Chemical
+SC Engineering
+GA 853SB
+UT WOS:000297444900024
+OA Green Published
+DA 2021-08-19
+ER
+
+PT J
+AU Franca, AS
+   Oliveira, LS
+   Ferreira, ME
+AF Franca, Adriana S.
+   Oliveira, Leandro S.
+   Ferreira, Mauro E.
+TI Kinetics and equilibrium studies of methylene blue adsorption by spent
+   coffee grounds
+SO DESALINATION
+LA English
+DT Article
+DE Adsorption; Agri-food waste; Methylene blue
+ID ACTIVATED CARBON; THEORETICAL DESCRIPTION; SOLUTE ADSORPTION;
+   AQUEOUS-SOLUTIONS; REMOVAL; DYES; INTERFACES; BIOSORPTION; ADSORBENTS;
+   SORPTION
+AB Spent coffee grounds (SCG), a residue from the soluble coffee industry. was evaluated as an adsorbent for the removal of methylene blue (MB) from aqueous solution. Batch adsorption tests were performed at 25 degrees C and the effects of contact time, adsorbent dosage, and pH were investigated. Adsorption kinetics was determined by fitting first and second-order kinetic models to the experimental data, with the second-order model providing the best description of MB adsorption onto spent coffee grounds. The typical dependence of dye uptake on kinetic studies indicated the adsorption process to be both chemisorption and diffusion controlled. The experimental adsorption equilibrium data were fitted to Langmuir, Freundlich and Tempkin adsorption models. The experimental data obtained in the present study indicate that spent coffee grounds are suitable candidates for use as adsorbents in the removal of cationic dyes. (C) 2009 Elsevier B.V. All rights reserved.
+C1 [Franca, Adriana S.; Oliveira, Leandro S.] Univ Fed Minas Gerais, DEMEC, BR-31270901 Belo Horizonte, MG, Brazil.
+   [Ferreira, Mauro E.] Univ Fed Minas Gerais, DEQ, BR-30160030 Belo Horizonte, MG, Brazil.
+RP Franca, AS (corresponding author), Univ Fed Minas Gerais, DEMEC, Av Antonio Carlos 6627, BR-31270901 Belo Horizonte, MG, Brazil.
+EM adriana@demec.ufmg.br
+RI Oliveira, Leandro/O-2671-2017; Franca, Adriana S/N-8870-2013
+OI Oliveira, Leandro/0000-0001-6977-7625; Franca, Adriana
+   S/0000-0003-0967-8451
+FU CNPqConselho Nacional de Desenvolvimento Cientifico e Tecnologico
+   (CNPQ); FAPEMIGFundacao de Amparo a Pesquisa do Estado de Minas Gerais
+   (FAPEMIG)
+FX The authors acknowledge the financial support from the following
+   Brazilian Government Agencies: CNPq and FAPEMIG. The authors would like
+   to thank Cafe Soluvel Brasilia (Varginha, MG, Brazil) for kindly
+   donating the spent coffee grounds used in this study.
+CR ADAM E, 1987, LANCET, V2, P291
+   Annadurai G, 2002, J HAZARD MATER, V92, P263, DOI 10.1016/S0304-3894(02)00017-1
+   Azizian S, 2004, J COLLOID INTERF SCI, V276, P47, DOI 10.1016/j.jcis.2004.03.048
+   Banat F, 2003, PROCESS BIOCHEM, V39, P193, DOI 10.1016/S0032-9592(03)00065-7
+   BOEHM HP, 1994, CARBON, V32, P759, DOI 10.1016/0008-6223(94)90031-0
+   Boonamnuayvitaya V, 2005, SEP PURIF TECHNOL, V42, P159, DOI 10.1016/j.seppur.2004.07.007
+   Boonamnuayvitaya V, 2004, SEP PURIF TECHNOL, V35, P11, DOI 10.1016/S1383-5866(03)00110-2
+   Bulut Y, 2006, DESALINATION, V194, P259, DOI 10.1016/j.desal.2005.10.032
+   Crini G, 2006, BIORESOURCE TECHNOL, V97, P1061, DOI 10.1016/j.biortech.2005.05.001
+   Dias JM, 2007, J ENVIRON MANAGE, V85, P833, DOI 10.1016/j.jenvman.2007.07.031
+   Do D.D., 1998, ADSORPTION ANAL EQUI
+   Forgacs E, 2004, ENVIRON INT, V30, P953, DOI 10.1016/j.envint.2004.02.001
+   Ghosh D, 2002, APPL CLAY SCI, V20, P295, DOI 10.1016/S0169-1317(01)00081-3
+   Han RP, 2006, J HAZARD MATER, V137, P550, DOI 10.1016/j.jhazmat.2006.02.029
+   Hirata M, 2002, J COLLOID INTERF SCI, V254, P17, DOI 10.1006/jcis.2002.8570
+   *MAPA MIN AGR, 2008, PEC AB AGR CAF INF E
+   Namane A, 2005, J HAZARD MATER, V119, P189, DOI 10.1016/j.jhazmat.2004.12.006
+   Ncibi MC, 2007, J HAZARD MATER, V139, P280, DOI 10.1016/j.jhazmat.2006.06.029
+   Oliveira LS, 2008, J HAZARD MATER, V155, P507, DOI 10.1016/j.jhazmat.2007.11.093
+   Pavan FA, 2008, J HAZARD MATER, V150, P703, DOI 10.1016/j.jhazmat.2007.05.023
+   Rudzinski W, 2008, LANGMUIR, V24, P5393, DOI 10.1021/la8000448
+   Rudzinski W, 2008, ENVIRON SCI TECHNOL, V42, P2470, DOI 10.1021/es7025278
+   Rudzinski W, 2007, APPL SURF SCI, V253, P5827, DOI 10.1016/j.apsusc.2006.12.038
+   Tokimoto T, 2005, J COLLOID INTERF SCI, V281, P56, DOI 10.1016/j.jcis.2004.08.083
+   Vadivelan V, 2005, J COLLOID INTERF SCI, V286, P90, DOI 10.1016/j.jcis.2005.01.007
+   Valdes H, 2002, LANGMUIR, V18, P2111, DOI 10.1021/la010920a
+   Weber W.J., 1963, J SANIT ENG DIV, V89, P31, DOI [DOI 10.1061/JSEDAI.0000420, DOI 10.1080/002689796173345]
+   Yang XY, 2005, J COLLOID INTERF SCI, V287, P25, DOI 10.1016/j.jcis.2005.01.093
+NR 28
+TC 222
+Z9 225
+U1 4
+U2 88
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0011-9164
+J9 DESALINATION
+JI Desalination
+PD NOV 30
+PY 2009
+VL 249
+IS 1
+BP 267
+EP 272
+DI 10.1016/j.desal.2008.11.017
+PG 6
+WC Engineering, Chemical; Water Resources
+SC Engineering; Water Resources
+GA 521WA
+UT WOS:000271955400043
+DA 2021-08-19
+ER
+
+PT J
+AU Gouvea, BM
+   Torres, C
+   Franca, AS
+   Oliveira, LS
+   Oliveira, ES
+AF Gouvea, B. M.
+   Torres, C.
+   Franca, A. S.
+   Oliveira, L. S.
+   Oliveira, E. S.
+TI Feasibility of ethanol production from coffee husks
+SO BIOTECHNOLOGY LETTERS
+LA English
+DT Article; Proceedings Paper
+CT 13th International Biotechnology Symposium and Exhibition (IBS) of the
+   Biotechnology-for-the-Sustainability-of-Human-Society
+CY OCT 12-17, 2008
+CL Dalian, PEOPLES R CHINA
+SP Biotechnol Sustainabil Human Soc
+DE Bioethanol; Fermentation; Sticky coffee husks
+ID AGRICULTURAL RESIDUES; WASTE
+AB The objective of this work was to evaluate the feasibility of ethanol production by fermentation of coffee husks by Saccharomyces cerevisiae. Batch fermentation studies were performed employing whole and ground coffee husks, and aqueous extract from ground coffee husks. It was observed that fermentation yield decreased with an increase in yeast concentration. The best results were obtained for the following conditions: whole coffee husks, 3 g yeast/l substrate, temperature of 30A degrees C. Under these conditions ethanol production was 8.49 +/- A 0.29 g/100 g dry basis (13.6 +/- A 0.5 g ethanol/l), a satisfactory value in comparison to literature data for other residues such as corn stalks, barley straw and hydrolyzed wheat stillage (5-11 g ethanol/l). Such results indicate that coffee husks present excellent potential for residue-based ethanol production.
+C1 [Gouvea, B. M.; Torres, C.; Franca, A. S.; Oliveira, L. S.] Univ Fed Minas Gerais, DEQ, BR-30160030 Belo Horizonte, MG, Brazil.
+   [Oliveira, E. S.] Univ Fed Minas Gerais, PPGCA, BR-31270901 Belo Horizonte, MG, Brazil.
+RP Franca, AS (corresponding author), Univ Fed Minas Gerais, Dept Engn Mecan, Av Antonio Carlos 6627, BR-31270901 Belo Horizonte, MG, Brazil.
+EM adriana@demec.ufmg.br
+RI Oliveira, Leandro/O-2671-2017; Franca, Adriana S/N-8870-2013
+OI Oliveira, Leandro/0000-0001-6977-7625; Franca, Adriana
+   S/0000-0003-0967-8451
+CR *ABNT, 1997, 13920 ABNT NBR
+   *AOAC, 1995, OFF METH AN
+   Athanasiadis I, 2002, J AGR FOOD CHEM, V50, P7231, DOI 10.1021/jf020331q
+   Ballesteros M, 2004, PROCESS BIOCHEM, V39, P1843, DOI 10.1016/j.procbio.2003.09.011
+   Belkacemi K, 2002, IND ENG CHEM RES, V41, P173, DOI 10.1021/ie0102246
+   Davis L, 2005, BIOMASS BIOENERG, V29, P49, DOI 10.1016/j.biombioe.2005.02.006
+   Franca A.S., 2009, AGR WASTES
+   Mojovic L, 2006, FUEL, V85, P1750, DOI 10.1016/j.fuel.2006.01.018
+   Ohgren K, 2007, PROCESS BIOCHEM, V42, P834, DOI 10.1016/j.procbio.2007.02.003
+   Oliveira LS, 2008, BIORESOURCE TECHNOL, V99, P3244, DOI 10.1016/j.biortech.2007.05.074
+   Saha BC, 2008, J BIOTECHNOL, V136, pS285, DOI 10.1016/j.jbiotec.2008.07.613
+   Tang YQ, 2008, BIOMASS BIOENERG, V32, P1037, DOI 10.1016/j.biombioe.2008.01.027
+   VANSOEST PJ, 1967, J ASSOC OFF ANA CHEM, V50, P50
+NR 13
+TC 61
+Z9 62
+U1 1
+U2 15
+PU SPRINGER
+PI DORDRECHT
+PA VAN GODEWIJCKSTRAAT 30, 3311 GZ DORDRECHT, NETHERLANDS
+SN 0141-5492
+EI 1573-6776
+J9 BIOTECHNOL LETT
+JI Biotechnol. Lett.
+PD SEP
+PY 2009
+VL 31
+IS 9
+SI SI
+BP 1315
+EP 1319
+DI 10.1007/s10529-009-0023-4
+PG 5
+WC Biotechnology & Applied Microbiology
+SC Biotechnology & Applied Microbiology
+GA 480IF
+UT WOS:000268726500002
+PM 19466561
+DA 2021-08-19
+ER
+
+PT J
+AU Ramalakshmi, K
+   Rao, LJM
+   Takano-Ishikawa, Y
+   Goto, M
+AF Ramalakshmi, K.
+   Rao, L. Jagan Mohan
+   Takano-Ishikawa, Yuko
+   Goto, Masao
+TI Bioactivities of low-grade green coffee and spent coffee in different in
+   vitro model systems
+SO FOOD CHEMISTRY
+LA English
+DT Article
+DE Low-grade coffee; Spent coffee; Radical scavenging activity; ORAC;
+   Anti-tumour; Anti-inflammatory; Anti-allergy
+ID RADICAL ABSORBENCY CAPACITY; PHYSICOCHEMICAL CHARACTERISTICS; RISK;
+   CONSUMPTION; EXTRACTS; RELEASE; CANCER; BEANS; WATER; TEA
+AB Methanolic extracts of low-grade green coffee (LCB) and spent coffee were analysed for radical-scavenging activity (alpha,alpha-diphenyl-beta-picrylhydrazyl radical) and oxygen radical absorbance capacity (ORAC). The extracts were also evaluated for anti-tumour (P388 cell assay), anti-inflammatory (J774A.1 cell assay) and anti-allergenic (RBL-2H3 cell line) activities in vitro. LCB extract was found to exhibit a radical-scavenging activity of 92.0% followed by spent Arabica (86.9%) and spent Robusta (82.0%) at a concentration of 50 ppm. The antioxidant activity of LCB extract. measured as Trolox equivalents (4416 mu M/g) was significantly (p < 0.05) higher than that of the spent coffee extracts. However, extracts of spent coffee exhibited significantly (p < 0.05) more anti-tumour activity than the LCB extract in terms of cell viability. This could lie due to the possible role of brown pigments (melanoidins and phenolic polymers). formed during roasting, which may protect cells from oxidative damage in the biological system. However, both the extracts of LCB and spent coffee showed limited anti inflammatory and anti-allergic activity. The presence of phenolics and chlorogenic acids in appreciable quantities along with brown pigments makes these coffee by-products a source for natural antioxidants. (C) 2008 Elsevier Ltd. All rights reserved.
+C1 [Takano-Ishikawa, Yuko; Goto, Masao] Natl Food Res Inst, Tsukuba, Ibaraki 3058642, Japan.
+   [Ramalakshmi, K.; Rao, L. Jagan Mohan] Cent Food Technol Res Inst, Mysore 570020, Karnataka, India.
+RP Takano-Ishikawa, Y (corresponding author), Natl Food Res Inst, Kannondai 2-1-12, Tsukuba, Ibaraki 3058642, Japan.
+EM yuko@affrc.go.jp
+RI JAGANMOHANRAO, LINGAMALLU/C-7670-2009; Ramalakshmi,
+   Kulathooran/F-6966-2011
+OI JAGANMOHANRAO, LINGAMALLU/0000-0001-5229-8185; 
+FU Central Food Technological Research Institute, Mysore and Head,
+   Plantation Products Spices and Flavour Technology Department CFTRI,
+   Mysore; United Nations University-Kirin (Tokyo, Japan)
+FX KRL and LJMR are thankful to Director, Central Food Technological
+   Research Institute, Mysore and Head, Plantation Products Spices and
+   Flavour Technology Department CFTRI, Mysore for providing the facilities
+   for this work. This work was supported in part by the United Nations
+   University-Kirin (Tokyo, Japan) fellowship programine 2007.
+CR Abdille MH, 2005, FOOD CHEM, V90, P891, DOI 10.1016/j.foodchem.2004.09.002
+   AOAC, 2016, OFFICIAL METHODS ANA, V18
+   BLOIS MS, 1958, NATURE, V181, P1199, DOI 10.1038/1811199a0
+   BOOPATHY R, 1987, ASIAN ENV, V9, P13
+   Cao GH, 1999, METHOD ENZYMOL, V299, P50
+   Cavin C, 2002, FOOD CHEM TOXICOL, V40, P1155, DOI 10.1016/S0278-6915(02)00029-7
+   D'Alessandro T, 2003, J NUTR, V133, p3773S, DOI 10.1093/jn/133.11.3773S
+   del Castillo MD, 2005, EUR FOOD RES TECHNOL, V221, P471, DOI 10.1007/s00217-005-1209-1
+   Demo SD, 1999, CYTOMETRY, V36, P340, DOI 10.1002/(SICI)1097-0320(19990801)36:4<340::AID-CYTO9>3.0.CO;2-C
+   Franca AS, 2005, FOOD CHEM, V90, P89, DOI 10.1016/j.foodchem.2004.03.028
+   FREEDMAN SO, 1964, J ALLERGY, V35, P97, DOI 10.1016/0021-8707(64)90023-1
+   George SE, 2008, CRIT REV FOOD SCI, V48, P464, DOI 10.1080/10408390701522445
+   Giovannucci E, 1998, AM J EPIDEMIOL, V147, P1043, DOI 10.1093/oxfordjournals.aje.a009398
+   Herath Herath Mudiyanselage Theja, 2003, Journal of Medicinal Food, V6, P365
+   Huang DJ, 2002, J AGR FOOD CHEM, V50, P4437, DOI 10.1021/jf0201529
+   Inoue M, 1998, CANCER CAUSE CONTROL, V9, P209, DOI 10.1023/A:1008890529261
+   Jayaprakasha GK, 2000, Z NATURFORSCH C, V55, P1018
+   KIM J, 1988, MICROBIOS, V53, P181
+   LAYTON LL, 1966, J ALLERGY, V38, P268, DOI 10.1016/0021-8707(66)90020-7
+   LESLIE B, 2007, SKIN AGING, V15, P80
+   LIG EUG, 1970, Patent No. 3499851
+   Mazzafera P, 1999, FOOD CHEM, V64, P547, DOI 10.1016/S0308-8146(98)00167-8
+   Navarini L, 1999, CARBOHYD POLYM, V40, P71, DOI 10.1016/S0144-8617(99)00032-6
+   Nicoli M. C., 1997, Lebensmittel-Wissenschaft and Technologie, V30, P292, DOI 10.1006/fstl.1996.0181
+   Nishi M, 1996, JPN J CLIN ONCOL, V26, P42, DOI 10.1093/oxfordjournals.jjco.a023177
+   Ramalakshmi K, 2008, FOOD RES INT, V41, P96, DOI 10.1016/j.foodres.2007.10.003
+   Ramalakshmi K, 2000, J FOOD SCI TECH MYS, V37, P282
+   Ramalakshmi K, 2007, J FOOD SCI, V72, pS333, DOI 10.1111/j.1750-3841.2007.00379.x
+   RIZZI GP, 1994, Patent No. 5328708
+   ROSENBERG L, 1990, CANCER LETT, V52, P163, DOI 10.1016/0304-3835(90)90183-X
+   SCHILTER B, 2001, COFFEE RECENT DEV, P165
+   Shinmoto H, 2001, J JPN SOC FOOD SCI, V48, P787, DOI 10.3136/nskkk.48.787
+   SIVETZ M, 1979, COFFEE TECHNOLOGY, P518
+   STAHL H, 1991, FOURTEENTH INTERNATIONAL CONFERENCE ON COFFEE SCIENCE, P339
+   SWAIN T, 1959, J SCI FOOD AGR, V10, P63, DOI DOI 10.1002/JSFA.2740100110
+   VARNAM AH, 1994, BEVERAGES TECHNOLOGY, P191
+   Watanabe J, 2005, BIOSCI BIOTECH BIOCH, V69, P1, DOI 10.1271/bbb.69.1
+   Wen X, 2004, BIOSCI BIOTECH BIOCH, V68, P2313, DOI 10.1271/bbb.68.2313
+   Yamashita K, 2000, BIOCHEM BIOPH RES CO, V274, P603, DOI 10.1006/bbrc.2000.3200
+   Yen WJ, 2005, J AGR FOOD CHEM, V53, P2658, DOI 10.1021/jf0402429
+NR 40
+TC 121
+Z9 124
+U1 0
+U2 47
+PU ELSEVIER SCI LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, OXON, ENGLAND
+SN 0308-8146
+EI 1873-7072
+J9 FOOD CHEM
+JI Food Chem.
+PD JUL 1
+PY 2009
+VL 115
+IS 1
+BP 79
+EP 85
+DI 10.1016/j.foodchem.2008.11.063
+PG 7
+WC Chemistry, Applied; Food Science & Technology; Nutrition & Dietetics
+SC Chemistry; Food Science & Technology; Nutrition & Dietetics
+GA 426DF
+UT WOS:000264687300014
+DA 2021-08-19
+ER
+
+PT J
+AU Kondamudi, N
+   Mohapatra, SK
+   Misra, M
+AF Kondamudi, Narasimharao
+   Mohapatra, Susanta K.
+   Misra, Mano
+TI Spent Coffee Grounds as a Versatile Source of Green Energy
+SO JOURNAL OF AGRICULTURAL AND FOOD CHEMISTRY
+LA English
+DT Article
+DE Coffee grounds; green energy; biofuel; biodiesel
+ID BIODIESEL PRODUCTION; VEGETABLE-OILS; FUEL; TRANSESTERIFICATION;
+   FEEDSTOCK; EMISSIONS; PROSPECTS; KINETICS; INDIA
+AB The production of energy from renewable and waste materials is an attractive alternative to the conventional agricultural feed stocks such as corn and soybean. This paper describes an approach to extract oil from spent coffee grounds and to further transesterify the processed oil to convert it into biodiesel. This process yields 10-15% oil depending on the coffee species (Arabica or Robusta). The biodiesel derived from the coffee grounds (100% conversion of oil to biodiesel) was found to be stable for more than 1 month under ambient conditions. It is projected that 340 million gallons of biodiesel can be produced from the waste coffee grounds around the world. The coffee grounds after oil extraction are ideal materials for garden fertilizer, feedstock for ethanol, and as fuel pellets.
+C1 [Kondamudi, Narasimharao; Mohapatra, Susanta K.; Misra, Mano] Univ Nevada, Reno, NV 89557 USA.
+RP Mohapatra, SK (corresponding author), Univ Nevada, 1664 N Virginia,MS-388, Reno, NV 89557 USA.
+EM susantk@yahoo.com; misra@unr.edu
+RI kondamudi, Narasimharao/L-9978-2015
+OI kondamudi, Narasimharao/0000-0003-3998-0707
+CR Azam MM, 2005, BIOMASS BIOENERG, V29, P293, DOI 10.1016/j.biombioe.2005.05.001
+   Balat M, 2007, ENERG SOURCE PART A, V29, P895, DOI 10.1080/00908310500283359
+   BARKENBUS CHARLES, 1927, JOUR AMER CHEM SOC, V49, P2061, DOI 10.1021/ja01407a033
+   Barnwal BK, 2005, RENEW SUST ENERG REV, V9, P363, DOI 10.1016/j.rser.2004.05.007
+   Beer T, 2002, ATMOS ENVIRON, V36, P753, DOI 10.1016/S1352-2310(01)00514-3
+   Campo P, 2007, CHEMOSPHERE, V68, P2054, DOI 10.1016/j.chemosphere.2007.02.024
+   Cardone M, 2003, BIOMASS BIOENERG, V25, P623, DOI 10.1016/S0961-9534(03)00058-8
+   Daglia M, 2004, J AGR FOOD CHEM, V52, P1700, DOI 10.1021/jf030298n
+   DAQUIN EL, 1952, IND ENG CHEM, V45, P247
+   Encinar JM, 2002, ENERG FUEL, V16, P443, DOI 10.1021/ef010174h
+   Gressel J, 2008, PLANT SCI, V174, P246, DOI 10.1016/j.plantsci.2007.11.009
+   Gui MM, 2008, ENERGY, V33, P1646, DOI 10.1016/j.energy.2008.06.002
+   Holcapek M, 1999, J CHROMATOGR A, V858, P13
+   Karaosmanoglu F, 1996, ENERG FUEL, V10, P890, DOI 10.1021/ef9502214
+   Kulkarni MG, 2006, IND ENG CHEM RES, V45, P2901, DOI 10.1021/ie0510526
+   Lang X, 2001, BIORESOURCE TECHNOL, V80, P53, DOI 10.1016/S0960-8524(01)00051-7
+   Lebedevas S, 2006, ENERG FUEL, V20, P2274, DOI 10.1021/ef060145c
+   Marchetti JM, 2007, RENEW SUST ENERG REV, V11, P1300, DOI 10.1016/j.rser.2005.08.006
+   Nebel BA, 2006, EUR J LIPID SCI TECH, V108, P398, DOI 10.1002/ejlt.200500329
+   Nelson R.G., 1994, P 6 NAT BIOEN C REN
+   Oliveira LS, 2008, BIORESOURCE TECHNOL, V99, P3244, DOI 10.1016/j.biortech.2007.05.074
+   Pumphrey D., 2007, TROPICAL PRODUCT WOR
+   Sendzikiene E, 2004, EUR J LIPID SCI TECH, V106, P831, DOI 10.1002/ejlt.200401011
+   U. S. Environmental Protection Agency (EPA), 2008, STARB PROT ENV OFF G
+   Vasudevan PT, 2008, J IND MICROBIOL BIOT, V35, P421, DOI 10.1007/s10295-008-0312-2
+   Yanagimoto K, 2004, J AGR FOOD CHEM, V52, P592, DOI 10.1021/jf030317t
+NR 26
+TC 254
+Z9 258
+U1 7
+U2 157
+PU AMER CHEMICAL SOC
+PI WASHINGTON
+PA 1155 16TH ST, NW, WASHINGTON, DC 20036 USA
+SN 0021-8561
+EI 1520-5118
+J9 J AGR FOOD CHEM
+JI J. Agric. Food Chem.
+PD DEC 24
+PY 2008
+VL 56
+IS 24
+BP 11757
+EP 11760
+DI 10.1021/jf802487s
+PG 4
+WC Agriculture, Multidisciplinary; Chemistry, Applied; Food Science &
+   Technology
+SC Agriculture; Chemistry; Food Science & Technology
+GA 385GJ
+UT WOS:000261802400029
+PM 19053356
+DA 2021-08-19
+ER
+
+PT J
+AU Oliveira, LS
+   Franca, AS
+   Alves, TM
+   Rocha, SDF
+AF Oliveira, Leandro S.
+   Franca, Adriana S.
+   Alves, Thiago M.
+   Rocha, Sonia D. F.
+TI Evaluation of untreated coffee husks as potential biosorbents for
+   treatment of dye contaminated waters
+SO JOURNAL OF HAZARDOUS MATERIALS
+LA English
+DT Article
+DE biosorption; agricultural waste; toxic pollutants
+ID METHYLENE-BLUE; ACTIVATED CARBON; AQUEOUS-SOLUTION; PROCESS DESIGN;
+   EQUILIBRIUM; KINETICS; ADSORPTION; REMOVAL; BIOSORPTION; MECHANISM
+AB The objective of this work was to propose an alternative use for coffee husks (CH), a coffee processing residue, as untreated sorbents for the removal of methylene blue (MB) from aqueous solutions. The effects of solution temperature, pH, biosorbent dosage and contact time on MB removal were investigated. The experimental adsorption equilibrium data were fitted to both Langmuir and Freundlich adsorption models. The biosorption kinetics was determined by fitting first and second-order kinetic models to the experimental data, with the second-order model providing the best description of MB adsorption onto coffee husks. pH variations did not present a significant effect on MB removal. Evaluation of thermodynamics parameters indicated that the adsorption is spontaneous and endothermic. The experimental data obtained in the present study demonstrated coffee husks to be suitable candidates for use as biosorbents in the removal of cationic dyes. (C) 2007 Elsevier B.V. All rights reserved.
+C1 [Oliveira, Leandro S.; Franca, Adriana S.; Alves, Thiago M.; Rocha, Sonia D. F.] Univ Fed Minas Gerais, Dept Engn Quim, BR-30160030 Belo Horizonte, MG, Brazil.
+RP Franca, AS (corresponding author), Univ Fed Minas Gerais, Dept Engn Quim, 35 Sexto Andar, BR-30160030 Belo Horizonte, MG, Brazil.
+EM franca@deq.ufmg.br
+RI Oliveira, Leandro/O-2671-2017; Franca, Adriana S/N-8870-2013
+OI Oliveira, Leandro/0000-0001-6977-7625; Franca, Adriana
+   S/0000-0003-0967-8451; Ferreira Rocha, Sonia Denise/0000-0002-4775-6329
+CR *AOAC, 1995, OFF METH AOAC INT
+   Banat F, 2003, PROCESS BIOCHEM, V39, P193, DOI 10.1016/S0032-9592(03)00065-7
+   Basar CA, 2006, J HAZARD MATER, V135, P232, DOI 10.1016/j.jhazmat.2005.11.055
+   Bulut Y, 2006, DESALINATION, V194, P259, DOI 10.1016/j.desal.2005.10.032
+   Chen JP, 2005, IND ENG CHEM RES, V44, P9931, DOI 10.1021/ie050678t
+   Crini G, 2006, BIORESOURCE TECHNOL, V97, P1061, DOI 10.1016/j.biortech.2005.05.001
+   El Qada EN, 2006, CHEM ENG J, V124, P103, DOI 10.1016/j.cej.2006.08.015
+   Hameed BH, 2007, J HAZARD MATER, V141, P819, DOI 10.1016/j.jhazmat.2006.07.049
+   Han RP, 2007, J HAZARD MATER, V141, P156, DOI 10.1016/j.jhazmat.2006.06.107
+   Han RP, 2006, J HAZARD MATER, V137, P550, DOI 10.1016/j.jhazmat.2006.02.029
+   Ho YS, 2000, WATER RES, V34, P735, DOI 10.1016/S0043-1354(99)00232-8
+   Kannan N, 2001, DYES PIGMENTS, V51, P25, DOI 10.1016/S0143-7208(01)00056-0
+   Kumar KV, 2007, J HAZARD MATER, V146, P214, DOI 10.1016/j.jhazmat.2006.12.010
+   Kumar KV, 2006, J HAZARD MATER, V134, P237, DOI 10.1016/j.jhazmat.2005.11.002
+   *MAPA, 2007, AGR CAF CONAB HIST E
+   Ncibi MC, 2007, J HAZARD MATER, V139, P280, DOI 10.1016/j.jhazmat.2006.06.029
+   Ofomaja AE, 2007, PROCESS BIOCHEM, V42, P16, DOI 10.1016/j.procbio.2006.07.005
+   Oliveira WE, 2008, J HAZARD MATER, V152, P1073, DOI 10.1016/j.jhazmat.2007.07.085
+   Otero M, 2003, BIOCHEM ENG J, V15, P59, DOI 10.1016/S1369-703X(02)00177-8
+   Saenger M, 2001, RENEW ENERG, V23, P103, DOI 10.1016/S0960-1481(00)00106-3
+   Vadivelan V, 2005, J COLLOID INTERF SCI, V286, P90, DOI 10.1016/j.jcis.2005.01.007
+NR 21
+TC 239
+Z9 239
+U1 1
+U2 38
+PU ELSEVIER SCIENCE BV
+PI AMSTERDAM
+PA PO BOX 211, 1000 AE AMSTERDAM, NETHERLANDS
+SN 0304-3894
+J9 J HAZARD MATER
+JI J. Hazard. Mater.
+PD JUL 15
+PY 2008
+VL 155
+IS 3
+BP 507
+EP 512
+DI 10.1016/j.jhazmat.2007.11.093
+PG 6
+WC Engineering, Environmental; Environmental Sciences
+SC Engineering; Environmental Sciences & Ecology
+GA 320UX
+UT WOS:000257261600015
+PM 18226444
+DA 2021-08-19
+ER
+
+PT J
+AU Boonamnuayvitaya, V
+   Chaiya, C
+   Tanthapanichakoon, W
+AF Boonamnuayvitaya, V
+   Chaiya, C
+   Tanthapanichakoon, W
+TI The preparation and characterization of activated carbon from coffee
+   residue
+SO JOURNAL OF CHEMICAL ENGINEERING OF JAPAN
+LA English
+DT Article
+DE activated carbon; coffee residue; adsorption; BET surface area;
+   functional groups
+ID PHOSPHORIC-ACID; AQUEOUS-SOLUTIONS; ADSORPTION; WASTE
+AB Coffee residues from instant coffee plants were used to produce mesoporous activated carbon. A series of carbonization and activation conditions were examined to elucidate the effect of each condition. The specific surface area, mesopore and total pore volumes were evaluated by nitrogen adsorption at 77 K, and the surface chemistry was characterized by FTIR. The activated carbon derived in the conditions of a ZnCl2/coffee weight ratio of 3, an activation temperature of 600degreesC and a CO2 activation time of 4 h (R30T600H4) yielded a surface area of 900 m(2)/g, a total pore volume of 1.01 cm(3)/g with a mesopore content of 92%. The FTIR results demonstrated that the C-H group was the main functional group on the surface of coffee-derived activated carbon. The adsorptive capacities of R30T600H4 compared with a commercial activated carbon CAL for phenol, methylene blue and erythrosine red. We found that for small molecules such as phenol and methylene blue the adsorption capacity of R30T600H4 was lower than that of CAL, whereas, for larger molecules such as erythrosine red R30T600H4 was higher. The mesoporous structure and the surface chemistry of coffee-derived activated carbon associated in the adsorption were discussed.
+C1 King Mongkuts Univ Technol Thonburi, Dept Chem Engn, Bangkok 10140, Thailand.
+   King Mongkuts Univ Technol Thonburi, Joint Grad Sch Energy & Environm Technol, Bangkok 10140, Thailand.
+   Chulalongkorn Univ, Dept Chem Engn, Bangkok 10330, Thailand.
+RP Boonamnuayvitaya, V (corresponding author), King Mongkuts Univ Technol Thonburi, Dept Chem Engn, Pracha Utit Rd, Bangkok 10140, Thailand.
+EM virote.boo@kmutt.ac.th
+RI Chaiya, Chaiyan/AAR-5135-2020
+OI Chaiya, Chaiyan/0000-0002-2086-6966
+CR Ariyadejwanich P, 2003, CARBON, V41, P157, DOI 10.1016/S0008-6223(02)00267-1
+   Bansal R., 1998, ACTIVE CARBON, P119
+   Baquero MC, 2003, J ANAL APPL PYROL, V70, P779, DOI 10.1016/S0165-2370(02)00180-8
+   Benkhedda J, 2000, J CHEM THERMODYN, V32, P401, DOI 10.1006/jcht.1999.0613
+   BRUCH LW, 1997, PHYS ADSORPTION FORC, P107
+   Chiang YC, 2001, CARBON, V39, P523, DOI 10.1016/S0008-6223(00)00161-5
+   Evans MJB, 1999, CARBON, V37, P269, DOI 10.1016/S0008-6223(98)00174-2
+   Guo J, 2000, SEP PURIF TECHNOL, V18, P47, DOI 10.1016/S1383-5866(99)00051-9
+   Hsieh CT, 2000, CARBON, V38, P863, DOI 10.1016/S0008-6223(99)00180-3
+   Hu ZH, 1999, MICROPOR MESOPOR MAT, V27, P11, DOI 10.1016/S1387-1811(98)00183-8
+   Hu ZH, 2001, CARBON, V39, P877, DOI 10.1016/S0008-6223(00)00198-6
+   Hu ZH, 1995, J COLLOID INTERF SCI, V176, P422, DOI 10.1006/jcis.1995.9949
+   Hussein MZ, 1996, CARBON, V34, P1447, DOI 10.1016/0008-6223(96)88755-0
+   Martin MJ, 2003, CHEM ENG J, V94, P231, DOI 10.1016/S1385-8947(03)00054-8
+   Nagano S, 2000, CARBON, V38, P915, DOI 10.1016/S0008-6223(99)00208-0
+   Nakagawa K., 2001, JPN J FOOD ENG, V2, P141
+   PATRICK JW, 1995, POROSITY CARBONS CHA, P2
+   Philip CA, 1996, J CHEM TECHNOL BIOT, V67, P248, DOI 10.1002/(SICI)1097-4660(199611)67:3<248::AID-JCTB557>3.0.CO;2-1
+   Rouquerol F, 1999, ADSORPTION POWDERS P, P237, DOI DOI 10.1016/13478-012598Q70-6/50010-%
+   Tamon H, 1999, CARBON, V37, P1643, DOI 10.1016/S0008-6223(99)00162-1
+   Toles CA, 1998, J CHEM TECHNOL BIOT, V72, P255, DOI 10.1002/(SICI)1097-4660(199807)72:3&lt;255::AID-JCTB890&gt;3.0.CO;2-P
+   Vitidsant T., 1999, SCI ASIA, V25, P211
+NR 22
+TC 21
+Z9 21
+U1 1
+U2 24
+PU SOC CHEMICAL ENG JAPAN
+PI BUNKYO KU TOKYO
+PA KYORITSU BUILDING 4-16-19 KOHINATA, BUNKYO KU TOKYO, 112, JAPAN
+SN 0021-9592
+J9 J CHEM ENG JPN
+JI J. Chem. Eng. Jpn.
+PD DEC
+PY 2004
+VL 37
+IS 12
+BP 1504
+EP 1512
+DI 10.1252/jcej.37.1504
+PG 9
+WC Engineering, Chemical
+SC Engineering
+GA 883KN
+UT WOS:000226010400010
+DA 2021-08-19
+ER
+
+PT J
+AU Borrelli, RC
+   Esposito, F
+   Napolitano, A
+   Ritieni, A
+   Fogliano, V
+AF Borrelli, RC
+   Esposito, F
+   Napolitano, A
+   Ritieni, A
+   Fogliano, V
+TI Characterization of a new potential functional ingredient: Coffee
+   silverskin
+SO JOURNAL OF AGRICULTURAL AND FOOD CHEMISTRY
+LA English
+DT Article
+DE coffee; dietary fiber; silverskin; antioxidative activity; prebiotic
+   property
+ID CHEMICAL CHARACTERIZATION; DIETARY FIBER; ANTIOXIDANT ACTIVITY; ROASTED
+   COFFEE; CEREALS; GLUTATHIONE; MELANOIDINS; GREEN; FOODS; COLON
+AB Dietary fiber (DF) is one of the main dietary factors contributing to consumers' well-being. In this work the possibility of using the roasted coffee silverskin (CS), a byproduct of roasted coffee beans, as a DF-rich ingredient has been evaluated. The results of our investigation showed that this material has 60% total DF, with a relevant component (14%) of soluble DF. Although a small amount of free phenol compounds is present in CS, it has a marked antioxidative activity, which can be attributed to the huge amount of Maillard reaction products, the melanoidins. Static batch culture fermentation experiments showed that CS induces preferential growth of bifidobacteria rather than clostridia and Bacteroides spp. CS can be proposed as a new potential functional ingredient in consideration of the high content of soluble DF, the marked antioxidant activity, and the potential prebiotic activity.
+C1 Univ Naples Federico II, Dipartimento Sci Alimenti, I-80055 Portici, NA, Italy.
+RP Fogliano, V (corresponding author), Univ Naples Federico II, Dipartimento Sci Alimenti, Parco Gussone,Ed 84, I-80055 Portici, NA, Italy.
+EM fogliano@unina.it
+RI fogliano, vincenzo/W-6885-2019; Fogliano, Vincenzo/M-8166-2019;
+   fogliano, vincenzo/A-1419-2009
+OI fogliano, vincenzo/0000-0001-8786-9355; fogliano,
+   vincenzo/0000-0001-8786-9355
+CR Abraham SK, 1999, FOOD CHEM TOXICOL, V37, P733, DOI 10.1016/S0278-6915(99)00053-8
+   Andlauer W, 1998, CEREAL FOOD WORLD, V43, P356
+   BEER MU, 1995, EUR J CLIN NUTR, V49, P517
+   BIJLANI RL, 1985, PROG FOOD NUTR SCI, V9, P343
+   Borrelli RC, 2002, J AGR FOOD CHEM, V50, P6527, DOI 10.1021/jf025686o
+   Charalampopoulos D, 2002, INT J FOOD MICROBIOL, V79, P131, DOI 10.1016/S0168-1605(02)00187-3
+   Daglia M, 2000, J AGR FOOD CHEM, V48, P1449, DOI 10.1021/jf990510g
+   Daglia M, 1998, J PHARMACEUT BIOMED, V18, P219, DOI 10.1016/S0731-7085(98)00177-0
+   del Castillo MD, 2002, J AGR FOOD CHEM, V50, P3698, DOI 10.1021/jf011702q
+   Esposito F, 2003, ALIMENT PHARM THER, V17, P595, DOI 10.1046/j.1365-2036.2003.01429.x
+   Fidanza F, 2002, EUR J CLIN NUTR, V56, P1004, DOI 10.1038/sj.ejcn.1601435
+   Fogliano V, 1999, J AGR FOOD CHEM, V47, P1035, DOI 10.1021/jf980496s
+   GIBSON GR, 1995, J NUTR, V125, P1401, DOI 10.1093/jn/125.6.1401
+   Hofmann T, 2002, J AGR FOOD CHEM, V50, P319, DOI 10.1021/jf010823n
+   Ishii T, 1997, PLANT SCI, V127, P111, DOI 10.1016/S0168-9452(97)00130-1
+   KLOTZ D, 2000, MUHLE MISCHFUTER, V137, P273
+   Kroon PA, 1997, J AGR FOOD CHEM, V45, P661, DOI 10.1021/jf9604403
+   McCann SE, 2001, NUTR CANCER, V39, P19, DOI 10.1207/S15327914nc391_3
+   Nicoli MC, 1997, CANCER LETT, V114, P71, DOI 10.1016/S0304-3835(97)04628-4
+   Nunes FM, 2002, J AGR FOOD CHEM, V50, P7046, DOI 10.1021/jf020534e
+   Nunes FM, 2002, J AGR FOOD CHEM, V50, P1429, DOI 10.1021/jf0109625
+   OHTA A, 1995, J NUTR, V125, P2417
+   Olano-Martin E, 2000, BRIT J NUTR, V83, P247, DOI 10.1017/S0007114500000325
+   Pellegrini N, 1999, METHOD ENZYMOL, V299, P379
+   PROSKY L, 1988, J ASSOC OFF ANA CHEM, V71, P1017
+   Rabiu BA, 2001, APPL ENVIRON MICROB, V67, P2526, DOI 10.1128/AEM.67.6.2526-2530.2001
+   Sacchi R, 2002, J AGR FOOD CHEM, V50, P2830, DOI 10.1021/jf011526l
+   Saenger M, 2001, RENEW ENERG, V23, P103, DOI 10.1016/S0960-1481(00)00106-3
+   Selvendran R R, 1987, Adv Food Res, V31, P117
+   Solfrizzo M, 1998, J CHROMATOGR A, V815, P67, DOI 10.1016/S0021-9673(98)00271-4
+   SPILLER RC, 1994, PHARMACOL THERAPEUT, V62, P407, DOI 10.1016/0163-7258(94)90052-3
+   Wood P., 1997, CEREALS NOVEL USES P, P233
+   Wood P. J., 1993, OAT BRAN, P83
+   2002, FED REG, V67, P191
+NR 34
+TC 152
+Z9 153
+U1 2
+U2 77
+PU AMER CHEMICAL SOC
+PI WASHINGTON
+PA 1155 16TH ST, NW, WASHINGTON, DC 20036 USA
+SN 0021-8561
+EI 1520-5118
+J9 J AGR FOOD CHEM
+JI J. Agric. Food Chem.
+PD MAR 10
+PY 2004
+VL 52
+IS 5
+BP 1338
+EP 1343
+DI 10.1021/jf034974x
+PG 6
+WC Agriculture, Multidisciplinary; Chemistry, Applied; Food Science &
+   Technology
+SC Agriculture; Chemistry; Food Science & Technology
+GA 800PI
+UT WOS:000220039800052
+PM 14995143
+DA 2021-08-19
+ER
+
+PT J
+AU Saenger, M
+   Hartge, EU
+   Werther, J
+   Ogada, T
+   Siagi, Z
+AF Saenger, M
+   Hartge, EU
+   Werther, J
+   Ogada, T
+   Siagi, Z
+TI Combustion of coffee husks
+SO RENEWABLE ENERGY
+LA English
+DT Article
+DE coffee husks; combustion mechanisms; ash problems; N2O and NOx emissions
+AB Combustion mechanisms of two types of coffee husks have been studied using single particle combustion techniques as well as combustion in a pilot-scale fluidised bed facility (FBC), 150 mm in diameter and 9 m high. Through measurements of weight-loss and particle temperatures, the processes of drying, devolatilisation and combustion of coffee husks were studied. Axial temperature profiles in the FBC were also measured during stationary combustion conditions to analyse the location of volatile release and combustion as a function of fuel feeding mode. Finally the problems of ash sintering were analysed. The results showed that devolatilisation of coffee husks (65-72% volatile matter, raw mass) starts at a low temperature range of 170-200 degreesC and takes place rapidly. During fuel feeding using a non water-cooled system, pyrolysis of the husks took place in the feeder tube leading to blockage and non-uniform fuel flow. Measurements of axial temperature profiles showed that during under-bed feeding, the bed and freeboard temperatures were more or less the same, whereas for over-bed feeding, freeboard temperatures were much higher, indicating significant combustion of the volatiles in the freeboard. A major problem observed during the combustion of coffee husks was ash sintering and bed agglomeration. This is due to the low melting temperature of the ash, which is attributed to the high contents of K2O (36-38%) of the coffee husks. (C) 2000 Elsevier Science Ltd. All rights reserved.
+C1 Tech Univ Hamburg Harburg, D-21071 Hamburg, Germany.
+   Moi Univ, Dept Prod Engn, Eldoret, Kenya.
+RP Werther, J (corresponding author), Tech Univ Hamburg Harburg, D-21071 Hamburg, Germany.
+OI Hartge, Ernst-Ulrich/0000-0002-2702-7719
+CR Adams M.R., 1987, COFFEE TECHNOLOGY, P257
+   AGARWAL PK, 1989, ENG RES DES, P457
+   Bapat D.W., 1997, P 14 INT C FLUID BED, P165
+   CHEN G, 1997, P 14 INT C FLUID BED, P175
+   CROISET G, 1994, P 8 EUR BIOM C LOND, P2095
+   *ENV RES MAN, 1996, PREL ENV ASS COFF PR
+   Grubor B.D., 1995, P 13 INT C FLUID BED, P515
+   Hellwig G., 1985, ENERGY BIOMASS, P793
+   Johnsson J. E., 1991, P 11 INT C FLUID BED, P1389
+   KLEIN MR, 1994, VGB KRAFTWERKTECHNIK, V74, P1071
+   *KPCU, 1996, CO INF BOOKL
+   Meschgbiz A, 1995, COMBINED COMBUSTION
+   MILES TR, 1980, AM SANT CHEM SOC S S, V130, P179
+   MUTHUKRISHNAN M, 1995, P 13 INT C FLUID BED, P609
+   Nussbaumer T, 1997, DEV THERMOCHEMICAL B, P1229
+   Ogada T, 1996, FUEL, V75, P617, DOI 10.1016/0016-2361(95)00280-4
+   OGADA T, 1995, THESIS TU HAMBURG HA
+   PEEL RB, 1980, P FLUID COMB SYST AP
+   PETERSEN BM, 1991, BIOMASS ENERGY IND E, P1171
+   SAASTAMANIONEN JJ, 1994, IEA BIOM COMB C CAMB
+   STREHLER A, 1987, BIOMASS REGENERABLE, P75
+   TREBBI G, 1995, COMBINED COMBUSTION
+   Vincent J. C., 1987, COFFEE TECHNOLOGY, P1
+   VONRACZECK U, 1992, THESIS TU HAMBURG HA
+   WARNATZ J, 1996, COMBUSTION PHYSICAL
+   Werther J., 1995, P I EN 2 INT C COMB, P149, DOI DOI 10.1016/B978-0-902597-49-5.50017-2
+   Wilen X., 1987, ENERGY BIOMASS WASTE, V10, p469 484
+   ZELKOWSKI J, 1986, VGB TECHNISCHE VEREI, V8
+   1995, EFFICIENCY EMISSIONS
+NR 29
+TC 86
+Z9 89
+U1 1
+U2 13
+PU PERGAMON-ELSEVIER SCIENCE LTD
+PI OXFORD
+PA THE BOULEVARD, LANGFORD LANE, KIDLINGTON, OXFORD OX5 1GB, ENGLAND
+SN 0960-1481
+J9 RENEW ENERG
+JI Renew. Energy
+PD MAY
+PY 2001
+VL 23
+IS 1
+BP 103
+EP 121
+DI 10.1016/S0960-1481(00)00106-3
+PG 19
+WC Green & Sustainable Science & Technology; Energy & Fuels
+SC Science & Technology - Other Topics; Energy & Fuels
+GA 391RR
+UT WOS:000166369400009
+DA 2021-08-19
+ER
+
+EF

@@ -28,13 +28,16 @@ library(here)
 ```{r}
 spent_mendeley <- 
   revtools::read_bibliography(here("data",
-                                   "spent_coffee_grounds_79.bib")) %>% 
+                                   "spent_coffee_grounds_98.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
          title, 
          year) %>% 
-  mutate(byproduct = "spent_coffee_grounds")
+  mutate(byproduct = "spent_coffee_grounds",
+         title = replace(title, title %in% "Effect of Thymus vulgaris postâ€<90>extraction waste and spent coffee grounds on the quality of cultivated Pleurotus eryngii",
+                         "EFFECT OF THYMUS VULGARIS POSTEXTRACTION WASTE AND SPENT COFFEE GROUNDS ON THE QUALITY OF CULTIVATED PLEUROTUS ERYNGII" ))
+
 dim(spent_mendeley)
 ```
 
@@ -43,7 +46,7 @@ dim(spent_mendeley)
 ```{r}
 silverskin_mendelely <- 
   revtools::read_bibliography(here("data",
-                                   "coffee_silverskin_35.bib")) %>% 
+                                   "coffee_silverskin_40.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
@@ -57,7 +60,7 @@ dim(silverskin_mendelely)
 ```{r}
 pulp_mendeley <- 
   revtools::read_bibliography(here("data",
-                                   "coffee_pulp_36.bib")) %>% 
+                                   "coffee_pulp_39.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
@@ -71,7 +74,7 @@ dim(pulp_mendeley)
 ```{r}
 husk_mendeley <- 
   revtools::read_bibliography(here("data",
-                                   "coffee_husk_25.bib")) %>% 
+                                   "coffee_husk_28.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
@@ -203,12 +206,48 @@ rm(husk_wos,
    spent_wos)
 ```
 
-Merging both datasets...
+New ones from graph search, 28 registers. 
+
+```{r}
+wos_graph_25 <- 
+  bibliometrix::convert2df(here("data",
+                                "new_graph_wos_25.txt"),
+                           dbsource = "isi", 
+                           format = "plaintext")
+
+scopus_graph_3 <- 
+  bibliometrix::convert2df(here("data",
+                                "new_graph_scopus_3.bib"),
+                           dbsource = "scopus", format = "bibtex")
+```
+
+
+Missing values
+
+```{r}
+wos_15 <- 
+  convert2df(here("data", 
+                  "wos_missing_16.txt"))
+
+scopus_1 <- 
+  convert2df(here("data",
+                  "scopus_missing_1.bib"), 
+             dbsource = "scopus", 
+             format = "bibtex")
+
+```
+
+
+Merging datasets...
 
 ```{r}
 byproducts_raw_scopus_wos <- 
   bibliometrix::mergeDbSources(byproducts_raw_scopus, 
                                byproducts_raw_wos, 
+                               wos_graph_25, 
+                               scopus_graph_3,
+                               wos_15, 
+                               scopus_1,
                                remove.duplicated = TRUE)
 ```
 
@@ -223,13 +262,14 @@ byproducts_raw_scopus_wos <-
 mendeley_byproducts %>% 
   map_df(~sum(is.na(.)))
 ```
+We have 16 papers without doi... double checked. 
 
 I will remove "N/A"s tags and reviews
 
 Other option to write the paper
 
 ```{r}
-mendeley_byproducts_no_nas_other <- 
+mendeley_byproducts_no_nas_reviews <- 
   mendeley_byproducts %>% 
   filter(!str_detect(string = mendeley_tags, 
                      pattern = "n/a"),
@@ -238,9 +278,8 @@ mendeley_byproducts_no_nas_other <-
          !str_detect(string = mendeley_tags, 
                      pattern = "review"))
 
-dim(mendeley_byproducts_no_nas_other)
+dim(mendeley_byproducts_no_nas_reviews)
 ```
-
 
 Are there duplicate papers?
 
@@ -289,7 +328,7 @@ mendeley_tags %>%
 
 There are no duplicates 
 
-## Removing categories from tags
+## Removing tags without category
 
 We found some tags that are not in the category table. So, we need it to 
 delete them but I will ask Natalia and Daniel first. 
@@ -388,14 +427,53 @@ dim(dummy_title_83)
 
 We removed 17 papers!!!
 
-Analysing the number of NAs in DOIS
+Analyzing the number of NAs in DOIS
 
 ```{r}
 mendeley_tags_cate %>% 
   map_df(~sum(is.na(.)))
 ```
+We can try a different approach using titles. 
 
-Let's manually assing identifiers to na dois
+Creating the dataset with unique papers
+
+## Adding wos and scopus data 
+
+```{r}
+mendeley_108 <- 
+  mendeley_tags_cate |> 
+  ungroup() |> 
+  select(-mendeley_tags, -label) |> 
+  group_by(doi, title, year, byproduct) |> 
+  mutate(tags = paste0(tag, collapse = ", ")) |> 
+  select(-tag) |> 
+  unique() |> 
+  ungroup() |>
+  group_by(doi, title, year, byproduct, tags) |> 
+  mutate(categories = paste0(category, collapse = ", ")) |> 
+  select(-category) |> 
+  unique()
+```
+
+Normalizing title in mendeley tags 
+
+```{r}
+mendeley_wos_scopus <- 
+  mendeley_108 |> 
+  mutate(title = str_to_upper(title), 
+         title = str_replace_all(title, pattern = "-", replacement = ""),
+         title = str_replace_all(title, "[[:punct:]]", replacement = ""),
+         title = str_replace_all(title, pattern = "~", replacement = "")) |> 
+  left_join(byproducts_raw_scopus_wos, by = c("title" = "TI"))
+```
+
+```{r}
+byproducts_raw_scopus_wos
+```
+
+
+
+Let's manually assign identifiers to na dois
 
 Which are the papers with na?
 

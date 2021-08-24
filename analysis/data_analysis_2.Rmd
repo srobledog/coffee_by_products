@@ -344,16 +344,58 @@ byproducts_journals_scimago
 ## 3.1.4 Author analysis and country collaboration
 
 ```{r}
-authors_by_products <- 
+husk_authors <- 
   data_tidied |> 
-  ungroup() |> 
+  filter(str_detect(byproduct, pattern = "husk")) |> 
   select(doi, AU) |>
   unique() |> 
   separate_rows(AU, sep = ";") |> 
   count(AU, sort = TRUE) |> 
-  slice(1:5)
+  mutate(byproduct = "husk") |> 
+  slice(1:3)
 
-authors_by_products
+husk_authors
+
+pulp_authors <- 
+  data_tidied |> 
+  filter(str_detect(byproduct, pattern = "pulp")) |> 
+  select(doi, AU) |>
+  unique() |> 
+  separate_rows(AU, sep = ";") |> 
+  count(AU, sort = TRUE) |> 
+  mutate(byproduct = "pulp") |> 
+  slice(1:3)
+
+silverskin_authors <- 
+  data_tidied |> 
+  filter(str_detect(byproduct, pattern = "silverskin")) |> 
+  select(doi, AU) |>
+  unique() |> 
+  separate_rows(AU, sep = ";") |> 
+  count(AU, sort = TRUE) |> 
+  mutate(byproduct = "silverskin") |> 
+  slice(1:3)
+
+spent_coffee_ground_authors <- 
+  data_tidied |> 
+  filter(str_detect(byproduct, pattern = "spent_coffee_ground")) |> 
+  select(doi, AU) |>
+  unique() |> 
+  separate_rows(AU, sep = ";") |> 
+  count(AU, sort = TRUE) |> 
+  mutate(byproduct = "spent_coffee_ground") |> 
+  slice(1:3)
+
+byproducts_authors <- 
+  bind_rows(husk_authors,
+            pulp_authors,
+            silverskin_authors,
+            spent_coffee_ground_authors) |> 
+  rename("papers" = n) |> 
+  select(byproduct, everything()) |> 
+  arrange(desc(byproduct))
+
+byproducts_authors
 ```
 
 # 3.2 Coffee By-products applications

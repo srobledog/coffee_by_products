@@ -22,6 +22,9 @@ library(formattable)
 library(readxl)
 library(googlesheets4)
 library(sjrdata)
+library(knitr)
+library(kableExtra)
+library(apaTables)
 ```
 
 
@@ -276,30 +279,66 @@ data_tidied |>
   dplyr::select(doi, byproduct, SO ) %>% 
   separate_rows(byproduct, sep = ", ") |> 
   unique() |> 
-  count(SO, sort = TRUE)
+  count(SO, sort = TRUE) |> 
+  slice(1:5)
 ```
 
-```{r}
-journals_byproducts <- 
-  data_tidied %>% 
-  ungroup() %>% 
-  dplyr::select(doi, byproduct, year, SO) %>% 
-  separate_rows(byproduct, sep = ", ") |> 
-  unique() |> 
-  count(SO, sort = TRUE) %>% 
-  rename("papers" = n) |> 
-  slice(1:5)
+What if we split by byproducts? 
 
-sjr_journals_by_products <- 
+```{r}
+husk_journals <- 
+  data_tidied |> 
+  filter(str_detect(string = byproduct, pattern = "husk"),
+         year >= 2016) |> 
+  count(SO,sort = TRUE) |> 
+  slice(1:3) |> 
+  mutate(byproduct = "husk")
+
+pulp_journals <- 
+  data_tidied |> 
+  filter(str_detect(string = byproduct, pattern = "pulp"), 
+         year >= 2016) |> 
+  count(SO,sort = TRUE) |> 
+  slice(1:3)|> 
+  mutate(byproduct = "pulp")
+
+silverskin_journals <- 
+  data_tidied |> 
+  filter(str_detect(string = byproduct, pattern = "silverskin"), 
+         year >= 2016) |> 
+  count(SO,sort = TRUE) |> 
+  slice(1:3)|> 
+  mutate(byproduct = "silverskin")
+
+spent_coffee_ground <- 
+  data_tidied |> 
+  filter(str_detect(string = byproduct, pattern = "spent_coffee_grounds"), 
+         year >= 2016) |> 
+  count(SO,sort = TRUE) |> 
+  slice(1:3)|> 
+  mutate(byproduct = "spent_cofee_ground")
+
+byproducts_journals <- 
+  bind_rows(husk_journals,
+            pulp_journals,
+            silverskin_journals,
+            spent_coffee_ground) |> 
+  rename("papers" = n) |> 
+  mutate(SO = replace(SO, SO %in% "LWT-FOOD SCIENCE AND TECHNOLOGY", 
+                      "LWT - Food Science and Technology"), 
+         SO = str_to_upper(SO))
+
+byproducts_journals_scimago <- 
   sjr_journals |> 
   mutate(title  = str_to_upper(title)) |>
   filter(year == 2019) |> 
   select(title, h_index, sjr_best_quartile) |> 
-  right_join(journals_byproducts, 
+  right_join(byproducts_journals, 
              by = c("title" = "SO")) |> 
-  select(title, papers, sjr_best_quartile, h_index)
+  select(byproduct, everything()) |> 
+  arrange(desc(byproduct))
 
-sjr_journals_by_products
+byproducts_journals_scimago
 ```
 
 ## 3.1.4 Author analysis and country collaboration

@@ -11,6 +11,8 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+# Creating the environment
+
 ```{r}
 library(tidyverse)
 library(here)
@@ -25,6 +27,7 @@ library(sjrdata)
 library(knitr)
 library(kableExtra)
 library(apaTables)
+library(bibliometrix)
 ```
 
 
@@ -37,9 +40,8 @@ data_tidied <-
 ```
 
 
-# 3.1 Scientometric mapping 
-## 3.1.2 Annual scientific production
-
+# 3.1 Academic production of coffee By-products 
+## 3.1.1 Annual scientific production
 
 ```{r}
 byproducts_year <- 
@@ -271,7 +273,7 @@ global_scientific_production <-
 global_scientific_production
 ```
 
-## 3.1.3 Journal production
+## 3.1.2 Journal production
 
 ```{r}
 data_tidied |> 
@@ -341,7 +343,7 @@ byproducts_journals_scimago <-
 byproducts_journals_scimago
 ```
 
-## 3.1.4 Author analysis and country collaboration
+## 3.1.3 Author analysis and country collaboration
 
 ```{r}
 husk_authors <- 
@@ -397,8 +399,72 @@ byproducts_authors <-
 
 byproducts_authors
 ```
+## 3.1.4 Country Analysis
 
-# 3.2 Coffee By-products applications
+```{r}
+husk_country <- 
+  data_tidied |> 
+  filter(str_detect(byproduct, 
+                    pattern = "husk")) |> 
+  biblioAnalysis(sep = "; ") |> 
+  plot()
+
+husk_country_plot <- 
+  husk_country$MostProdCountries +
+  labs(title = "husk")
+
+pulp_country <- 
+  data_tidied |> 
+  filter(str_detect(byproduct, 
+                    pattern = "pulp")) |> 
+  biblioAnalysis(sep = "; ") |> 
+  plot()
+
+pulp_country_plot <- 
+  pulp_country$MostProdCountries +
+  labs(title = "pulp")
+
+silverskin_country <- 
+  data_tidied |> 
+  filter(str_detect(byproduct, 
+                    pattern = "silverskin")) |> 
+  biblioAnalysis(sep = "; ") |> 
+  plot()
+
+silverskin_country_plot <- 
+  silverskin_country$MostProdCountries +
+  labs(title = "silverskin")
+
+spent_coffee_ground_country <- 
+  data_tidied |> 
+  filter(str_detect(byproduct, 
+                    pattern = "spent_coffee_grounds")) |> 
+  biblioAnalysis(sep = "; ") |> 
+  plot()
+
+spent_coffee_ground_country_plot <- 
+  spent_coffee_ground_country$MostProdCountries +
+  labs(title = "spent_coffee_grounds")
+
+country_scientific_production <- 
+  ggarrange(
+            ggarrange(spent_coffee_ground_country_plot, silverskin_country_plot, 
+                      ncol = 2, labels = c("b", "d"), 
+                      align = "h",widths = c(1.5,2)), 
+            ggarrange(pulp_country_plot, husk_country_plot,
+                      ncol = 2, labels = c("c", "e"), 
+                      align = "h",widths = c(1.5,2)), 
+            nrow = 2
+  ) 
+
+country_scientific_production
+```
+
+# 3.2 Academic networks of Coffee By-products 
+
+## 3.2.1 
+
+# 3.3 Coffee By-products applications
 
 ## 3.2.1 Husk
 

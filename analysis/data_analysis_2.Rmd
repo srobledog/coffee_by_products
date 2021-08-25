@@ -28,6 +28,12 @@ library(knitr)
 library(kableExtra)
 library(apaTables)
 library(bibliometrix)
+library(igraph)
+
+libs <- c("here", 
+          "dplyr")
+
+invisible(lapply(libs, library, character.only = TRUE))
 ```
 
 
@@ -448,13 +454,13 @@ spent_coffee_ground_country_plot <-
 
 country_scientific_production <- 
   ggarrange(
-            ggarrange(spent_coffee_ground_country_plot, silverskin_country_plot, 
-                      ncol = 2, labels = c("b", "d"), 
-                      align = "h",widths = c(1.5,2)), 
-            ggarrange(pulp_country_plot, husk_country_plot,
-                      ncol = 2, labels = c("c", "e"), 
-                      align = "h",widths = c(1.5,2)), 
-            nrow = 2
+    ggarrange(spent_coffee_ground_country_plot, silverskin_country_plot, 
+              ncol = 2, labels = c("b", "d"), 
+              align = "h",widths = c(1.5,2)), 
+    ggarrange(pulp_country_plot, husk_country_plot,
+              ncol = 2, labels = c("c", "e"), 
+              align = "h",widths = c(1.5,2)), 
+    nrow = 2
   ) 
 
 country_scientific_production
@@ -462,15 +468,107 @@ country_scientific_production
 
 # 3.2 Academic networks of Coffee By-products 
 
-## 3.2.1 
+## 3.2.1 Collab net author
+
+```{r}
+
+author_colab <- 
+  biblioNetwork(data.frame(data_tidied), 
+                analysis = "collaboration", 
+                network = "authors", 
+                sep = ";")
+
+net=networkPlot(author_colab, n = 30, 
+                Title = "Co-Citation Network", 
+                type = "fruchterman", 
+                size=T,
+                remove.multiple=FALSE, 
+                labelsize=0.7,
+                edgesize = 5,
+                cluster = 'louvain')
+
+author_colab_graph <- 
+  graph_from_adjacency_matrix(adjmatrix = author_colab, 
+                              mode = "undirected", 
+                              weighted = TRUE) |> 
+  simplify()
+
+```
+
+The results are scattered in author collaboration network.  
+
+## 3.2.2 Collab net country
+
+```{r}
+M <- metaTagExtraction(data_tidied, 
+                       Field = "AU_CO", 
+                       sep = ";")
+
+country_collab <- 
+  biblioNetwork(data.frame(M), 
+                analysis = "collaboration", 
+                network = "countries", 
+                sep = ";")
+
+net=networkPlot(country_collab, 
+                n = dim(country_collab)[1], 
+                Title = "Country Collaboration", 
+                type = "circle", 
+                size=TRUE, 
+                remove.multiple=FALSE,
+                labelsize=0.7,
+                cluster="none")
+
+country_collab_graph <- 
+  graph_from_adjacency_matrix(country_collab, 
+                              mode = "undirected", 
+                              weighted = TRUE) |> 
+  simplify()
+```
+I couldn't create the world map :-( 
+
+## 3.2.3 Collab net universities
+
+```{r}
+universty_collab <- 
+  biblioNetwork(data.frame(data_tidied), 
+                analysis = "collaboration", 
+                network = "universities", 
+                sep = ";")
+
+universty_collab_net <- networkPlot(universty_collab, 
+                n = dim(universty_collab)[1], 
+                Title = "University Collaboration", 
+                type = "circle", 
+                size=TRUE, 
+                remove.multiple=FALSE,
+                labelsize=0.7,
+                cluster="none")
+
+country_collab_graph <- 
+  graph_from_adjacency_matrix(country_collab, 
+                              mode = "undirected", 
+                              weighted = TRUE) |> 
+  simplify()
+```
+
 
 # 3.3 Coffee By-products applications
 
-## 3.2.1 Husk
+## 3.3.1 Husk
 
 ```{r}
 
 ```
+
+```{r}
+
+```
+
+
+# 3.3 Applications of Coffee by-products
+
+
 
 # Bibliometric general analysis
 
@@ -499,10 +597,7 @@ net=networkPlot(NetMatrix, n = 30, Title = "Co-Citation Network",
 ```
 
 
-# COuntry cientific colaboration 
-M <- metaTagExtraction(datos_unidos, Field = "AU_CO", sep = ";")
-NetMatrix <- biblioNetwork(M, analysis = "collaboration", network = "countries", sep = ";")
-net=networkPlot(NetMatrix, n = dim(NetMatrix)[1], Title = "Country Collaboration", type = "circle", size=TRUE, remove.multiple=FALSE,labelsize=0.7,cluster="none")
+
 
 
 # key word co-ocurrences

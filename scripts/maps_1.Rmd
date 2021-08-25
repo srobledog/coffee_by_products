@@ -1,0 +1,82 @@
+---
+title: "World_map"
+author: "Sebastian Robledo"
+date: "8/25/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+# World map is available in the maps package
+library(maps)
+
+# No margin
+par(mar=c(0,0,0,0))
+
+# World map
+map('world',
+    col="#f2f2f2", fill=TRUE, bg="white", lwd=0.05,
+    mar=rep(0,4),border=0, ylim=c(-80,80) 
+)
+```
+
+```{r}
+# Dplyr for data wrangling and pipe function
+library(dplyr)
+
+# Cities
+Buenos_aires <- c(-58,-34)
+Paris <- c(2,49)
+Melbourne <- c(145,-38)
+
+# Data frame
+data <- rbind(Buenos_aires, Paris, Melbourne) %>% 
+  as.data.frame()
+colnames(data) <- c("long","lat")
+
+# Show the cities on the map
+map('world',
+    col="#f2f2f2", fill=TRUE, bg="white", lwd=0.05,
+    mar=rep(0,4),border=0, ylim=c(-80,80) 
+)
+points(x=data$long, y=data$lat, col="slateblue", cex=3, pch=20)
+
+# Compute the connection between Buenos Aires and Paris
+inter <- gcIntermediate(Paris,  Buenos_aires, n=50, addStartEnd=TRUE, breakAtDateLine=F)
+
+# Show this connection
+lines(inter, col="slateblue", lwd=2)
+ 
+# Between Paris and Melbourne
+inter <- gcIntermediate(Melbourne,  Paris, n=50, addStartEnd=TRUE, breakAtDateLine=F)             
+lines(inter, col="slateblue", lwd=2)
+```
+
+```{r}
+# Load geosphere
+library(geosphere)
+
+# Background map
+map('world',
+    col="#f2f2f2", fill=TRUE, bg="white", lwd=0.05,
+    mar=rep(0,4),border=0, ylim=c(-80,80) 
+)
+
+# Dot for cities
+points(x=data$long, y=data$lat, col="slateblue", cex=3, pch=20)
+
+# Compute the connection between Buenos Aires and Paris
+inter <- gcIntermediate(Paris,  Buenos_aires, n=50, addStartEnd=TRUE, breakAtDateLine=F)
+
+# Show this connection
+lines(inter, col="slateblue", lwd=2)
+ 
+# Between Paris and Melbourne
+inter <- gcIntermediate(Melbourne,  Paris, n=50, addStartEnd=TRUE, breakAtDateLine=F)             
+lines(inter, col="slateblue", lwd=2)
+```
+

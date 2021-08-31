@@ -1,0 +1,648 @@
+---
+title: "Data_Analysis_2"
+author: "Sebastian Robledo"
+date: "8/18/2021"
+output: 
+  html_document:
+    code_folding: hide
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Creating the environment
+
+```{r}
+library(tidyverse)
+library(here)
+library(revtools)
+library(ggpubr) 
+library(gt)
+library(dplyr)
+library(formattable)
+library(readxl)
+library(googlesheets4)
+library(sjrdata)
+library(knitr)
+library(kableExtra)
+library(apaTables)
+library(bibliometrix)
+library(igraph)
+```
+
+
+# Getting tidied data 
+
+```{r message=FALSE, warning=FALSE}
+data_tidied <- 
+  read_csv(here("output",
+                "mendelely_tags_wos_scopus.csv"))
+```
+
+
+# 3.1 Academic production of coffee By-products 
+## 3.1.1 Annual scientific production
+
+```{r}
+byproducts_year <- 
+  data_tidied %>% 
+  ungroup() %>% 
+  dplyr::select(doi, byproduct, year) %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  unique() |> 
+  count(year, sort = TRUE) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.integer(year))
+
+# We need to create a range sequence of years
+
+byproduct_years <- 
+  range(data_tidied$year)  
+
+byproduct_year_range <- 
+  byproduct_years[1]:byproduct_years[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to husk dataset
+
+byproduct_year_all <-
+  byproduct_year_range %>% 
+  left_join(byproducts_year) %>% 
+  replace_na(list(papers = 0)) 
+
+mendeley_byproducts_plot <- 
+  byproduct_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() +
+  geom_line() +
+  ylab("papers") +
+  ggtitle("Scientific annual production") +
+  theme(plot.title = element_text(hjust = 0.5),
+        text=element_text(family="Times", face="bold", size=12),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank())
+
+## Coffee husk 
+
+husk_year <- 
+  data_tidied %>% 
+  ungroup() %>% 
+  dplyr::select(doi, byproduct, year) %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  unique() |>
+  filter(str_detect(string = byproduct,
+                    pattern = "husk")) |> 
+  count(year, sort = TRUE) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+# We need to create a range sequence of years
+
+husk_range_year <- 
+  range(husk_year$year)  
+
+husk_years <- 
+  husk_range_year[1]:husk_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to husk dataset
+
+husk_year_all <-
+  husk_years %>% 
+  left_join(husk_year) %>% 
+  replace_na(list(papers = 0)) 
+
+husk_year_all_plot <- 
+  husk_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() +
+  geom_line() +
+  ylab("papers") +
+  ggtitle("Husk") +
+  theme(plot.title = element_text(hjust = 0.5),
+        text=element_text(family="Times", face="bold", size=12),
+        axis.line = element_line(colour = "black"),
+        panel.grid.major = element_blank(),
+        panel.grid.minor = element_blank(),
+        panel.border = element_blank(),
+        panel.background = element_blank())
+
+
+## Coffee pulp 
+
+pulp_year <- 
+  data_tidied %>% 
+  ungroup() %>% 
+  dplyr::select(doi, byproduct, year) %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  unique() |>
+  filter(str_detect(string = byproduct,
+                    pattern = "pulp")) |> 
+  count(year, sort = TRUE) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+# We need to create a range sequence of years
+
+pulp_range_year <- 
+  range(pulp_year$year)  
+
+pulp_years <- 
+  pulp_range_year[1]:pulp_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to pulp dataset
+
+pulp_year_all <-
+  pulp_years %>% 
+  left_join(pulp_year) %>% 
+  replace_na(list(papers = 0)) 
+
+pulp_year_all_plot <- 
+  pulp_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() + 
+  geom_line() +
+  ggtitle("Pulp")
+
+
+## Coffee silverskin 
+
+silverskin_year <- 
+  data_tidied %>% 
+  ungroup() %>% 
+  dplyr::select(doi, byproduct, year) %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  unique() |>
+  filter(str_detect(string = byproduct,
+                    pattern = "silverskin")) |> 
+  count(year, sort = TRUE) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+# We need to create a range sequence of years
+
+silverskin_range_year <- 
+  range(silverskin_year$year)  
+
+silverskin_years <- 
+  silverskin_range_year[1]:silverskin_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to silverskin dataset
+
+silverskin_year_all <-
+  silverskin_years %>% 
+  left_join(silverskin_year) %>% 
+  replace_na(list(papers = 0)) 
+
+silverskin_year_all_plot <- 
+  silverskin_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() + 
+  geom_line() +
+  ggtitle("Silverskin")
+
+
+
+## Coffee Spent_coffee 
+
+Spent_coffee_year <- 
+  data_tidied %>% 
+  ungroup() %>% 
+  dplyr::select(doi, byproduct, year) %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  unique() |>
+  filter(str_detect(string = byproduct,
+                    pattern = "spent_coffee_grounds")) |> 
+  count(year, sort = TRUE) %>% 
+  rename("papers" = n) %>% 
+  mutate(year = as.numeric(year)) %>% 
+  arrange(desc(year)) 
+
+# We need to create a range sequence of years
+
+Spent_coffee_range_year <- 
+  range(Spent_coffee_year$year)  
+
+Spent_coffee_years <- 
+  Spent_coffee_range_year[1]:Spent_coffee_range_year[2]%>% 
+  as_tibble() %>% 
+  rename("year" = value)
+
+# Adding range years to Spent_coffee dataset
+
+Spent_coffee_year_all <-
+  Spent_coffee_years %>% 
+  left_join(Spent_coffee_year) %>% 
+  replace_na(list(papers = 0)) 
+
+Spent_coffee_year_all_plot <- 
+  Spent_coffee_year_all %>% 
+  ggplot(aes(x = year, y = papers, group = 1)) +
+  geom_point() + 
+  geom_line() +
+  ggtitle("Spent coffee ground")
+
+
+## Annual scientific production
+
+global_scientific_production <- 
+  ggarrange(mendeley_byproducts_plot,
+            ggarrange(husk_year_all_plot, pulp_year_all_plot, 
+                      ncol = 2, labels = c("b", "d"), 
+                      align = "h",widths = c(1.5,2)), 
+            ggarrange(silverskin_year_all_plot, Spent_coffee_year_all_plot,
+                      ncol = 2, labels = c("c", "e"), 
+                      align = "h",widths = c(1.5,2)), 
+            nrow = 3, 
+            heights = c(1.5, 1, 1),
+            labels = "a" 
+  ) 
+
+global_scientific_production
+```
+
+## 3.1.2 Journal production
+
+```{r}
+data_tidied |> 
+  ungroup() %>% 
+  dplyr::select(doi, byproduct, SO ) %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  unique() |> 
+  count(SO, sort = TRUE) |> 
+  slice(1:5)
+```
+
+What if we split by byproducts? 
+
+```{r}
+husk_journals <- 
+  data_tidied |> 
+  filter(str_detect(string = byproduct, pattern = "husk"),
+         year >= 2016) |> 
+  count(SO,sort = TRUE) |> 
+  slice(1:3) |> 
+  mutate(byproduct = "husk")
+
+pulp_journals <- 
+  data_tidied |> 
+  filter(str_detect(string = byproduct, pattern = "pulp"), 
+         year >= 2016) |> 
+  count(SO,sort = TRUE) |> 
+  slice(1:3)|> 
+  mutate(byproduct = "pulp")
+
+silverskin_journals <- 
+  data_tidied |> 
+  filter(str_detect(string = byproduct, pattern = "silverskin"), 
+         year >= 2016) |> 
+  count(SO,sort = TRUE) |> 
+  slice(1:3)|> 
+  mutate(byproduct = "silverskin")
+
+spent_coffee_ground <- 
+  data_tidied |> 
+  filter(str_detect(string = byproduct, pattern = "spent_coffee_grounds"), 
+         year >= 2016) |> 
+  count(SO,sort = TRUE) |> 
+  slice(1:3)|> 
+  mutate(byproduct = "spent_cofee_ground")
+
+byproducts_journals <- 
+  bind_rows(husk_journals,
+            pulp_journals,
+            silverskin_journals,
+            spent_coffee_ground) |> 
+  rename("papers" = n) |> 
+  mutate(SO = replace(SO, SO %in% "LWT-FOOD SCIENCE AND TECHNOLOGY", 
+                      "LWT - Food Science and Technology"), 
+         SO = str_to_upper(SO))
+
+byproducts_journals_scimago <- 
+  sjr_journals |> 
+  mutate(title  = str_to_upper(title)) |>
+  filter(year == 2019) |> 
+  select(title, h_index, sjr_best_quartile) |> 
+  right_join(byproducts_journals, 
+             by = c("title" = "SO")) |> 
+  select(byproduct, everything()) |> 
+  arrange(desc(byproduct))
+
+byproducts_journals_scimago
+```
+
+## 3.1.3 Author analysis and country collaboration
+
+```{r}
+husk_authors <- 
+  data_tidied |> 
+  filter(str_detect(byproduct, pattern = "husk")) |> 
+  select(doi, AU) |>
+  unique() |> 
+  separate_rows(AU, sep = ";") |> 
+  count(AU, sort = TRUE) |> 
+  mutate(byproduct = "husk") |> 
+  slice(1:3)
+
+husk_authors
+
+pulp_authors <- 
+  data_tidied |> 
+  filter(str_detect(byproduct, pattern = "pulp")) |> 
+  select(doi, AU) |>
+  unique() |> 
+  separate_rows(AU, sep = ";") |> 
+  count(AU, sort = TRUE) |> 
+  mutate(byproduct = "pulp") |> 
+  slice(1:3)
+
+silverskin_authors <- 
+  data_tidied |> 
+  filter(str_detect(byproduct, pattern = "silverskin")) |> 
+  select(doi, AU) |>
+  unique() |> 
+  separate_rows(AU, sep = ";") |> 
+  count(AU, sort = TRUE) |> 
+  mutate(byproduct = "silverskin") |> 
+  slice(1:3)
+
+spent_coffee_ground_authors <- 
+  data_tidied |> 
+  filter(str_detect(byproduct, pattern = "spent_coffee_ground")) |> 
+  select(doi, AU) |>
+  unique() |> 
+  separate_rows(AU, sep = ";") |> 
+  count(AU, sort = TRUE) |> 
+  mutate(byproduct = "spent_coffee_ground") |> 
+  slice(1:3)
+
+byproducts_authors <- 
+  bind_rows(husk_authors,
+            pulp_authors,
+            silverskin_authors,
+            spent_coffee_ground_authors) |> 
+  rename("papers" = n) |> 
+  select(byproduct, everything()) |> 
+  arrange(desc(byproduct))
+
+byproducts_authors
+```
+## 3.1.4 Country Analysis
+
+```{r}
+husk_country <- 
+  data_tidied |> 
+  filter(str_detect(byproduct, 
+                    pattern = "husk")) |> 
+  biblioAnalysis(sep = "; ") |> 
+  plot()
+
+husk_country_plot <- 
+  husk_country$MostProdCountries +
+  labs(title = "husk")
+
+pulp_country <- 
+  data_tidied |> 
+  filter(str_detect(byproduct, 
+                    pattern = "pulp")) |> 
+  biblioAnalysis(sep = "; ") |> 
+  plot()
+
+pulp_country_plot <- 
+  pulp_country$MostProdCountries +
+  labs(title = "pulp")
+
+silverskin_country <- 
+  data_tidied |> 
+  filter(str_detect(byproduct, 
+                    pattern = "silverskin")) |> 
+  biblioAnalysis(sep = "; ") |> 
+  plot()
+
+silverskin_country_plot <- 
+  silverskin_country$MostProdCountries +
+  labs(title = "silverskin")
+
+spent_coffee_ground_country <- 
+  data_tidied |> 
+  filter(str_detect(byproduct, 
+                    pattern = "spent_coffee_grounds")) |> 
+  biblioAnalysis(sep = "; ") |> 
+  plot()
+
+spent_coffee_ground_country_plot <- 
+  spent_coffee_ground_country$MostProdCountries +
+  labs(title = "spent_coffee_grounds")
+
+country_scientific_production <- 
+  ggarrange(
+    ggarrange(spent_coffee_ground_country_plot, silverskin_country_plot, 
+              ncol = 2, labels = c("b", "d"), 
+              align = "h",widths = c(1.5,2)), 
+    ggarrange(pulp_country_plot, husk_country_plot,
+              ncol = 2, labels = c("c", "e"), 
+              align = "h",widths = c(1.5,2)), 
+    nrow = 2
+  ) 
+
+country_scientific_production
+```
+
+# 3.2 Academic networks of Coffee By-products 
+
+## 3.2.1 Collab net author
+
+```{r}
+
+author_colab <- 
+  biblioNetwork(data.frame(data_tidied), 
+                analysis = "collaboration", 
+                network = "authors", 
+                sep = ";")
+
+net=networkPlot(author_colab, n = 30, 
+                Title = "Author Collaboration Network", 
+                type = "fruchterman", 
+                size=T,
+                remove.multiple=FALSE, 
+                labelsize=0.7,
+                edgesize = 5,
+                cluster = 'louvain')
+
+author_colab_graph <- 
+  graph_from_adjacency_matrix(adjmatrix = author_colab, 
+                              mode = "undirected", 
+                              weighted = TRUE) |> 
+  simplify()
+
+```
+
+The results are scattered in author collaboration network.  
+
+## 3.2.2 Collab net country
+
+```{r}
+M <- metaTagExtraction(data_tidied, 
+                       Field = "AU_CO", 
+                       sep = ";")
+
+country_collab <- 
+  biblioNetwork(data.frame(M), 
+                analysis = "collaboration", 
+                network = "countries", 
+                sep = ";")
+
+net=networkPlot(country_collab, 
+                n = dim(country_collab)[1], 
+                Title = "Country Collaboration", 
+                type = "circle", 
+                size=TRUE, 
+                remove.multiple=FALSE,
+                labelsize=0.7,
+                cluster="none")
+
+country_collab_graph <- 
+  graph_from_adjacency_matrix(country_collab, 
+                              mode = "undirected", 
+                              weighted = TRUE) |> 
+  simplify()
+```
+I couldn't create the world map :-( 
+
+## 3.2.3 Collab net universities
+
+```{r}
+university_collab <- 
+  biblioNetwork(data.frame(data_tidied), 
+                analysis = "collaboration", 
+                network = "universities", 
+                sep = ";")
+
+university_collab_net <- networkPlot(university_collab, 
+                n = dim(universty_collab)[1], 
+                Title = "University Collaboration", 
+                type = "circle", 
+                size=TRUE, 
+                remove.multiple=FALSE,
+                labelsize=0.7,
+                cluster="none")
+
+# university_collab_graph <- 
+#   graph_from_adjacency_matrix(universty_collab_net$graph, 
+#                               mode = "undirected", 
+#                               weighted = TRUE) |> 
+#   simplify()
+```
+
+Scattered.... 
+
+## 3.2.4 Citation Network
+
+```{r}
+
+```
+
+
+# 3.3 Coffee By-products applications
+
+## 3.3.1 Husk
+
+```{r}
+
+```
+
+```{r}
+
+```
+
+
+# 3.3 Applications of Coffee by-products
+
+
+
+# Bibliometric general analysis
+
+## General results
+
+```{r}
+results <-  biblioAnalysis(data_tidied, sep = ";")
+
+results_summary <- summary(results)
+```
+
+## Citation network
+
+```{r}
+NetMatrix <- 
+  biblioNetwork(data_tidied, 
+                analysis = "co-citation", 
+                network = "references", 
+                sep = ";")
+
+net=networkPlot(NetMatrix, n = 30, Title = "Co-Citation Network", 
+                type = "fruchterman", size=T,
+                remove.multiple=FALSE, 
+                labelsize=0.7,edgesize = 5,
+                cluster = 'louvain')
+```
+
+
+
+
+
+# key word co-ocurrences
+NetMatrix <- biblioNetwork(datos_unidos, analysis = "co-occurrences", network = "keywords", sep = ";")
+net=networkPlot(NetMatrix, normalize="association", weighted=T, n = 30, Title = "Keyword Co-occurrences", type = "fruchterman", size=T,edgesize = 5,labelsize=0.7)
+
+
+# Tabla de journals por producto 
+datos_unidos <- inner_join(datos_select,datos,by = c('AU' = 'autores')) %>%
+separate_rows(byproduct,sep = ',')
+datos_unidos$byproduct <- gsub(" ","",datos_unidos$byproduct)
+
+journal_product <- datos_unidos %>%
+group_by(JI,byproduct) %>%
+count()
+
+
+# Autores mas productivos
+datos_autores <- datos_unidos %>%
+separate_rows(AU, sep = ";")
+
+autores_mas_prod <- datos_autores %>%
+group_by(AU) %>% 
+count() %>%
+arrange(desc(n)) %>% 
+head(10)
+
+
+# Autores mas productivos por producto 
+
+autores_producto <- datos_autores %>%
+group_by(AU,byproduct) %>% 
+count() %>%
+arrange(desc(n)) %>%
+group_by(byproduct) %>%
+top_n(n = 5)
+
+
+# Autores por categoria 
+autores_categoria <- datos_autores %>%
+group_by(AU,category) %>% 
+count() %>%
+arrange(desc(n)) %>%
+group_by(category) %>%
+top_n(n = 5)

@@ -1,0 +1,198 @@
+---
+title: "world_map"
+author: "Sebastian Robledo"
+date: "8/25/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+install.packages(c("cowplot", "googleway", "ggplot2", "ggrepel", 
+"ggspatial", "libwgeom", "sf", "rnaturalearth", "rnaturalearthdata"))
+```
+
+```{r}
+libs <- c("cowplot", 
+          "googleway", 
+          "ggplot2", 
+          "ggrepel", 
+          "ggspatial", 
+          "libwgeom", 
+          "sf", 
+          "rnaturalearth", 
+          "rnaturalearthdata")
+
+invisible(lapply(libs, library, character.only = TRUE))
+
+theme_set(theme_bw())
+```
+
+```{r}
+library("ggplot2")
+theme_set(theme_bw())
+library("sf")
+```
+
+
+```{r}
+library("rnaturalearth")
+library("rnaturalearthdata")
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+class(world)
+```
+
+```{r}
+ggplot(data = world) +
+    geom_sf()
+```
+
+# Other option
+
+```{r}
+library(maps)
+library(diagram)  
+library(plotrix)
+library(R.utils)
+palette(rainbow(20))
+data("world.cities")
+
+pdf(tf <- tempfile(fileext = ".pdf"), width = 40, height = 20)
+
+map('world', fill = TRUE, col = "lightgray", mar = rep(0, 4)) 
+
+nodes <- transform(with(world.cities, world.cities[pop > 5e6,]), country.etc = as.factor(country.etc))
+with(nodes, points(long, lat, col=country.etc, pch=19, cex=rescale(pop, c(1, 8)))) 
+
+set.seed(1)
+edges <- subset(data.frame(from = sample(nodes$name, 20, replace = TRUE), to = sample(nodes$name, 20, replace = TRUE), stringsAsFactors = F), from != to)
+edges <- merge(merge(edges, nodes[, c("name", "long", "lat")], by.x = "from", by.y = "name"), nodes[, c("name", "long", "lat")], by.x = "to", by.y = "name")
+edges$col <- as.integer(nodes$country.etc[match(edges$from, nodes$name)])
+
+apply(edges[, -(1:2)], 1, function(x) curvedarrow(to=x[3:4], from=x[1:2], lcol=x[5], curve=.1, arr.pos = 1, lwd=.5))
+
+dev.off()         
+R.utils::shell.exec2(tf)
+```
+
+## Other option
+
+```{r}
+# World map is available in the maps package
+library(maps)
+
+# No margin
+par(mar=c(0,0,0,0))
+
+# World map
+map('world',
+    col="#f2f2f2", fill=TRUE, bg="white", lwd=0.05,
+    mar=rep(0,4),border=0, ylim=c(-80,80) 
+)
+```
+
+```{r}
+# Dplyr for data wrangling and pipe function
+library(dplyr)
+
+# Cities
+Buenos_aires <- c(-58,-34)
+Paris <- c(2,49)
+Melbourne <- c(145,-38)
+
+# Data frame
+data <- rbind(Buenos_aires, Paris, Melbourne) %>% 
+  as.data.frame()
+colnames(data) <- c("long","lat")
+
+# Show the cities on the map
+map('world',
+    col="#f2f2f2", fill=TRUE, bg="white", lwd=0.05,
+    mar=rep(0,4),border=0, ylim=c(-80,80) 
+)
+points(x=data$long, y=data$lat, col="slateblue", cex=3, pch=20)
+```
+
+
+```{r}
+# Load geosphere
+library(geosphere)
+
+# Background map
+map('world',
+    col="#f2f2f2", fill=TRUE, bg="white", lwd=0.05,
+    mar=rep(0,4),border=0, ylim=c(-80,80) 
+)
+
+# Dot for cities
+points(x=data$long, y=data$lat, col="slateblue", cex=3, pch=20)
+
+# Compute the connection between Buenos Aires and Paris
+inter <- gcIntermediate(Paris,  Buenos_aires, n=50, addStartEnd=TRUE, breakAtDateLine=F)
+
+# Show this connection
+lines(inter, col="slateblue", lwd=2)
+ 
+# Between Paris and Melbourne
+inter <- gcIntermediate(Melbourne,  Paris, n=50, addStartEnd=TRUE, breakAtDateLine=F)             
+lines(inter, col="slateblue", lwd=2)
+```
+
+```{r}
+# Background map
+map('world',col="#f2f2f2", fill=TRUE, bg="white", lwd=0.05,mar=rep(0,4),border=0, ylim=c(-80,80) )
+
+# Circles for cities
+points(x=data$long, y=data$lat, col="slateblue", cex=3, pch=20)
+ 
+# Connections
+plot_my_connection(Paris[1], Paris[2], Melbourne[1], Melbourne[2], col="slateblue", lwd=2)
+plot_my_connection(Buenos_aires[1], Buenos_aires[2], Melbourne[1], Melbourne[2], col="slateblue", lwd=2)
+plot_my_connection(Buenos_aires[1], Buenos_aires[2], Paris[1], Paris[2], col="slateblue", lwd=2)
+```
+
+
+## Other option
+
+```{r}
+library(tidyverse)
+library(maps)
+library(geosphere)
+```
+
+```{r}
+par(mar=c(0,0,0,0))
+map('world',col="#f2f2f2", fill=TRUE, bg="white", lwd=0.05,mar=rep(0,4),border=0, ylim=c(-80,80) )
+```
+
+```{r}
+Buenos_aires=c(-58,-34)
+Paris=c(2,49)
+Melbourne=c(145,-38)
+data=rbind(Buenos_aires, Paris, Melbourne) %>% as.data.frame()
+colnames(data)=c("long","lat")
+```
+
+```{r}
+points(x=data$long, y=data$lat, col="slateblue", cex=3, pch=20)
+```
+
+# Other option
+
+```{r}
+# World map is available in the maps package
+library(maps)
+
+# No margin
+par(mar=c(0,0,0,0))
+
+# World map
+map('world',
+    col="#f2f2f2", fill=TRUE, bg="white", lwd=0.05,
+    mar=rep(0,4),border=0, ylim=c(-80,80) 
+)
+```
+

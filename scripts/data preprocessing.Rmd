@@ -15,6 +15,7 @@ library(formattable)
 library(readxl)
 library(bibliometrix)
 library(tosr)
+library(here)
 ```
 
 
@@ -26,13 +27,17 @@ library(tosr)
 
 ```{r}
 spent_mendeley <- 
-  revtools::read_bibliography("data/spent_coffee_grounds_79.bib") %>% 
+  revtools::read_bibliography(here("data",
+                                   "spent_coffee_grounds_98.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
          title, 
          year) %>% 
-  mutate(byproduct = "spent_coffee_grounds")
+  mutate(byproduct = "spent_coffee_grounds",
+         title = replace(title, title %in% "Effect of Thymus vulgaris postâ€<90>extraction waste and spent coffee grounds on the quality of cultivated Pleurotus eryngii",
+                         "EFFECT OF THYMUS VULGARIS POSTEXTRACTION WASTE AND SPENT COFFEE GROUNDS ON THE QUALITY OF CULTIVATED PLEUROTUS ERYNGII" ))
+
 dim(spent_mendeley)
 ```
 
@@ -40,7 +45,8 @@ dim(spent_mendeley)
 
 ```{r}
 silverskin_mendelely <- 
-  revtools::read_bibliography("data/coffee_silverskin_35.bib") %>% 
+  revtools::read_bibliography(here("data",
+                                   "coffee_silverskin_40.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
@@ -53,7 +59,8 @@ dim(silverskin_mendelely)
 
 ```{r}
 pulp_mendeley <- 
-  revtools::read_bibliography("data/coffee_pulp_36.bib") %>% 
+  revtools::read_bibliography(here("data",
+                                   "coffee_pulp_39.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
@@ -66,7 +73,8 @@ dim(pulp_mendeley)
 
 ```{r}
 husk_mendeley <- 
-  revtools::read_bibliography("data/coffee_husk_25.bib") %>% 
+  revtools::read_bibliography(here("data",
+                                   "coffee_husk_28.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
@@ -98,8 +106,9 @@ dim(mendeley_byproducts)
 
 ```{r}
 tags <-
-  read.csv("data/unique_tags.csv", 
-                  stringsAsFactors = FALSE) %>% 
+  read.csv(here("data",
+                "unique_tags.csv"), 
+           stringsAsFactors = FALSE) %>% 
   rename(tag = "code") %>% 
   unique() %>% 
   mutate(category = str_to_lower(category),
@@ -113,26 +122,30 @@ categories <-
 
 ## 3. Scopus & WoS
 
-### Scopus
+### Scopus
 
 ```{r}
 husk_scopus <- 
-  bibliometrix::convert2df("data/raw data/Coffee Husk Scopus 21.bib", 
+  bibliometrix::convert2df(here("data",
+                                "raw data scopus/Coffee Husk Scopus 21.bib"), 
                            dbsource = "scopus", 
                            format = "bibtex")
 
 pulp_scopus <- 
-  bibliometrix::convert2df("data/raw data/Coffee Pulp Scopus 33.bib", 
+  bibliometrix::convert2df(here("data",
+                                "raw data scopus/Coffee Pulp Scopus 33.bib"), 
                            dbsource = "scopus", 
                            format = "bibtex")
 
 silverskin_scopus <- 
-  bibliometrix::convert2df("data/raw data/Coffee Silverskin Scopus 34.bib", 
+  bibliometrix::convert2df(here("data",
+                                "raw data scopus/Coffee Silverskin Scopus 34.bib"), 
                            dbsource = "scopus", 
                            format = "bibtex")
 
 spent_scopus <- 
-  bibliometrix::convert2df("data/raw data/Spent coffee grounds Scopus 47.bib", 
+  bibliometrix::convert2df(here("data",
+                                "raw data scopus/Spent coffee grounds Scopus 47.bib"), 
                            dbsource = "scopus", 
                            format = "bibtex")
 
@@ -155,22 +168,26 @@ rm(husk_scopus,
 
 ```{r}
 husk_wos <- 
-  bibliometrix::convert2df("data/raw data wos/Coffe Husk WOS 29.txt", 
+  bibliometrix::convert2df(here("data",
+                                "raw data wos/Coffe Husk WOS 29.txt"), 
                            dbsource = "wos", 
                            format = "plaintext")
 
 pulp_wos <- 
-  bibliometrix::convert2df("data/raw data wos/Coffee Pulp WOS 26.txt", 
+  bibliometrix::convert2df(here("data",
+                                "raw data wos/Coffee Pulp WOS 26.txt"), 
                            dbsource = "wos", 
                            format = "plaintext")
 
 silverskin_wos <- 
-  bibliometrix::convert2df("data/raw data wos/Coffee Silverskin WOS 26.txt", 
+  bibliometrix::convert2df(here("data", 
+                                "raw data wos/Coffee Silverskin WOS 26.txt"), 
                            dbsource = "wos", 
                            format = "plaintext")
 
 spent_wos <- 
-  bibliometrix::convert2df("data/raw data wos/Spent coffee grounds WOS 57.txt", 
+  bibliometrix::convert2df(here("data",
+                                "/raw data wos/Spent coffee grounds WOS 57.txt"), 
                            dbsource = "wos", 
                            format = "plaintext")
 
@@ -178,7 +195,7 @@ byproducts_raw_wos <-
   bind_rows(husk_wos,
             pulp_wos,
             silverskin_wos,
-            spent_scopus) %>% 
+            spent_wos) %>% 
   unique()
 
 dim(byproducts_raw_wos)
@@ -189,12 +206,48 @@ rm(husk_wos,
    spent_wos)
 ```
 
-Merging both datasets...
+New ones from graph search, 28 registers. 
+
+```{r}
+wos_graph_25 <- 
+  bibliometrix::convert2df(here("data",
+                                "new_graph_wos_25.txt"),
+                           dbsource = "isi", 
+                           format = "plaintext")
+
+scopus_graph_3 <- 
+  bibliometrix::convert2df(here("data",
+                                "new_graph_scopus_3.bib"),
+                           dbsource = "scopus", format = "bibtex")
+```
+
+
+Missing values
+
+```{r}
+wos_15 <- 
+  convert2df(here("data", 
+                  "wos_missing_16.txt"))
+
+scopus_1 <- 
+  convert2df(here("data",
+                  "scopus_missing_1.bib"), 
+             dbsource = "scopus", 
+             format = "bibtex")
+
+```
+
+
+Merging datasets...
 
 ```{r}
 byproducts_raw_scopus_wos <- 
   bibliometrix::mergeDbSources(byproducts_raw_scopus, 
                                byproducts_raw_wos, 
+                               wos_graph_25, 
+                               scopus_graph_3,
+                               wos_15, 
+                               scopus_1,
                                remove.duplicated = TRUE)
 ```
 
@@ -209,42 +262,21 @@ byproducts_raw_scopus_wos <-
 mendeley_byproducts %>% 
   map_df(~sum(is.na(.)))
 ```
+We have 16 papers without doi... double checked. 
 
-I will remove "N/A"s tags
-
-```{r}
-mendeley_byproducts_no_nas <- 
-  mendeley_byproducts %>% 
-  filter(!str_detect(string = mendeley_tags, 
-                     pattern = "n/a"))
-dim(mendeley_byproducts_no_nas)
-```
+I will remove "N/A"s tags and reviews
 
 Other option to write the paper
 
 ```{r}
-mendeley_byproducts_no_nas_other <- 
+mendeley_byproducts_no_nas_reviews <- 
   mendeley_byproducts %>% 
   filter(!str_detect(string = mendeley_tags, 
                      pattern = "n/a"),
          !str_detect(string = mendeley_tags, 
-                    pattern = "na"),
+                     pattern = "na"),
          !str_detect(string = mendeley_tags, 
-                    pattern = "review"))
-
-dim(mendeley_byproducts_no_nas_other)
-```
-
-
-Now, we need to remove papers with the tag "Review" and "na"
-
-```{r}
-mendeley_byproducts_no_nas_reviews <- 
-  mendeley_byproducts_no_nas %>% 
-  filter(!str_detect(string = mendeley_tags, 
-                    pattern = "review"), 
-         !str_detect(string = mendeley_tags, 
-                    pattern = "na"))
+                     pattern = "review"))
 
 dim(mendeley_byproducts_no_nas_reviews)
 ```
@@ -296,7 +328,7 @@ mendeley_tags %>%
 
 There are no duplicates 
 
-## Removing categories from tags
+## Removing tags without category
 
 We found some tags that are not in the category table. So, we need it to 
 delete them but I will ask Natalia and Daniel first. 
@@ -372,7 +404,8 @@ Now, we need to add a new column called category based on the tags
 ```{r}
 mendeley_tags_cate <- 
   mendeley_tags_no_cate %>% 
-  left_join(tags)
+  left_join(tags) |> 
+  filter(!is.na(category))
 
 dim(mendeley_tags_cate)  
 ```
@@ -394,14 +427,53 @@ dim(dummy_title_83)
 
 We removed 17 papers!!!
 
-Analysing the number of NAs in DOIS
+Analyzing the number of NAs in DOIS
 
 ```{r}
 mendeley_tags_cate %>% 
   map_df(~sum(is.na(.)))
 ```
+We can try a different approach using titles. 
 
-Let's manually assing identifiers to na dois
+Creating the dataset with unique papers
+
+## Adding wos and scopus data 
+
+```{r}
+mendeley_108 <- 
+  mendeley_tags_cate |> 
+  ungroup() |> 
+  select(-mendeley_tags, -label) |> 
+  group_by(doi, title, year, byproduct) |> 
+  mutate(tags = paste0(tag, collapse = ", ")) |> 
+  select(-tag) |> 
+  unique() |> 
+  ungroup() |>
+  group_by(doi, title, year, byproduct, tags) |> 
+  mutate(categories = paste0(category, collapse = ", ")) |> 
+  select(-category) |> 
+  unique()
+```
+
+Normalizing title in mendeley tags 
+
+```{r}
+mendeley_wos_scopus <- 
+  mendeley_108 |> 
+  mutate(title = str_to_upper(title), 
+         title = str_replace_all(title, pattern = "-", replacement = ""),
+         title = str_replace_all(title, "[[:punct:]]", replacement = ""),
+         title = str_replace_all(title, pattern = "~", replacement = "")) |> 
+  left_join(byproducts_raw_scopus_wos, by = c("title" = "TI"))
+```
+
+```{r}
+byproducts_raw_scopus_wos
+```
+
+
+
+Let's manually assign identifiers to na dois
 
 Which are the papers with na?
 
@@ -422,8 +494,7 @@ mendeley_tags_cate$doi <-
                        ifelse(mendeley_tags_cate$label == dois_nas$label[4], 4,
                               ifelse(mendeley_tags_cate$label == dois_nas$label[5], 5,
                                      ifelse(mendeley_tags_cate$label == dois_nas$label[6], 6,
-                                            ifelse(mendeley_tags_cate$label == dois_nas$label[7], 7,
-                                                   ifelse(mendeley_tags_cate$label == dois_nas$label[8], 8, mendeley_tags_cate$doi))))))))
+                                            ifelse(mendeley_tags_cate$label == dois_nas$label[7], 7, mendeley_tags_cate$doi)))))))
 ```
 
 Added manually in excel
@@ -432,7 +503,8 @@ Scopus
 
 ```{r}
 byproducts_raw_scopus_modified <- 
-  read_csv("output/byproducts_raw_scopus_modified.csv")
+  read_csv(here("output",
+                "byproducts_raw_scopus_modified.csv"))
 ```
 
 WoS in this case we only need one record...
@@ -442,7 +514,6 @@ I couldn't find this paper
 "Isolation and identification of lactic acid bacteria from mature coffee cheries: Potential application in coffee husk ensiling"
 
 it was weird...
-
 
 We need to merge both datasets 
 
@@ -462,6 +533,127 @@ mendeley_tags_cate_all %>%
   purrr::map_df(~sum(is.na(.)))
 ```
 
+Searching for unique missing papers
+
+```{r}
+titles_1 <- mendeley_tags_cate_all |> 
+  filter(is.na(AU)) |>
+  ungroup() |> 
+  select(title) |> 
+  unique()
+```
+
+Reading missing values from Scopus (some) 
+
+```{r}
+scopus_missing <- 
+  bibliometrix::convert2df(c(here("data", 
+                                  "raw_data_scopus_missing/scopus (3).bib"),
+                             here("data", 
+                                  "raw_data_scopus_missing/scopus (4).bib"),
+                             here("data", 
+                                  "raw_data_scopus_missing/scopus (5).bib"),
+                             here("data", 
+                                  "raw_data_scopus_missing/scopus (6).bib"),
+                             here("data", 
+                                  "raw_data_scopus_missing/scopus (7).bib")),
+                           dbsource = "scopus", 
+                           format = "bibtex") |> 
+  select(DI,TI, AU, CR, SO) |> 
+  filter(!is.na(DI)) |> 
+  unique()
+```
+
+Merging with mendeley_tags_cate_all
+
+```{r}
+mendeley_tags_cate_all$doi[47] <-  "10.24275/rmiq/Bio1612"
+
+mendeley_tags_1 <- 
+  mendeley_tags_cate_all |> 
+  filter(is.na(AU)) |> 
+  select(-AU, -CR, -SO) |> 
+  left_join(scopus_missing |> 
+              select(-TI), by = c("doi" = "DI")) |> 
+  filter(!is.na(AU)) |> 
+  unique()
+```
+
+
+```{r}
+mendeley_tags_nas <- 
+  mendeley_tags_cate_all |> 
+  filter(is.na(AU)) |> 
+  select(-AU, -CR, -SO) |> 
+  left_join(scopus_missing |> 
+              select(-TI), by = c("doi" = "DI")) |> 
+  filter(is.na(AU)) |> 
+  unique()
+```
+
+
+```{r}
+titles_3 <- 
+  mendeley_tags_nas |> 
+  filter(is.na(AU)) |>
+  ungroup() |> 
+  select(title) |> 
+  unique()
+```
+
+
+Other 
+
+```{r}
+scopus_missing_2 <- 
+  bibliometrix::convert2df(c(here("data", 
+                                  "raw_data_scopus_missing/scopus (9).bib"),
+                             here("data", 
+                                  "raw_data_scopus_missing/scopus (11).bib"),
+                             here("data", 
+                                  "raw_data_scopus_missing/scopus (12).bib"),
+                             here("data", 
+                                  "raw_data_scopus_missing/scopus (13).bib")),
+                           dbsource = "scopus", 
+                           format = "bibtex") |> 
+  select(DI,TI, AU, CR, SO) |> 
+  filter(!is.na(DI)) |> 
+  unique()
+```
+
+Merging with mendeley_tags_cate_all
+
+```{r}
+mendeley_tags_2 <- 
+  mendeley_tags_cate_all |> 
+  filter(is.na(AU)) |> 
+  select(-AU, -CR, -SO) |> 
+  left_join(scopus_missing_2 |> 
+              select(-TI), by = c("doi" = "DI")) |> 
+  filter(!is.na(AU)) |> 
+  unique()
+```
+
+Merging everything... just for the analysis
+
+```{r}
+data_final <- 
+  mendeley_tags_cate_all |> 
+  bind_rows(mendeley_tags_1,
+            mendeley_tags_2) |>
+  filter(!is.na(AU)) |> 
+  unique()
+```
+
+```{r}
+write_csv(data_final,
+          here("output", 
+               "data_final_test.csv"))
+```
+
+
+# I don't know what is this below  ###
+
 There are 32 missing values...
 
 ```{r}
@@ -474,7 +666,7 @@ One option is with the title
 ```{r}
 byproducts_raw_scopus %>% 
   mutate(TI = str_to_lower(TI)) %>% 
-filter(TI == "residual biomass gasification on a small scale and its thermal utilization for coffee drying") %>%
+  filter(TI == "residual biomass gasification on a small scale and its thermal utilization for coffee drying") %>%
   select(DI, JI, AU)
 ```
 
@@ -549,11 +741,11 @@ husk_year <-
   mutate(year = as.numeric(year)) %>% 
   arrange(desc(year)) 
 
- # We need to create a range sequence of years
+# We need to create a range sequence of years
 
 husk_range_year <- 
   range(husk_year$year)  
-  
+
 husk_years <- 
   husk_range_year[1]:husk_range_year[2]%>% 
   as_tibble() %>% 
@@ -588,11 +780,11 @@ pulp_year <-
   mutate(year = as.numeric(year)) %>% 
   arrange(desc(year)) 
 
- # We need to create a range sequence of years
+# We need to create a range sequence of years
 
 pulp_range_year <- 
   range(pulp_year$year)  
-  
+
 pulp_years <- 
   pulp_range_year[1]:pulp_range_year[2]%>% 
   as_tibble() %>% 
@@ -627,11 +819,11 @@ silverskin_year <-
   mutate(year = as.numeric(year)) %>% 
   arrange(desc(year)) 
 
- # We need to create a range sequence of years
+# We need to create a range sequence of years
 
 silverskin_range_year <- 
   range(silverskin_year$year)  
-  
+
 silverskin_years <- 
   silverskin_range_year[1]:silverskin_range_year[2]%>% 
   as_tibble() %>% 
@@ -666,11 +858,11 @@ Spent_coffee_year <-
   mutate(year = as.numeric(year)) %>% 
   arrange(desc(year)) 
 
- # We need to create a range sequence of years
+# We need to create a range sequence of years
 
 Spent_coffee_range_year <- 
   range(Spent_coffee_year$year)  
-  
+
 Spent_coffee_years <- 
   Spent_coffee_range_year[1]:Spent_coffee_range_year[2]%>% 
   as_tibble() %>% 
@@ -698,16 +890,16 @@ Spent_coffee_year_all_plot
 ```{r}
 global_scientific_production <- 
   ggarrange(mendeley_byproducts_plot,
-        ggarrange(husk_year_all_plot, pulp_year_all_plot, 
-                  ncol = 2, labels = c("b", "d"), 
-                  align = "h",widths = c(1.5,2)), 
-        ggarrange(silverskin_year_all_plot, Spent_coffee_year_all_plot,
-                  ncol = 2, labels = c("c", "e"), 
-                  align = "h",widths = c(1.5,2)), 
-      nrow = 3, 
-      heights = c(1.5, 1, 1),
-      labels = "a" 
-      ) 
+            ggarrange(husk_year_all_plot, pulp_year_all_plot, 
+                      ncol = 2, labels = c("b", "d"), 
+                      align = "h",widths = c(1.5,2)), 
+            ggarrange(silverskin_year_all_plot, Spent_coffee_year_all_plot,
+                      ncol = 2, labels = c("c", "e"), 
+                      align = "h",widths = c(1.5,2)), 
+            nrow = 3, 
+            heights = c(1.5, 1, 1),
+            labels = "a" 
+  ) 
 
 global_scientific_production
 ```
@@ -858,16 +1050,16 @@ Merging all plots
 ```{r}
 mendeley_tags_year_plot <- 
   ggarrange(
-        ggarrange(mendeley_tags_year_husk_plot, mendeley_tags_year_pulp_plot, 
-                  ncol = 2, labels = c("b", "d"), 
-                  align = "h",widths = c(1.5,2)), 
-        ggarrange(mendeley_tags_year_silverskin_plot, mendeley_tags_year_spent_plot,
-                  ncol = 2, labels = c("c", "e"), 
-                  align = "h",widths = c(1.5,2)), 
-      nrow = 2, 
-      heights = c(2, 2),
-      labels = "a" 
-      ) 
+    ggarrange(mendeley_tags_year_husk_plot, mendeley_tags_year_pulp_plot, 
+              ncol = 2, labels = c("b", "d"), 
+              align = "h",widths = c(1.5,2)), 
+    ggarrange(mendeley_tags_year_silverskin_plot, mendeley_tags_year_spent_plot,
+              ncol = 2, labels = c("c", "e"), 
+              align = "h",widths = c(1.5,2)), 
+    nrow = 2, 
+    heights = c(2, 2),
+    labels = "a" 
+  ) 
 mendeley_tags_year_plot
 ```
 
@@ -923,7 +1115,7 @@ network_metrics_names <-
   network_metrics %>% 
   dplyr::left_join(byproducts_scopus_wos_tos$nodes_atributes %>% 
                      mutate(ID_TOS = str_trim(ID_TOS)),  
-            by = c("paper" = "ID_TOS")) %>% 
+                   by = c("paper" = "ID_TOS")) %>% 
   filter(!duplicated(paper))
 
 dim(network_metrics_names)
@@ -975,7 +1167,7 @@ papers_main <-
             papers_main_outdegree,
             papers_main_bet,
             papers_main_pagerank
-            ) %>% 
+  ) %>% 
   filter(!duplicated(paper))
 
 dim(papers_main)

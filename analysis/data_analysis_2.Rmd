@@ -29,6 +29,7 @@ library(kableExtra)
 library(apaTables)
 library(bibliometrix)
 library(igraph)
+library(tosr)
 ```
 
 
@@ -38,6 +39,23 @@ library(igraph)
 data_tidied <- 
   read_csv(here("output",
                 "mendelely_tags_wos_scopus.csv"))
+
+data_tidied_wos <- 
+  data_tidied |>
+  select(SR, CR) |> 
+  separate_rows(CR, sep = "; ") |> # Scopus
+  count(SR) |>
+  filter(n == 1) |> 
+  select(SR) |> 
+  mutate(database = "wos")
+
+data_tidied <- 
+  data_tidied |> 
+  left_join(data_tidied_wos) |> 
+  mutate(database = if_else(is.na(database), 
+                            "Scopus", 
+                            database))
+
 ```
 
 
@@ -552,7 +570,33 @@ Scattered....
 ## 3.2.4 Citation Network
 
 ```{r}
+citation_network <- 
+  data_tidied |>
+  select(SR, CR) |> 
+  separate_rows(CR, sep = "; ")
 
+
+
+data_tidied_wos <- 
+  data_tidied |> 
+  count(SR) |>
+  filter(n == 1) |> 
+  select(SR) |> View()
+
+by_products_citation_network <- 
+  cocMatrix(data.frame(data_tidied), 
+            Field = "CR", 
+            sep = "; ")
+
+by_products_citation_network_1 <- 
+  graph_from_adjacency_matrix(by_products_citation_network,
+                              mode = "directed")
+
+country_collab_graph <- 
+  graph_from_adjacency_matrix(country_collab, 
+                              mode = "undirected", 
+                              weighted = TRUE) |> 
+  simplify()
 ```
 
 

@@ -29,11 +29,6 @@ library(kableExtra)
 library(apaTables)
 library(bibliometrix)
 library(igraph)
-
-libs <- c("here", 
-          "dplyr")
-
-invisible(lapply(libs, library, character.only = TRUE))
 ```
 
 
@@ -479,7 +474,7 @@ author_colab <-
                 sep = ";")
 
 net=networkPlot(author_colab, n = 30, 
-                Title = "Co-Citation Network", 
+                Title = "Author Collaboration Network", 
                 type = "fruchterman", 
                 size=T,
                 remove.multiple=FALSE, 

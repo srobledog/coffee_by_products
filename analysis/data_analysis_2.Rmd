@@ -530,13 +530,13 @@ I couldn't create the world map :-(
 ## 3.2.3 Collab net universities
 
 ```{r}
-universty_collab <- 
+university_collab <- 
   biblioNetwork(data.frame(data_tidied), 
                 analysis = "collaboration", 
                 network = "universities", 
                 sep = ";")
 
-universty_collab_net <- networkPlot(universty_collab, 
+university_collab_net <- networkPlot(university_collab, 
                 n = dim(universty_collab)[1], 
                 Title = "University Collaboration", 
                 type = "circle", 
@@ -545,11 +545,19 @@ universty_collab_net <- networkPlot(universty_collab,
                 labelsize=0.7,
                 cluster="none")
 
-country_collab_graph <- 
-  graph_from_adjacency_matrix(country_collab, 
-                              mode = "undirected", 
-                              weighted = TRUE) |> 
-  simplify()
+# university_collab_graph <- 
+#   graph_from_adjacency_matrix(universty_collab_net$graph, 
+#                               mode = "undirected", 
+#                               weighted = TRUE) |> 
+#   simplify()
+```
+
+Scattered.... 
+
+## 3.2.4 Citation Network
+
+```{r}
+
 ```
 
 

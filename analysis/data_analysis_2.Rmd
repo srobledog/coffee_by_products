@@ -29,6 +29,8 @@ library(kableExtra)
 library(apaTables)
 library(bibliometrix)
 library(igraph)
+library(tosr)
+library(rebus)
 ```
 
 
@@ -38,6 +40,23 @@ library(igraph)
 data_tidied <- 
   read_csv(here("output",
                 "mendelely_tags_wos_scopus.csv"))
+
+data_tidied_wos <- 
+  data_tidied |>
+  select(SR, CR) |> 
+  separate_rows(CR, sep = "; ") |> # Scopus
+  count(SR) |>
+  filter(n == 1) |> 
+  select(SR) |> 
+  mutate(database = "wos")
+
+data_tidied <- 
+  data_tidied |> 
+  left_join(data_tidied_wos) |> 
+  mutate(database = if_else(is.na(database), 
+                            "Scopus", 
+                            database))
+
 ```
 
 
@@ -532,13 +551,13 @@ university_collab <-
                 sep = ";")
 
 university_collab_net <- networkPlot(university_collab, 
-                n = dim(universty_collab)[1], 
-                Title = "University Collaboration", 
-                type = "circle", 
-                size=TRUE, 
-                remove.multiple=FALSE,
-                labelsize=0.7,
-                cluster="none")
+                                     n = dim(universty_collab)[1], 
+                                     Title = "University Collaboration", 
+                                     type = "circle", 
+                                     size=TRUE, 
+                                     remove.multiple=FALSE,
+                                     labelsize=0.7,
+                                     cluster="none")
 
 # university_collab_graph <- 
 #   graph_from_adjacency_matrix(universty_collab_net$graph, 
@@ -552,8 +571,85 @@ Scattered....
 ## 3.2.4 Citation Network
 
 ```{r}
+edgelist_scopus <- 
+  data_tidied |>
+  filter(str_detect(database, 
+                    "Scopus")) |> 
+  select(SR, CR, database, SO) |> 
+  separate_rows(CR, sep = "; ") |> 
+  mutate(SR_TOS = str_extract(SR, one_or_more(WRD) %R%
+                                SPC %R% one_or_more(WRD) %R%
+                                "," %R% SPC %R%
+                                one_or_more(DGT) %R% ","),
+         SR_TOS = str_c(SR_TOS, " ", SO)) %>%
+  mutate(ID_TOS =str_extract(SR, ".*,")) |> 
+  select(ID_TOS, CR) |> 
+  mutate(lastname = sub("\\., .*", "", CR),
+         lastname = sub(",", "", lastname),
+         lastname = sub("\\.", "", lastname),
+         year = str_extract(CR, "\\(([0-9]{4})\\)"),
+         year = str_remove_all(year, "\\(|\\)")) |> 
+  filter(!grepl(pattern = "[():[:digit:]]", lastname),
+         str_length(year) == 4) |> 
+  mutate(CR = paste0(lastname, ", ", year, ",")) %>%
+  select(ID_TOS, CR)
 
+edgelist_wos <- 
+  data_tidied |>
+  filter(str_detect(database, 
+                    "wos")) |> 
+  select(SR, CR, database, SO) |> 
+  separate_rows(CR, sep = ";") |> 
+  mutate(ID_TOS = str_extract(SR, ".*,")) |> 
+  mutate(CR = sub("^(\\S*\\s+\\S+\\s+\\S+).*", # removing strings after second comma
+                  "\\1", CR)) %>%
+  select(ID_TOS, CR) %>%
+  na.omit() %>%
+  unique() 
+
+edgelist <- 
+  edgelist_scopus |> 
+  bind_rows(edgelist_wos) |> 
+  mutate(CR = str_replace_all(CR, 
+                              pattern = "\\.", 
+                              replacement = ""))
+
+byproducts_graph_raw <- 
+  edgelist |> 
+  graph.data.frame(directed = TRUE) |> 
+  simplify()
+
+byproducts_graph_cleaned <- 
+  delete.vertices(byproducts_graph_raw, 
+                  which(degree(byproducts_graph_raw, 
+                               mode = "in") == 1 &
+                          which(degree(byproducts_graph_raw, 
+                                       mode = "out") == 0)))
+
+giant.component <- function(graph) {
+  cl <- igraph::clusters(graph)
+  igraph::induced.subgraph(graph, which(cl$membership == which.max(cl$csize)))
+}
+
+byproducts_graph <- 
+  giant.component(byproducts_graph_cleaned)
+
+subareas <- 
+  byproducts_graph |> 
+  as.undirected(mode = "each") |> 
+  cluster_louvain()
+
+byproducts_graph_subareas <- 
+  byproducts_graph |> 
+  set_vertex_attr(name = "sub_area",
+                  value = membership(subareas))
+
+write.graph(byproducts_graph_subareas, 
+            here("output", 
+                 "byproducts_citation_network.graphml" ), 
+            format = "graphml")
 ```
+
 
 
 # 3.3 Coffee By-products applications

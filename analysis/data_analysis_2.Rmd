@@ -31,6 +31,7 @@ library(bibliometrix)
 library(igraph)
 library(tosr)
 library(rebus)
+library(lubridate)
 ```
 
 
@@ -468,9 +469,9 @@ g <- ggplot(df2, aes(x = Author,
                                   freq, "\nTotal Citations per Year: ",
                                   round(TCpY,
                                         2)
-                                  )
                      )
-            ) + 
+)
+) + 
   geom_point(aes(alpha = TCpY, 
                  size = freq), 
              color = "dodgerblue4") + 
@@ -799,95 +800,36 @@ https://bibliometrix.org/documents/bibliometrix_Report.html
 ## 3.3.1 Husk
 
 ```{r}
+data_tidied_husk  <- 
+  data_tidied %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  separate_rows(categories, sep = ", ") |> 
+  filter(str_detect(byproduct, pattern = "husk")) %>% 
+  group_by(year,categories) %>% 
+  count(categories, sort = TRUE)
 
-```
+data_tidied_husk_plot <- 
+  data_tidied_husk %>% 
+  arrange(year,categories) %>% 
+  mutate(categories = factor(categories)) %>% 
+  ggplot(aes(y = categories, x = year, size = n, color= categories)) +
+  geom_point(alpha = 1) +
+  scale_x_continuous(breaks = seq(min(data_tidied_husk$year),
+                                  max(data_tidied_husk$year),
+                                  by = 1)) +
+  scale_size(name="tags") +
+  xlab("Byproducts Applications") +
+  ggtitle("Husk applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 0,vjust = 0),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 0,hjust = 1)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
 
-```{r}
-
-```
-
-# testing other options
-
-```{r}
-topAU <- authorProdOverTime(data_tidied, k = 10, graph = TRUE)
-
-```
-
-
-# 3.3 Applications of Coffee by-products
-
-
-
-# Bibliometric general analysis
-
-## General results
-
-```{r}
-results <-  biblioAnalysis(data_tidied, sep = ";")
-
-results_summary <- summary(results)
-```
-
-## Citation network
-
-```{r}
-NetMatrix <- 
-  biblioNetwork(data_tidied, 
-                analysis = "co-citation", 
-                network = "references", 
-                sep = ";")
-
-net=networkPlot(NetMatrix, n = 30, Title = "Co-Citation Network", 
-                type = "fruchterman", size=T,
-                remove.multiple=FALSE, 
-                labelsize=0.7,edgesize = 5,
-                cluster = 'louvain')
+data_tidied_husk_plot
 ```
 
 
 
 
-
-# key word co-ocurrences
-NetMatrix <- biblioNetwork(datos_unidos, analysis = "co-occurrences", network = "keywords", sep = ";")
-net=networkPlot(NetMatrix, normalize="association", weighted=T, n = 30, Title = "Keyword Co-occurrences", type = "fruchterman", size=T,edgesize = 5,labelsize=0.7)
-
-
-# Tabla de journals por producto 
-datos_unidos <- inner_join(datos_select,datos,by = c('AU' = 'autores')) %>%
-separate_rows(byproduct,sep = ',')
-datos_unidos$byproduct <- gsub(" ","",datos_unidos$byproduct)
-
-journal_product <- datos_unidos %>%
-group_by(JI,byproduct) %>%
-count()
-
-
-# Autores mas productivos
-datos_autores <- datos_unidos %>%
-separate_rows(AU, sep = ";")
-
-autores_mas_prod <- datos_autores %>%
-group_by(AU) %>% 
-count() %>%
-arrange(desc(n)) %>% 
-head(10)
-
-
-# Autores mas productivos por producto 
-
-autores_producto <- datos_autores %>%
-group_by(AU,byproduct) %>% 
-count() %>%
-arrange(desc(n)) %>%
-group_by(byproduct) %>%
-top_n(n = 5)
-
-
-# Autores por categoria 
-autores_categoria <- datos_autores %>%
-group_by(AU,category) %>% 
-count() %>%
-arrange(desc(n)) %>%
-group_by(category) %>%
-top_n(n = 5)

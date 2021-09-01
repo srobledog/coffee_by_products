@@ -293,6 +293,8 @@ global_scientific_production <-
 global_scientific_production
 ```
 
+Add trending lines
+
 ## 3.1.2 Journal production
 
 ```{r}
@@ -363,7 +365,7 @@ byproducts_journals_scimago <-
 byproducts_journals_scimago
 ```
 
-## 3.1.3 Author analysis and country collaboration
+## 3.1.3 Author analysis
 
 ```{r}
 husk_authors <- 
@@ -419,6 +421,96 @@ byproducts_authors <-
 
 byproducts_authors
 ```
+
+```{r}
+M <- data_tidied |> 
+  rename("TI" = title)
+k <- 10
+M$TC <- as.numeric(M$TC)
+data_tidied$PY <- as.numeric(data_tidied$PY)
+data_tidied <- data_tidied[!is.na(data_tidied$PY), ]
+AU <- names(tableTag(M, "AU"))
+k <- min(k, length(AU))
+AU <- AU[1:k]
+df <- data.frame(Author = "NA", year = NA, TI = "NA", SO = "NA", 
+                 DOI = "NA", TC = NA, TCpY = NA, stringsAsFactors = FALSE)
+Y <- as.numeric(substr(Sys.time(), 1, 4))
+if (!("DI" %in% names(M))) {
+  M$DI = "NA"
+}
+for (i in 1:length(AU)) {
+  ind <- which(regexpr(AU[i], M$AU) > -1)
+  TCpY <- M$TC[ind]/(Y - M$PY[ind] + 1)
+  dfAU <- data.frame(Author = rep(AU[i], length(ind)), 
+                     year = M$PY[ind], TI = M$TI[ind], SO = M$SO[ind], 
+                     DOI = M$DI[ind], TC = M$TC[ind], TCpY = TCpY, stringsAsFactors = TRUE)
+  df <- rbind(df, dfAU)
+}
+df <- df[-1, ]
+df2 <- dplyr::group_by(df, .data$Author, .data$year) %>% 
+  dplyr::summarise(freq = length(.data$year), TC = sum(.data$TC), 
+                   TCpY = sum(.data$TCpY))
+df2 <- as.data.frame(df2)
+df2$Author <- factor(df2$Author, levels = AU[1:k])
+x <- c(0.5, 1.5 * k/10)
+y <- c(min(df$year), min(df$year) + diff(range(df2$year)) * 
+         0.125)
+
+```
+
+
+```{r}
+g <- ggplot(df2, aes(x = Author, 
+                     y = year, 
+                     text = paste("Author: ",
+                                  Author, "\nYear: ",
+                                  year, "\nN. of Articles: ",
+                                  freq, "\nTotal Citations per Year: ",
+                                  round(TCpY,
+                                        2)
+                                  )
+                     )
+            ) + 
+  geom_point(aes(alpha = TCpY, 
+                 size = freq), 
+             color = "dodgerblue4") + 
+  scale_size(range = c(2, 6)) + 
+  scale_alpha(range = c(0.3, 1)) + 
+  scale_y_continuous(breaks = seq(min(df2$year), 
+                                  max(df2$year), 
+                                  by = 2)) + 
+  guides(size = guide_legend(order = 1,
+                             "N.Articles"), 
+         alpha = guide_legend(order = 2, 
+                              "TC per Year")) + 
+  theme(legend.position = "right", text = element_text(color = "#444444"), 
+        panel.background = element_rect(fill = "gray97"), 
+        panel.grid.minor = element_line(color = "#FFFFFF"), 
+        panel.grid.major = element_line(color = "#FFFFFF"), 
+        plot.title = element_text(size = 24), 
+        axis.title = element_text(size = 14, 
+                                  color = "#555555"), 
+        axis.title.y = element_text(vjust = 1,
+                                    angle = 90, 
+                                    face = "bold"), 
+        axis.title.x = element_text(hjust = 0.95,
+                                    face = "bold"), 
+        axis.text.x = element_text(face = "bold", 
+                                   angle = 90), 
+        axis.text.y = element_text(face = "bold")) + 
+  labs(title = "Top-Authors' Production over the Time", 
+       x = "Author", y = "Year") + 
+  geom_line(data = df2, 
+            aes(x = Author, y = year, group = Author),
+            size = 1, color = "firebrick", alpha = 0.3) + 
+  scale_x_discrete(limits = rev(levels(df2$Author))) + 
+  coord_flip()
+```
+
+```{r}
+g
+```
+
 ## 3.1.4 Country Analysis
 
 ```{r}
@@ -469,16 +561,18 @@ spent_coffee_ground_country_plot <-
 country_scientific_production <- 
   ggarrange(
     ggarrange(spent_coffee_ground_country_plot, silverskin_country_plot, 
-              ncol = 2, labels = c("b", "d"), 
+              ncol = 2, labels = c("a", "b"), 
               align = "h",widths = c(1.5,2)), 
     ggarrange(pulp_country_plot, husk_country_plot,
-              ncol = 2, labels = c("c", "e"), 
+              ncol = 2, labels = c("c", "d"), 
               align = "h",widths = c(1.5,2)), 
     nrow = 2
   ) 
 
 country_scientific_production
 ```
+
+Add one in general?
 
 # 3.2 Academic networks of Coffee By-products 
 
@@ -650,7 +744,55 @@ write.graph(byproducts_graph_subareas,
             format = "graphml")
 ```
 
+## 3.2.5 Co-citation analysis
 
+Document
+
+```{r}
+document_co_citation_matrix <- 
+  biblioNetwork(data.frame(data_tidied),
+                analysis = "co-citation", 
+                network = "references", 
+                sep = ";")
+
+net=networkPlot(document_co_citation_matrix, 
+                n = 80, 
+                Title = "Co-Citation Network", 
+                type = "fruchterman", 
+                size.cex=TRUE, 
+                size=20, 
+                remove.multiple=FALSE, 
+                labelsize=0.7,
+                edgesize = 10, 
+                edges.min=5)
+```
+
+Author
+
+```{r}
+author_co_citation_matrix <- 
+  biblioNetwork(data.frame(data_tidied),
+                analysis = "co-citation", 
+                network = "author", 
+                sep = ";")
+
+net=networkPlot(author_co_citation_matrix, 
+                n = 80, 
+                Title = "Co-Citation Network", 
+                type = "fruchterman", 
+                size.cex=TRUE, 
+                size=20, 
+                remove.multiple=FALSE, 
+                labelsize=0.7,
+                edgesize = 10, 
+                edges.min=5)
+```
+
+Journal?
+
+https://www.bibliometrix.org/vignettes/Introduction_to_bibliometrix.html
+
+https://bibliometrix.org/documents/bibliometrix_Report.html
 
 # 3.3 Coffee By-products applications
 
@@ -661,6 +803,13 @@ write.graph(byproducts_graph_subareas,
 ```
 
 ```{r}
+
+```
+
+# testing other options
+
+```{r}
+topAU <- authorProdOverTime(data_tidied, k = 10, graph = TRUE)
 
 ```
 

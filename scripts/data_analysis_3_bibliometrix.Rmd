@@ -1,0 +1,267 @@
+---
+title: "data_analysis_3_bibliometrix"
+author: "Sebastian Robledo"
+date: "9/1/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+*Bibliometric analysis according to these links:*
+
+[*https://www.bibliometrix.org/vignettes/Introduction_to_bibliometrix.html*](https://www.bibliometrix.org/vignettes/Introduction_to_bibliometrix.html){.uri}
+
+[*https://bibliometrix.org/documents/bibliometrix_Report.html*](https://bibliometrix.org/documents/bibliometrix_Report.html){.uri}
+
+# *Getting tidied data*
+
+```{r message=FALSE, warning=FALSE}
+data_tidied <- 
+  read_csv(here("output",
+                "mendelely_tags_wos_scopus.csv"))
+
+data_tidied_wos <- 
+  data_tidied |>
+  select(SR, CR) |> 
+  separate_rows(CR, sep = "; ") |> # Scopus
+  count(SR) |>
+  filter(n == 1) |> 
+  select(SR) |> 
+  mutate(database = "wos")
+
+data_tidied <- 
+  data_tidied |> 
+  left_join(data_tidied_wos) |> 
+  mutate(database = if_else(is.na(database), 
+                            "Scopus", 
+                            database))
+
+```
+
+# *Bibliometrix analysis*
+
+```{r}
+results <- biblioAnalysis(data_tidied, sep = ";")
+```
+
+```{r}
+options(width=100)
+S <- summary(object = results, k = 10, pause = FALSE)
+```
+
+```{r}
+plot(x = results, k = 10, pause = FALSE)
+```
+
+# *Analysis of Cited references*
+
+```{r}
+CR <- citations(data_tidied, field = "article", sep = ";")
+cbind(CR$Cited[1:10])
+```
+
+*The most frequent cited author*
+
+```{r}
+CR <- citations(data_tidied, field = "author", sep = ";")
+cbind(CR$Cited[1:10])
+```
+
+*It is not working...*
+
+*The most frequent local cited authors*
+
+```{r}
+CR <- localCitations(data_tidied |> 
+                       rename("TI" = title), 
+                     sep = ";")
+CR$Authors[1:10,]
+```
+
+```{r}
+CR$Papers[1:10,]
+```
+
+# *Authors' Dominance Ranking*
+
+```{r}
+DF <- dominance(results, k = 10)
+DF
+```
+
+# *Authors' h-index*
+
+```{r}
+indices <- Hindex(M, field = "author", elements="MARTINEZ-SAEZ N", sep = ";", years = 10)
+indices$H
+```
+
+# *Top-Authors' productivity over the Time*
+
+```{r}
+topAU <- authorProdOverTime(data_tidied, k = 10, graph = TRUE)
+```
+
+```{r}
+M <- data_tidied |> 
+  rename("TI" = title)
+k <- 10
+M$TC <- as.numeric(M$TC)
+data_tidied$PY <- as.numeric(data_tidied$PY)
+data_tidied <- data_tidied[!is.na(data_tidied$PY), ]
+AU <- names(tableTag(M, "AU"))
+k <- min(k, length(AU))
+AU <- AU[1:k]
+df <- data.frame(Author = "NA", year = NA, TI = "NA", SO = "NA", 
+                 DOI = "NA", TC = NA, TCpY = NA, stringsAsFactors = FALSE)
+Y <- as.numeric(substr(Sys.time(), 1, 4))
+if (!("DI" %in% names(M))) {
+  M$DI = "NA"
+}
+for (i in 1:length(AU)) {
+  ind <- which(regexpr(AU[i], M$AU) > -1)
+  TCpY <- M$TC[ind]/(Y - M$PY[ind] + 1)
+  dfAU <- data.frame(Author = rep(AU[i], length(ind)), 
+                     year = M$PY[ind], TI = M$TI[ind], SO = M$SO[ind], 
+                     DOI = M$DI[ind], TC = M$TC[ind], TCpY = TCpY, stringsAsFactors = TRUE)
+  df <- rbind(df, dfAU)
+}
+df <- df[-1, ]
+df2 <- dplyr::group_by(df, .data$Author, .data$year) %>% 
+  dplyr::summarise(freq = length(.data$year), TC = sum(.data$TC), 
+                   TCpY = sum(.data$TCpY))
+df2 <- as.data.frame(df2)
+df2$Author <- factor(df2$Author, levels = AU[1:k])
+x <- c(0.5, 1.5 * k/10)
+y <- c(min(df$year), min(df$year) + diff(range(df2$year)) * 
+         0.125)
+
+```
+
+```{r}
+g <- ggplot(df2, aes(x = Author, 
+                     y = year, 
+                     text = paste("Author: ",
+                                  Author, "\nYear: ",
+                                  year, "\nN. of Articles: ",
+                                  freq, "\nTotal Citations per Year: ",
+                                  round(TCpY,
+                                        2)
+                                  )
+                     )
+            ) + 
+  geom_point(aes(alpha = TCpY, 
+                 size = freq), 
+             color = "dodgerblue4") + 
+  scale_size(range = c(2, 6)) + 
+  scale_alpha(range = c(0.3, 1)) + 
+  scale_y_continuous(breaks = seq(min(df2$year), 
+                                  max(df2$year), 
+                                  by = 2)) + 
+  guides(size = guide_legend(order = 1,
+                             "N.Articles"), 
+         alpha = guide_legend(order = 2, 
+                              "TC per Year")) + 
+  theme(legend.position = "right", text = element_text(color = "#444444"), 
+        panel.background = element_rect(fill = "gray97"), 
+        panel.grid.minor = element_line(color = "#FFFFFF"), 
+        panel.grid.major = element_line(color = "#FFFFFF"), 
+        plot.title = element_text(size = 24), 
+        axis.title = element_text(size = 14, 
+                                  color = "#555555"), 
+        axis.title.y = element_text(vjust = 1,
+                                    angle = 90, 
+                                    face = "bold"), 
+        axis.title.x = element_text(hjust = 0.95,
+                                    face = "bold"), 
+        axis.text.x = element_text(face = "bold", 
+                                   angle = 90), 
+        axis.text.y = element_text(face = "bold")) + 
+  labs(title = "Top-Authors' Production over the Time", 
+       x = "Author", y = "Year") + 
+  geom_line(data = df2, 
+            aes(x = Author, y = year, group = Author),
+            size = 1, color = "firebrick", alpha = 0.3) + 
+  scale_x_discrete(limits = rev(levels(df2$Author))) + 
+  coord_flip()
+```
+
+```{r}
+g
+```
+
+# *Keyword co-occurrences* 
+
+```{r}
+byproduct_keyword_co_occurrence <- 
+  biblioNetwork(data.frame(data_tidied), 
+                           analysis = "co-occurrences", 
+                           network = "keywords", 
+                           sep = ";")
+
+# Plot the network
+net=networkPlot(byproduct_keyword_co_occurrence, 
+                normalize="association", 
+                weighted=T, 
+                n = 60, 
+                Title = "Keyword Co-occurrences", 
+                type = "fruchterman", 
+                size=T,
+                # dgesize = 5,
+                labelsize=0.7)
+```
+
+```{r}
+dummy_NetMatrix <- biblioNetwork(data.frame(data_tidied |> slice(1:4)), 
+                           analysis = "co-occurrences", 
+                           network = "keywords", 
+                           sep = ";")
+
+# Plot the network
+net=networkPlot(dummy_NetMatrix, 
+                normalize="association", 
+                weighted=T, 
+                n = 30, 
+                Title = "Keyword Co-occurrences", 
+                type = "fruchterman", 
+                size=T,
+                # dgesize = 5,
+                labelsize=0.7)
+```
+
+# *Co-Word Analysis: The conceptual structure of a field*
+
+```{r}
+CS <- conceptualStructure(data.frame(data_tidied),
+                          field="ID", 
+                          method="CA", 
+                          minDegree=4, 
+                          clust=5, 
+                          stemming=FALSE, 
+                          labelsize=10, 
+                          documents=10)
+```
+
+# *Historical direct citation network*
+
+```{r}
+options(width=130)
+histResults <- histNetwork(data.frame(data_tidied) |> 
+                             rename("TI" = title), min.citations = 1, sep = ";")
+
+```
+
+```{r}
+net <- histPlot(histResults, n=15, size = 10, labelsize=5)
+```
+
+[*https://bibliometrix.org/documents/bibliometrix_Report.html*](https://bibliometrix.org/documents/bibliometrix_Report.html)
+
+# *Edu Collaboration Network*
+
+```{r}
+NetMatrix <- biblioNetwork(data.frame(data_tidied), analysis = "collaboration",  network = "universities", sep = ";")
+net=networkPlot(NetMatrix,  n = 50, Title = "Edu collaboration",type = "auto", size=10,size.cex=T,edgesize = 3,labelsize=0.6)
+```

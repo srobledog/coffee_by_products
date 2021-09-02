@@ -97,15 +97,16 @@ mendeley_byproducts_plot <-
   ggplot(aes(x = year, y = papers, group = 1)) +
   geom_point() +
   geom_line() +
-  ylab("papers") +
-  ggtitle("Scientific annual production") +
+  labs(title = "Total Scientific Annual Production", 
+       x = "year")  +
   theme(plot.title = element_text(hjust = 0.5),
         text=element_text(family="Times", face="bold", size=12),
         axis.line = element_line(colour = "black"),
-        panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
+        # panel.grid.major = element_blank(),
+        # panel.grid.minor = element_blank(),
         panel.border = element_blank(),
-        panel.background = element_blank())
+        # panel.background = element_blank()
+  )
 
 ## Coffee husk 
 
@@ -147,13 +148,11 @@ husk_year_all_plot <-
   ylab("papers") +
   ggtitle("Husk") +
   theme(plot.title = element_text(hjust = 0.5),
-        text=element_text(family="Times", face="bold", size=12),
+        text=element_text(family="Times", 
+                          face="bold", 
+                          size=12),
         axis.line = element_line(colour = "black"),
-        panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        panel.border = element_blank(),
-        panel.background = element_blank())
-
+        panel.border = element_blank())
 
 ## Coffee pulp 
 
@@ -192,7 +191,13 @@ pulp_year_all_plot <-
   ggplot(aes(x = year, y = papers, group = 1)) +
   geom_point() + 
   geom_line() +
-  ggtitle("Pulp")
+  ggtitle("Pulp") +
+  theme(plot.title = element_text(hjust = 0.5),
+        text=element_text(family="Times", 
+                          face="bold", 
+                          size=12),
+        axis.line = element_line(colour = "black"),
+        panel.border = element_blank())
 
 
 ## Coffee silverskin 
@@ -232,7 +237,13 @@ silverskin_year_all_plot <-
   ggplot(aes(x = year, y = papers, group = 1)) +
   geom_point() + 
   geom_line() +
-  ggtitle("Silverskin")
+  ggtitle("Silverskin") +
+  theme(plot.title = element_text(hjust = 0.5),
+        text=element_text(family="Times", 
+                          face="bold", 
+                          size=12),
+        axis.line = element_line(colour = "black"),
+        panel.border = element_blank())
 
 
 
@@ -273,7 +284,13 @@ Spent_coffee_year_all_plot <-
   ggplot(aes(x = year, y = papers, group = 1)) +
   geom_point() + 
   geom_line() +
-  ggtitle("Spent coffee ground")
+  ggtitle("Spent coffee ground")  +
+  theme(plot.title = element_text(hjust = 0.5),
+        text=element_text(family="Times", 
+                          face="bold", 
+                          size=12),
+        axis.line = element_line(colour = "black"),
+        panel.border = element_blank())
 
 
 ## Annual scientific production
@@ -291,7 +308,7 @@ global_scientific_production <-
             labels = "a" 
   ) 
 
-global_scientific_production
+global_scientific_production 
 ```
 
 Add trending lines

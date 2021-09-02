@@ -298,10 +298,10 @@ Spent_coffee_year_all_plot <-
 global_scientific_production <- 
   ggarrange(mendeley_byproducts_plot,
             ggarrange(husk_year_all_plot, pulp_year_all_plot, 
-                      ncol = 2, labels = c("b", "d"), 
+                      ncol = 2, labels = c("b", "c"), 
                       align = "h",widths = c(1.5,2)), 
             ggarrange(silverskin_year_all_plot, Spent_coffee_year_all_plot,
-                      ncol = 2, labels = c("c", "e"), 
+                      ncol = 2, labels = c("d", "e"), 
                       align = "h",widths = c(1.5,2)), 
             nrow = 3, 
             heights = c(1.5, 1, 1),

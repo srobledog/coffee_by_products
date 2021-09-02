@@ -821,7 +821,7 @@ data_tidied_husk_plot <-
   xlab("Byproducts Applications") +
   ggtitle("Husk applications") +
   theme(axis.text.x = element_text(face = "bold", 
-                                   size = 10, angle = 0,vjust = 0),
+                                   size = 10, angle = 45,vjust = 0),
         axis.text.y = element_text(face = "bold", 
                                    size = 10, angle = 0,hjust = 1)) +
   #scale_y_continuous(breaks = seq(2003,2020)) + 
@@ -830,6 +830,100 @@ data_tidied_husk_plot <-
 data_tidied_husk_plot
 ```
 
+## 3.3.2 Pulp
 
+```{r}
+data_tidied_pulp  <- 
+  data_tidied %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  separate_rows(categories, sep = ", ") |> 
+  filter(str_detect(byproduct, pattern = "pulp")) %>% 
+  group_by(year,categories) %>% 
+  count(categories, sort = TRUE)
 
+data_tidied_pulp_plot <- 
+  data_tidied_pulp %>% 
+  arrange(year,categories) %>% 
+  mutate(categories = factor(categories)) %>% 
+  ggplot(aes(y = categories, x = year, size = n, color= categories)) +
+  geom_point(alpha = 1) +
+  scale_x_continuous(breaks = seq(min(data_tidied_pulp$year),
+                                  max(data_tidied_pulp$year),
+                                  by = 1)) +
+  scale_size(name="tags") +
+  xlab("Byproducts Applications") +
+  ggtitle("Pulp applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 45,vjust = 0),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 0,hjust = 1)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
 
+data_tidied_pulp_plot
+```
+## 3.3.3 Silverskin
+
+```{r}
+data_tidied_silverskin  <- 
+  data_tidied %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  separate_rows(categories, sep = ", ") |> 
+  filter(str_detect(byproduct, pattern = "silverskin")) %>% 
+  group_by(year,categories) %>% 
+  count(categories, sort = TRUE)
+
+data_tidied_silverskin_plot <- 
+  data_tidied_silverskin %>% 
+  arrange(year,categories) %>% 
+  mutate(categories = factor(categories)) %>% 
+  ggplot(aes(y = categories, x = year, size = n, color= categories)) +
+  geom_point(alpha = 1) +
+  scale_x_continuous(breaks = seq(min(data_tidied_silverskin$year),
+                                  max(data_tidied_silverskin$year),
+                                  by = 1)) +
+  scale_size(name="tags") +
+  xlab("Byproducts Applications") +
+  ggtitle("Silverskin applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 45,vjust = 0),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 0,hjust = 1)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
+
+data_tidied_silverskin_plot
+```
+
+## 3.3.4 Spent Coffee Ground
+
+```{r}
+data_tidied_spent_coffee_grounds  <- 
+  data_tidied %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  separate_rows(categories, sep = ", ") |> 
+  filter(str_detect(byproduct, pattern = "spent_coffee_grounds")) %>% 
+  group_by(year,categories) %>% 
+  count(categories, sort = TRUE)
+
+data_tidied_spent_coffee_grounds_plot <- 
+  data_tidied_spent_coffee_grounds %>% 
+  arrange(year,categories) %>% 
+  mutate(categories = factor(categories)) %>% 
+  ggplot(aes(y = categories, x = year, size = n, color= categories)) +
+  geom_point(alpha = 1) +
+  scale_x_continuous(breaks = seq(min(data_tidied_spent_coffee_grounds$year),
+                                  max(data_tidied_spent_coffee_grounds$year),
+                                  by = 1)) +
+  scale_size(name="tags") +
+  xlab("Byproducts Applications") +
+  ggtitle("Spent Coffee Grounds applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 45,vjust = 0),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 0,hjust = 1)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
+
+data_tidied_spent_coffee_grounds_plot
+```

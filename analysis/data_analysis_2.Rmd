@@ -383,6 +383,99 @@ byproducts_journals_scimago <-
 byproducts_journals_scimago
 ```
 
+```{r}
+M_journal_husk <- 
+  data_tidied |> 
+  rename("TI" = title) |> 
+  filter(byproduct %in% "husk") # maybe there is a mistake here
+k_husk <- 12
+M_journal_husk$TC <- as.numeric(M_journal_husk$TC)
+data_tidied$PY <- as.numeric(data_tidied$PY)
+data_tidied <- data_tidied[!is.na(data_tidied$PY), ]
+SO <- names(tableTag(M_journal_husk, "SO"))
+k_husk <- min(k_husk, length(SO))
+SO <- SO[1:k_husk]
+df_journal_husk <- tibble()
+Y <- as.numeric(substr(Sys.time(), 1, 4))
+if (!("DI" %in% names(M_journal_husk))) {
+  M_journal$DI = "NA"
+}
+for (i in 1:length(SO)) {
+  ind <- which(regexpr(SO[i], M_journal_husk$SO) > -1)
+  TCpY <- M$TC[ind]/(Y - M$PY[ind] + 1)
+  dfSO <- data.frame(Journal = rep(SO[i], length(ind)), 
+                     year = M_journal$PY[ind], TI = M_journal_husk$TI[ind], 
+                     SO = M_journal_husk$SO[ind], DOI = M_journal_husk$DI[ind], 
+                     TC = M_journal_husk$TC[ind], TCpY = TCpY, 
+                     stringsAsFactors = TRUE)
+  df_journal_husk <- bind_rows(df_journal_husk, dfSO)
+}
+df2_journal_husk <- dplyr::group_by(df_journal_husk, 
+                                    .data$Journal, 
+                                    .data$year) %>% 
+  dplyr::summarise(freq = length(.data$year), TC = sum(.data$TC), 
+                   TCpY = sum(.data$TCpY), .groups = "drop")
+df2_journal_husk$Journal <- factor(df2_journal_husk$Journal, levels = SO[1:k_husk])
+x <- c(0.5, 1.5 * k_husk/10)
+y <- c(min(df_journal$year), min(df_journal$year) + diff(range(df_journal$year)) * 
+         0.125)
+```
+
+
+```{r}
+g_journal_husk <-
+  ggplot(df2_journal_husk, 
+         aes(x = Journal, 
+             y = year, 
+             text = paste("Journal: ",
+                          Journal, "\nYear: ",
+                          year, "\nN. of Articles: ",
+                          freq, "\nTotal Citations per Year: ",
+                          round(TCpY,
+                                2)
+             )
+         )
+  ) + 
+  geom_point(aes(alpha = TCpY, 
+                 size = freq), 
+             color = "dodgerblue4") + 
+  scale_size(range = c(2, 6)) + 
+  scale_alpha(range = c(0.3, 1)) + 
+  scale_y_continuous(breaks = seq(min(df2_journal_husk$year), 
+                                  max(df2_journal_husk$year), 
+                                  by = 2)) + 
+  guides(size = guide_legend(order = 1,
+                             "N.Articles"), 
+         alpha = guide_legend(order = 2, 
+                              "TC per Year")) + 
+  theme(legend.position = "right", text = element_text(color = "#444444"), 
+        panel.background = element_rect(fill = "gray97"), 
+        panel.grid.minor = element_line(color = "#FFFFFF"), 
+        panel.grid.major = element_line(color = "#FFFFFF"), 
+        plot.title = element_text(size = 24), 
+        axis.title = element_text(size = 14, 
+                                  color = "#555555"), 
+        axis.title.y = element_text(vjust = 1,
+                                    angle = 90, 
+                                    face = "bold"), 
+        axis.title.x = element_text(hjust = 0.95,
+                                    face = "bold"), 
+        axis.text.x = element_text(face = "bold", 
+                                   angle = 90), 
+        axis.text.y = element_text(face = "bold")) + 
+  labs(title = "Top-Journals' Production over the Time", 
+       x = "Journal", y = "Year") + 
+  geom_line(data = df2_journal_husk, 
+            aes(x = Journal, y = year, group = Journal),
+            size = 1, color = "firebrick", alpha = 0.3) + 
+  scale_x_discrete(limits = rev(levels(df2_journal_husk$Journal))) + 
+  coord_flip()
+```
+
+```{r}
+g_journal_husk
+```
+
 ## 3.1.3 Author analysis
 
 ```{r}

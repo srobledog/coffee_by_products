@@ -5,6 +5,8 @@ date: "8/18/2021"
 output: 
   html_document:
     code_folding: hide
+editor_options: 
+  chunk_output_type: console
 ---
 
 ```{r setup, include=FALSE}
@@ -31,6 +33,7 @@ library(bibliometrix)
 library(igraph)
 library(tosr)
 library(rebus)
+library(lubridate)
 ```
 
 
@@ -96,15 +99,16 @@ mendeley_byproducts_plot <-
   ggplot(aes(x = year, y = papers, group = 1)) +
   geom_point() +
   geom_line() +
-  ylab("papers") +
-  ggtitle("Scientific annual production") +
+  labs(title = "Total Scientific Annual Production", 
+       x = "year")  +
   theme(plot.title = element_text(hjust = 0.5),
         text=element_text(family="Times", face="bold", size=12),
         axis.line = element_line(colour = "black"),
-        panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
+        # panel.grid.major = element_blank(),
+        # panel.grid.minor = element_blank(),
         panel.border = element_blank(),
-        panel.background = element_blank())
+        # panel.background = element_blank()
+  )
 
 ## Coffee husk 
 
@@ -146,13 +150,11 @@ husk_year_all_plot <-
   ylab("papers") +
   ggtitle("Husk") +
   theme(plot.title = element_text(hjust = 0.5),
-        text=element_text(family="Times", face="bold", size=12),
+        text=element_text(family="Times", 
+                          face="bold", 
+                          size=12),
         axis.line = element_line(colour = "black"),
-        panel.grid.major = element_blank(),
-        panel.grid.minor = element_blank(),
-        panel.border = element_blank(),
-        panel.background = element_blank())
-
+        panel.border = element_blank())
 
 ## Coffee pulp 
 
@@ -191,7 +193,13 @@ pulp_year_all_plot <-
   ggplot(aes(x = year, y = papers, group = 1)) +
   geom_point() + 
   geom_line() +
-  ggtitle("Pulp")
+  ggtitle("Pulp") +
+  theme(plot.title = element_text(hjust = 0.5),
+        text=element_text(family="Times", 
+                          face="bold", 
+                          size=12),
+        axis.line = element_line(colour = "black"),
+        panel.border = element_blank())
 
 
 ## Coffee silverskin 
@@ -231,7 +239,13 @@ silverskin_year_all_plot <-
   ggplot(aes(x = year, y = papers, group = 1)) +
   geom_point() + 
   geom_line() +
-  ggtitle("Silverskin")
+  ggtitle("Silverskin") +
+  theme(plot.title = element_text(hjust = 0.5),
+        text=element_text(family="Times", 
+                          face="bold", 
+                          size=12),
+        axis.line = element_line(colour = "black"),
+        panel.border = element_blank())
 
 
 
@@ -272,7 +286,13 @@ Spent_coffee_year_all_plot <-
   ggplot(aes(x = year, y = papers, group = 1)) +
   geom_point() + 
   geom_line() +
-  ggtitle("Spent coffee ground")
+  ggtitle("Spent coffee ground")  +
+  theme(plot.title = element_text(hjust = 0.5),
+        text=element_text(family="Times", 
+                          face="bold", 
+                          size=12),
+        axis.line = element_line(colour = "black"),
+        panel.border = element_blank())
 
 
 ## Annual scientific production
@@ -280,17 +300,17 @@ Spent_coffee_year_all_plot <-
 global_scientific_production <- 
   ggarrange(mendeley_byproducts_plot,
             ggarrange(husk_year_all_plot, pulp_year_all_plot, 
-                      ncol = 2, labels = c("b", "d"), 
+                      ncol = 2, labels = c("b", "c"), 
                       align = "h",widths = c(1.5,2)), 
             ggarrange(silverskin_year_all_plot, Spent_coffee_year_all_plot,
-                      ncol = 2, labels = c("c", "e"), 
+                      ncol = 2, labels = c("d", "e"), 
                       align = "h",widths = c(1.5,2)), 
             nrow = 3, 
             heights = c(1.5, 1, 1),
             labels = "a" 
   ) 
 
-global_scientific_production
+global_scientific_production 
 ```
 
 Add trending lines
@@ -363,6 +383,306 @@ byproducts_journals_scimago <-
   arrange(desc(byproduct))
 
 byproducts_journals_scimago
+```
+
+```{r}
+M_journal_husk <- 
+  data_tidied |> 
+  rename("TI" = title) |> 
+  filter(byproduct %in% "husk") # maybe there is a mistake here
+k_husk <- 12
+M_journal_husk$TC <- as.numeric(M_journal_husk$TC)
+data_tidied$PY <- as.numeric(data_tidied$PY)
+data_tidied <- data_tidied[!is.na(data_tidied$PY), ]
+SO <- names(tableTag(M_journal_husk, "SO"))
+k_husk <- min(k_husk, length(SO))
+SO <- SO[1:k_husk]
+df_journal_husk <- tibble()
+Y <- as.numeric(substr(Sys.time(), 1, 4))
+if (!("DI" %in% names(M_journal_husk))) {
+  M_journal$DI = "NA"
+}
+for (i in 1:length(SO)) {
+  ind <- which(regexpr(SO[i], M_journal_husk$SO) > -1)
+  TCpY <- M$TC[ind]/(Y - M$PY[ind] + 1)
+  dfSO <- data.frame(Journal = rep(SO[i], length(ind)), 
+                     year = M_journal$PY[ind], TI = M_journal_husk$TI[ind], 
+                     SO = M_journal_husk$SO[ind], DOI = M_journal_husk$DI[ind], 
+                     TC = M_journal_husk$TC[ind], TCpY = TCpY, 
+                     stringsAsFactors = TRUE)
+  df_journal_husk <- bind_rows(df_journal_husk, dfSO)
+}
+df2_journal_husk <- dplyr::group_by(df_journal_husk, 
+                                    .data$Journal, 
+                                    .data$year) %>% 
+  dplyr::summarise(freq = length(.data$year), TC = sum(.data$TC), 
+                   TCpY = sum(.data$TCpY), .groups = "drop")
+df2_journal_husk$Journal <- factor(df2_journal_husk$Journal, levels = SO[1:k_husk])
+x <- c(0.5, 1.5 * k_husk/10)
+y <- c(min(df_journal$year), min(df_journal$year) + diff(range(df_journal$year)) * 
+         0.125)
+```
+
+
+```{r}
+g_journal_husk <-
+  ggplot(df2_journal_husk, 
+         aes(x = Journal, 
+             y = year, 
+             text = paste("Journal: ",
+                          Journal, "\nYear: ",
+                          year, "\nN. of Articles: ",
+                          freq, "\nTotal Citations per Year: ",
+                          round(TCpY,
+                                2)
+             )
+         )
+  ) + 
+  geom_point(aes(alpha = TCpY, 
+                 size = freq), 
+             color = "dodgerblue4") + 
+  scale_size(range = c(2, 6)) + 
+  scale_alpha(range = c(0.3, 1)) + 
+  scale_y_continuous(breaks = seq(min(df2_journal_husk$year), 
+                                  max(df2_journal_husk$year), 
+                                  by = 2)) + 
+  guides(size = guide_legend(order = 1,
+                             "N.Articles"), 
+         alpha = guide_legend(order = 2, 
+                              "TC per Year")) + 
+  theme(legend.position = "right", text = element_text(color = "#444444"), 
+        panel.background = element_rect(fill = "gray97"), 
+        panel.grid.minor = element_line(color = "#FFFFFF"), 
+        panel.grid.major = element_line(color = "#FFFFFF"), 
+        plot.title = element_text(size = 24), 
+        axis.title = element_text(size = 14, 
+                                  color = "#555555"), 
+        axis.title.y = element_text(vjust = 1,
+                                    angle = 90, 
+                                    face = "bold"), 
+        axis.title.x = element_text(hjust = 0.95,
+                                    face = "bold"), 
+        axis.text.x = element_text(face = "bold", 
+                                   angle = 90), 
+        axis.text.y = element_text(face = "bold")) + 
+  labs(title = "Husk Top-Journals' Production over the Time", 
+       x = "Journal", y = "Year") + 
+  geom_line(data = df2_journal_husk, 
+            aes(x = Journal, y = year, group = Journal),
+            size = 1, color = "firebrick", alpha = 0.3) + 
+  scale_x_discrete(limits = rev(levels(df2_journal_husk$Journal))) + 
+  coord_flip()
+```
+
+```{r}
+g_journal_husk
+```
+
+### Pulp
+
+```{r}
+M_journal_pulp <- 
+  data_tidied |> 
+  rename("TI" = title) |> 
+  separate_rows(byproduct, sep = ", ") |> 
+  filter(byproduct %in% "pulp") |> 
+  select(SO, PY, TC) |> 
+  mutate(TCpY = TC/(2021 - PY + 1)) |> 
+  add_count(SO, PY) |> 
+  rename(freq = n)
+```
+
+
+```{r}
+g_journal_pulp <- 
+  M_journal_pulp |> 
+  ggplot(aes(y = PY, 
+             x = SO,
+             text = paste("Journal: ",
+                          SO, "\nYear: ",
+                          PY, "\nN. of Articles: ",
+                          freq, "\nTotal Citations per Year: ",
+                          round(TCpY,
+                                2)))) + 
+  geom_point(aes(alpha = M_journal_pulp |> 
+                   pull(TCpY),
+                 size = freq), 
+             color = "dodgerblue4") +
+  scale_size(range = c(2, 6)) +
+  scale_alpha(range= c(0.3, 1)) +
+  scale_y_continuous(breaks = seq(min(M_journal_pulp |> 
+                                        pull(PY)),
+                                  max(M_journal_pulp |> 
+                                        pull(PY)),
+                                  by = 2)) +
+  guides(size = guide_legend(order = 1,
+                             "N. Articles"),
+         alpha = guide_legend(order = 2, 
+                              "TC per year")) +
+  theme(legend.position = "right", text = element_text(color = "#444444"), 
+        panel.background = element_rect(fill = "gray97"), 
+        panel.grid.minor = element_line(color = "#FFFFFF"), 
+        panel.grid.major = element_line(color = "#FFFFFF"), 
+        plot.title = element_text(size = 24), 
+        axis.title = element_text(size = 14, 
+                                  color = "#555555"), 
+        axis.title.y = element_text(vjust = 1,
+                                    angle = 90, 
+                                    face = "bold"), 
+        axis.title.x = element_text(hjust = 0.95,
+                                    face = "bold"), 
+        axis.text.x = element_text(face = "bold", 
+                                   angle = 90), 
+        axis.text.y = element_text(face = "bold")) + 
+  labs(title = "pulp Top-Journals' Production over the Time", 
+       x = "Journal", y = "Year") + 
+  geom_line(data = M_journal_pulp, 
+            aes(x = SO, y = PY, group = SO),
+            size = 1, color = "firebrick", alpha = 0.3) + 
+  scale_x_discrete(limits = rev(levels(M_journal_pulp$PY))) + 
+  coord_flip()
+```
+
+```{r}
+g_journal_pulp
+```
+
+### Silverskin
+
+```{r}
+M_journal_silverskin <- 
+  data_tidied |> 
+  rename("TI" = title) |> 
+  separate_rows(byproduct, sep = ", ") |> 
+  filter(byproduct %in% "silverskin") |> 
+  select(SO, PY, TC) |> 
+  mutate(TCpY = TC/(2021 - PY + 1)) |> 
+  add_count(SO, PY) |> 
+  rename(freq = n)
+```
+
+
+```{r}
+g_journal_silverskin <- 
+  M_journal_silverskin |> 
+  ggplot(aes(y = PY, 
+             x = SO,
+             text = paste("Journal: ",
+                          SO, "\nYear: ",
+                          PY, "\nN. of Articles: ",
+                          freq, "\nTotal Citations per Year: ",
+                          round(TCpY,
+                                2)))) + 
+  geom_point(aes(alpha = M_journal_silverskin |> 
+                   pull(TCpY),
+                 size = freq), 
+             color = "dodgerblue4") +
+  scale_size(range = c(2, 6)) +
+  scale_alpha(range= c(0.3, 1)) +
+  scale_y_continuous(breaks = seq(min(M_journal_pulp |> 
+                                        pull(PY)),
+                                  max(M_journal_pulp |> 
+                                        pull(PY)),
+                                  by = 2)) +
+  guides(size = guide_legend(order = 1,
+                             "N. Articles"),
+         alpha = guide_legend(order = 2, 
+                              "TC per year")) +
+  theme(legend.position = "right", text = element_text(color = "#444444"), 
+        panel.background = element_rect(fill = "gray97"), 
+        panel.grid.minor = element_line(color = "#FFFFFF"), 
+        panel.grid.major = element_line(color = "#FFFFFF"), 
+        plot.title = element_text(size = 24), 
+        axis.title = element_text(size = 14, 
+                                  color = "#555555"), 
+        axis.title.y = element_text(vjust = 1,
+                                    angle = 90, 
+                                    face = "bold"), 
+        axis.title.x = element_text(hjust = 0.95,
+                                    face = "bold"), 
+        axis.text.x = element_text(face = "bold", 
+                                   angle = 90), 
+        axis.text.y = element_text(face = "bold")) + 
+  labs(title = "Silverskin Top-Journals' Production over the Time", 
+       x = "Journal", y = "Year") + 
+  geom_line(data = M_journal_silverskin, 
+            aes(x = SO, y = PY, group = SO),
+            size = 1, color = "firebrick", alpha = 0.3) + 
+  scale_x_discrete(limits = rev(levels(M_journal_silverskin$PY))) + 
+  coord_flip()
+```
+
+```{r}
+g_journal_silverskin
+```
+
+### Spent Coffee Ground
+
+```{r}
+M_journal_spent_coffee_ground <- 
+  data_tidied |> 
+  rename("TI" = title) |> 
+  separate_rows(byproduct, sep = ", ") |> 
+  filter(byproduct %in% "spent_coffee_grounds") |> 
+  select(SO, PY, TC) |> 
+  mutate(TCpY = TC/(2021 - PY + 1)) |> 
+  add_count(SO, PY) |> 
+  rename(freq = n)
+```
+
+
+```{r}
+g_journal_spent_coffee_ground <- 
+  M_journal_spent_coffee_ground |> 
+  ggplot(aes(y = PY, 
+             x = SO,
+             text = paste("Journal: ",
+                          SO, "\nYear: ",
+                          PY, "\nN. of Articles: ",
+                          freq, "\nTotal Citations per Year: ",
+                          round(TCpY,
+                                2)))) + 
+  geom_point(aes(alpha = M_journal_spent_coffee_ground |> 
+                   pull(TCpY),
+                 size = freq), 
+             color = "dodgerblue4") +
+  scale_size(range = c(2, 6)) +
+  scale_alpha(range= c(0.3, 1)) +
+  scale_y_continuous(breaks = seq(min(M_journal_spent_coffee_ground |> 
+                                        pull(PY)),
+                                  max(M_journal_spent_coffee_ground |> 
+                                        pull(PY)),
+                                  by = 2)) +
+  guides(size = guide_legend(order = 1,
+                             "N. Articles"),
+         alpha = guide_legend(order = 2, 
+                              "TC per year")) +
+  theme(legend.position = "right", text = element_text(color = "#444444"), 
+        panel.background = element_rect(fill = "gray97"), 
+        panel.grid.minor = element_line(color = "#FFFFFF"), 
+        panel.grid.major = element_line(color = "#FFFFFF"), 
+        plot.title = element_text(size = 24), 
+        axis.title = element_text(size = 14, 
+                                  color = "#555555"), 
+        axis.title.y = element_text(vjust = 1,
+                                    angle = 90, 
+                                    face = "bold"), 
+        axis.title.x = element_text(hjust = 0.95,
+                                    face = "bold"), 
+        axis.text.x = element_text(face = "bold", 
+                                   angle = 90), 
+        axis.text.y = element_text(face = "bold")) + 
+  labs(title = "Silverskin Top-Journals' Production over the Time", 
+       x = "Journal", y = "Year") + 
+  geom_line(data = M_journal_spent_coffee_ground, 
+            aes(x = SO, y = PY, group = SO),
+            size = 1, color = "firebrick", alpha = 0.3) + 
+  scale_x_discrete(limits = rev(levels(M_journal_spent_coffee_ground$PY))) + 
+  coord_flip()
+```
+
+```{r}
+g_journal_silverskin
 ```
 
 ## 3.1.3 Author analysis
@@ -468,9 +788,9 @@ g <- ggplot(df2, aes(x = Author,
                                   freq, "\nTotal Citations per Year: ",
                                   round(TCpY,
                                         2)
-                                  )
                      )
-            ) + 
+)
+) + 
   geom_point(aes(alpha = TCpY, 
                  size = freq), 
              color = "dodgerblue4") + 
@@ -799,95 +1119,130 @@ https://bibliometrix.org/documents/bibliometrix_Report.html
 ## 3.3.1 Husk
 
 ```{r}
+data_tidied_husk  <- 
+  data_tidied %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  separate_rows(categories, sep = ", ") |> 
+  filter(str_detect(byproduct, pattern = "husk")) %>% 
+  group_by(year,categories) %>% 
+  count(categories, sort = TRUE)
 
+data_tidied_husk_plot <- 
+  data_tidied_husk %>% 
+  arrange(year,categories) %>% 
+  mutate(categories = factor(categories)) %>% 
+  ggplot(aes(y = categories, x = year, size = n, color= categories)) +
+  geom_point(alpha = 1) +
+  scale_x_continuous(breaks = seq(min(data_tidied_husk$year),
+                                  max(data_tidied_husk$year),
+                                  by = 1)) +
+  scale_size(name="tags") +
+  xlab("Byproducts Applications") +
+  ggtitle("Husk applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 45,vjust = 0),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 0,hjust = 1)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
+
+data_tidied_husk_plot
 ```
+
+## 3.3.2 Pulp
 
 ```{r}
+data_tidied_pulp  <- 
+  data_tidied %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  separate_rows(categories, sep = ", ") |> 
+  filter(str_detect(byproduct, pattern = "pulp")) %>% 
+  group_by(year,categories) %>% 
+  count(categories, sort = TRUE)
 
+data_tidied_pulp_plot <- 
+  data_tidied_pulp %>% 
+  arrange(year,categories) %>% 
+  mutate(categories = factor(categories)) %>% 
+  ggplot(aes(y = categories, x = year, size = n, color= categories)) +
+  geom_point(alpha = 1) +
+  scale_x_continuous(breaks = seq(min(data_tidied_pulp$year),
+                                  max(data_tidied_pulp$year),
+                                  by = 1)) +
+  scale_size(name="tags") +
+  xlab("Byproducts Applications") +
+  ggtitle("Pulp applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 45,vjust = 0),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 0,hjust = 1)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
+
+data_tidied_pulp_plot
 ```
-
-# testing other options
+## 3.3.3 Silverskin
 
 ```{r}
-topAU <- authorProdOverTime(data_tidied, k = 10, graph = TRUE)
+data_tidied_silverskin  <- 
+  data_tidied %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  separate_rows(categories, sep = ", ") |> 
+  filter(str_detect(byproduct, pattern = "silverskin")) %>% 
+  group_by(year,categories) %>% 
+  count(categories, sort = TRUE)
 
+data_tidied_silverskin_plot <- 
+  data_tidied_silverskin %>% 
+  arrange(year,categories) %>% 
+  mutate(categories = factor(categories)) %>% 
+  ggplot(aes(y = categories, x = year, size = n, color= categories)) +
+  geom_point(alpha = 1) +
+  scale_x_continuous(breaks = seq(min(data_tidied_silverskin$year),
+                                  max(data_tidied_silverskin$year),
+                                  by = 1)) +
+  scale_size(name="tags") +
+  xlab("Byproducts Applications") +
+  ggtitle("Silverskin applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 45,vjust = 0),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 0,hjust = 1)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
+
+data_tidied_silverskin_plot
 ```
 
-
-# 3.3 Applications of Coffee by-products
-
-
-
-# Bibliometric general analysis
-
-## General results
+## 3.3.4 Spent Coffee Ground
 
 ```{r}
-results <-  biblioAnalysis(data_tidied, sep = ";")
+data_tidied_spent_coffee_grounds  <- 
+  data_tidied %>% 
+  separate_rows(byproduct, sep = ", ") |> 
+  separate_rows(categories, sep = ", ") |> 
+  filter(str_detect(byproduct, pattern = "spent_coffee_grounds")) %>% 
+  group_by(year,categories) %>% 
+  count(categories, sort = TRUE)
 
-results_summary <- summary(results)
+data_tidied_spent_coffee_grounds_plot <- 
+  data_tidied_spent_coffee_grounds %>% 
+  arrange(year,categories) %>% 
+  mutate(categories = factor(categories)) %>% 
+  ggplot(aes(y = categories, x = year, size = n, color= categories)) +
+  geom_point(alpha = 1) +
+  scale_x_continuous(breaks = seq(min(data_tidied_spent_coffee_grounds$year),
+                                  max(data_tidied_spent_coffee_grounds$year),
+                                  by = 1)) +
+  scale_size(name="tags") +
+  xlab("Byproducts Applications") +
+  ggtitle("Spent Coffee Grounds applications") +
+  theme(axis.text.x = element_text(face = "bold", 
+                                   size = 10, angle = 45,vjust = 0),
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10, angle = 0,hjust = 1)) +
+  #scale_y_continuous(breaks = seq(2003,2020)) + 
+  guides(color = FALSE)
+
+data_tidied_spent_coffee_grounds_plot
 ```
-
-## Citation network
-
-```{r}
-NetMatrix <- 
-  biblioNetwork(data_tidied, 
-                analysis = "co-citation", 
-                network = "references", 
-                sep = ";")
-
-net=networkPlot(NetMatrix, n = 30, Title = "Co-Citation Network", 
-                type = "fruchterman", size=T,
-                remove.multiple=FALSE, 
-                labelsize=0.7,edgesize = 5,
-                cluster = 'louvain')
-```
-
-
-
-
-
-# key word co-ocurrences
-NetMatrix <- biblioNetwork(datos_unidos, analysis = "co-occurrences", network = "keywords", sep = ";")
-net=networkPlot(NetMatrix, normalize="association", weighted=T, n = 30, Title = "Keyword Co-occurrences", type = "fruchterman", size=T,edgesize = 5,labelsize=0.7)
-
-
-# Tabla de journals por producto 
-datos_unidos <- inner_join(datos_select,datos,by = c('AU' = 'autores')) %>%
-separate_rows(byproduct,sep = ',')
-datos_unidos$byproduct <- gsub(" ","",datos_unidos$byproduct)
-
-journal_product <- datos_unidos %>%
-group_by(JI,byproduct) %>%
-count()
-
-
-# Autores mas productivos
-datos_autores <- datos_unidos %>%
-separate_rows(AU, sep = ";")
-
-autores_mas_prod <- datos_autores %>%
-group_by(AU) %>% 
-count() %>%
-arrange(desc(n)) %>% 
-head(10)
-
-
-# Autores mas productivos por producto 
-
-autores_producto <- datos_autores %>%
-group_by(AU,byproduct) %>% 
-count() %>%
-arrange(desc(n)) %>%
-group_by(byproduct) %>%
-top_n(n = 5)
-
-
-# Autores por categoria 
-autores_categoria <- datos_autores %>%
-group_by(AU,category) %>% 
-count() %>%
-arrange(desc(n)) %>%
-group_by(category) %>%
-top_n(n = 5)

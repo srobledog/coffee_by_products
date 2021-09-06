@@ -385,6 +385,8 @@ byproducts_journals_scimago <-
 byproducts_journals_scimago
 ```
 
+### Husk
+
 ```{r}
 M_journal_husk <- 
   data_tidied |> 
@@ -682,122 +684,110 @@ g_journal_spent_coffee_ground <-
 ```
 
 ```{r}
-g_journal_silverskin
+g_journal_spent_coffee_ground
 ```
 
 ## 3.1.3 Author analysis
 
+### Husk
+
 ```{r}
+husk_authors_top <- 
+  data_tidied |>
+  separate_rows(byproduct, sep = ", ") |> 
+  filter(byproduct %in% "husk") |> 
+  separate_rows(AU, sep = ";") |> 
+  count(AU, sort = TRUE)
+
 husk_authors <- 
-  data_tidied |> 
-  filter(str_detect(byproduct, pattern = "husk")) |> 
-  select(doi, AU) |>
-  unique() |> 
-  separate_rows(AU, sep = ";") |> 
-  count(AU, sort = TRUE) |> 
-  mutate(byproduct = "husk") |> 
-  slice(1:3)
-
-husk_authors
-
-pulp_authors <- 
-  data_tidied |> 
-  filter(str_detect(byproduct, pattern = "pulp")) |> 
-  select(doi, AU) |>
-  unique() |> 
-  separate_rows(AU, sep = ";") |> 
-  count(AU, sort = TRUE) |> 
-  mutate(byproduct = "pulp") |> 
-  slice(1:3)
-
-silverskin_authors <- 
-  data_tidied |> 
-  filter(str_detect(byproduct, pattern = "silverskin")) |> 
-  select(doi, AU) |>
-  unique() |> 
-  separate_rows(AU, sep = ";") |> 
-  count(AU, sort = TRUE) |> 
-  mutate(byproduct = "silverskin") |> 
-  slice(1:3)
-
-spent_coffee_ground_authors <- 
-  data_tidied |> 
-  filter(str_detect(byproduct, pattern = "spent_coffee_ground")) |> 
-  select(doi, AU) |>
-  unique() |> 
-  separate_rows(AU, sep = ";") |> 
-  count(AU, sort = TRUE) |> 
-  mutate(byproduct = "spent_coffee_ground") |> 
-  slice(1:3)
-
-byproducts_authors <- 
-  bind_rows(husk_authors,
-            pulp_authors,
-            silverskin_authors,
-            spent_coffee_ground_authors) |> 
-  rename("papers" = n) |> 
-  select(byproduct, everything()) |> 
-  arrange(desc(byproduct))
-
-byproducts_authors
+  data_tidied |>
+  separate_rows(byproduct, sep = ", ") |> 
+  filter(byproduct %in% "husk") |> 
+  separate_rows(AU, sep = ";") |>
+  select(AU, PY, TC) |> 
+  group_by(AU, PY) |> 
+  add_count(AU, PY) |> 
+  summarise(TC_total = sum(TC),
+            freq = unique(n),
+            .groups = "drop") |> 
+  mutate(TCpY = TC_total/(2021 - PY + 1)) 
 ```
 
 ```{r}
-M <- data_tidied |> 
-  rename("TI" = title)
+husk_authors <- data_tidied |> 
+  rename("TI" = title) |> 
+  separate_rows(byproduct, sep = ", ") |> 
+  filter(byproduct %in% "husk")
+
 k <- 10
-M$TC <- as.numeric(M$TC)
+husk_authors$TC <- as.numeric(husk_authors$TC)
 data_tidied$PY <- as.numeric(data_tidied$PY)
 data_tidied <- data_tidied[!is.na(data_tidied$PY), ]
-AU <- names(tableTag(M, "AU"))
-k <- min(k, length(AU))
-AU <- AU[1:k]
-df <- data.frame(Author = "NA", year = NA, TI = "NA", SO = "NA", 
-                 DOI = "NA", TC = NA, TCpY = NA, stringsAsFactors = FALSE)
+AU_husk <- names(tableTag(husk_authors, "AU"))
+k <- min(k, length(AU_husk))
+AU_husk <- AU_husk[1:k]
+df_husk_authors <- 
+  data.frame(Author = "NA", 
+             year = NA, 
+             TI = "NA", 
+             SO = "NA", 
+             DOI = "NA", 
+             TC = NA, 
+             TCpY = NA, 
+             stringsAsFactors = FALSE)
 Y <- as.numeric(substr(Sys.time(), 1, 4))
-if (!("DI" %in% names(M))) {
-  M$DI = "NA"
+if (!("DI" %in% names(husk_authors))) {
+  husk_authors$DI = "NA"
 }
-for (i in 1:length(AU)) {
-  ind <- which(regexpr(AU[i], M$AU) > -1)
-  TCpY <- M$TC[ind]/(Y - M$PY[ind] + 1)
-  dfAU <- data.frame(Author = rep(AU[i], length(ind)), 
-                     year = M$PY[ind], TI = M$TI[ind], SO = M$SO[ind], 
-                     DOI = M$DI[ind], TC = M$TC[ind], TCpY = TCpY, stringsAsFactors = TRUE)
-  df <- rbind(df, dfAU)
+for (i in 1:length(AU_husk)) {
+  ind <- which(regexpr(AU_husk[i], husk_authors$AU) > -1)
+  TCpY <- husk_authors$TC[ind]/(Y - husk_authors$PY[ind] + 1)
+  dfAU <- data.frame(Author = rep(AU_husk[i], length(ind)), 
+                     year = husk_authors$PY[ind], 
+                     TI = husk_authors$TI[ind], 
+                     SO = husk_authors$SO[ind], 
+                     DOI = husk_authors$DI[ind], 
+                     TC = husk_authors$TC[ind], 
+                     TCpY = TCpY, 
+                     stringsAsFactors = TRUE)
+  df_husk_authors <- rbind(df_husk_authors, dfAU)
 }
-df <- df[-1, ]
-df2 <- dplyr::group_by(df, .data$Author, .data$year) %>% 
-  dplyr::summarise(freq = length(.data$year), TC = sum(.data$TC), 
+df_husk_authors <- df_husk_authors[-1, ]
+df2_husk_authors <- dplyr::group_by(df_husk_authors, 
+                                    .data$Author, 
+                                    .data$year) %>% 
+  dplyr::summarise(freq = length(.data$year), 
+                   TC = sum(.data$TC), 
                    TCpY = sum(.data$TCpY))
-df2 <- as.data.frame(df2)
-df2$Author <- factor(df2$Author, levels = AU[1:k])
+df2_husk_authors <- as.data.frame(df2_husk_authors)
+df2_husk_authors$Author <- factor(df2_husk_authors$Author, levels = AU_husk[1:k])
 x <- c(0.5, 1.5 * k/10)
 y <- c(min(df$year), min(df$year) + diff(range(df2$year)) * 
          0.125)
-
 ```
 
 
 ```{r}
-g <- ggplot(df2, aes(x = Author, 
-                     y = year, 
-                     text = paste("Author: ",
-                                  Author, "\nYear: ",
-                                  year, "\nN. of Articles: ",
-                                  freq, "\nTotal Citations per Year: ",
-                                  round(TCpY,
-                                        2)
-                     )
-)
-) + 
+husk_authors_plot <- 
+  ggplot(df2_husk_authors, 
+         aes(x = Author, 
+             y = year, 
+             text = paste("Author: ",
+                          Author, "\nYear: ",
+                          year, "\nN. of Articles: ",
+                          freq, "\nTotal Citations per Year: ",
+                          round(TCpY,
+                                2)
+             )
+         )
+  ) + 
   geom_point(aes(alpha = TCpY, 
                  size = freq), 
              color = "dodgerblue4") + 
   scale_size(range = c(2, 6)) + 
   scale_alpha(range = c(0.3, 1)) + 
-  scale_y_continuous(breaks = seq(min(df2$year), 
-                                  max(df2$year), 
+  scale_y_continuous(breaks = seq(min(df2_husk_authors$year), 
+                                  max(df2_husk_authors$year), 
                                   by = 2)) + 
   guides(size = guide_legend(order = 1,
                              "N.Articles"), 
@@ -820,15 +810,329 @@ g <- ggplot(df2, aes(x = Author,
         axis.text.y = element_text(face = "bold")) + 
   labs(title = "Top-Authors' Production over the Time", 
        x = "Author", y = "Year") + 
-  geom_line(data = df2, 
+  geom_line(data = df2_husk_authors, 
             aes(x = Author, y = year, group = Author),
             size = 1, color = "firebrick", alpha = 0.3) + 
-  scale_x_discrete(limits = rev(levels(df2$Author))) + 
+  scale_x_discrete(limits = rev(levels(df2_husk_authors$Author))) + 
   coord_flip()
 ```
 
+### Pulp
+
 ```{r}
-g
+pulp_authors <- data_tidied |> 
+  rename("TI" = title) |> 
+  separate_rows(byproduct, sep = ", ") |> 
+  filter(byproduct %in% "pulp")
+
+k <- 10
+pulp_authors$TC <- as.numeric(pulp_authors$TC)
+data_tidied$PY <- as.numeric(data_tidied$PY)
+data_tidied <- data_tidied[!is.na(data_tidied$PY), ]
+AU_pulp <- names(tableTag(pulp_authors, "AU"))
+k <- min(k, length(AU_pulp))
+AU_pulp <- AU_pulp[1:k]
+df_pulp_authors <- 
+  data.frame(Author = "NA", 
+             year = NA, 
+             TI = "NA", 
+             SO = "NA", 
+             DOI = "NA", 
+             TC = NA, 
+             TCpY = NA, 
+             stringsAsFactors = FALSE)
+Y <- as.numeric(substr(Sys.time(), 1, 4))
+if (!("DI" %in% names(pulp_authors))) {
+  pulp_authors$DI = "NA"
+}
+for (i in 1:length(AU_pulp)) {
+  ind <- which(regexpr(AU_pulp[i], pulp_authors$AU) > -1)
+  TCpY <- pulp_authors$TC[ind]/(Y - pulp_authors$PY[ind] + 1)
+  dfAU <- data.frame(Author = rep(AU_pulp[i], length(ind)), 
+                     year = pulp_authors$PY[ind], 
+                     TI = pulp_authors$TI[ind], 
+                     SO = pulp_authors$SO[ind], 
+                     DOI = pulp_authors$DI[ind], 
+                     TC = pulp_authors$TC[ind], 
+                     TCpY = TCpY, 
+                     stringsAsFactors = TRUE)
+  df_pulp_authors <- rbind(df_pulp_authors, dfAU)
+}
+df_pulp_authors <- df_pulp_authors[-1, ]
+df2_pulp_authors <- dplyr::group_by(df_pulp_authors, 
+                                    .data$Author, 
+                                    .data$year) %>% 
+  dplyr::summarise(freq = length(.data$year), 
+                   TC = sum(.data$TC), 
+                   TCpY = sum(.data$TCpY))
+df2_pulp_authors <- as.data.frame(df2_pulp_authors)
+df2_pulp_authors$Author <- factor(df2_pulp_authors$Author, levels = AU_pulp[1:k])
+x <- c(0.5, 1.5 * k/10)
+y <- c(min(df$year), min(df$year) + diff(range(df2$year)) * 
+         0.125)
+```
+
+
+```{r}
+pulp_authors_plot <- 
+  ggplot(df2_pulp_authors, 
+         aes(x = Author, 
+             y = year, 
+             text = paste("Author: ",
+                          Author, "\nYear: ",
+                          year, "\nN. of Articles: ",
+                          freq, "\nTotal Citations per Year: ",
+                          round(TCpY,
+                                2)
+             )
+         )
+  ) + 
+  geom_point(aes(alpha = TCpY, 
+                 size = freq), 
+             color = "dodgerblue4") + 
+  scale_size(range = c(2, 6)) + 
+  scale_alpha(range = c(0.3, 1)) + 
+  scale_y_continuous(breaks = seq(min(df2_pulp_authors$year), 
+                                  max(df2_pulp_authors$year), 
+                                  by = 2)) + 
+  guides(size = guide_legend(order = 1,
+                             "N.Articles"), 
+         alpha = guide_legend(order = 2, 
+                              "TC per Year")) + 
+  theme(legend.position = "right", text = element_text(color = "#444444"), 
+        panel.background = element_rect(fill = "gray97"), 
+        panel.grid.minor = element_line(color = "#FFFFFF"), 
+        panel.grid.major = element_line(color = "#FFFFFF"), 
+        plot.title = element_text(size = 24), 
+        axis.title = element_text(size = 14, 
+                                  color = "#555555"), 
+        axis.title.y = element_text(vjust = 1,
+                                    angle = 90, 
+                                    face = "bold"), 
+        axis.title.x = element_text(hjust = 0.95,
+                                    face = "bold"), 
+        axis.text.x = element_text(face = "bold", 
+                                   angle = 90), 
+        axis.text.y = element_text(face = "bold")) + 
+  labs(title = "Top-Authors' Production over the Time", 
+       x = "Author", y = "Year") + 
+  geom_line(data = df2_pulp_authors, 
+            aes(x = Author, y = year, group = Author),
+            size = 1, color = "firebrick", alpha = 0.3) + 
+  scale_x_discrete(limits = rev(levels(df2_pulp_authors$Author))) + 
+  coord_flip()
+```
+
+### spent_coffee_grounds
+
+```{r}
+spent_coffee_grounds_authors <- data_tidied |> 
+  rename("TI" = title) |> 
+  separate_rows(byproduct, sep = ", ") |> 
+  filter(byproduct %in% "spent_coffee_grounds")
+
+k <- 10
+spent_coffee_grounds_authors$TC <- as.numeric(spent_coffee_grounds_authors$TC)
+data_tidied$PY <- as.numeric(data_tidied$PY)
+data_tidied <- data_tidied[!is.na(data_tidied$PY), ]
+AU_spent_coffee_grounds <- names(tableTag(spent_coffee_grounds_authors, "AU"))
+k <- min(k, length(AU_spent_coffee_grounds))
+AU_spent_coffee_grounds <- AU_spent_coffee_grounds[1:k]
+df_spent_coffee_grounds_authors <- 
+  data.frame(Author = "NA", 
+             year = NA, 
+             TI = "NA", 
+             SO = "NA", 
+             DOI = "NA", 
+             TC = NA, 
+             TCpY = NA, 
+             stringsAsFactors = FALSE)
+Y <- as.numeric(substr(Sys.time(), 1, 4))
+if (!("DI" %in% names(spent_coffee_grounds_authors))) {
+  spent_coffee_grounds_authors$DI = "NA"
+}
+for (i in 1:length(AU_spent_coffee_grounds)) {
+  ind <- which(regexpr(AU_spent_coffee_grounds[i], spent_coffee_grounds_authors$AU) > -1)
+  TCpY <- spent_coffee_grounds_authors$TC[ind]/(Y - spent_coffee_grounds_authors$PY[ind] + 1)
+  dfAU <- data.frame(Author = rep(AU_spent_coffee_grounds[i], length(ind)), 
+                     year = spent_coffee_grounds_authors$PY[ind], 
+                     TI = spent_coffee_grounds_authors$TI[ind], 
+                     SO = spent_coffee_grounds_authors$SO[ind], 
+                     DOI = spent_coffee_grounds_authors$DI[ind], 
+                     TC = spent_coffee_grounds_authors$TC[ind], 
+                     TCpY = TCpY, 
+                     stringsAsFactors = TRUE)
+  df_spent_coffee_grounds_authors <- rbind(df_spent_coffee_grounds_authors, dfAU)
+}
+df_spent_coffee_grounds_authors <- df_spent_coffee_grounds_authors[-1, ]
+df2_spent_coffee_grounds_authors <- dplyr::group_by(df_spent_coffee_grounds_authors, 
+                                    .data$Author, 
+                                    .data$year) %>% 
+  dplyr::summarise(freq = length(.data$year), 
+                   TC = sum(.data$TC), 
+                   TCpY = sum(.data$TCpY))
+df2_spent_coffee_grounds_authors <- as.data.frame(df2_spent_coffee_grounds_authors)
+df2_spent_coffee_grounds_authors$Author <- factor(df2_spent_coffee_grounds_authors$Author, levels = AU_spent_coffee_grounds[1:k])
+x <- c(0.5, 1.5 * k/10)
+y <- c(min(df$year), min(df$year) + diff(range(df2$year)) * 
+         0.125)
+```
+
+
+```{r}
+spent_coffee_grounds_authors_plot <- 
+  ggplot(df2_spent_coffee_grounds_authors, 
+         aes(x = Author, 
+             y = year, 
+             text = paste("Author: ",
+                          Author, "\nYear: ",
+                          year, "\nN. of Articles: ",
+                          freq, "\nTotal Citations per Year: ",
+                          round(TCpY,
+                                2)
+             )
+         )
+  ) + 
+  geom_point(aes(alpha = TCpY, 
+                 size = freq), 
+             color = "dodgerblue4") + 
+  scale_size(range = c(2, 6)) + 
+  scale_alpha(range = c(0.3, 1)) + 
+  scale_y_continuous(breaks = seq(min(df2_spent_coffee_grounds_authors$year), 
+                                  max(df2_spent_coffee_grounds_authors$year), 
+                                  by = 2)) + 
+  guides(size = guide_legend(order = 1,
+                             "N.Articles"), 
+         alpha = guide_legend(order = 2, 
+                              "TC per Year")) + 
+  theme(legend.position = "right", text = element_text(color = "#444444"), 
+        panel.background = element_rect(fill = "gray97"), 
+        panel.grid.minor = element_line(color = "#FFFFFF"), 
+        panel.grid.major = element_line(color = "#FFFFFF"), 
+        plot.title = element_text(size = 24), 
+        axis.title = element_text(size = 14, 
+                                  color = "#555555"), 
+        axis.title.y = element_text(vjust = 1,
+                                    angle = 90, 
+                                    face = "bold"), 
+        axis.title.x = element_text(hjust = 0.95,
+                                    face = "bold"), 
+        axis.text.x = element_text(face = "bold", 
+                                   angle = 90), 
+        axis.text.y = element_text(face = "bold")) + 
+  labs(title = "Top-Authors' Production over the Time", 
+       x = "Author", y = "Year") + 
+  geom_line(data = df2_spent_coffee_grounds_authors, 
+            aes(x = Author, y = year, group = Author),
+            size = 1, color = "firebrick", alpha = 0.3) + 
+  scale_x_discrete(limits = rev(levels(df2_spent_coffee_grounds_authors$Author))) + 
+  coord_flip()
+```
+
+### silverskin
+
+```{r}
+silverskin_authors <- data_tidied |> 
+  rename("TI" = title) |> 
+  separate_rows(byproduct, sep = ", ") |> 
+  filter(byproduct %in% "silverskin")
+
+k <- 10
+silverskin_authors$TC <- as.numeric(silverskin_authors$TC)
+data_tidied$PY <- as.numeric(data_tidied$PY)
+data_tidied <- data_tidied[!is.na(data_tidied$PY), ]
+AU_silverskin <- names(tableTag(silverskin_authors, "AU"))
+k <- min(k, length(AU_silverskin))
+AU_silverskin <- AU_silverskin[1:k]
+df_silverskin_authors <- 
+  data.frame(Author = "NA", 
+             year = NA, 
+             TI = "NA", 
+             SO = "NA", 
+             DOI = "NA", 
+             TC = NA, 
+             TCpY = NA, 
+             stringsAsFactors = FALSE)
+Y <- as.numeric(substr(Sys.time(), 1, 4))
+if (!("DI" %in% names(silverskin_authors))) {
+  silverskin_authors$DI = "NA"
+}
+for (i in 1:length(AU_silverskin)) {
+  ind <- which(regexpr(AU_silverskin[i], silverskin_authors$AU) > -1)
+  TCpY <- silverskin_authors$TC[ind]/(Y - silverskin_authors$PY[ind] + 1)
+  dfAU <- data.frame(Author = rep(AU_silverskin[i], length(ind)), 
+                     year = silverskin_authors$PY[ind], 
+                     TI = silverskin_authors$TI[ind], 
+                     SO = silverskin_authors$SO[ind], 
+                     DOI = silverskin_authors$DI[ind], 
+                     TC = silverskin_authors$TC[ind], 
+                     TCpY = TCpY, 
+                     stringsAsFactors = TRUE)
+  df_silverskin_authors <- rbind(df_silverskin_authors, dfAU)
+}
+df_silverskin_authors <- df_silverskin_authors[-1, ]
+df2_silverskin_authors <- dplyr::group_by(df_silverskin_authors, 
+                                    .data$Author, 
+                                    .data$year) %>% 
+  dplyr::summarise(freq = length(.data$year), 
+                   TC = sum(.data$TC), 
+                   TCpY = sum(.data$TCpY))
+df2_silverskin_authors <- as.data.frame(df2_silverskin_authors)
+df2_silverskin_authors$Author <- factor(df2_silverskin_authors$Author, levels = AU_silverskin[1:k])
+x <- c(0.5, 1.5 * k/10)
+y <- c(min(df$year), min(df$year) + diff(range(df2$year)) * 
+         0.125)
+```
+
+
+```{r}
+silverskin_authors_plot <- 
+  ggplot(df2_silverskin_authors, 
+         aes(x = Author, 
+             y = year, 
+             text = paste("Author: ",
+                          Author, "\nYear: ",
+                          year, "\nN. of Articles: ",
+                          freq, "\nTotal Citations per Year: ",
+                          round(TCpY,
+                                2)
+             )
+         )
+  ) + 
+  geom_point(aes(alpha = TCpY, 
+                 size = freq), 
+             color = "dodgerblue4") + 
+  scale_size(range = c(2, 6)) + 
+  scale_alpha(range = c(0.3, 1)) + 
+  scale_y_continuous(breaks = seq(min(df2_silverskin_authors$year), 
+                                  max(df2_silverskin_authors$year), 
+                                  by = 2)) + 
+  guides(size = guide_legend(order = 1,
+                             "N.Articles"), 
+         alpha = guide_legend(order = 2, 
+                              "TC per Year")) + 
+  theme(legend.position = "right", text = element_text(color = "#444444"), 
+        panel.background = element_rect(fill = "gray97"), 
+        panel.grid.minor = element_line(color = "#FFFFFF"), 
+        panel.grid.major = element_line(color = "#FFFFFF"), 
+        plot.title = element_text(size = 24), 
+        axis.title = element_text(size = 14, 
+                                  color = "#555555"), 
+        axis.title.y = element_text(vjust = 1,
+                                    angle = 90, 
+                                    face = "bold"), 
+        axis.title.x = element_text(hjust = 0.95,
+                                    face = "bold"), 
+        axis.text.x = element_text(face = "bold", 
+                                   angle = 90), 
+        axis.text.y = element_text(face = "bold")) + 
+  labs(title = "Top-Authors' Production over the Time", 
+       x = "Author", y = "Year") + 
+  geom_line(data = df2_silverskin_authors, 
+            aes(x = Author, y = year, group = Author),
+            size = 1, color = "firebrick", alpha = 0.3) + 
+  scale_x_discrete(limits = rev(levels(df2_silverskin_authors$Author))) + 
+  coord_flip()
 ```
 
 ## 3.1.4 Country Analysis

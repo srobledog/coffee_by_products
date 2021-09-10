@@ -1345,42 +1345,53 @@ for (i in 1:length(data_tidied_scopus_ref$CR)) {
              Target = 2)
     
     edgelist <- edgelist |> 
-    bind_rows(df_2)
+      bind_rows(df_2)
     
   }
 }
 
-author_ref_net <- 
-  data_tidied_scopus_ref |>
-  select(CR) |> 
-  slice(1) |>
-  mutate(authors = str_remove(CR, 
-                              "\\([0-9]{4}\\) .*"),
-         authors = str_extract(authors,
-                               ".*,"),
-         authors = str_replace_all(authors,
-                                   "\\.", 
-                                   replacement = "")) |> 
-  select(authors) |> 
-  separate_rows(authors, sep = ", ") |> 
-  mutate(authors = str_replace(authors, ",", "")) |>
-  pull() |> 
-  rollapply(2, by=2, c) |> 
-  as_tibble() |> 
-  unite(authors, sep = " ") |> 
-  pull() |> 
-  combn(2, simplify = FALSE) |> 
-  as_tibble(.name_repair = "minimal") |> 
-  t() |> 
-  data.frame()
+
 
 ```
 
-Maybe with bibliometrix but not.... 
+Edge list of main papers 
 
 ```{r}
+data_tidied_scopus_main <- 
+  data_tidied |> 
+  filter(database %in% "Scopus") |> 
+  select(SR, AU) |> 
+  separate_rows(AU, sep = ";")
+
+edgelist_main <- tibble(Source = as.character(),
+                        Target = as.character())
+
+for (i in data_tidied_scopus_main$SR) {
+  
+  df_1 <- data_tidied_scopus_main |> 
+    filter(SR %in% i)
+  
+  if (dim(df_1)[1] >= 2) {
+    
+    df_2 <- df_1 |> 
+      select(AU) |> 
+      pull() |> 
+      combn(2, simplify = FALSE) |> 
+      as_tibble(.name_repair = "minimal") |> 
+      t() |> 
+      data.frame() |> 
+      rename(Source = 1, 
+             Target = 2)
+    
+    edgelist_main <- edgelist_main |> 
+      bind_rows(df_2)
+    
+  }
+  
+}
 
 ```
+
 
 
 

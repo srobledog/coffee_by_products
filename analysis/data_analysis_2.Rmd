@@ -1389,7 +1389,26 @@ for (i in data_tidied_scopus_main$SR) {
   }
   
 }
+```
 
+Merging both edge lists 
+
+```{r}
+edgelist_total <- 
+  edgelist_main |>
+  bind_rows(edgelist)
+```
+
+Creating the graph
+
+```{r}
+author_cocitation_network_scopus <- 
+  graph.data.frame(edgelist_total, 
+                   directed = FALSE) |> 
+  simplify()
+
+author_cocitation_network_scopus |> 
+  summary()
 ```
 
 

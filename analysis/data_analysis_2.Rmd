@@ -34,6 +34,7 @@ library(igraph)
 library(tosr)
 library(rebus)
 library(lubridate)
+library(zoo)
 ```
 
 
@@ -1304,22 +1305,11 @@ data_tidied_scopus_ref <-
   mutate(lastname = str_replace(lastname, 
                                 pattern = "\\.", 
                                 replacement = ""),
-         ID_TOS = paste0(lastname, ", ", year, ",")) 
+         ID_TOS = paste0(lastname, ", ", year, ",")) |> 
+  select(ID_TOS, CR)
 
+# Only 1!
 
-dummy_data <- 
-  data_tidied_scopus_ref |>
-  select(CR) |> 
-  slice(1:2) |>
-  mutate(authors_1 = str_remove(CR, 
-                                "\\([0-9]{4}\\) .*"),
-         authors_2 = str_extract(authors_1,
-                                 ".*,"),
-         authors_3 = str_replace_all(authors_2,
-                                     "\\.", 
-                                     replacement = "")) |> 
-  separate_rows(authors_3, sep = ",") |> 
-  nest(authors = authors_3)
 
 author_ref_net <- 
   data_tidied_scopus_ref |>
@@ -1334,46 +1324,31 @@ author_ref_net <-
                                    replacement = "")) |> 
   select(authors) |> 
   separate_rows(authors, sep = ", ") |> 
-  mutate(authors = str_replace(authors, ",", "")) |> 
-  t() |> 
-  data.frame()
-
-# Option 1
-
-dummy_1 <- unite(author_ref_net, string, X1:X2, sep = " ") 
-dummy_2 <- unite(dummy_1, string_2, X3:X4, sep = " ") # enough
-dummy_3 <- unite(dummy_2, string_3, c("string", "string_2"), sep = "; ") 
-
-for (i in dim(author_ref_net)[2]) {
+  mutate(authors = str_replace(authors, ",", "")) |>
+  pull() |> 
+  rollapply(2, by=2, c) |> 
+  as_tibble() |> 
+  unite(authors, sep = " ") |> 
+  pull() |> 
+  combn(2, simplify = FALSE) |> 
+  as_tibble()
   
-  df <- unite(author_ref_net, string) # Select column 1 and 2
-  
-}
+df_1 <- combn(author_ref_net$authors, 2, simplify = FALSE)
 
-for (i in length(author_ref_net$authors)) {
-  
-  author_1 <- 
-    str_c(author_ref_net |> slice(i) |> pull(), " ",
-          author_ref_net |> slice(i + i) |> pull()) |> 
-    tibble() |> 
-    rename(author = 1)
-  
-  authors <- authors |> 
-    bind_rows(author_1)
-  
-}
+df_2 = data.frame((t(data.frame(df_1))))
 
 
-library(zoo)
 
-x <- 1:10     # Vector of 10 numbers
-m <- rollapply(data = x, 2, by=1, c)    # Creates a Matrix of rows = n-1, each row as a List
-l <- split(m, row(m))   #splitting the matrix into individual list
 
-x <- author_ref_net |> pull()
-m <- rollapply(data = x, 2, by=2, c)    # Creates a Matrix of rows = n-1, each row as a List
-l <- split(m, row(m)) 
-l
+
+dummy_1 <- 
+  data_tidied |> 
+  select(CR) |> 
+  separate_rows(CR, sep = "; ") |> 
+  slice(1)
+
+
+
 dummy_data_1 <- 
   dummy_data[[4]][[1]]
 

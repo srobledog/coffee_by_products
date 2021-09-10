@@ -1669,6 +1669,34 @@ author_cocitation_network_wos |> summary()
 ```
 
 
+Merging both datasets 
+
+```{r}
+edgelist_author_cocitation_wos_scopus <- edgelist_wos_authors |> 
+  select(-doi) |> 
+  bind_rows(edgelist_total_scopus)
+
+author_cocitation_byproducts <- 
+  graph.data.frame(edgelist_author_cocitation_wos_scopus, 
+                   directed = FALSE)
+  
+author_cocitation_byproducts |> summary()
+```
+
+We created a unweighted graph!!! We didn't know how to do it in R :-(
+
+This is the result from gephi
+
+```{r}
+author_cocitation_byproducts_gephi <- 
+  igraph::read_graph(file = "output/author_cocitation_weighted.graphml", 
+             format = "graphml")
+
+author_cocitation_byproducts_gephi |> summary()
+```
+
+
+
 ## 3.2.2 Author Co-citation Network
 
 ```{r}

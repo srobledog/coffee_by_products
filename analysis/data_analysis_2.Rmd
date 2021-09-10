@@ -1330,17 +1330,24 @@ for (i in length(data_tidied_scopus_ref$CR)) {
     pull() |> 
     rollapply(2, by=2, c) |> 
     as_tibble() |> 
-    unite(authors, sep = " ") |> 
-    pull() |> 
-    combn(2, simplify = FALSE) |> 
-    as_tibble(.name_repair = "minimal")
+    unite(authors, sep = " ") 
   
-  df_2 <- combn(df_1$authors, 2, simplify = FALSE)
+  if (dim(df_1)[1] >= 2) {
+    
+    df_2 <- df_1 |> 
+      pull() |> 
+      combn(2, simplify = FALSE) |> 
+      as_tibble(.name_repair = "minimal") |> 
+      t() |> 
+      data.frame() |> 
+      rename(Source = 1, 
+             Target = 2)
+    
+  }
   
-  df_3 = data.frame((t(data.frame(df_2))))
   
   edgelist <- edgelist |> 
-    bind_rows(authors)
+    bind_rows(df_1)
   
   
 }
@@ -1369,30 +1376,6 @@ author_ref_net <-
   t() |> 
   data.frame()
 
-
-
-
-
-
-dummy_1 <- 
-  data_tidied |> 
-  select(CR) |> 
-  separate_rows(CR, sep = "; ") |> 
-  slice(1)
-
-
-
-dummy_data_1 <- 
-  dummy_data[[4]][[1]]
-
-dummy_data_2 <- 
-  dummy_data_1 
-
-dummy_data_2 |> 
-  filter(authors_3 != "") |> 
-  mutate(authors_3 = str_trim(authors_3)) |> 
-  t() |> 
-  tibble() |> View()
 ```
 
 Maybe with bibliometrix but not.... 

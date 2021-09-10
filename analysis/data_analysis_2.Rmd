@@ -1302,8 +1302,8 @@ data_tidied_scopus_ref <-
          lastname = sub("\\.", "", lastname),
          year = str_extract(CR, "\\(([0-9]{4})\\)"),
          year = str_remove_all(year, "\\(|\\)")) |> 
-  filter(!grepl(pattern = "[():[:digit:]]", lastname),
-         str_length(year) == 4) %>%
+  # filter(!grepl(pattern = "[():[:digit:]]", lastname),
+         # str_length(year) == 4) %>%
   mutate(lastname = str_replace(lastname, 
                                 pattern = "\\.", 
                                 replacement = ""),
@@ -1319,12 +1319,12 @@ for (i in 1:length(data_tidied_scopus_ref$CR)) {
   
   df_1 <- data_tidied_scopus_ref |> 
     select(CR) |> 
-    slice(i) |> 
-    mutate(authors = str_remove(CR, 
+    slice(i) |>
+    mutate(authors_2 = str_remove(CR, 
                                 "\\([0-9]{4}\\) .*"),
-           authors = str_extract(authors,
-                                 ".*,"),
-           authors = str_replace_all(authors,
+           authors_1 = str_extract(authors_2,
+                                 ".*\\.,"),
+           authors = str_replace_all(authors_1,
                                      "\\.", 
                                      replacement = "")) |> 
     select(authors) |> 
@@ -1333,7 +1333,8 @@ for (i in 1:length(data_tidied_scopus_ref$CR)) {
     pull() |> 
     rollapply(2, by=2, c) |> 
     as_tibble() |> 
-    unite(authors, sep = " ") 
+    unite(authors, sep = " ") |> 
+    mutate(authors = str_replace(authors, "(?<= [[:alpha:]]).*", ""))
   
   if (dim(df_1)[1] >= 2) {
     
@@ -1343,7 +1344,7 @@ for (i in 1:length(data_tidied_scopus_ref$CR)) {
       as_tibble(.name_repair = "minimal") |> 
       t() |> 
       data.frame() |> 
-      rename(Source = 1, 
+      dplyr::rename(Source = 1, 
              Target = 2)
     
     edgelist <- edgelist |> 
@@ -1352,7 +1353,9 @@ for (i in 1:length(data_tidied_scopus_ref$CR)) {
   }
 }
 
-
+edgelist_scopus_ref <- edgelist |> 
+  filter(!str_detect(Source, "[0-9]"),
+         !str_detect(Target, "[0-9]"))
 
 ```
 
@@ -1396,9 +1399,11 @@ for (i in data_tidied_scopus_main$SR) {
 Merging both edge lists 
 
 ```{r}
-edgelist_total <- 
+edgelist_total_scopus <- 
   edgelist_main |>
-  bind_rows(edgelist)
+  bind_rows(edgelist_scopus_ref)
+
+edgelist_total_scopus |> count(Source, Target)
 ```
 
 Creating the graph

@@ -966,8 +966,8 @@ for (i in 1:length(AU_spent_coffee_grounds)) {
 }
 df_spent_coffee_grounds_authors <- df_spent_coffee_grounds_authors[-1, ]
 df2_spent_coffee_grounds_authors <- dplyr::group_by(df_spent_coffee_grounds_authors, 
-                                    .data$Author, 
-                                    .data$year) %>% 
+                                                    .data$Author, 
+                                                    .data$year) %>% 
   dplyr::summarise(freq = length(.data$year), 
                    TC = sum(.data$TC), 
                    TCpY = sum(.data$TCpY))
@@ -1072,8 +1072,8 @@ for (i in 1:length(AU_silverskin)) {
 }
 df_silverskin_authors <- df_silverskin_authors[-1, ]
 df2_silverskin_authors <- dplyr::group_by(df_silverskin_authors, 
-                                    .data$Author, 
-                                    .data$year) %>% 
+                                          .data$Author, 
+                                          .data$year) %>% 
   dplyr::summarise(freq = length(.data$year), 
                    TC = sum(.data$TC), 
                    TCpY = sum(.data$TCpY))
@@ -1200,93 +1200,7 @@ Add one in general?
 
 # 3.2 Academic networks of Coffee By-products 
 
-## 3.2.1 Collab net author
-
-```{r}
-
-author_colab <- 
-  biblioNetwork(data.frame(data_tidied), 
-                analysis = "collaboration", 
-                network = "authors", 
-                sep = ";")
-
-net=networkPlot(author_colab, n = 30, 
-                Title = "Author Collaboration Network", 
-                type = "fruchterman", 
-                size=T,
-                remove.multiple=FALSE, 
-                labelsize=0.7,
-                edgesize = 5,
-                cluster = 'louvain')
-
-author_colab_graph <- 
-  graph_from_adjacency_matrix(adjmatrix = author_colab, 
-                              mode = "undirected", 
-                              weighted = TRUE) |> 
-  simplify()
-
-```
-
-The results are scattered in author collaboration network.  
-
-## 3.2.2 Collab net country
-
-```{r}
-M <- metaTagExtraction(data_tidied, 
-                       Field = "AU_CO", 
-                       sep = ";")
-
-country_collab <- 
-  biblioNetwork(data.frame(M), 
-                analysis = "collaboration", 
-                network = "countries", 
-                sep = ";")
-
-net=networkPlot(country_collab, 
-                n = dim(country_collab)[1], 
-                Title = "Country Collaboration", 
-                type = "circle", 
-                size=TRUE, 
-                remove.multiple=FALSE,
-                labelsize=0.7,
-                cluster="none")
-
-country_collab_graph <- 
-  graph_from_adjacency_matrix(country_collab, 
-                              mode = "undirected", 
-                              weighted = TRUE) |> 
-  simplify()
-```
-I couldn't create the world map :-( 
-
-## 3.2.3 Collab net universities
-
-```{r}
-university_collab <- 
-  biblioNetwork(data.frame(data_tidied), 
-                analysis = "collaboration", 
-                network = "universities", 
-                sep = ";")
-
-university_collab_net <- networkPlot(university_collab, 
-                                     n = dim(universty_collab)[1], 
-                                     Title = "University Collaboration", 
-                                     type = "circle", 
-                                     size=TRUE, 
-                                     remove.multiple=FALSE,
-                                     labelsize=0.7,
-                                     cluster="none")
-
-# university_collab_graph <- 
-#   graph_from_adjacency_matrix(universty_collab_net$graph, 
-#                               mode = "undirected", 
-#                               weighted = TRUE) |> 
-#   simplify()
-```
-
-Scattered.... 
-
-## 3.2.4 Citation Network
+## 3.2.1 Citation Network
 
 ```{r}
 edgelist_scopus <- 
@@ -1368,28 +1282,219 @@ write.graph(byproducts_graph_subareas,
             format = "graphml")
 ```
 
-## 3.2.5 Co-citation analysis
-
-Document
+Identifying names in Scopus and WoS
 
 ```{r}
-document_co_citation_matrix <- 
-  biblioNetwork(data.frame(data_tidied),
+data_tidied_scopus <- 
+  data_tidied |> 
+  filter(database %in% "Scopus") |> 
+  mutate(ID_TOS = str_extract(SR, ".*,")) 
+
+data_tidied_scopus_ref <- 
+  data_tidied_scopus |> 
+  select(CR) |> 
+  separate_rows(CR, sep = "; ") |> 
+  mutate(lastname = sub("\\., .*", "", CR),
+         lastname = sub(",", "", lastname),
+         lastname = sub("\\.", "", lastname),
+         year = str_extract(CR, "\\(([0-9]{4})\\)"),
+         year = str_remove_all(year, "\\(|\\)")) |> 
+  filter(!grepl(pattern = "[():[:digit:]]", lastname),
+         str_length(year) == 4) %>%
+  mutate(lastname = str_replace(lastname, 
+                                pattern = "\\.", 
+                                replacement = ""),
+         ID_TOS = paste0(lastname, ", ", year, ",")) 
+
+
+dummy_data <- 
+  data_tidied_scopus_ref |>
+  select(CR) |> 
+  slice(1:2) |>
+  mutate(authors_1 = str_remove(CR, 
+                                "\\([0-9]{4}\\) .*"),
+         authors_2 = str_extract(authors_1,
+                                 ".*,"),
+         authors_3 = str_replace_all(authors_2,
+                                     "\\.", 
+                                     replacement = "")) |> 
+  separate_rows(authors_3, sep = ",") |> 
+  nest(authors = authors_3)
+
+author_ref_net <- 
+  data_tidied_scopus_ref |>
+  select(CR) |> 
+  slice(3) |>
+  mutate(authors = str_remove(CR, 
+                              "\\([0-9]{4}\\) .*"),
+         authors = str_extract(authors,
+                               ".*,"),
+         authors = str_replace_all(authors,
+                                   "\\.", 
+                                   replacement = "")) |> 
+  select(authors) |> 
+  separate_rows(authors, sep = ", ") |> 
+  mutate(authors = str_replace(authors, ",", "")) |> 
+  t() |> 
+  data.frame()
+
+# Option 1
+
+dummy_1 <- unite(author_ref_net, string, X1:X2, sep = " ") 
+dummy_2 <- unite(dummy_1, string_2, X3:X4, sep = " ") # enough
+dummy_3 <- unite(dummy_2, string_3, c("string", "string_2"), sep = "; ") 
+
+for (i in dim(author_ref_net)[2]) {
+  
+  df <- unite(author_ref_net, string) # Select column 1 and 2
+  
+}
+
+for (i in length(author_ref_net$authors)) {
+  
+  author_1 <- 
+    str_c(author_ref_net |> slice(i) |> pull(), " ",
+          author_ref_net |> slice(i + i) |> pull()) |> 
+    tibble() |> 
+    rename(author = 1)
+  
+  authors <- authors |> 
+    bind_rows(author_1)
+  
+}
+
+
+library(zoo)
+
+x <- 1:10     # Vector of 10 numbers
+m <- rollapply(data = x, 2, by=1, c)    # Creates a Matrix of rows = n-1, each row as a List
+l <- split(m, row(m))   #splitting the matrix into individual list
+
+x <- author_ref_net |> pull()
+m <- rollapply(data = x, 2, by=2, c)    # Creates a Matrix of rows = n-1, each row as a List
+l <- split(m, row(m)) 
+l
+dummy_data_1 <- 
+  dummy_data[[4]][[1]]
+
+dummy_data_2 <- 
+  dummy_data_1 
+
+dummy_data_2 |> 
+  filter(authors_3 != "") |> 
+  mutate(authors_3 = str_trim(authors_3)) |> 
+  t() |> 
+  tibble() |> View()
+```
+
+Maybe with bibliometrix but not.... 
+
+```{r}
+
+```
+
+
+
+## 3.2.2 Author Co-citation Network
+
+```{r}
+author_co_citation_tags <- 
+  metaTagExtraction(data_tidied |> slice(1:4), 
+                    Field = "CR_AU", 
+                    sep = ";")
+author_co_citation_network <- 
+  biblioNetwork(data.frame(author_co_citation_tags), 
                 analysis = "co-citation", 
-                network = "references", 
+                network = "authors", 
                 sep = ";")
 
-net=networkPlot(document_co_citation_matrix, 
-                n = 80, 
-                Title = "Co-Citation Network", 
+net=networkPlot(author_co_citation_network, n = 200, 
+                Title = "Author Co-citation Network", 
                 type = "fruchterman", 
-                size.cex=TRUE, 
-                size=20, 
+                size=T,
                 remove.multiple=FALSE, 
                 labelsize=0.7,
-                edgesize = 10, 
-                edges.min=5)
+                edgesize = 5,
+                cluster = 'louvain')
+
+author_co_citation_graph <- 
+  graph_from_adjacency_matrix(adjmatrix = author_co_citation_network, 
+                              mode = "undirected", 
+                              weighted = TRUE) |> 
+  simplify()
+
 ```
+
+Undertanding more... 
+
+```{r}
+dummy_co_citation <- 
+  tibble()
+```
+
+
+The results are scattered in author collaboration network.  
+
+## 3.2.2 Collab net country
+
+```{r}
+M <- metaTagExtraction(data_tidied, 
+                       Field = "AU_CO", 
+                       sep = ";")
+
+country_collab <- 
+  biblioNetwork(data.frame(M), 
+                analysis = "collaboration", 
+                network = "countries", 
+                sep = ";")
+
+net=networkPlot(country_collab, 
+                n = dim(country_collab)[1], 
+                Title = "Country Collaboration", 
+                type = "circle", 
+                size=TRUE, 
+                remove.multiple=FALSE,
+                labelsize=0.7,
+                cluster="none")
+
+country_collab_graph <- 
+  graph_from_adjacency_matrix(country_collab, 
+                              mode = "undirected", 
+                              weighted = TRUE) |> 
+  simplify()
+```
+I couldn't create the world map :-( 
+
+## 3.2.3 Collab net universities
+
+```{r}
+university_collab <- 
+  biblioNetwork(data.frame(data_tidied), 
+                analysis = "collaboration", 
+                network = "universities", 
+                sep = ";")
+
+university_collab_net <- networkPlot(university_collab, 
+                                     n = dim(universty_collab)[1], 
+                                     Title = "University Collaboration", 
+                                     type = "circle", 
+                                     size=TRUE, 
+                                     remove.multiple=FALSE,
+                                     labelsize=0.7,
+                                     cluster="none")
+
+# university_collab_graph <- 
+#   graph_from_adjacency_matrix(universty_collab_net$graph, 
+#                               mode = "undirected", 
+#                               weighted = TRUE) |> 
+#   simplify()
+```
+
+Scattered.... 
+
+## 3.2.4 
+
+## 3.2.5 Co-citation analysis
 
 Author
 

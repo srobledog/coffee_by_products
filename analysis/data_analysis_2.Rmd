@@ -1310,11 +1310,45 @@ data_tidied_scopus_ref <-
 
 # Only 1!
 
+edgelist <- tibble()
+
+for (i in length(data_tidied_scopus_ref$CR)) {
+  
+  df_1 <- data_tidied_scopus_ref |> 
+    select(CR) |> 
+    slice(i) |> 
+    mutate(authors = str_remove(CR, 
+                                "\\([0-9]{4}\\) .*"),
+           authors = str_extract(authors,
+                                 ".*,"),
+           authors = str_replace_all(authors,
+                                     "\\.", 
+                                     replacement = "")) |> 
+    select(authors) |> 
+    separate_rows(authors, sep = ", ") |> 
+    mutate(authors = str_replace(authors, ",", "")) |>
+    pull() |> 
+    rollapply(2, by=2, c) |> 
+    as_tibble() |> 
+    unite(authors, sep = " ") |> 
+    pull() |> 
+    combn(2, simplify = FALSE) |> 
+    as_tibble(.name_repair = "minimal")
+  
+  df_2 <- combn(df_1$authors, 2, simplify = FALSE)
+  
+  df_3 = data.frame((t(data.frame(df_2))))
+  
+  edgelist <- edgelist |> 
+    bind_rows(authors)
+  
+  
+}
 
 author_ref_net <- 
   data_tidied_scopus_ref |>
   select(CR) |> 
-  slice(3) |>
+  slice(1) |>
   mutate(authors = str_remove(CR, 
                               "\\([0-9]{4}\\) .*"),
          authors = str_extract(authors,
@@ -1331,11 +1365,10 @@ author_ref_net <-
   unite(authors, sep = " ") |> 
   pull() |> 
   combn(2, simplify = FALSE) |> 
-  as_tibble()
-  
-df_1 <- combn(author_ref_net$authors, 2, simplify = FALSE)
+  as_tibble(.name_repair = "minimal") |> 
+  t() |> 
+  data.frame()
 
-df_2 = data.frame((t(data.frame(df_1))))
 
 
 

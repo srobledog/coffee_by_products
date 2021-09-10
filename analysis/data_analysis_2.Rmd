@@ -1310,9 +1310,10 @@ data_tidied_scopus_ref <-
 
 # Only 1!
 
-edgelist <- tibble()
+edgelist <- tibble(Source = as.character(),
+                   Target = as.character())
 
-for (i in length(data_tidied_scopus_ref$CR)) {
+for (i in 1:length(data_tidied_scopus_ref$CR)) {
   
   df_1 <- data_tidied_scopus_ref |> 
     select(CR) |> 
@@ -1343,13 +1344,10 @@ for (i in length(data_tidied_scopus_ref$CR)) {
       rename(Source = 1, 
              Target = 2)
     
+    edgelist <- edgelist |> 
+    bind_rows(df_2)
+    
   }
-  
-  
-  edgelist <- edgelist |> 
-    bind_rows(df_1)
-  
-  
 }
 
 author_ref_net <- 

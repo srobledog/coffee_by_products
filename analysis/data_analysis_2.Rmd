@@ -37,6 +37,8 @@ library(lubridate)
 library(zoo)
 library(XML)
 library(plyr)
+library(sjrdata)
+library(journalabbr)
 ```
 
 
@@ -1737,6 +1739,113 @@ dummy_co_citation <-
 
 The results are scattered in author collaboration network.  
 
+## 3.2.2 Journal co-Citation Network
+
+```{r}
+data_tidied |> 
+  filter(database %in% "Scopus") |> 
+  select(SO) |> 
+  slice(1) |> 
+  pull()
+```
+
+```{r}
+scopus_ref_journal <- 
+  data_tidied |> 
+  filter(database %in% "Scopus") |> 
+  select(CR) |> 
+  separate_rows(CR, sep = ";") |> 
+  mutate(SO = str_remove(CR,
+                         ".*\\([0-9]{4}\\)")) |> 
+  mutate(SO = str_remove(string = SO, ",.*")) |> 
+  mutate(SO =str_trim(string = SO, side = "both")) |> 
+  filter(SO != "") |> 
+  mutate(SO = str_remove_all(string = SO, pattern = "\\."))
+
+journals_all_abbr <- 
+  journalabbr::abbrTable |> 
+  select(journal, journal_abbr) |> 
+  mutate(journal_abbr = str_remove_all(journal_abbr, "\\.")) |> 
+  mutate(journal_abbr = str_to_upper(journal_abbr))
+
+journals_all_full <- 
+  journalabbr::abbrTable |> 
+  select(journal, journal_abbr) |> 
+  # mutate(journal = str_remove_all(journal_abbr, "\\.")) |> 
+  mutate(journal = str_to_upper(journal))
+
+# Merging abbrevite name to scopus_ref_journal
+
+scopus_ref_journal_1 <- 
+  scopus_ref_journal |> 
+  left_join(journals_all,by = c("SO" = "journal_abbr"))
+
+scopus_ref_journal_2 <- 
+  scopus_ref_journal |> 
+  left_join(journals_all_full,by = c("SO" = "journal")) |> 
+  # filter(!is.na(journal_abbr)) |> 
+  mutate(journal_abbr = str_remove_all(journal_abbr, "\\.")) |> 
+  mutate(journal_abbr = str_to_upper(journal_abbr)) |> 
+  mutate(journal_abbr = if_else(is.na(journal_abbr), SO, journal_abbr)) |> 
+  unique() |> 
+  select(CR, SO = journal_abbr)
+
+
+# We need abbr from journal to compare with the main dataset (data_tidied)
+
+
+```
+
+jorunal from oringinal data set 
+
+```{r}
+# original_journal <- 
+  data_tidied |> 
+  select(JI) |> 
+  mutate(JI = str_remove_all(JI, "\\."))
+```
+
+
+
+```{r}
+journal_cocitation_CR_SO <- 
+  metaTagExtraction(M = data_tidied, 
+                    Field = "CR_SO", 
+                    sep = ";")
+
+journal_cocitation_matrix <- 
+  biblioNetwork(M = data.frame(journal_cocitation_CR_SO), 
+                analysis = "co-citation", 
+                network = "sources",
+                sep = ";"
+                )
+
+networkPlot(journal_cocitation_matrix, 
+            n = 50, 
+            Title = "Co-Citation Network", 
+            type = "auto", 
+            size.cex=TRUE, 
+            size=15, 
+            remove.multiple=FALSE, 
+            labelsize=0.7, 
+            edges.min=5)
+
+journal_cocitation_graph <- 
+  journal_cocitation |> 
+  graph_from_adjacency_matrix(mode = "undirected", weighted = TRUE) |> 
+  simplify() |> 
+  giant.component()
+
+journal_cocitation_graph_filtered <- 
+  journal_cocitation_graph |> 
+  delete.vertices(v = which(E(journal_cocitation_graph)$weight > 4))
+
+dummy <- tibble(weights =
+                E(journal_cocitation_graph)$weight)
+dummy <- get.edges(journal_cocitation_graph,es = E(journal_cocitation_graph)$weight > 4)
+```
+
+
 ## 3.2.2 Collab net country
 
 ```{r}
@@ -1765,6 +1874,7 @@ country_collab_graph <-
                               weighted = TRUE) |> 
   simplify()
 ```
+
 I couldn't create the world map :-( 
 
 ## 3.2.3 Collab net universities

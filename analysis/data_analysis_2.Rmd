@@ -1741,6 +1741,8 @@ The results are scattered in author collaboration network.
 
 ## 3.2.2 Journal co-Citation Network
 
+Scopus
+
 ```{r}
 data_tidied |> 
   filter(database %in% "Scopus") |> 
@@ -1788,23 +1790,61 @@ scopus_ref_journal_2 <-
   mutate(journal_abbr = str_to_upper(journal_abbr)) |> 
   mutate(journal_abbr = if_else(is.na(journal_abbr), SO, journal_abbr)) |> 
   unique() |> 
-  select(CR, SO = journal_abbr)
+  select(CR, SO_REF = journal_abbr) 
 
 
 # We need abbr from journal to compare with the main dataset (data_tidied)
 
+scopus_journal_citation <- 
+  data_tidied |> 
+  dplyr::filter(database %in% "Scopus") |> 
+  select(SR, CR, JI) |> 
+  mutate(JI = str_remove_all(JI, "\\.")) |> 
+  separate_rows(CR, sep = ";") |> 
+  left_join(scopus_ref_journal_2, by = c("CR" = "CR")) |> 
+  select(JI, SO_REF) |>
+  filter(!is.na(SO_REF)) |> 
+  graph.data.frame(directed = TRUE) |> 
+  simplify() |> 
+  giant.component()
 
 ```
 
-jorunal from oringinal data set 
+WoS
 
 ```{r}
-# original_journal <- 
+
+wos_ref_journal <-
   data_tidied |> 
-  select(JI) |> 
-  mutate(JI = str_remove_all(JI, "\\."))
+  filter(database %in% "wos") |> 
+  select(CR, JI) |> 
+  mutate(JI = str_remove_all(JI, "\\.")) |> 
+  separate_rows(CR, sep = ";") |> 
+  mutate(SO_REF = str_remove(CR, ".*[0-9]{4}, ")) |> 
+  mutate(SO_REF = str_remove(SO_REF, ",.*")) |> 
+  filter(!str_detect(SO_REF, "[0-9]")) |> 
+  select(-CR) |> 
+  filter(!is.na(SO_REF))
 ```
 
+Merging both datasets WoS and Scopus, and creting the graph
+
+```{r}
+journal_citation_graph <- 
+  scopus_journal_citation |> 
+  bind_rows(wos_ref_journal) |> 
+  unique() |> 
+  graph.data.frame(directed = TRUE) |> 
+  simplify() |> 
+  giant.component()
+
+journal_citation_graph <- 
+  igraph::delete.vertices(journal_citation_graph,
+                            which(igraph::degree(journal_citation_graph, mode = "in") == 1 &
+                                    igraph::degree(journal_citation_graph, mode = "out") == 0))
+
+# it is not directed?
+```
 
 
 ```{r}

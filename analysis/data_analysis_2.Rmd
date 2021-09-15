@@ -1833,15 +1833,22 @@ Merging both datasets WoS and Scopus, and creting the graph
 journal_citation_graph <- 
   scopus_journal_citation |> 
   bind_rows(wos_ref_journal) |> 
-  unique() |> 
-  graph.data.frame(directed = TRUE) |> 
+  filter(!(JI == SO_REF)) |> 
+  add_count(JI, SO_REF) 
+  # graph.data.frame(directed = TRUE) |> 
+  # simplify() |> 
+  # giant.component()
+
+journal_citation_graph_weighted <- 
+  graph_from_adjacency_matrix(as.matrix(get.adjacency(graph.data.frame(journal_citation_graph))), weighted = TRUE, mode = "undirected", diag = TRUE) |> 
   simplify() |> 
   giant.component()
+  
 
-journal_citation_graph <- 
-  igraph::delete.vertices(journal_citation_graph,
-                            which(igraph::degree(journal_citation_graph, mode = "in") == 1 &
-                                    igraph::degree(journal_citation_graph, mode = "out") == 0))
+journal_citation_graph_1 <-
+  delete.vertices(journal_citation_graph_weighted,
+                            which(degree(journal_citation_graph_weighted, 
+                                         mode = "all") == 1))
 
 # it is not directed?
 ```

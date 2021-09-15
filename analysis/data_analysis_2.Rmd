@@ -702,27 +702,27 @@ husk_authors_top <-
   separate_rows(byproduct, sep = ", ") |> 
   filter(byproduct %in% "husk") |> 
   separate_rows(AU, sep = ";") |> 
-  count(AU, sort = TRUE)
+  dplyr::count(AU, sort = TRUE)
 
 husk_authors <- 
   data_tidied |>
   separate_rows(byproduct, sep = ", ") |> 
-  filter(byproduct %in% "husk") |> 
+  dplyr::filter(byproduct %in% "husk") |> 
   separate_rows(AU, sep = ";") |>
-  select(AU, PY, TC) |> 
-  group_by(AU, PY) |> 
+  dplyr::select(AU, PY, TC) |> 
+  dplyr::group_by(AU, PY) |> 
   add_count(AU, PY) |> 
-  summarise(TC_total = sum(TC),
-            freq = unique(n),
-            .groups = "drop") |> 
-  mutate(TCpY = TC_total/(2021 - PY + 1)) 
+  dplyr::summarise(TC_total = sum(TC),
+                   freq = unique(n),
+                   .groups = "drop") |> 
+  dplyr::mutate(TCpY = TC_total/(2021 - PY + 1)) 
 ```
 
 ```{r}
 husk_authors <- data_tidied |> 
-  rename("TI" = title) |> 
+  dplyr::rename("TI" = title) |> 
   separate_rows(byproduct, sep = ", ") |> 
-  filter(byproduct %in% "husk")
+  dplyr::filter(byproduct %in% "husk")
 
 k <- 10
 husk_authors$TC <- as.numeric(husk_authors$TC)
@@ -788,7 +788,7 @@ husk_authors_plot <-
   ) + 
   geom_point(aes(alpha = TCpY, 
                  size = freq), 
-             color = "dodgerblue4") + 
+             color = "black") + 
   scale_size(range = c(2, 6)) + 
   scale_alpha(range = c(0.3, 1)) + 
   scale_y_continuous(breaks = seq(min(df2_husk_authors$year), 
@@ -798,28 +798,34 @@ husk_authors_plot <-
                              "N.Articles"), 
          alpha = guide_legend(order = 2, 
                               "TC per Year")) + 
-  theme(legend.position = "right", text = element_text(color = "#444444"), 
+  theme(legend.position = "right", text = element_text(color = "black", 
+                                                       face = "bold", 
+                                                       family = "Times New Roman"), 
         panel.background = element_rect(fill = "gray97"), 
         panel.grid.minor = element_line(color = "#FFFFFF"), 
         panel.grid.major = element_line(color = "#FFFFFF"), 
-        plot.title = element_text(size = 24), 
-        axis.title = element_text(size = 14, 
-                                  color = "#555555"), 
+        plot.title = element_text(size = 12), 
+        axis.title = element_text(size = 12, 
+                                  color = "black"), 
         axis.title.y = element_text(vjust = 1,
-                                    angle = 90, 
-                                    face = "bold"), 
+                                    angle = 90), 
         axis.title.x = element_text(hjust = 0.95,
                                     face = "bold"), 
         axis.text.x = element_text(face = "bold", 
                                    angle = 90), 
         axis.text.y = element_text(face = "bold")) + 
-  labs(title = "Top-Authors' Production over the Time", 
-       x = "Author", y = "Year") + 
+  labs(title = "Husk Top-Authors' Production over the Time", 
+       x = "Author", y = "") + 
   geom_line(data = df2_husk_authors, 
             aes(x = Author, y = year, group = Author),
-            size = 1, color = "firebrick", alpha = 0.3) + 
+            size = 1, color = "black", alpha = 0.3) + 
   scale_x_discrete(limits = rev(levels(df2_husk_authors$Author))) + 
   coord_flip()
+```
+
+
+```{r}
+husk_authors_plot
 ```
 
 ### Pulp
@@ -879,6 +885,12 @@ y <- c(min(df$year), min(df$year) + diff(range(df2$year)) *
 
 
 ```{r}
+
+df2_pulp_authors <- 
+  df2_pulp_authors |> 
+  filter(year >= 2011) |> 
+  mutate(Author = as.character(Author))
+
 pulp_authors_plot <- 
   ggplot(df2_pulp_authors, 
          aes(x = Author, 
@@ -894,7 +906,7 @@ pulp_authors_plot <-
   ) + 
   geom_point(aes(alpha = TCpY, 
                  size = freq), 
-             color = "dodgerblue4") + 
+             color = "black") + 
   scale_size(range = c(2, 6)) + 
   scale_alpha(range = c(0.3, 1)) + 
   scale_y_continuous(breaks = seq(min(df2_pulp_authors$year), 
@@ -904,29 +916,35 @@ pulp_authors_plot <-
                              "N.Articles"), 
          alpha = guide_legend(order = 2, 
                               "TC per Year")) + 
-  theme(legend.position = "right", text = element_text(color = "#444444"), 
+  theme(legend.position = "right", text = element_text(color = "black", 
+                                                       face = "bold", 
+                                                       family = "Times New Roman"), 
         panel.background = element_rect(fill = "gray97"), 
         panel.grid.minor = element_line(color = "#FFFFFF"), 
         panel.grid.major = element_line(color = "#FFFFFF"), 
-        plot.title = element_text(size = 24), 
-        axis.title = element_text(size = 14, 
-                                  color = "#555555"), 
+        plot.title = element_text(size = 12), 
+        axis.title = element_text(size = 12, 
+                                  color = "black"), 
         axis.title.y = element_text(vjust = 1,
                                     angle = 90, 
                                     face = "bold"), 
-        axis.title.x = element_text(hjust = 0.95,
-                                    face = "bold"), 
+        axis.title.x = element_text(hjust = 0.95), 
         axis.text.x = element_text(face = "bold", 
                                    angle = 90), 
         axis.text.y = element_text(face = "bold")) + 
-  labs(title = "Top-Authors' Production over the Time", 
-       x = "Author", y = "Year") + 
+  labs(title = "Pulp Top-Authors' Production over the Time", 
+       x = "Author", y = "") + 
   geom_line(data = df2_pulp_authors, 
             aes(x = Author, y = year, group = Author),
-            size = 1, color = "firebrick", alpha = 0.3) + 
+            size = 1, color = "black", alpha = 0.3) + 
   scale_x_discrete(limits = rev(levels(df2_pulp_authors$Author))) + 
   coord_flip()
 ```
+
+```{r}
+pulp_authors_plot
+```
+
 
 ### spent_coffee_grounds
 
@@ -1000,7 +1018,7 @@ spent_coffee_grounds_authors_plot <-
   ) + 
   geom_point(aes(alpha = TCpY, 
                  size = freq), 
-             color = "dodgerblue4") + 
+             color = "black") + 
   scale_size(range = c(2, 6)) + 
   scale_alpha(range = c(0.3, 1)) + 
   scale_y_continuous(breaks = seq(min(df2_spent_coffee_grounds_authors$year), 
@@ -1010,29 +1028,36 @@ spent_coffee_grounds_authors_plot <-
                              "N.Articles"), 
          alpha = guide_legend(order = 2, 
                               "TC per Year")) + 
-  theme(legend.position = "right", text = element_text(color = "#444444"), 
+  theme(legend.position = "right", 
+        text = element_text(color = "black", 
+                            face = "bold", 
+                            family = "Times New Roman"), 
         panel.background = element_rect(fill = "gray97"), 
         panel.grid.minor = element_line(color = "#FFFFFF"), 
         panel.grid.major = element_line(color = "#FFFFFF"), 
-        plot.title = element_text(size = 24), 
-        axis.title = element_text(size = 14, 
-                                  color = "#555555"), 
+        plot.title = element_text(size = 12), 
+        axis.title = element_text(size = 12, 
+                                  color = "black"), 
         axis.title.y = element_text(vjust = 1,
-                                    angle = 90, 
-                                    face = "bold"), 
+                                    angle = 90), 
         axis.title.x = element_text(hjust = 0.95,
                                     face = "bold"), 
         axis.text.x = element_text(face = "bold", 
                                    angle = 90), 
         axis.text.y = element_text(face = "bold")) + 
-  labs(title = "Top-Authors' Production over the Time", 
+  labs(title = "Spent Coffee Ground Top-Authors' Production over the Time", 
        x = "Author", y = "Year") + 
   geom_line(data = df2_spent_coffee_grounds_authors, 
             aes(x = Author, y = year, group = Author),
-            size = 1, color = "firebrick", alpha = 0.3) + 
+            size = 1, color = "black", alpha = 0.3) + 
   scale_x_discrete(limits = rev(levels(df2_spent_coffee_grounds_authors$Author))) + 
   coord_flip()
 ```
+
+```{r}
+spent_coffee_grounds_authors_plot
+```
+
 
 ### silverskin
 
@@ -1106,7 +1131,7 @@ silverskin_authors_plot <-
   ) + 
   geom_point(aes(alpha = TCpY, 
                  size = freq), 
-             color = "dodgerblue4") + 
+             color = "black") + 
   scale_size(range = c(2, 6)) + 
   scale_alpha(range = c(0.3, 1)) + 
   scale_y_continuous(breaks = seq(min(df2_silverskin_authors$year), 
@@ -1116,13 +1141,15 @@ silverskin_authors_plot <-
                              "N.Articles"), 
          alpha = guide_legend(order = 2, 
                               "TC per Year")) + 
-  theme(legend.position = "right", text = element_text(color = "#444444"), 
+  theme(legend.position = "right", text = element_text(color = "black", 
+                                                       face = "bold" ,
+                                                       family = "Times New Roman"), 
         panel.background = element_rect(fill = "gray97"), 
         panel.grid.minor = element_line(color = "#FFFFFF"), 
         panel.grid.major = element_line(color = "#FFFFFF"), 
-        plot.title = element_text(size = 24), 
-        axis.title = element_text(size = 14, 
-                                  color = "#555555"), 
+        plot.title = element_text(size = 12), 
+        axis.title = element_text(size = 12, 
+                                  color = "black"), 
         axis.title.y = element_text(vjust = 1,
                                     angle = 90, 
                                     face = "bold"), 
@@ -1131,14 +1158,50 @@ silverskin_authors_plot <-
         axis.text.x = element_text(face = "bold", 
                                    angle = 90), 
         axis.text.y = element_text(face = "bold")) + 
-  labs(title = "Top-Authors' Production over the Time", 
-       x = "Author", y = "Year") + 
+  labs(title = "Silverskink Top-Authors' Production over the Time", 
+       x = "Author", y = "") + 
   geom_line(data = df2_silverskin_authors, 
             aes(x = Author, y = year, group = Author),
-            size = 1, color = "firebrick", alpha = 0.3) + 
+            size = 1, color = "black", alpha = 0.3) + 
   scale_x_discrete(limits = rev(levels(df2_silverskin_authors$Author))) + 
   coord_flip()
 ```
+
+
+```{r}
+silverskin_authors_plot
+```
+
+Merging all author figures 
+
+```{r}
+silverskin_authors_plot
+
+spent_coffee_grounds_authors_plot
+
+pulp_authors_plot
+
+husk_authors_plot
+
+author_scientific_production <- 
+  ggarrange(
+            ggarrange(husk_authors_plot, pulp_authors_plot, 
+                      ncol = 2, labels = c("a", "b"), 
+                      align = "h",widths = c(1.5,2)), 
+            ggarrange(silverskin_authors_plot, spent_coffee_grounds_authors_plot,
+                      ncol = 2, labels = c("c", "d"), 
+                      align = "h",widths = c(1.5,2)), 
+            nrow = 2, 
+            heights = c(1, 1)
+  ) 
+
+author_scientific_production 
+
+ggarrange(husk_authors_plot, pulp_authors_plot, 
+          hjust = 0.8, ncol = 1, nrow = 2)
+
+```
+
 
 ## 3.1.4 Country Analysis
 

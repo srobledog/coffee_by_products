@@ -1739,11 +1739,16 @@ Merging both datasets
 ```{r}
 edgelist_author_cocitation_wos_scopus <- edgelist_wos_authors |> 
   select(-doi) |> 
-  bind_rows(edgelist_total_scopus)
+  bind_rows(edgelist_total_scopus) |> 
+  add_count(Source, Target) |> 
+  unique() |> 
+  mutate(weight = n)
 
 author_cocitation_byproducts <- 
   graph.data.frame(edgelist_author_cocitation_wos_scopus, 
-                   directed = FALSE)
+                   directed = FALSE) |> 
+  simplify() |> 
+  giant.component()
 
 author_cocitation_byproducts |> summary()
 ```

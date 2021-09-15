@@ -1305,7 +1305,7 @@ data_tidied_scopus_ref <-
          year = str_extract(CR, "\\(([0-9]{4})\\)"),
          year = str_remove_all(year, "\\(|\\)")) |> 
   # filter(!grepl(pattern = "[():[:digit:]]", lastname),
-         # str_length(year) == 4) %>%
+  # str_length(year) == 4) %>%
   mutate(lastname = str_replace(lastname, 
                                 pattern = "\\.", 
                                 replacement = ""),
@@ -1323,9 +1323,9 @@ for (i in 1:length(data_tidied_scopus_ref$CR)) {
     select(CR) |> 
     slice(i) |>
     mutate(authors_2 = str_remove(CR, 
-                                "\\([0-9]{4}\\) .*"),
+                                  "\\([0-9]{4}\\) .*"),
            authors_1 = str_extract(authors_2,
-                                 ".*\\.,"),
+                                   ".*\\.,"),
            authors = str_replace_all(authors_1,
                                      "\\.", 
                                      replacement = "")) |> 
@@ -1347,7 +1347,7 @@ for (i in 1:length(data_tidied_scopus_ref$CR)) {
       t() |> 
       data.frame() |> 
       dplyr::rename(Source = 1, 
-             Target = 2)
+                    Target = 2)
     
     edgelist <- edgelist |> 
       bind_rows(df_2)
@@ -1433,9 +1433,9 @@ DOI <-
   mutate(DOI = str_remove(CR, ".*DOI ")) |> 
   distinct(DOI)    # 1039 rows
 
-  
-  
-  ##########################################################################
+
+
+##########################################################################
 #### Extracci?n de la informaci?n de los art?culos de las referencias ####
 ##########################################################################
 
@@ -1681,7 +1681,7 @@ edgelist_author_cocitation_wos_scopus <- edgelist_wos_authors |>
 author_cocitation_byproducts <- 
   graph.data.frame(edgelist_author_cocitation_wos_scopus, 
                    directed = FALSE)
-  
+
 author_cocitation_byproducts |> summary()
 ```
 
@@ -1692,7 +1692,7 @@ This is the result from gephi
 ```{r}
 author_cocitation_byproducts_gephi <- 
   igraph::read_graph(file = "output/author_cocitation_weighted.graphml", 
-             format = "graphml")
+                     format = "graphml")
 
 author_cocitation_byproducts_gephi |> summary()
 ```
@@ -1835,20 +1835,20 @@ journal_citation_graph <-
   bind_rows(wos_ref_journal) |> 
   filter(!(JI == SO_REF)) |> 
   add_count(JI, SO_REF) 
-  # graph.data.frame(directed = TRUE) |> 
-  # simplify() |> 
-  # giant.component()
+# graph.data.frame(directed = TRUE) |> 
+# simplify() |> 
+# giant.component()
 
 journal_citation_graph_weighted <- 
   graph_from_adjacency_matrix(as.matrix(get.adjacency(graph.data.frame(journal_citation_graph))), weighted = TRUE, mode = "undirected", diag = TRUE) |> 
   simplify() |> 
   giant.component()
-  
+
 
 journal_citation_graph_1 <-
   delete.vertices(journal_citation_graph_weighted,
-                            which(degree(journal_citation_graph_weighted, 
-                                         mode = "all") == 1))
+                  which(degree(journal_citation_graph_weighted, 
+                               mode = "all") == 1))
 
 # it is not directed?
 ```
@@ -1865,7 +1865,7 @@ journal_cocitation_matrix <-
                 analysis = "co-citation", 
                 network = "sources",
                 sep = ";"
-                )
+  )
 
 networkPlot(journal_cocitation_matrix, 
             n = 50, 
@@ -1888,7 +1888,7 @@ journal_cocitation_graph_filtered <-
   delete.vertices(v = which(E(journal_cocitation_graph)$weight > 4))
 
 dummy <- tibble(weights =
-                E(journal_cocitation_graph)$weight)
+                  E(journal_cocitation_graph)$weight)
 dummy <- get.edges(journal_cocitation_graph,es = E(journal_cocitation_graph)$weight > 4)
 ```
 
@@ -1896,12 +1896,17 @@ dummy <- get.edges(journal_cocitation_graph,es = E(journal_cocitation_graph)$wei
 ## 3.2.2 Collab net country
 
 ```{r}
-M <- metaTagExtraction(data_tidied, 
-                       Field = "AU_CO", 
-                       sep = ";")
+data_tidied_au_co <- 
+  metaTagExtraction(data_tidied, 
+                    Field = "AU_CO", 
+                    sep = ";")
+
+data_tidied_au_co_1 <- 
+  data_tidied_au_co |> 
+  select(SR, AU_CO)
 
 country_collab <- 
-  biblioNetwork(data.frame(M), 
+  biblioNetwork(data.frame(data_tidied_au_co), 
                 analysis = "collaboration", 
                 network = "countries", 
                 sep = ";")
@@ -1920,6 +1925,52 @@ country_collab_graph <-
                               mode = "undirected", 
                               weighted = TRUE) |> 
   simplify()
+
+dummy_1 <- 
+  data_tidied_au_co |> 
+  select(SR, AU_CO) |> 
+  separate_rows(SR, sep = ";")
+
+edgelist_countries <- tibble(Source = as.character(),
+                             Target = as.character())
+
+for (i in 1:length(dummy_1$SR)) {
+  
+  row <- 
+    dummy_1 |> 
+    slice(i) |> 
+    separate_rows(AU_CO, sep = ";")
+  
+  if (dim(row)[1] >= 2) {
+    
+    row_2 <- row |> 
+      pull() |> 
+      combn(2, simplify = FALSE) |> 
+      as_tibble(.name_repair = "minimal") |> 
+      t() |> 
+      data.frame() |> 
+      dplyr::rename(Source = 1, 
+                    Target = 2)
+    
+    edgelist_countries <- 
+      edgelist_countries |> 
+      bind_rows(row_2)
+    
+  }
+}
+
+country_collab_graph_weighted <- 
+  edgelist_countries |> 
+  add_count(Source, Target) |> 
+  filter(!(Source == Target)) |> 
+  arrange(desc(n)) |> 
+  unique() |> 
+  filter(n > 0) |> 
+  dplyr::rename(weight = n) |> 
+  graph.data.frame(directed = FALSE)
+
+
+
 ```
 
 I couldn't create the world map :-( 

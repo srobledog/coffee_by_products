@@ -1271,83 +1271,83 @@ Add one in general?
 ## 3.2.1 Author Cocitation Network
 
 ```{r}
-edgelist_scopus <- 
-  data_tidied |>
-  filter(str_detect(database, 
-                    "Scopus")) |> 
-  select(SR, CR, database, SO) |> 
-  separate_rows(CR, sep = "; ") |> 
-  mutate(SR_TOS = str_extract(SR, one_or_more(WRD) %R%
-                                SPC %R% one_or_more(WRD) %R%
-                                "," %R% SPC %R%
-                                one_or_more(DGT) %R% ","),
-         SR_TOS = str_c(SR_TOS, " ", SO)) %>%
-  mutate(ID_TOS =str_extract(SR, ".*,")) |> 
-  select(ID_TOS, CR) |> 
-  mutate(lastname = sub("\\., .*", "", CR),
-         lastname = sub(",", "", lastname),
-         lastname = sub("\\.", "", lastname),
-         year = str_extract(CR, "\\(([0-9]{4})\\)"),
-         year = str_remove_all(year, "\\(|\\)")) |> 
-  filter(!grepl(pattern = "[():[:digit:]]", lastname),
-         str_length(year) == 4) |> 
-  mutate(CR = paste0(lastname, ", ", year, ",")) %>%
-  select(ID_TOS, CR)
-
-edgelist_wos <- 
-  data_tidied |>
-  filter(str_detect(database, 
-                    "wos")) |> 
-  select(SR, CR, database, SO) |> 
-  separate_rows(CR, sep = ";") |> 
-  mutate(ID_TOS = str_extract(SR, ".*,")) |> 
-  mutate(CR = sub("^(\\S*\\s+\\S+\\s+\\S+).*", # removing strings after second comma
-                  "\\1", CR)) %>%
-  select(ID_TOS, CR) %>%
-  na.omit() %>%
-  unique() 
-
-edgelist <- 
-  edgelist_scopus |> 
-  bind_rows(edgelist_wos) |> 
-  mutate(CR = str_replace_all(CR, 
-                              pattern = "\\.", 
-                              replacement = ""))
-
-byproducts_graph_raw <- 
-  edgelist |> 
-  graph.data.frame(directed = TRUE) |> 
-  simplify()
-
-byproducts_graph_cleaned <- 
-  delete.vertices(byproducts_graph_raw, 
-                  which(degree(byproducts_graph_raw, 
-                               mode = "in") == 1 &
-                          which(degree(byproducts_graph_raw, 
-                                       mode = "out") == 0)))
-
-giant.component <- function(graph) {
-  cl <- igraph::clusters(graph)
-  igraph::induced.subgraph(graph, which(cl$membership == which.max(cl$csize)))
-}
-
-byproducts_graph <- 
-  giant.component(byproducts_graph_cleaned)
-
-subareas <- 
-  byproducts_graph |> 
-  as.undirected(mode = "each") |> 
-  cluster_louvain()
-
-byproducts_graph_subareas <- 
-  byproducts_graph |> 
-  set_vertex_attr(name = "sub_area",
-                  value = membership(subareas))
-
-write.graph(byproducts_graph_subareas, 
-            here("output", 
-                 "byproducts_citation_network.graphml" ), 
-            format = "graphml")
+# edgelist_scopus <- 
+#   data_tidied |>
+#   filter(str_detect(database, 
+#                     "Scopus")) |> 
+#   select(SR, CR, database, SO) |> 
+#   separate_rows(CR, sep = "; ") |> 
+#   mutate(SR_TOS = str_extract(SR, one_or_more(WRD) %R%
+#                                 SPC %R% one_or_more(WRD) %R%
+#                                 "," %R% SPC %R%
+#                                 one_or_more(DGT) %R% ","),
+#          SR_TOS = str_c(SR_TOS, " ", SO)) %>%
+#   mutate(ID_TOS =str_extract(SR, ".*,")) |> 
+#   select(ID_TOS, CR) |> 
+#   mutate(lastname = sub("\\., .*", "", CR),
+#          lastname = sub(",", "", lastname),
+#          lastname = sub("\\.", "", lastname),
+#          year = str_extract(CR, "\\(([0-9]{4})\\)"),
+#          year = str_remove_all(year, "\\(|\\)")) |> 
+#   filter(!grepl(pattern = "[():[:digit:]]", lastname),
+#          str_length(year) == 4) |> 
+#   mutate(CR = paste0(lastname, ", ", year, ",")) %>%
+#   select(ID_TOS, CR)
+# 
+# edgelist_wos <- 
+#   data_tidied |>
+#   filter(str_detect(database, 
+#                     "wos")) |> 
+#   select(SR, CR, database, SO) |> 
+#   separate_rows(CR, sep = ";") |> 
+#   mutate(ID_TOS = str_extract(SR, ".*,")) |> 
+#   mutate(CR = sub("^(\\S*\\s+\\S+\\s+\\S+).*", # removing strings after second comma
+#                   "\\1", CR)) %>%
+#   select(ID_TOS, CR) %>%
+#   na.omit() %>%
+#   unique() 
+# 
+# edgelist <- 
+#   edgelist_scopus |> 
+#   bind_rows(edgelist_wos) |> 
+#   mutate(CR = str_replace_all(CR, 
+#                               pattern = "\\.", 
+#                               replacement = ""))
+# 
+# byproducts_graph_raw <- 
+#   edgelist |> 
+#   graph.data.frame(directed = TRUE) |> 
+#   simplify()
+# 
+# byproducts_graph_cleaned <- 
+#   delete.vertices(byproducts_graph_raw, 
+#                   which(degree(byproducts_graph_raw, 
+#                                mode = "in") == 1 &
+#                           which(degree(byproducts_graph_raw, 
+#                                        mode = "out") == 0)))
+# 
+# giant.component <- function(graph) {
+#   cl <- igraph::clusters(graph)
+#   igraph::induced.subgraph(graph, which(cl$membership == which.max(cl$csize)))
+# }
+# 
+# byproducts_graph <- 
+#   giant.component(byproducts_graph_cleaned)
+# 
+# subareas <- 
+#   byproducts_graph |> 
+#   as.undirected(mode = "each") |> 
+#   cluster_louvain()
+# 
+# byproducts_graph_subareas <- 
+#   byproducts_graph |> 
+#   set_vertex_attr(name = "sub_area",
+#                   value = membership(subareas))
+# 
+# write.graph(byproducts_graph_subareas, 
+#             here("output", 
+#                  "byproducts_citation_network.graphml" ), 
+#             format = "graphml")
 ```
 
 Identifying names in Scopus and WoS
@@ -1377,33 +1377,42 @@ data_tidied_scopus_ref <-
 
 # Only 1!
 
-edgelist <- tibble(Source = as.character(),
-                   Target = as.character())
+edgelist_scopus_ref_dummy <- 
+  tibble(Source = as.character(),
+         Target = as.character(),
+         year = as.character())
 
 for (i in 1:length(data_tidied_scopus_ref$CR)) {
   
   df_1 <- data_tidied_scopus_ref |> 
     select(CR) |> 
     slice(i) |>
-    mutate(authors_2 = str_remove(CR, 
+    mutate(year_2 = str_extract(CR, "\\([0-9]{4}\\)"),
+           year_1 = str_remove(year_2, "\\("),
+           year = str_remove(year_1, "\\)"),
+           authors_2 = str_remove(CR, 
                                   "\\([0-9]{4}\\) .*"),
            authors_1 = str_extract(authors_2,
                                    ".*\\.,"),
            authors = str_replace_all(authors_1,
                                      "\\.", 
                                      replacement = "")) |> 
-    select(authors) |> 
+    select(authors, year) |> 
     separate_rows(authors, sep = ", ") |> 
-    mutate(authors = str_replace(authors, ",", "")) |>
+    mutate(authors = str_replace(authors, ",", ""))
+    
+  df_2 <- 
+    df_1 |> 
+    select(authors) |> 
     pull() |> 
     rollapply(2, by=2, c) |> 
     as_tibble() |> 
     unite(authors, sep = " ") |> 
     mutate(authors = str_replace(authors, "(?<= [[:alpha:]]).*", ""))
   
-  if (dim(df_1)[1] >= 2) {
+  if (dim(df_2)[1] >= 2) {
     
-    df_2 <- df_1 |> 
+    df_3 <- df_2 |> 
       pull() |> 
       combn(2, simplify = FALSE) |> 
       as_tibble(.name_repair = "minimal") |> 
@@ -1412,13 +1421,20 @@ for (i in 1:length(data_tidied_scopus_ref$CR)) {
       dplyr::rename(Source = 1, 
                     Target = 2)
     
-    edgelist <- edgelist |> 
-      bind_rows(df_2)
+    df_4 <- 
+      df_3 |> 
+      bind_cols(df_1 |> 
+                  select(year) |> 
+                  unique())
+    
+    edgelist_scopus_ref_dummy <- 
+      edgelist_scopus_ref_dummy |> 
+      bind_rows(df_4) 
     
   }
 }
 
-edgelist_scopus_ref <- edgelist |> 
+edgelist_scopus_ref <- edgelist_scopus_ref_dummy |> 
   filter(!str_detect(Source, "[0-9]"),
          !str_detect(Target, "[0-9]"))
 
@@ -1789,8 +1805,11 @@ Academic Social Network clustering graph
         panel.background = element_rect(fill = "white"))
 ```
 
+ASN - Network Analysis o
 
-
+```{r}
+tibble(id)
+```
 
 We created a unweighted graph!!! We didn't know how to do it in R :-(
 
@@ -1803,46 +1822,6 @@ author_cocitation_byproducts_gephi <-
 
 author_cocitation_byproducts_gephi |> summary()
 ```
-
-
-
-## 3.2.2 Author Co-citation Network
-
-```{r}
-author_co_citation_tags <- 
-  metaTagExtraction(data_tidied |> slice(1:4), 
-                    Field = "CR_AU", 
-                    sep = ";")
-author_co_citation_network <- 
-  biblioNetwork(data.frame(author_co_citation_tags), 
-                analysis = "co-citation", 
-                network = "authors", 
-                sep = ";")
-
-net=networkPlot(author_co_citation_network, n = 200, 
-                Title = "Author Co-citation Network", 
-                type = "fruchterman", 
-                size=T,
-                remove.multiple=FALSE, 
-                labelsize=0.7,
-                edgesize = 5,
-                cluster = 'louvain')
-
-author_co_citation_graph <- 
-  graph_from_adjacency_matrix(adjmatrix = author_co_citation_network, 
-                              mode = "undirected", 
-                              weighted = TRUE) |> 
-  simplify()
-
-```
-
-Undertanding more... 
-
-```{r}
-dummy_co_citation <- 
-  tibble()
-```
-
 
 The results are scattered in author collaboration network.  
 

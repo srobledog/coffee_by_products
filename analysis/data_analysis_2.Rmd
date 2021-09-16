@@ -1748,10 +1748,49 @@ author_cocitation_byproducts <-
   graph.data.frame(edgelist_author_cocitation_wos_scopus, 
                    directed = FALSE) |> 
   simplify() |> 
-  giant.component()
+  giant.component()  
+  
+clusters_author_network <- 
+  author_cocitation_byproducts |> 
+  as.undirected(mode = "each") |> 
+  cluster_louvain()
+
+author_cocitation_byproducts_clusters <-
+  author_cocitation_byproducts |> 
+  set_vertex_attr(name = "cluster",
+                  value = membership(clusters_author_network))
+  
 
 author_cocitation_byproducts |> summary()
 ```
+
+Academic Social Network clustering graph 
+
+```{r}
+# byproduct_san_clusters <- 
+  tibble(id = V(author_cocitation_byproducts_clusters)$name,
+         cluster = V(author_cocitation_byproducts_clusters)$cluster) |>
+  select(cluster) |> 
+  add_count(cluster) |> 
+  unique() |> 
+  arrange(desc(n)) |>
+  dplyr::rename(count = n) |> 
+  filter(count >= 80) |> 
+  ggplot(aes(x = reorder(cluster, count), y = count)) +
+  geom_point() +
+  geom_line() +
+  labs(title = "Clusters by size", 
+       x = "clusters", 
+       y = "authors") +
+  theme(text = element_text(color = "black",
+                            face = "bold",
+                            family = "Times New Roman"),
+        plot.title = element_text(size = 14),
+        panel.background = element_rect(fill = "white"))
+```
+
+
+
 
 We created a unweighted graph!!! We didn't know how to do it in R :-(
 

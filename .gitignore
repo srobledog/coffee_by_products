@@ -45,3 +45,5 @@ Icon*
 *.graphml
 *.gsheet
 *.gephi
+*.png
+*.svg

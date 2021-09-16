@@ -1436,7 +1436,8 @@ for (i in 1:length(data_tidied_scopus_ref$CR)) {
 
 edgelist_scopus_ref <- edgelist_scopus_ref_dummy |> 
   filter(!str_detect(Source, "[0-9]"),
-         !str_detect(Target, "[0-9]"))
+         !str_detect(Target, "[0-9]")) |> 
+  mutate(year = as.numeric(year))
 
 ```
 
@@ -1446,16 +1447,19 @@ Edge list of main papers
 data_tidied_scopus_main <- 
   data_tidied |> 
   filter(database %in% "Scopus") |> 
-  select(SR, AU) |> 
+  select(SR, AU, PY) |> 
   separate_rows(AU, sep = ";")
 
-edgelist_main <- tibble(Source = as.character(),
-                        Target = as.character())
+edgelist_scopus_dummy <- 
+  tibble(Source = as.character(),
+         Target = as.character(),
+         year = as.numeric())
 
 for (i in data_tidied_scopus_main$SR) {
   
   df_1 <- data_tidied_scopus_main |> 
-    filter(SR %in% i)
+    filter(SR %in% i) |> 
+    dplyr::rename(year = PY)
   
   if (dim(df_1)[1] >= 2) {
     
@@ -1466,11 +1470,18 @@ for (i in data_tidied_scopus_main$SR) {
       as_tibble(.name_repair = "minimal") |> 
       t() |> 
       data.frame() |> 
-      rename(Source = 1, 
-             Target = 2)
+      dplyr::rename(Source = 1, 
+                    Target = 2)
     
-    edgelist_main <- edgelist_main |> 
-      bind_rows(df_2)
+    df_3 <- 
+      df_2 |> 
+      bind_cols(df_1 |> 
+                  select(year) |> 
+                  unique())
+    
+    edgelist_scopus_dummy <- 
+      edgelist_scopus_dummy |> 
+      bind_rows(df_3)
     
   }
   
@@ -1481,18 +1492,23 @@ Merging both edge lists
 
 ```{r}
 edgelist_total_scopus <- 
-  edgelist_main |>
-  bind_rows(edgelist_scopus_ref)
+  edgelist_scopus_dummy |>
+  bind_rows(edgelist_scopus_ref) |> 
+  mutate(Source  = str_trim(Source, side = "both"),
+         Target = str_trim(Target, side = "both"))
 
-edgelist_total_scopus |> count(Source, Target)
+edgelist_total_scopus |> dplyr::count(Source, Target, year)
 ```
 
 Creating the graph
 
 ```{r}
+edgelist_total_scopus
+
 author_cocitation_network_scopus <- 
-  graph.data.frame(edgelist_total, 
-                   directed = FALSE) |> 
+  edgelist_total_scopus |> 
+  add_count(Source, Target, year) |> 
+  graph.data.frame(directed = FALSE) |> 
   simplify()
 
 author_cocitation_network_scopus |> 

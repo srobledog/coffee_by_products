@@ -1811,7 +1811,7 @@ author_cocitation_byproducts_clusters <-
                   value = membership(clusters_author_network))
   
 
-author_cocitation_byproducts |> summary()
+author_cocitation_byproducts_clusters |> summary()
 ```
 
 Creating the academic social network with year 
@@ -1852,26 +1852,45 @@ nodes_table <- # 21 row
   ungroup() |> 
   dplyr::mutate(percentage = n / max(n)) |> 
   select(year, percentage)
-  
+```
+
+### ASN nodes and links
+
+```{r}
 # Creating the graph with two datasets 
 
 nodes_table |> 
   mutate(type = "nodes") |> 
   bind_rows(links_table |> 
               mutate(type = "links")) |> 
-  ggplot(aes(x = year, y = percentage, color = type)) +
+  ggplot(aes(x = year, 
+             y = percentage, 
+             color = type)) +
   geom_point() +
   geom_line() +
   theme(legend.position = "right", 
         text = element_text(color = "black", 
                             face = "bold",
                             family = "Times New Roman"),
-        plot.title = element_text(size = 16)) +
-  labs(title = "Nodes and links through time") +
-  scale_y_continuous(labels = scales::percent)
+        plot.title = element_text(size = 25),
+        panel.background = element_rect(fill = "white"), 
+        axis.text.y = element_text(size = 15, 
+                                   colour = "black"),
+        axis.text.x = element_text(size = 15,
+                                   colour = "black"),
+        axis.title.x = element_text(size = 20),
+        axis.title.y = element_text(size = 20),
+        legend.text = element_text(size = "15"), 
+        legend.title = element_blank()) +
+  labs(title = "Nodes and links through time", 
+       y = "") +
+  scale_y_continuous(labels = scales::percent) 
 
-  
-  
+
+```
+
+
+```{r}
 author_cocitation_byproducts <- 
   graph.data.frame(edgelist_author_cocitation_wos_scopus, 
                    directed = FALSE) |> 
@@ -1891,9 +1910,9 @@ author_cocitation_byproducts_clusters <-
 
 author_cocitation_byproducts |> summary()
 ```
+reorder(cluster, count)
 
-
-Academic Social Network clustering graph 
+### ASN clustering graph 
 
 ```{r}
 # byproduct_san_clusters <- 
@@ -1905,38 +1924,31 @@ Academic Social Network clustering graph
   arrange(desc(n)) |>
   dplyr::rename(count = n) |> 
   filter(count >= 80) |> 
-  ggplot(aes(x = reorder(cluster, count), y = count)) +
+  mutate(clusters = length(cluster):1) |> 
+  arrange(desc(clusters)) |> 
+  ggplot(aes(x = clusters, y = count)) +
   geom_point() +
   geom_line() +
+  geom_text(label = count,
+            nudge_x = 0.5,
+            nudge_y = 0.5,
+            check_overlap = T) +
   labs(title = "Clusters by size", 
        x = "clusters", 
-       y = "authors") +
+       y = "Authors") +
   theme(text = element_text(color = "black",
                             face = "bold",
                             family = "Times New Roman"),
-        plot.title = element_text(size = 14),
-        panel.background = element_rect(fill = "white"))
+        plot.title = element_text(size = 25),
+        panel.background = element_rect(fill = "white"), 
+        axis.text.y = element_text(size = 15, 
+                                   colour = "black"),
+        axis.text.x = element_text(size = 15,
+                                   colour = "black"),
+        axis.title.x = element_text(size = 20),
+        axis.title.y = element_text(size = 20)) 
+  
 ```
-
-ASN - Network Analysis o
-
-```{r}
-tibble(id)
-```
-
-We created a unweighted graph!!! We didn't know how to do it in R :-(
-
-This is the result from gephi
-
-```{r}
-# author_cocitation_byproducts_gephi <- 
-#   igraph::read_graph(file = "output/author_cocitation_weighted.graphml", 
-#                      format = "graphml")
-# 
-# author_cocitation_byproducts_gephi |> summary()
-```
-
-The results are scattered in author collaboration network.  
 
 ## 3.2.2 Journal co-Citation Network
 

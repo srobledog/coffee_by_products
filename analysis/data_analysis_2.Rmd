@@ -1824,15 +1824,59 @@ edgelist_author_cocitation_wos_scopus_year <-
   select(-doi) |> 
   bind_rows(edgelist_total_scopus) |> 
   unique() |> 
-  dplyr::filter(!(is.na(year))) |> 
-  add_count(Source, Target, year) |> 
-  unique()
+  dplyr::filter(!(is.na(year)))
 
+links_table <- # 21 rows
+  edgelist_author_cocitation_wos_scopus_year |> 
+  dplyr::count(year, sort = TRUE) |> 
+  dplyr::arrange(desc(year)) |> 
+  filter(year >= 2000) |> 
+  dplyr::mutate(percentage = n/max(n))  |> 
+  select(year, percentage)
+  
+# Create a data frame with author and year 
+  
+nodes_table <- # 21 row 
+  edgelist_author_cocitation_wos_scopus_year |> 
+  select(author = Source, year) |>
+  bind_rows(edgelist_author_cocitation_wos_scopus_year |> 
+              select(author = Target, year)) |> 
+  unique() |> 
+  group_by(author) |> 
+  slice(which.min(year)) |>
+  ungroup() |> 
+  select(year) |> 
+  group_by(year) |> 
+  count(year) |> 
+  filter(year >= 2000) |> 
+  ungroup() |> 
+  dplyr::mutate(percentage = n / max(n)) |> 
+  select(year, percentage)
+  
+# Creating the graph with two datasets 
+
+nodes_table |> 
+  mutate(type = "nodes") |> 
+  bind_rows(links_table |> 
+              mutate(type = "links")) |> 
+  ggplot(aes(x = year, y = percentage, color = type)) +
+  geom_point() +
+  geom_line() +
+  theme(legend.position = "right", 
+        text = element_text(color = "black", 
+                            face = "bold",
+                            family = "Times New Roman"),
+        plot.title = element_text(size = 16)) +
+  labs(title = "Nodes and links through time") +
+  scale_y_continuous(labels = scales::percent)
+
+  
+  
 author_cocitation_byproducts <- 
   graph.data.frame(edgelist_author_cocitation_wos_scopus, 
                    directed = FALSE) |> 
   simplify() |> 
-  giant.component()  
+  giant.component() 
   
 clusters_author_network <- 
   author_cocitation_byproducts |> 

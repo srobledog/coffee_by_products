@@ -1526,7 +1526,7 @@ DOI <-
   separate_rows(CR, sep = ";") |> # 1650 rows
   filter(str_detect(CR, "DOI"))  |>   # 1300 rows
   mutate(DOI = str_remove(CR, ".*DOI ")) |> 
-  distinct(DOI)    # 1039 rows
+  distinct(DOI)    # 1049 rows
 
 
 
@@ -1708,9 +1708,10 @@ authors$month <- sub("^[0]+", "", authors$month) # Elimina los ceros a la izquie
 #### Separaci?n de los nombres de los autores de los art?culos de WoS ####
 ##########################################################################
 
-wos_author <- data_tidied |> 
+wos_author <- # 190 3
+  data_tidied |> 
   filter(database %in% "wos") |>
-  select(doi, AU) |> 
+  select(doi, AU, PY) |> 
   separate_rows(AU, sep = ";") |> 
   dplyr::rename(author = AU)
 
@@ -1720,9 +1721,11 @@ wos_author <- data_tidied |>
 
 authors$author <- gsub("(?<=, [[:alpha:]]).*", "", authors$author, perl=TRUE)
 
-wos_author_ref <- authors |> 
+wos_author_ref <- # 4104 3
+  authors |> 
   mutate(author = str_replace(author, ",", "")) |> 
-  select(doi, author)
+  select(doi, author, year) |> 
+  mutate(author = str_to_upper(author))
 
 ```
 
@@ -1734,12 +1737,19 @@ wos_author_ref <- authors |>
 
 # Para art?culos que tienen como m?nimo dos autores
 
-author_1 <- wos_author |> 
-  bind_rows(wos_author_ref)
+author_1 <- # 4273 3 there a mistake with the duplicate values. 
+  wos_author |> # 190
+  dplyr::rename(year = PY) |> 
+  bind_rows(wos_author_ref |> 
+              mutate(year = as.numeric(year))) |> # 4104
+  unique() |> 
+  filter(!(doi %in% "10.3109/13880209.2014.922589" & 
+         year == 2014)) # this is a duplicate value with != year
 
 edgelist_wos_authors <- data.frame(Source = character(), 
                                    Target = character(), 
-                                   doi = character(), 
+                                   doi = character(),
+                                   year = as.numeric(),
                                    stringsAsFactors = FALSE)
 
 table_ids <- table(author_1$doi)
@@ -1752,7 +1762,8 @@ for (i in list_ids_1) {
   df_2 = combn(df_1$author, 2, simplify = FALSE)
   df_3 = data.frame((t(data.frame(df_2))), i)
   colnames(df_3) = c("Source", "Target", "doi")
-  edgelist_wos_authors = rbind(edgelist_wos_authors, df_3)
+  df_4 <- df_3 |> bind_cols(df_1 |> select(year) |> unique())
+  edgelist_wos_authors = rbind(edgelist_wos_authors, df_4)
 }
 ```
 
@@ -1769,12 +1780,15 @@ author_cocitation_network_wos |> summary()
 Merging both datasets 
 
 ```{r}
-edgelist_author_cocitation_wos_scopus <- edgelist_wos_authors |> 
-  select(-doi) |> 
-  bind_rows(edgelist_total_scopus) |> 
+# we need to remove duplicates with dois. 
+edgelist_author_cocitation_wos_scopus <- 
+  edgelist_wos_authors |> 
+  select(-doi, -year) |> 
+  bind_rows(edgelist_total_scopus |> 
+              select(-year)) |> 
   add_count(Source, Target) |> 
   unique() |> 
-  mutate(weight = n)
+  dplyr::rename(weight = n)
 
 author_cocitation_byproducts <- 
   graph.data.frame(edgelist_author_cocitation_wos_scopus, 

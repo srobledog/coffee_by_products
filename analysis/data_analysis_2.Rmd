@@ -1352,8 +1352,10 @@ Add one in general?
 
 Identifying names in Scopus and WoS
 
+### Scopus
+
 ```{r}
-data_tidied_scopus <- 
+data_tidied_scopus <- # Create a list with single names
   data_tidied |> 
   filter(database %in% "Scopus") |> 
   mutate(ID_TOS = str_extract(SR, ".*,")) 
@@ -1516,7 +1518,7 @@ author_cocitation_network_scopus |>
 ```
 
 
-WoS
+### WoS
 
 ```{r}
 DOI <- 
@@ -1779,6 +1781,8 @@ author_cocitation_network_wos |> summary()
 
 Merging both datasets 
 
+Creating the weighted network of academic social network
+
 ```{r}
 # we need to remove duplicates with dois. 
 edgelist_author_cocitation_wos_scopus <- 
@@ -1809,6 +1813,41 @@ author_cocitation_byproducts_clusters <-
 
 author_cocitation_byproducts |> summary()
 ```
+
+Creating the academic social network with year 
+
+```{r}
+# we need to remove duplicates with dois or scale data...
+
+edgelist_author_cocitation_wos_scopus_year <- 
+  edgelist_wos_authors |> 
+  select(-doi) |> 
+  bind_rows(edgelist_total_scopus) |> 
+  unique() |> 
+  dplyr::filter(!(is.na(year))) |> 
+  add_count(Source, Target, year) |> 
+  unique()
+
+author_cocitation_byproducts <- 
+  graph.data.frame(edgelist_author_cocitation_wos_scopus, 
+                   directed = FALSE) |> 
+  simplify() |> 
+  giant.component()  
+  
+clusters_author_network <- 
+  author_cocitation_byproducts |> 
+  as.undirected(mode = "each") |> 
+  cluster_louvain()
+
+author_cocitation_byproducts_clusters <-
+  author_cocitation_byproducts |> 
+  set_vertex_attr(name = "cluster",
+                  value = membership(clusters_author_network))
+  
+
+author_cocitation_byproducts |> summary()
+```
+
 
 Academic Social Network clustering graph 
 
@@ -1846,11 +1885,11 @@ We created a unweighted graph!!! We didn't know how to do it in R :-(
 This is the result from gephi
 
 ```{r}
-author_cocitation_byproducts_gephi <- 
-  igraph::read_graph(file = "output/author_cocitation_weighted.graphml", 
-                     format = "graphml")
-
-author_cocitation_byproducts_gephi |> summary()
+# author_cocitation_byproducts_gephi <- 
+#   igraph::read_graph(file = "output/author_cocitation_weighted.graphml", 
+#                      format = "graphml")
+# 
+# author_cocitation_byproducts_gephi |> summary()
 ```
 
 The results are scattered in author collaboration network.  

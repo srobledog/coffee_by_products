@@ -432,8 +432,17 @@ y <- c(min(df_journal$year), min(df_journal$year) + diff(range(df_journal$year))
 
 
 ```{r}
+df2_journal_husk_plot <- 
+  df2_journal_husk|> 
+           filter(year >= 2011) 
+
+levels_husk <- 
+  df2_journal_husk_plot |> 
+  select(Journal) |> 
+  unique()
+
 g_journal_husk <-
-  ggplot(df2_journal_husk, 
+  ggplot(df2_journal_husk_plot , 
          aes(x = Journal, 
              y = year, 
              text = paste("Journal: ",
@@ -447,37 +456,48 @@ g_journal_husk <-
   ) + 
   geom_point(aes(alpha = TCpY, 
                  size = freq), 
-             color = "dodgerblue4") + 
+             color = "black") + 
   scale_size(range = c(2, 6)) + 
   scale_alpha(range = c(0.3, 1)) + 
-  scale_y_continuous(breaks = seq(min(df2_journal_husk$year), 
-                                  max(df2_journal_husk$year), 
-                                  by = 2)) + 
+  scale_y_continuous(breaks = seq(min(df2_journal_husk_plot$year), 
+                                  max(df2_journal_husk_plot$year), 
+                                  by = 1)) + 
   guides(size = guide_legend(order = 1,
                              "N.Articles"), 
          alpha = guide_legend(order = 2, 
                               "TC per Year")) + 
-  theme(legend.position = "right", text = element_text(color = "#444444"), 
+  theme(legend.position = "right", 
+        text = element_text(color = "black", 
+                            face = "bold", 
+                            family = "Times New Roman"), 
         panel.background = element_rect(fill = "gray97"), 
         panel.grid.minor = element_line(color = "#FFFFFF"), 
         panel.grid.major = element_line(color = "#FFFFFF"), 
-        plot.title = element_text(size = 24), 
-        axis.title = element_text(size = 14, 
-                                  color = "#555555"), 
+        plot.title = element_text(size = 25), 
+        axis.title = element_text(size = 20, 
+                                  color = "black"), 
         axis.title.y = element_text(vjust = 1,
                                     angle = 90, 
-                                    face = "bold"), 
+                                    face = "bold", 
+                                    size = 20), 
         axis.title.x = element_text(hjust = 0.95,
-                                    face = "bold"), 
+                                    face = "bold", 
+                                    size = 20), 
         axis.text.x = element_text(face = "bold", 
-                                   angle = 90), 
-        axis.text.y = element_text(face = "bold")) + 
+                                   angle = 90, 
+                                   size = 15, 
+                                   color = "black"), 
+        axis.text.y = element_text(face = "bold", 
+                                   size = 15,
+                                   color = "black"),
+        legend.text = element_text(size = 15),
+        legend.title = element_text(size = 15)) + 
   labs(title = "Husk Top-Journals' Production over the Time", 
-       x = "Journal", y = "Year") + 
-  geom_line(data = df2_journal_husk, 
+       x = "Journal", y = "") + 
+  geom_line(data = df2_journal_husk_plot, 
             aes(x = Journal, y = year, group = Journal),
-            size = 1, color = "firebrick", alpha = 0.3) + 
-  scale_x_discrete(limits = rev(levels(df2_journal_husk$Journal))) + 
+            size = 1, color = "black", alpha = 0.3) + 
+  # scale_x_discrete(limits = rev(df2_journal_husk_plot$Journal)) + 
   coord_flip()
 ```
 
@@ -501,8 +521,14 @@ M_journal_pulp <-
 
 
 ```{r}
-g_journal_pulp <- 
+M_journal_pulp_plot <- 
   M_journal_pulp |> 
+  filter(PY >= 2011) |> 
+  arrange(desc(TC)) |> 
+  slice(1:10)
+
+g_journal_pulp <- 
+  M_journal_pulp_plot |> 
   ggplot(aes(y = PY, 
              x = SO,
              text = paste("Journal: ",
@@ -511,42 +537,48 @@ g_journal_pulp <-
                           freq, "\nTotal Citations per Year: ",
                           round(TCpY,
                                 2)))) + 
-  geom_point(aes(alpha = M_journal_pulp |> 
+  geom_point(aes(alpha = M_journal_pulp_plot |> 
                    pull(TCpY),
                  size = freq), 
-             color = "dodgerblue4") +
+             color = "black") +
   scale_size(range = c(2, 6)) +
   scale_alpha(range= c(0.3, 1)) +
-  scale_y_continuous(breaks = seq(min(M_journal_pulp |> 
+  scale_y_continuous(breaks = seq(min(M_journal_pulp_plot |> 
                                         pull(PY)),
-                                  max(M_journal_pulp |> 
+                                  max(M_journal_pulp_plot |> 
                                         pull(PY)),
-                                  by = 2)) +
+                                  by = 1)) +
   guides(size = guide_legend(order = 1,
                              "N. Articles"),
          alpha = guide_legend(order = 2, 
                               "TC per year")) +
-  theme(legend.position = "right", text = element_text(color = "#444444"), 
+  theme(legend.position = "right", text = element_text(color = "black",
+                                                       face = "bold",
+                                                       family = "Times New Roman"), 
         panel.background = element_rect(fill = "gray97"), 
         panel.grid.minor = element_line(color = "#FFFFFF"), 
         panel.grid.major = element_line(color = "#FFFFFF"), 
-        plot.title = element_text(size = 24), 
-        axis.title = element_text(size = 14, 
-                                  color = "#555555"), 
+        plot.title = element_text(size = 25), 
+        axis.title = element_text(size = 20, 
+                                  color = "black"), 
         axis.title.y = element_text(vjust = 1,
                                     angle = 90, 
                                     face = "bold"), 
         axis.title.x = element_text(hjust = 0.95,
                                     face = "bold"), 
         axis.text.x = element_text(face = "bold", 
-                                   angle = 90), 
-        axis.text.y = element_text(face = "bold")) + 
+                                   angle = 90, 
+                                   size = 20), 
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10), 
+        legend.text = element_text(size = 15),
+        legend.title = element_text(size = 15)) + 
   labs(title = "pulp Top-Journals' Production over the Time", 
-       x = "Journal", y = "Year") + 
-  geom_line(data = M_journal_pulp, 
+       x = "Journal", y = "") + 
+  geom_line(data = M_journal_pulp_plot, 
             aes(x = SO, y = PY, group = SO),
-            size = 1, color = "firebrick", alpha = 0.3) + 
-  scale_x_discrete(limits = rev(levels(M_journal_pulp$PY))) + 
+            size = 1, color = "black", alpha = 0.3) + 
+  # scale_x_discrete(limits = rev(M_journal_pulp_plot$SO)) + 
   coord_flip()
 ```
 
@@ -559,19 +591,25 @@ g_journal_pulp
 ```{r}
 M_journal_silverskin <- 
   data_tidied |> 
-  rename("TI" = title) |> 
+  dplyr::rename(TI = title) |> 
   separate_rows(byproduct, sep = ", ") |> 
-  filter(byproduct %in% "silverskin") |> 
-  select(SO, PY, TC) |> 
-  mutate(TCpY = TC/(2021 - PY + 1)) |> 
+  dplyr::filter(byproduct %in% "silverskin") |> 
+  dplyr::select(SO, PY, TC) |> 
+  dplyr::mutate(TCpY = TC/(2021 - PY + 1)) |> 
   add_count(SO, PY) |> 
-  rename(freq = n)
+  dplyr::rename(freq = n)
 ```
 
 
 ```{r}
-g_journal_silverskin <- 
+M_journal_silverskin_plot <- 
   M_journal_silverskin |> 
+  filter(PY >= 2011) |> 
+  arrange(desc(TC)) |> 
+  slice(1:10)
+
+g_journal_silverskin <- 
+  M_journal_silverskin_plot |> 
   ggplot(aes(y = PY, 
              x = SO,
              text = paste("Journal: ",
@@ -580,42 +618,50 @@ g_journal_silverskin <-
                           freq, "\nTotal Citations per Year: ",
                           round(TCpY,
                                 2)))) + 
-  geom_point(aes(alpha = M_journal_silverskin |> 
+  geom_point(aes(alpha = M_journal_silverskin_plot |> 
                    pull(TCpY),
                  size = freq), 
-             color = "dodgerblue4") +
+             color = "black") +
   scale_size(range = c(2, 6)) +
   scale_alpha(range= c(0.3, 1)) +
-  scale_y_continuous(breaks = seq(min(M_journal_pulp |> 
+  scale_y_continuous(breaks = seq(min(M_journal_silverskin_plot |> 
                                         pull(PY)),
-                                  max(M_journal_pulp |> 
+                                  max(M_journal_silverskin_plot |> 
                                         pull(PY)),
-                                  by = 2)) +
+                                  by = 1)) +
   guides(size = guide_legend(order = 1,
                              "N. Articles"),
          alpha = guide_legend(order = 2, 
                               "TC per year")) +
-  theme(legend.position = "right", text = element_text(color = "#444444"), 
+  theme(legend.position = "right", text = element_text(color = "black",
+                                                       face = "bold",
+                                                       family = "Times New Roman"), 
         panel.background = element_rect(fill = "gray97"), 
         panel.grid.minor = element_line(color = "#FFFFFF"), 
         panel.grid.major = element_line(color = "#FFFFFF"), 
-        plot.title = element_text(size = 24), 
-        axis.title = element_text(size = 14, 
-                                  color = "#555555"), 
+        plot.title = element_text(size = 25), 
+        axis.title = element_text(size = 20, 
+                                  color = "black"), 
         axis.title.y = element_text(vjust = 1,
                                     angle = 90, 
-                                    face = "bold"), 
+                                    face = "bold",
+                                    size = 20), 
         axis.title.x = element_text(hjust = 0.95,
-                                    face = "bold"), 
+                                    face = "bold", 
+                                    size = 20), 
         axis.text.x = element_text(face = "bold", 
-                                   angle = 90), 
-        axis.text.y = element_text(face = "bold")) + 
+                                   angle = 90, 
+                                   size = 15, 
+                                   colour = "black"), 
+        axis.text.y = element_text(face = "bold"),
+        legend.text = element_text(size = 15),
+        legend.title = element_text(size = 15))  + 
   labs(title = "Silverskin Top-Journals' Production over the Time", 
-       x = "Journal", y = "Year") + 
-  geom_line(data = M_journal_silverskin, 
+       x = "Journal", y = "") + 
+  geom_line(data = M_journal_silverskin_plot, 
             aes(x = SO, y = PY, group = SO),
-            size = 1, color = "firebrick", alpha = 0.3) + 
-  scale_x_discrete(limits = rev(levels(M_journal_silverskin$PY))) + 
+            size = 1, color = "black", alpha = 0.3) + 
+  # scale_x_discrete(limits = rev(levels(M_journal_silverskin$PY))) + 
   coord_flip()
 ```
 
@@ -639,8 +685,14 @@ M_journal_spent_coffee_ground <-
 
 
 ```{r}
-g_journal_spent_coffee_ground <- 
+M_journal_spent_coffee_ground_plot <- 
   M_journal_spent_coffee_ground |> 
+  filter(PY >= 2011) |> 
+  arrange(desc(PY)) |> 
+  slice(1:11)
+
+g_journal_spent_coffee_ground <- 
+  M_journal_spent_coffee_ground_plot |> 
   ggplot(aes(y = PY, 
              x = SO,
              text = paste("Journal: ",
@@ -649,42 +701,52 @@ g_journal_spent_coffee_ground <-
                           freq, "\nTotal Citations per Year: ",
                           round(TCpY,
                                 2)))) + 
-  geom_point(aes(alpha = M_journal_spent_coffee_ground |> 
+  geom_point(aes(alpha = M_journal_spent_coffee_ground_plot |> 
                    pull(TCpY),
                  size = freq), 
-             color = "dodgerblue4") +
+             color = "black") +
   scale_size(range = c(2, 6)) +
   scale_alpha(range= c(0.3, 1)) +
-  scale_y_continuous(breaks = seq(min(M_journal_spent_coffee_ground |> 
+  scale_y_continuous(breaks = seq(min(M_journal_spent_coffee_ground_plot |> 
                                         pull(PY)),
-                                  max(M_journal_spent_coffee_ground |> 
+                                  max(M_journal_spent_coffee_ground_plot |> 
                                         pull(PY)),
-                                  by = 2)) +
+                                  by = 1)) +
   guides(size = guide_legend(order = 1,
                              "N. Articles"),
          alpha = guide_legend(order = 2, 
                               "TC per year")) +
-  theme(legend.position = "right", text = element_text(color = "#444444"), 
+  theme(legend.position = "right", text = element_text(color = "black", 
+                                                       face = "bold",
+                                                       family = "Times New Roman"), 
         panel.background = element_rect(fill = "gray97"), 
         panel.grid.minor = element_line(color = "#FFFFFF"), 
         panel.grid.major = element_line(color = "#FFFFFF"), 
-        plot.title = element_text(size = 24), 
-        axis.title = element_text(size = 14, 
-                                  color = "#555555"), 
+        plot.title = element_text(size = 25), 
+        axis.title = element_text(size = 20, 
+                                  color = "black"), 
         axis.title.y = element_text(vjust = 1,
                                     angle = 90, 
-                                    face = "bold"), 
+                                    face = "bold", 
+                                    size = 20), 
         axis.title.x = element_text(hjust = 0.95,
-                                    face = "bold"), 
+                                    face = "bold", 
+                                    size = 20), 
         axis.text.x = element_text(face = "bold", 
-                                   angle = 90), 
-        axis.text.y = element_text(face = "bold")) + 
-  labs(title = "Silverskin Top-Journals' Production over the Time", 
+                                   angle = 90, 
+                                   size = 15, 
+                                   colour = "black"), 
+        axis.text.y = element_text(face = "bold", 
+                                   size = 10,
+                                   colour = "black"),
+         legend.text = element_text(size = 15),
+        legend.title = element_text(size = 15)) + 
+  labs(title = "Spent Coffee Grounds Top-Journals' Production over the Time", 
        x = "Journal", y = "Year") + 
-  geom_line(data = M_journal_spent_coffee_ground, 
+  geom_line(data = M_journal_spent_coffee_ground_plot, 
             aes(x = SO, y = PY, group = SO),
-            size = 1, color = "firebrick", alpha = 0.3) + 
-  scale_x_discrete(limits = rev(levels(M_journal_spent_coffee_ground$PY))) + 
+            size = 1, color = "black", alpha = 0.3) + 
+  # scale_x_discrete(limits = rev(levels(M_journal_spent_coffee_ground_plot$PY))) + 
   coord_flip()
 ```
 
@@ -1136,7 +1198,7 @@ silverskin_authors_plot <-
   scale_alpha(range = c(0.3, 1)) + 
   scale_y_continuous(breaks = seq(min(df2_silverskin_authors$year), 
                                   max(df2_silverskin_authors$year), 
-                                  by = 2)) + 
+                                  by = 1)) + 
   guides(size = guide_legend(order = 1,
                              "N.Articles"), 
          alpha = guide_legend(order = 2, 
@@ -1156,8 +1218,12 @@ silverskin_authors_plot <-
         axis.title.x = element_text(hjust = 0.95,
                                     face = "bold"), 
         axis.text.x = element_text(face = "bold", 
-                                   angle = 90), 
-        axis.text.y = element_text(face = "bold")) + 
+                                   angle = 90, 
+                                   color = "black"), 
+        axis.text.y = element_text(face = "bold", 
+                                   colour = "black"), 
+        legend.text = element_text(size = 15),
+        legend.title = element_text(size = 15)) + 
   labs(title = "Silverskink Top-Authors' Production over the Time", 
        x = "Author", y = "") + 
   geom_line(data = df2_silverskin_authors, 
@@ -2212,8 +2278,6 @@ university_collab_net <- networkPlot(university_collab,
 ```
 
 Scattered.... 
-
-## 3.2.4 
 
 ## 3.2.5 Co-citation analysis
 

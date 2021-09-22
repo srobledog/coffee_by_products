@@ -2122,10 +2122,16 @@ journal_citation_graph_weighted <-
   giant.component()
 
 
-journal_citation_graph_1 <-
+journal_citation_graph_1 <-  # The graph is very dense we need to remove links
   delete.vertices(journal_citation_graph_weighted,
                   which(degree(journal_citation_graph_weighted, 
                                mode = "all") == 1))
+
+
+
+byproducts_journals_citation <- 
+  journal_citation_graph_1 |> 
+  add_clusters_to_nodes()
 
 # it is not directed?
 ```

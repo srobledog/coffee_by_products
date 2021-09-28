@@ -2413,6 +2413,160 @@ bio_comp_apps_plot <- # making the graph
 bio_comp_apps_plot
 ```
 
+### Microbial Transformation
+
+```{r}
+microbio_trans_apps <- 
+  data_tidied |> # Filter by applications
+  separate_rows(byproduct, sep = ", ") |> # separate byproducts
+  separate_rows(categories, sep = ", ") |> # separate string categories
+  filter(categories == "microbial transformation") |> # Select bioactive compounds
+  separate_rows(tags, sep = ", ") |> # separate tags 
+  select(byproduct, tags, categories, year) |> # Select columns needed
+  filter(year >= 2010) |> # last 10 years 
+  group_by(byproduct, tags, categories)|> # group some variables
+  dplyr::count(year) # count by year
+
+
+jitter <- position_jitter(width = 0.1, # prevent overlap
+                          height = 0.2)
+microbio_trans_apps_plot <- # making the graph
+  microbio_trans_apps %>% 
+  ggplot(aes(y = tags, 
+             x = year, 
+             size = n, 
+             color = byproduct)) + # x, y and size 
+  geom_point(position = jitter) + # add points to graph
+  # geom_jitter(position = position_jitter(width = 0.1, # prevent overlap
+  #                                        height = 0.1)) +
+  scale_x_continuous(breaks = seq(min(bio_comp_apps$year), # x axis scale
+                                  max(bio_comp_apps$year))) +
+  labs(title = "Microbioal Transformation", # titles 
+       x = "Years",
+       y = "Tags") +
+  theme(#legend.position = "rigth",
+    text = element_text(color = "black", # main titles format
+                        face = "bold",
+                        family = "Times New Roman"),
+    plot.title = element_text(size = 25),
+    axis.title.y = element_text(size = 20),
+    axis.title.x = element_text(size = 20),
+    axis.text.x = element_text(face = "bold",
+                               size = 15, 
+                               color = "black"),
+    axis.text.y = element_text(face = "bold",
+                               size = 15,
+                               color = "black"),
+    legend.text = element_text(size = 15),
+    legend.title = element_text(size = 15))  
+
+microbio_trans_apps_plot
+```
+
+
+### Environmental applications
+
+```{r}
+environmental_apps <- 
+  data_tidied |> # Filter by applications
+  separate_rows(byproduct, sep = ", ") |> # separate byproducts
+  separate_rows(categories, sep = ", ") |> # separate string categories
+  filter(categories == "environmental applications") |> # Select envir apps
+  separate_rows(tags, sep = ", ") |> # separate tags 
+  select(byproduct, tags, categories, year) |> # Select columns needed
+  filter(year >= 2010) |> # last 10 years 
+  group_by(byproduct, tags, categories)|> # group some variables
+  dplyr::count(year) # count by year
+
+
+jitter <- position_jitter(width = 0.1, # prevent overlap
+                          height = 0.2)
+microbio_trans_apps_plot <- # making the graph
+  environmental_apps %>% 
+  ggplot(aes(y = tags, 
+             x = year, 
+             size = n, 
+             color = byproduct)) + # x, y and size 
+  geom_point(position = jitter) + # add points to graph
+  # geom_jitter(position = position_jitter(width = 0.1, # prevent overlap
+  #                                        height = 0.1)) +
+  scale_x_continuous(breaks = seq(min(bio_comp_apps$year), # x axis scale
+                                  max(bio_comp_apps$year))) +
+  labs(title = "Environmental Applications", # titles 
+       x = "Years",
+       y = "Tags") +
+  theme(#legend.position = "rigth",
+    text = element_text(color = "black", # main titles format
+                        face = "bold",
+                        family = "Times New Roman"),
+    plot.title = element_text(size = 25),
+    axis.title.y = element_text(size = 20),
+    axis.title.x = element_text(size = 20),
+    axis.text.x = element_text(face = "bold",
+                               size = 15, 
+                               color = "black"),
+    axis.text.y = element_text(face = "bold",
+                               size = 15,
+                               color = "black"),
+    legend.text = element_text(size = 15),
+    legend.title = element_text(size = 15))  
+
+microbio_trans_apps_plot
+```
+
+
+### Biofuels from thermochemical processes 
+
+### Materials 
+
+```{r}
+biofuels_ther_apps <- 
+  data_tidied |> # Filter by applications
+  separate_rows(byproduct, sep = ", ") |> # separate byproducts
+  separate_rows(categories, sep = ", ") |> # separate string categories
+  filter(categories == "biofuels from thermochemical processes") |> # Select bio
+  separate_rows(tags, sep = ", ") |> # separate tags 
+  select(byproduct, tags, categories, year) |> # Select columns needed
+  filter(year >= 2010) |> # last 10 years 
+  group_by(byproduct, tags, categories)|> # group some variables
+  dplyr::count(year) # count by year
+
+
+jitter <- position_jitter(width = 0.1, # prevent overlap
+                          height = 0.2)
+biofuels_ther_apps_plot <- # making the graph
+  biofuels_ther_apps %>% 
+  ggplot(aes(y = tags, 
+             x = year, 
+             size = n, 
+             color = byproduct)) + # x, y and size 
+  geom_point(position = jitter) + # add points to graph
+  # geom_jitter(position = position_jitter(width = 0.1, # prevent overlap
+  #                                        height = 0.1)) +
+  scale_x_continuous(breaks = seq(min(bio_comp_apps$year), # x axis scale
+                                  max(bio_comp_apps$year))) +
+  labs(title = "Biofuels from thermochemical processes", # titles 
+       x = "Years",
+       y = "Tags") +
+  theme(#legend.position = "rigth",
+    text = element_text(color = "black", # main titles format
+                        face = "bold",
+                        family = "Times New Roman"),
+    plot.title = element_text(size = 25),
+    axis.title.y = element_text(size = 20),
+    axis.title.x = element_text(size = 20),
+    axis.text.x = element_text(face = "bold",
+                               size = 15, 
+                               color = "black"),
+    axis.text.y = element_text(face = "bold",
+                               size = 15,
+                               color = "black"),
+    legend.text = element_text(size = 15),
+    legend.title = element_text(size = 15))  
+
+biofuels_ther_apps_plot
+```
+
 
 ## 3.3.2 Pulp
 

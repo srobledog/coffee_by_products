@@ -2320,11 +2320,9 @@ https://bibliometrix.org/documents/bibliometrix_Report.html
 
 ```{r}
 bio_comp_apps <- 
-  data_tidied |> # Filter by applications
-  separate_rows(byproduct, sep = ", ") |> # separate byproducts
-  separate_rows(categories, sep = ", ") |> # separate string categories
-  filter(categories == "bioactive compounds") |> # Select bioactive compounds
-  separate_rows(tags, sep = ", ") |> # separate tags 
+  mendeley_tags_cate_cleaned |> # Filter by applications
+  ungroup() |> 
+  filter(categories %in% "bioactive compounds") |> # Select bioactive compounds
   select(byproduct, tags, categories, year) |> # Select columns needed
   filter(year >= 2010) |> # last 10 years 
   group_by(byproduct, tags, categories)|> # group some variables
@@ -2370,10 +2368,9 @@ bio_comp_apps_plot
 
 ```{r}
 microbio_trans_apps <- 
-  data_tidied |> # Filter by applications
-  separate_rows(byproduct, sep = ", ") |> # separate byproducts
-  separate_rows(categories, sep = ", ") |> # separate string categories
-  filter(categories == "microbial transformation") |> # Select bioactive compounds
+  mendeley_tags_cate_cleaned |> # Filter by applications
+  ungroup() |> 
+  filter(categories %in% "microbial transformation") |> # Select bioactive compounds
   separate_rows(tags, sep = ", ") |> # separate tags 
   select(byproduct, tags, categories, year) |> # Select columns needed
   filter(year >= 2010) |> # last 10 years 
@@ -2421,9 +2418,8 @@ microbio_trans_apps_plot
 
 ```{r}
 environmental_apps <- 
-  data_tidied |> # Filter by applications
-  separate_rows(byproduct, sep = ", ") |> # separate byproducts
-  separate_rows(categories, sep = ", ") |> # separate string categories
+  mendeley_tags_cate_cleaned |> # Filter by applications
+  ungroup() |> 
   filter(categories == "environmental applications") |> # Select envir apps
   separate_rows(tags, sep = ", ") |> # separate tags 
   select(byproduct, tags, categories, year) |> # Select columns needed
@@ -2472,9 +2468,8 @@ environmental_apps_plot
 
 ```{r}
 biofuels_ther_apps <- 
-  data_tidied |> # Filter by applications
-  separate_rows(byproduct, sep = ", ") |> # separate byproducts
-  separate_rows(categories, sep = ", ") |> # separate string categories
+  mendeley_tags_cate_cleaned |> # Filter by applications
+  ungroup() |> 
   filter(categories == "biofuels from thermochemical processes") |> # Select bio
   separate_rows(tags, sep = ", ") |> # separate tags 
   select(byproduct, tags, categories, year) |> # Select columns needed
@@ -2522,9 +2517,8 @@ biofuels_ther_apps_plot
 
 ```{r}
 materials_apps <- 
-  data_tidied |> # Filter by applications
-  separate_rows(byproduct, sep = ", ") |> # separate byproducts
-  separate_rows(categories, sep = ", ") |> # separate string categories
+  mendeley_tags_cate_cleaned |> # Filter by applications
+  ungroup() |> 
   filter(categories == "materials") |> # Select bio
   separate_rows(tags, sep = ", ") |> # separate tags 
   select(byproduct, tags, categories, year) |> # Select columns needed

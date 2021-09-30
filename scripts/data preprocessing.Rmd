@@ -469,6 +469,8 @@ mendeley_tags_cate_cleaned <-
   rename(tags = tag_1,
          categories = category) |> 
   mutate(year = as.numeric(year)) |> 
+  unique() |> 
+  separate_rows(byproduct, sep = ", ") |> 
   unique()
 
 ```

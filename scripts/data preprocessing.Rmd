@@ -27,8 +27,8 @@ library(here)
 
 ```{r}
 spent_mendeley <- 
-  revtools::read_bibliography(here("data",
-                                   "spent_coffee_grounds_98.bib")) %>% 
+  revtools::read_bibliography(here::here("data",
+                                         "spent_coffee_grounds_98.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
@@ -45,8 +45,8 @@ dim(spent_mendeley)
 
 ```{r}
 silverskin_mendelely <- 
-  revtools::read_bibliography(here("data",
-                                   "coffee_silverskin_40.bib")) %>% 
+  revtools::read_bibliography(here::here("data",
+                                         "coffee_silverskin_40.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
@@ -59,8 +59,8 @@ dim(silverskin_mendelely)
 
 ```{r}
 pulp_mendeley <- 
-  revtools::read_bibliography(here("data",
-                                   "coffee_pulp_39.bib")) %>% 
+  revtools::read_bibliography(here::here("data",
+                                         "coffee_pulp_39.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
@@ -73,8 +73,8 @@ dim(pulp_mendeley)
 
 ```{r}
 husk_mendeley <- 
-  revtools::read_bibliography(here("data",
-                                   "coffee_husk_28.bib")) %>% 
+  revtools::read_bibliography(here::here("data",
+                                         "coffee_husk_28.bib")) %>% 
   select(label, 
          doi, 
          mendeley_tags,
@@ -106,17 +106,17 @@ dim(mendeley_byproducts)
 
 ```{r}
 tags <-
-  read.csv(here("data",
-                "unique_tags.csv"), 
+  read.csv(here::here("data",
+                      "unique_tags.csv"), 
            stringsAsFactors = FALSE) %>% 
-  rename(tag = "code") %>% 
+  dplyr::rename(tag = "code") %>% 
   unique() %>% 
-  mutate(category = str_to_lower(category),
-         tag = str_to_lower(tag))
+  dplyr::mutate(category = str_to_lower(category),
+                tag = str_to_lower(tag))
 
 categories <- 
   tags %>% 
-  select(category) %>% 
+  dplyr::select(category) %>% 
   unique
 ```
 
@@ -435,9 +435,71 @@ mendeley_tags_cate %>%
 ```
 We can try a different approach using titles. 
 
+
+this is new, new need to replace the organge tags for the blue tags... 
+
+```{r}
+mendeley_tags_cate_cleaned <- 
+  mendeley_tags_cate |> 
+  mutate(tag_1 = if_else(tag %in% c("beverages", 
+                                    "bakery products", 
+                                    "dietary fiber", 
+                                    "polysaccharides", 
+                                    "coffee flour",
+                                    "preservatives"), "food", 
+                         if_else(tag %in% c("lactic acid", 
+                                            "gallic acid"), "organic acids", 
+                                 if_else(tag %in% c("polyhydroxyalkanoates",
+                                                    "nanocellulose",
+                                                    "lignin"), "biopolymers",
+                                         if_else(tag %in% c("biochar",
+                                                            "activated carbon"), "bioadsorbents", 
+                                                 if_else(tag %in% c("vermicomposting",
+                                                                    "ensiling"), "composting", 
+                                                         if_else(tag %in% c("activated carbon"), "biocatalysts", 
+                                                                 if_else(tag %in% c("fuel pellet"), "solid fuels", tag)
+                                                                )
+                                                        )      
+                                                  )
+                                         )
+                                )
+                        )
+  ) |> 
+  select(-tag) |> 
+  rename(tags = tag_1,
+         categories = category) |> 
+  mutate(year = as.numeric(year)) |> 
+  unique() |> 
+  separate_rows(byproduct, sep = ", ") |> 
+  unique()
+
+```
+
+
 Creating the dataset with unique papers
 
 ## Adding wos and scopus data 
+
+```{r}
+mendeley_108_dummy <- 
+  mendeley_tags_cate_cleaned |> 
+  select(-tag) |> 
+  rename(tag = tag_1) |> 
+  ungroup() |> 
+  select(-mendeley_tags, -label) |> 
+  group_by(doi, title, year, byproduct) |> 
+  mutate(tags = paste0(tag, collapse = ", ")) |> 
+  select(-tag) |> 
+  unique() |> 
+  ungroup() |>
+  group_by(doi, title, year, byproduct, tags) |> 
+  mutate(categories = paste0(category, collapse = ", ")) |> 
+  select(-category) |> 
+  unique()
+```
+
+
+We think there is a mistake here... 
 
 ```{r}
 mendeley_108 <- 
@@ -445,7 +507,7 @@ mendeley_108 <-
   ungroup() |> 
   select(-mendeley_tags, -label) |> 
   group_by(doi, title, year, byproduct) |> 
-  mutate(tags = paste0(tag, collapse = ", ")) |> 
+  mutate(tags_1 = paste0(tag, collapse = ", ")) |> 
   select(-tag) |> 
   unique() |> 
   ungroup() |>

@@ -2316,51 +2316,300 @@ https://bibliometrix.org/documents/bibliometrix_Report.html
 
 # 3.3 Coffee By-products applications
 
+### Bioactive compounds applications 
+
+```{r}
+bio_comp_apps <- 
+  mendeley_tags_cate_cleaned |> # Filter by applications
+  ungroup() |> 
+  filter(categories %in% "bioactive compounds") |> # Select bioactive compounds
+  select(byproduct, tags, categories, year) |> # Select columns needed
+  filter(year >= 2010) |> # last 10 years 
+  group_by(byproduct, tags, categories)|> # group some variables
+  dplyr::count(year) # count by year
+
+
+jitter <- position_jitter(width = 0.1, # prevent overlap
+                          height = 0.2)
+bio_comp_apps_plot <- # making the graph
+  bio_comp_apps %>% 
+  ggplot(aes(y = tags, 
+             x = year, 
+             size = n, 
+             color = byproduct)) + # x, y and size 
+  geom_point(position = jitter) + # add points to graph
+  # geom_jitter(position = position_jitter(width = 0.1, # prevent overlap
+  #                                        height = 0.1)) +
+  scale_x_continuous(breaks = seq(min(bio_comp_apps$year), # x axis scale
+                                  max(bio_comp_apps$year))) +
+  labs(title = "Bioactive compounds applications", # titles 
+       x = "Years",
+       y = "Tags") +
+  theme(#legend.position = "rigth",
+    text = element_text(color = "black", # main titles format
+                        face = "bold",
+                        family = "Times New Roman"),
+    plot.title = element_text(size = 25),
+    axis.title.y = element_text(size = 20),
+    axis.title.x = element_text(size = 20),
+    axis.text.x = element_text(face = "bold",
+                               size = 15, 
+                               color = "black"),
+    axis.text.y = element_text(face = "bold",
+                               size = 15,
+                               color = "black"),
+    legend.text = element_text(size = 15),
+    legend.title = element_text(size = 15))  
+
+bio_comp_apps_plot
+```
+
+### Microbial Transformation
+
+```{r}
+microbio_trans_apps <- 
+  mendeley_tags_cate_cleaned |> # Filter by applications
+  ungroup() |> 
+  filter(categories %in% "microbial transformation") |> # Select bioactive compounds
+  separate_rows(tags, sep = ", ") |> # separate tags 
+  select(byproduct, tags, categories, year) |> # Select columns needed
+  filter(year >= 2010) |> # last 10 years 
+  group_by(byproduct, tags, categories)|> # group some variables
+  dplyr::count(year) # count by year
+
+
+jitter <- position_jitter(width = 0.1, # prevent overlap
+                          height = 0.2)
+microbio_trans_apps_plot <- # making the graph
+  microbio_trans_apps %>% 
+  ggplot(aes(y = tags, 
+             x = year, 
+             size = n, 
+             color = byproduct)) + # x, y and size 
+  geom_point(position = jitter) + # add points to graph
+  # geom_jitter(position = position_jitter(width = 0.1, # prevent overlap
+  #                                        height = 0.1)) +
+  scale_x_continuous(breaks = seq(min(bio_comp_apps$year), # x axis scale
+                                  max(bio_comp_apps$year))) +
+  labs(title = "Microbioal Transformation", # titles 
+       x = "Years",
+       y = "Tags") +
+  theme(#legend.position = "rigth",
+    text = element_text(color = "black", # main titles format
+                        face = "bold",
+                        family = "Times New Roman"),
+    plot.title = element_text(size = 25),
+    axis.title.y = element_text(size = 20),
+    axis.title.x = element_text(size = 20),
+    axis.text.x = element_text(face = "bold",
+                               size = 15, 
+                               color = "black"),
+    axis.text.y = element_text(face = "bold",
+                               size = 15,
+                               color = "black"),
+    legend.text = element_text(size = 15),
+    legend.title = element_text(size = 15))  
+
+microbio_trans_apps_plot
+```
+
+
+### Environmental applications
+
+```{r}
+environmental_apps <- 
+  mendeley_tags_cate_cleaned |> # Filter by applications
+  ungroup() |> 
+  filter(categories == "environmental applications") |> # Select envir apps
+  separate_rows(tags, sep = ", ") |> # separate tags 
+  select(byproduct, tags, categories, year) |> # Select columns needed
+  filter(year >= 2010) |> # last 10 years 
+  group_by(byproduct, tags, categories)|> # group some variables
+  dplyr::count(year) # count by year
+
+
+jitter <- position_jitter(width = 0.1, # prevent overlap
+                          height = 0.2)
+environmental_apps_plot <- # making the graph
+  environmental_apps %>% 
+  ggplot(aes(y = tags, 
+             x = year, 
+             size = n, 
+             color = byproduct)) + # x, y and size 
+  geom_point(position = jitter) + # add points to graph
+  # geom_jitter(position = position_jitter(width = 0.1, # prevent overlap
+  #                                        height = 0.1)) +
+  scale_x_continuous(breaks = seq(min(bio_comp_apps$year), # x axis scale
+                                  max(bio_comp_apps$year))) +
+  labs(title = "Environmental Applications", # titles 
+       x = "Years",
+       y = "Tags") +
+  theme(#legend.position = "rigth",
+    text = element_text(color = "black", # main titles format
+                        face = "bold",
+                        family = "Times New Roman"),
+    plot.title = element_text(size = 25),
+    axis.title.y = element_text(size = 20),
+    axis.title.x = element_text(size = 20),
+    axis.text.x = element_text(face = "bold",
+                               size = 15, 
+                               color = "black"),
+    axis.text.y = element_text(face = "bold",
+                               size = 15,
+                               color = "black"),
+    legend.text = element_text(size = 15),
+    legend.title = element_text(size = 15))  
+
+environmental_apps_plot
+```
+
+
+### Biofuels from thermochemical processes 
+
+```{r}
+biofuels_ther_apps <- 
+  mendeley_tags_cate_cleaned |> # Filter by applications
+  ungroup() |> 
+  filter(categories == "biofuels from thermochemical processes") |> # Select bio
+  separate_rows(tags, sep = ", ") |> # separate tags 
+  select(byproduct, tags, categories, year) |> # Select columns needed
+  filter(year >= 2010) |> # last 10 years 
+  group_by(byproduct, tags, categories)|> # group some variables
+  dplyr::count(year) # count by year
+
+
+jitter <- position_jitter(width = 0.1, # prevent overlap
+                          height = 0.2)
+biofuels_ther_apps_plot <- # making the graph
+  biofuels_ther_apps %>% 
+  ggplot(aes(y = tags, 
+             x = year, 
+             size = n, 
+             color = byproduct)) + # x, y and size 
+  geom_point(position = jitter) + # add points to graph
+  # geom_jitter(position = position_jitter(width = 0.1, # prevent overlap
+  #                                        height = 0.1)) +
+  scale_x_continuous(breaks = seq(min(bio_comp_apps$year), # x axis scale
+                                  max(bio_comp_apps$year))) +
+  labs(title = "Biofuels from thermochemical processes", # titles 
+       x = "Years",
+       y = "Tags") +
+  theme(#legend.position = "rigth",
+    text = element_text(color = "black", # main titles format
+                        face = "bold",
+                        family = "Times New Roman"),
+    plot.title = element_text(size = 25),
+    axis.title.y = element_text(size = 20),
+    axis.title.x = element_text(size = 20),
+    axis.text.x = element_text(face = "bold",
+                               size = 15, 
+                               color = "black"),
+    axis.text.y = element_text(face = "bold",
+                               size = 15,
+                               color = "black"),
+    legend.text = element_text(size = 15),
+    legend.title = element_text(size = 15))  
+
+biofuels_ther_apps_plot
+```
+
+### Materials 
+
+```{r}
+materials_apps <- 
+  mendeley_tags_cate_cleaned |> # Filter by applications
+  ungroup() |> 
+  filter(categories == "materials") |> # Select bio
+  separate_rows(tags, sep = ", ") |> # separate tags 
+  select(byproduct, tags, categories, year) |> # Select columns needed
+  filter(year >= 2010) |> # last 10 years 
+  group_by(byproduct, tags, categories)|> # group some variables
+  dplyr::count(year) # count by year
+
+
+jitter <- position_jitter(width = 0.1, # prevent overlap
+                          height = 0.2)
+materials_apps_plot <- # making the graph
+  materials_apps %>% 
+  ggplot(aes(y = tags, 
+             x = year, 
+             size = n, 
+             color = byproduct)) + # x, y and size 
+  geom_point(position = jitter) + # add points to graph
+  # geom_jitter(position = position_jitter(width = 0.1, # prevent overlap
+  #                                        height = 0.1)) +
+  scale_x_continuous(breaks = seq(min(bio_comp_apps$year), # x axis scale
+                                  max(bio_comp_apps$year))) +
+  labs(title = "Materials", # titles 
+       x = "Years",
+       y = "Tags") +
+  theme(#legend.position = "rigth",
+    text = element_text(color = "black", # main titles format
+                        face = "bold",
+                        family = "Times New Roman"),
+    plot.title = element_text(size = 25),
+    axis.title.y = element_text(size = 20),
+    axis.title.x = element_text(size = 20),
+    axis.text.x = element_text(face = "bold",
+                               size = 15, 
+                               color = "black"),
+    axis.text.y = element_text(face = "bold",
+                               size = 15,
+                               color = "black"),
+    legend.text = element_text(size = 15),
+    legend.title = element_text(size = 15))  
+
+materials_apps_plot
+```
+
+
+
 ## 3.3.1 Husk
 
 ```{r}
-data_tidied_husk  <- 
-  data_tidied %>% 
-  separate_rows(byproduct, sep = ", ") |> 
-  separate_rows(categories, sep = ", ") |> 
-  dplyr::filter(str_detect(byproduct, pattern = "husk")) %>% 
-  dplyr::group_by(year,categories) %>% 
-  dplyr::count(categories, sort = TRUE) |> 
-  dplyr::filter(year >= 2010)
 
-data_tidied_husk_plot <-
-  data_tidied_husk %>% 
-  arrange(year,categories) %>% 
-  mutate(categories = factor(categories)) %>% 
-  ggplot(aes(y = categories, x = year, size = n)) +
-  geom_point(alpha = 1) +
-  scale_x_continuous(breaks = seq(min(data_tidied_husk$year),
-                                  max(data_tidied_husk$year),
-                                  by = 1)) +
-  scale_size(name="Tags") +
-  xlab("Byproducts Applications") +
-  ggtitle("Husk applications") +
-  theme(text = element_text(color = "black", 
-                            face = "bold", 
-                            family = "Times New Roman"),
-        plot.title = element_text(size = 25),
-        axis.title = element_text(size = 20),
-        axis.text.y = element_text(face = "bold",
-                                   colour = "black", 
-                                   size = 15, 
-                                   angle = 0,
-                                   hjust = 1),
-        axis.title.x = element_text(size = 20, 
-                                    vjust = 1),
-        axis.text.x = element_text(face = "bold", 
-                                   size = 15, 
-                                   colour = "black", 
-                                   angle = 90),
-        legend.text = element_text(size = 15),
-        legend.title = element_text(size = 15)
-        )  
-
-data_tidied_husk_plot
+# data_tidied_husk  <-
+#   data_tidied %>%
+#   separate_rows(byproduct, sep = ", ") |>
+#   separate_rows(categories, sep = ", ") |>
+#   dplyr::filter(str_detect(byproduct, pattern = "husk")) %>%
+#   dplyr::group_by(year,categories) %>%
+#   dplyr::count(categories, sort = TRUE) |>
+#   dplyr::filter(year >= 2010)
+#
+# data_tidied_husk_plot <-
+#   data_tidied_husk %>%
+#   arrange(year,categories) %>%
+#   mutate(categories = factor(categories)) %>%
+#   ggplot(aes(y = categories, x = year, size = n)) +
+#   geom_point(alpha = 1) +
+#   scale_x_continuous(breaks = seq(min(data_tidied_husk$year),
+#                                   max(data_tidied_husk$year),
+#                                   by = 1)) +
+#   scale_size(name="Tags") +
+#   xlab("Byproducts Applications") +
+#   ggtitle("Husk applications") +
+#   theme(text = element_text(color = "black",
+#                             face = "bold",
+#                             family = "Times New Roman"),
+#         plot.title = element_text(size = 25),
+#         axis.title = element_text(size = 20),
+#         axis.text.y = element_text(face = "bold",
+#                                    colour = "black",
+#                                    size = 15,
+#                                    angle = 0,
+#                                    hjust = 1),
+#         axis.title.x = element_text(size = 20,
+#                                     vjust = 1),
+#         axis.text.x = element_text(face = "bold",
+#                                    size = 15,
+#                                    colour = "black",
+#                                    angle = 90),
+#         legend.text = element_text(size = 15),
+#         legend.title = element_text(size = 15)
+#         )
+#
+# data_tidied_husk_plot
 ```
 
 ## 3.3.2 Pulp
@@ -2409,6 +2658,7 @@ data_tidied_pulp_plot <-
 
 data_tidied_pulp_plot
 ```
+
 ## 3.3.3 Silverskin
 
 ```{r}
